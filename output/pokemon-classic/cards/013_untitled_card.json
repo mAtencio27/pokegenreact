@@ -1,0 +1,27 @@
+{
+  "index": 13,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Fairy",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 110,
+  "abilities": [
+    {
+      "name": "Punch",
+      "element": "Fairy",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 50
+    },
+    {
+      "name": "Moonlight",
+      "element": "Fairy",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a gigantic legendary fairy-type monkey pokemon::2.5, with magical fur, in a woods environment, galaxy background, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "013_untitled_card.png"
+}

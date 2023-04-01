@@ -1,0 +1,54 @@
+[001] Untitled Card
+Untitled Card::0 a basic neutral-type goat pokemon, in a field environment, bright lighting, anime sketch --niji --ar 3:2
+
+[002] Untitled Card
+Untitled Card::0 a chibi young fire-type ibex pokemon, in a volcano environment, red and purple ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2
+
+[003] Untitled Card
+Untitled Card::0 a dynamic fire-type ibex pokemon::1.8, with ornate antlers, in a volcano environment, blue and red ambient lighting, anime sketch with watercolor --niji --ar 3:2
+
+[004] Untitled Card
+Untitled Card::0 a epic water-type penguin pokemon::2.5, holding a teal and navy whip, in a ocean environment, aurora background, anime sketch --niji --ar 3:2
+
+[005] Untitled Card
+Untitled Card::0 a rare grass-type gorilla pokemon::1.8, holding a white dagger, in a forest environment, sunlight ray ambience, anime sketch --niji --ar 3:2
+
+[006] Untitled Card
+Untitled Card::0 a chibi cute electric-type lizard pokemon, in a city environment, lightning background, anime chibi drawing style, pastel background --niji --ar 3:2
+
+[007] Untitled Card
+Untitled Card::0 a dynamic electric-type lizard pokemon::1.8, holding a regal club, in a city environment, yellow and teal ambient lighting, anime sketch with watercolor --niji --ar 3:2
+
+[008] Untitled Card
+Untitled Card::0 a gigantic epic electric-type lizard pokemon::2.5, holding a regal club, in a city environment, orange galaxy background, polished final by studio ghibli --niji --ar 3:2
+
+[009] Untitled Card
+Untitled Card::0 a rare psychic-type bull pokemon::1.8, wearing a regal mask, in a castle environment, violet shadows, anime sketch --niji --ar 3:2
+
+[010] Untitled Card
+Untitled Card::0 a special fighting-type wolf pokemon::1.8, wearing brown and grey bracers, in a ruins environment, orange ambient lighting, anime sketch --niji --ar 3:2
+
+[011] Untitled Card
+Untitled Card::0 a chibi young fairy-type monkey pokemon, in a woods environment, pink and purple ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2
+
+[012] Untitled Card
+Untitled Card::0 a dynamic fairy-type monkey pokemon::1.8, with magical fur, in a woods environment, pink ambient lighting, anime sketch with watercolor --niji --ar 3:2
+
+[013] Untitled Card
+Untitled Card::0 a gigantic legendary fairy-type monkey pokemon::2.5, with magical fur, in a woods environment, galaxy background, polished final by studio ghibli --niji --ar 3:2
+
+[014] Untitled Card
+Untitled Card::0 a chibi young dark-type boar pokemon, in a ruins environment, purple ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2
+
+[015] Untitled Card
+Untitled Card::0 a dynamic dark-type boar pokemon::1.8, with regal hooves, in a ruins environment, violent shadows, anime sketch with watercolor --niji --ar 3:2
+
+[016] Untitled Card
+Untitled Card::0 a gigantic epic dark-type boar pokemon::2.5, with regal hooves, in a ruins environment, galaxy background, polished final by studio ghibli --niji --ar 3:2
+
+[017] Untitled Card
+Untitled Card::0 a legendary dragon-type gecko pokemon::2.5, wearing white armor, in a ruins environment, orange and blue ambient lighting, anime sketch --niji --ar 3:2
+
+[018] Untitled Card
+Untitled Card::0 a simple metal-type cat pokemon, in a cave environment, earthtones, anime sketch --niji --ar 3:2
+

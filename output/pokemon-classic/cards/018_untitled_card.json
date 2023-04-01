@@ -1,0 +1,20 @@
+{
+  "index": 18,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Metal",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 40,
+  "abilities": [
+    {
+      "name": "Magnet Bomb",
+      "element": "Metal",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 60
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a simple metal-type cat pokemon, in a cave environment, earthtones, anime sketch --niji --ar 3:2",
+  "image_file": "018_untitled_card.png"
+}

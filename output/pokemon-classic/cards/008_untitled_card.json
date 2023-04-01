@@ -1,0 +1,27 @@
+{
+  "index": 8,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Electric",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 70,
+  "abilities": [
+    {
+      "name": "Hypercharge",
+      "element": "Electric",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    },
+    {
+      "name": "Electric Fury",
+      "element": "Electric",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a gigantic epic electric-type lizard pokemon::2.5, holding a regal club, in a city environment, orange galaxy background, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "008_untitled_card.png"
+}

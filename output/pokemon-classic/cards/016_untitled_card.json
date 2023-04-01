@@ -1,0 +1,27 @@
+{
+  "index": 16,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Dark",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 70,
+  "abilities": [
+    {
+      "name": "Sucker Punch",
+      "element": "Dark",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    },
+    {
+      "name": "Slam",
+      "element": "Neutral",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 30
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a gigantic epic dark-type boar pokemon::2.5, with regal hooves, in a ruins environment, galaxy background, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "016_untitled_card.png"
+}

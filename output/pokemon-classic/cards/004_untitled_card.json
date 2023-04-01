@@ -1,0 +1,20 @@
+{
+  "index": 4,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Water",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 80,
+  "abilities": [
+    {
+      "name": "Ocean Crush",
+      "element": "Water",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 60
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a epic water-type penguin pokemon::2.5, holding a teal and navy whip, in a ocean environment, aurora background, anime sketch --niji --ar 3:2",
+  "image_file": "004_untitled_card.png"
+}

@@ -1,0 +1,27 @@
+{
+  "index": 10,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Fighting",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Pulverize",
+      "element": "Fighting",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    },
+    {
+      "name": "Roundhouse",
+      "element": "Fighting",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a special fighting-type wolf pokemon::1.8, wearing brown and grey bracers, in a ruins environment, orange ambient lighting, anime sketch --niji --ar 3:2",
+  "image_file": "010_untitled_card.png"
+}

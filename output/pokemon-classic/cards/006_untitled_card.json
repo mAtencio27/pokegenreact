@@ -1,0 +1,27 @@
+{
+  "index": 6,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Electric",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 30,
+  "abilities": [
+    {
+      "name": "Electrify",
+      "element": "Electric",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    },
+    {
+      "name": "Jab",
+      "element": "Neutral",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 10
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a chibi cute electric-type lizard pokemon, in a city environment, lightning background, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "006_untitled_card.png"
+}
