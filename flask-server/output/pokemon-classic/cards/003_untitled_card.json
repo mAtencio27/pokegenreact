@@ -2,19 +2,26 @@
   "index": 3,
   "name": "Untitled Card",
   "description": "",
-  "element": "Fire",
+  "element": "Neutral",
   "rarity": "rare",
   "rarity_index": 2,
-  "hp": 80,
+  "hp": 130,
   "abilities": [
     {
-      "name": "Inferno",
-      "element": "Fire",
-      "cost": 4,
-      "is_mixed_element": true,
-      "power": 50
+      "name": "Slam",
+      "element": "Neutral",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 30
+    },
+    {
+      "name": "Scratch",
+      "element": "Neutral",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 10
     }
   ],
-  "image_prompt": "Untitled Card::0 a mythical fire-type lion pokemon::2.5, with ancient claws, in a volcano environment, blue and red ambient lighting, anime sketch with watercolor --niji --ar 3:2",
+  "image_prompt": "Untitled Card::0 a gigantic legendary neutral-type parrot pokemon::2.5, wearing opal bracers, in a field environment, silver galaxy background, polished final by studio ghibli --niji --ar 3:2",
   "image_file": "003_untitled_card.png"
 }

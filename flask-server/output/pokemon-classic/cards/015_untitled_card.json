@@ -2,26 +2,19 @@
   "index": 15,
   "name": "Untitled Card",
   "description": "",
-  "element": "Fairy",
+  "element": "Dark",
   "rarity": "common",
   "rarity_index": 0,
-  "hp": 30,
+  "hp": 50,
   "abilities": [
     {
-      "name": "Clobber",
-      "element": "Fairy",
+      "name": "Knock Off",
+      "element": "Dark",
       "cost": 2,
-      "is_mixed_element": false,
-      "power": 40
-    },
-    {
-      "name": "Nudge",
-      "element": "Neutral",
-      "cost": 1,
-      "is_mixed_element": false,
-      "power": 10
+      "is_mixed_element": true,
+      "power": 30
     }
   ],
-  "image_prompt": "Untitled Card::0 a chibi cute fairy-type horse pokemon, in a woods environment, pink ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_prompt": "Untitled Card::0 a chibi young dark-type lion pokemon, in a ruins environment, violent shadows, anime chibi drawing style, pastel background --niji --ar 3:2",
   "image_file": "015_untitled_card.png"
 }

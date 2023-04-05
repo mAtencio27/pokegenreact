@@ -2,26 +2,19 @@
   "index": 19,
   "name": "Untitled Card",
   "description": "",
-  "element": "Dark",
-  "rarity": "rare",
-  "rarity_index": 2,
-  "hp": 130,
+  "element": "Metal",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 90,
   "abilities": [
     {
-      "name": "Fling",
-      "element": "Dark",
+      "name": "Iron Head",
+      "element": "Metal",
       "cost": 3,
       "is_mixed_element": false,
       "power": 50
-    },
-    {
-      "name": "Crunch",
-      "element": "Dark",
-      "cost": 1,
-      "is_mixed_element": false,
-      "power": 20
     }
   ],
-  "image_prompt": "Untitled Card::0 a gigantic mythical dark-type fox pokemon::2.5, with a violet hypnotic tail, in a crypt environment, galaxy background, polished final by studio ghibli --niji --ar 3:2",
+  "image_prompt": "Untitled Card::0 a metal-type gorilla pokemon::1.8, holding a metallic bow, in a cave environment, natural ambient lighting, anime sketch with watercolor --niji --ar 3:2",
   "image_file": "019_untitled_card.png"
 }

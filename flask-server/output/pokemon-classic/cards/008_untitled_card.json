@@ -5,23 +5,16 @@
   "element": "Electric",
   "rarity": "uncommon",
   "rarity_index": 1,
-  "hp": 50,
+  "hp": 90,
   "abilities": [
     {
-      "name": "Plasma Burst",
+      "name": "Lightning Blast",
       "element": "Electric",
       "cost": 3,
       "is_mixed_element": false,
       "power": 50
-    },
-    {
-      "name": "Electrocute",
-      "element": "Electric",
-      "cost": 2,
-      "is_mixed_element": true,
-      "power": 30
     }
   ],
-  "image_prompt": "Untitled Card::0 a dynamic electric-type deer pokemon::1.8, with yellow and teal antlers, in a city environment, yellow and teal ambient lighting, anime sketch with watercolor --niji --ar 3:2",
+  "image_prompt": "Untitled Card::0 a rare electric-type eagle pokemon::1.8, wearing a dark mask, in a thunderstorm environment, lightning background, anime sketch --niji --ar 3:2",
   "image_file": "008_untitled_card.png"
 }

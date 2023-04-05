@@ -2,19 +2,19 @@
   "index": 2,
   "name": "Untitled Card",
   "description": "",
-  "element": "Fire",
+  "element": "Neutral",
   "rarity": "uncommon",
   "rarity_index": 1,
-  "hp": 60,
+  "hp": 50,
   "abilities": [
     {
-      "name": "Ember Flare",
-      "element": "Fire",
-      "cost": 3,
-      "is_mixed_element": true,
+      "name": "Giga Slam",
+      "element": "Neutral",
+      "cost": 4,
+      "is_mixed_element": false,
       "power": 40
     }
   ],
-  "image_prompt": "Untitled Card::0 a chibi young fire-type lion pokemon::1.8, with ancient claws, in a volcano environment, lava texture background, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_prompt": "Untitled Card::0 a neutral-type parrot pokemon::1.8, wearing opal bracers, in a field environment, faded prismatic bokeh background, anime sketch with watercolor --niji --ar 3:2",
   "image_file": "002_untitled_card.png"
 }

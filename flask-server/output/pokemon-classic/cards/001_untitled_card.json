@@ -3,25 +3,18 @@
   "name": "Untitled Card",
   "description": "",
   "element": "Neutral",
-  "rarity": "uncommon",
-  "rarity_index": 1,
-  "hp": 70,
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 50,
   "abilities": [
     {
-      "name": "Strike",
+      "name": "Tackle",
       "element": "Neutral",
-      "cost": 3,
+      "cost": 2,
       "is_mixed_element": false,
-      "power": 30
-    },
-    {
-      "name": "Jab",
-      "element": "Neutral",
-      "cost": 1,
-      "is_mixed_element": false,
-      "power": 10
+      "power": 20
     }
   ],
-  "image_prompt": "Untitled Card::0 a special neutral-type bird pokemon::1.8, with a white tail, in a grassland environment, pastel colors, anime sketch --niji --ar 3:2",
+  "image_prompt": "Untitled Card::0 a chibi cute neutral-type parrot pokemon, in a field environment, faded prismatic bokeh background, anime chibi drawing style, pastel background --niji --ar 3:2",
   "image_file": "001_untitled_card.png"
 }

@@ -2,19 +2,26 @@
   "index": 7,
   "name": "Untitled Card",
   "description": "",
-  "element": "Electric",
-  "rarity": "common",
-  "rarity_index": 0,
+  "element": "Grass",
+  "rarity": "uncommon",
+  "rarity_index": 1,
   "hp": 50,
   "abilities": [
     {
-      "name": "Sparkwave",
-      "element": "Electric",
-      "cost": 2,
-      "is_mixed_element": false,
+      "name": "Verdant Rage",
+      "element": "Grass",
+      "cost": 3,
+      "is_mixed_element": true,
       "power": 40
+    },
+    {
+      "name": "Petal Pulse",
+      "element": "Grass",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
     }
   ],
-  "image_prompt": "Untitled Card::0 a chibi cute electric-type deer pokemon, in a city environment, lightning background, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_prompt": "Untitled Card::0 a strong grass-type horse pokemon::1.8, with wooden hooves, in a woods environment, sunlight ray ambience, anime sketch --niji --ar 3:2",
   "image_file": "007_untitled_card.png"
 }

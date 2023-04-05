@@ -9,9 +9,14 @@ app = Flask(__name__)
 def members():
     return {"members": ["Member 1", "Member 2", "Member 3"]}
 
-@app.route('/run_script')
-def run_script():
+@app.route('/generate')
+def generate():
     subprocess.call(['python', '../flask-server/pokemon-card-generator/src/generate.py'])
+    return 'Script executed successfully!'
+
+@app.route('/render')
+def render():
+    subprocess.call(['python', '../flask-server/pokemon-card-generator/src/render_cards.py'])
     return 'Script executed successfully!'
 
 if __name__ == "__main__":

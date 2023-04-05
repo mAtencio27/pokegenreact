@@ -2,26 +2,26 @@
   "index": 17,
   "name": "Untitled Card",
   "description": "",
-  "element": "Dark",
-  "rarity": "common",
-  "rarity_index": 0,
-  "hp": 30,
+  "element": "Dragon",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 60,
   "abilities": [
     {
-      "name": "Knock Off",
-      "element": "Dark",
-      "cost": 2,
+      "name": "Dragon Energy",
+      "element": "Dragon",
+      "cost": 4,
       "is_mixed_element": true,
-      "power": 30
+      "power": 50
     },
     {
-      "name": "Nudge",
+      "name": "Tackle",
       "element": "Neutral",
-      "cost": 1,
+      "cost": 2,
       "is_mixed_element": false,
-      "power": 10
+      "power": 20
     }
   ],
-  "image_prompt": "Untitled Card::0 a chibi young dark-type fox pokemon, in a crypt environment, violent shadows, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_prompt": "Untitled Card::0 a epic dragon-type frilled-lizard pokemon::2.5, wearing a friendly mask, in a volcano environment, sunny and dreamy ambient lighting, anime sketch --niji --ar 3:2",
   "image_file": "017_untitled_card.png"
 }

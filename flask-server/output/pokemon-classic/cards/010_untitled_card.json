@@ -3,25 +3,25 @@
   "name": "Untitled Card",
   "description": "",
   "element": "Psychic",
-  "rarity": "common",
-  "rarity_index": 0,
-  "hp": 30,
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
   "abilities": [
     {
-      "name": "Psychwave",
+      "name": "Astral Ring",
       "element": "Psychic",
-      "cost": 2,
-      "is_mixed_element": true,
-      "power": 30
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 50
     },
     {
-      "name": "Levitate",
-      "element": "Psychic",
-      "cost": 1,
+      "name": "Slash",
+      "element": "Neutral",
+      "cost": 2,
       "is_mixed_element": false,
       "power": 20
     }
   ],
-  "image_prompt": "Untitled Card::0 a chibi young psychic-type parrot pokemon, in a cave environment, pink bokeh lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_prompt": "Untitled Card::0 a young psychic-type lynx pokemon::1.8, with white fur, in a castle environment, violet shadows, anime sketch with watercolor --niji --ar 3:2",
   "image_file": "010_untitled_card.png"
 }

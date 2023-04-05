@@ -2,26 +2,26 @@
   "index": 6,
   "name": "Untitled Card",
   "description": "",
-  "element": "Grass",
-  "rarity": "uncommon",
-  "rarity_index": 1,
-  "hp": 70,
+  "element": "Water",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 80,
   "abilities": [
     {
-      "name": "Vine Sweep",
-      "element": "Grass",
+      "name": "Ice Blade",
+      "element": "Water",
       "cost": 3,
-      "is_mixed_element": true,
-      "power": 40
+      "is_mixed_element": false,
+      "power": 50
     },
     {
-      "name": "Bramble",
-      "element": "Grass",
-      "cost": 1,
-      "is_mixed_element": false,
-      "power": 20
+      "name": "Aquablast",
+      "element": "Water",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
     }
   ],
-  "image_prompt": "Untitled Card::0 a young grass-type bear pokemon::1.8, wearing a ornate crystal headband, in a forest environment, sunlight ray ambience, anime sketch with watercolor --niji --ar 3:2",
+  "image_prompt": "Untitled Card::0 a legendary water-type squid pokemon::2.5, with white tentacles, in a river environment, aurora background, anime sketch with watercolor --niji --ar 3:2",
   "image_file": "006_untitled_card.png"
 }

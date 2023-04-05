@@ -2,19 +2,19 @@
   "index": 20,
   "name": "Untitled Card",
   "description": "",
-  "element": "Dragon",
+  "element": "Metal",
   "rarity": "rare",
   "rarity_index": 2,
-  "hp": 100,
+  "hp": 130,
   "abilities": [
     {
-      "name": "Eterna Beam",
-      "element": "Dragon",
+      "name": "Magnet Bomb",
+      "element": "Metal",
       "cost": 4,
-      "is_mixed_element": true,
-      "power": 50
+      "is_mixed_element": false,
+      "power": 60
     }
   ],
-  "image_prompt": "Untitled Card::0 a mythical dragon-type dragon pokemon::2.5, with a dark crystal core, in a volcano environment, sunny and dreamy ambient lighting, anime sketch --niji --ar 3:2",
+  "image_prompt": "Untitled Card::0 a gigantic epic metal-type gorilla pokemon::2.5, holding a metallic bow, in a cave environment, galaxy background, polished final by studio ghibli --niji --ar 3:2",
   "image_file": "020_untitled_card.png"
 }

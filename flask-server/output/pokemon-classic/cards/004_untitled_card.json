@@ -2,26 +2,19 @@
   "index": 4,
   "name": "Untitled Card",
   "description": "",
-  "element": "Water",
-  "rarity": "rare",
-  "rarity_index": 2,
-  "hp": 100,
+  "element": "Fire",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 80,
   "abilities": [
     {
-      "name": "Wave Strike",
-      "element": "Water",
-      "cost": 3,
+      "name": "Heat",
+      "element": "Fire",
+      "cost": 2,
       "is_mixed_element": true,
-      "power": 40
-    },
-    {
-      "name": "Smack",
-      "element": "Neutral",
-      "cost": 1,
-      "is_mixed_element": false,
-      "power": 10
+      "power": 30
     }
   ],
-  "image_prompt": "Untitled Card::0 a mythical water-type swan pokemon::2.5, wearing ornate armor, in a river environment, aurora background, anime sketch --niji --ar 3:2",
+  "image_prompt": "Untitled Card::0 a simple fire-type lizard pokemon, in a desert environment, lava texture background, anime sketch --niji --ar 3:2",
   "image_file": "004_untitled_card.png"
 }
