@@ -1,0 +1,20 @@
+{
+  "index": 20,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Dragon",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 100,
+  "abilities": [
+    {
+      "name": "Eterna Beam",
+      "element": "Dragon",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a mythical dragon-type dragon pokemon::2.5, with a dark crystal core, in a volcano environment, sunny and dreamy ambient lighting, anime sketch --niji --ar 3:2",
+  "image_file": "020_untitled_card.png"
+}

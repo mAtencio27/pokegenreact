@@ -1,0 +1,27 @@
+{
+  "index": 18,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Dark",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 70,
+  "abilities": [
+    {
+      "name": "Dark Pulse",
+      "element": "Dark",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    },
+    {
+      "name": "Jab",
+      "element": "Neutral",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 10
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a dynamic dark-type fox pokemon::1.8, with a violet hypnotic tail, in a crypt environment, violent shadows, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "018_untitled_card.png"
+}

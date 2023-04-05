@@ -1,0 +1,27 @@
+{
+  "index": 10,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Psychic",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 30,
+  "abilities": [
+    {
+      "name": "Psychwave",
+      "element": "Psychic",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    },
+    {
+      "name": "Levitate",
+      "element": "Psychic",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a chibi young psychic-type parrot pokemon, in a cave environment, pink bokeh lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "010_untitled_card.png"
+}

@@ -1,0 +1,20 @@
+{
+  "index": 2,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Fire",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 60,
+  "abilities": [
+    {
+      "name": "Ember Flare",
+      "element": "Fire",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a chibi young fire-type lion pokemon::1.8, with ancient claws, in a volcano environment, lava texture background, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "002_untitled_card.png"
+}

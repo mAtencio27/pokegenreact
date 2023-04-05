@@ -1,0 +1,27 @@
+{
+  "index": 15,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Fairy",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 30,
+  "abilities": [
+    {
+      "name": "Clobber",
+      "element": "Fairy",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 40
+    },
+    {
+      "name": "Nudge",
+      "element": "Neutral",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 10
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a chibi cute fairy-type horse pokemon, in a woods environment, pink ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "015_untitled_card.png"
+}

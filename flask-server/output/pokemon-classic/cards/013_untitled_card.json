@@ -1,0 +1,27 @@
+{
+  "index": 13,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Fighting",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 90,
+  "abilities": [
+    {
+      "name": "Strike",
+      "element": "Fighting",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 40
+    },
+    {
+      "name": "Jab",
+      "element": "Neutral",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 10
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a young fighting-type gorilla pokemon::1.8, holding a regal lance, in a arena environment, orange ambient lighting, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "013_untitled_card.png"
+}

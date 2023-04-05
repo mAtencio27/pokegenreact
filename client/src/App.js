@@ -1,10 +1,25 @@
-import './App.css';
+import React from 'react'
+import './App.css'
+import { useState, useEffect } from 'react'
 
 function App() {
+
+  const [data, setData] = useState([{}])
+
+  useEffect(() => {
+    const fetchData = async() => {
+      const res = await fetch("/members");
+      const resData = await res.json()
+      setData(resData.members)
+    };
+
+    fetchData()
+  }, [])
 
   const buttonHandler = (e) => {
     console.log("button click");
     console.log(e.target.value);
+    console.log(data)
   };
 
   return (

@@ -1,0 +1,27 @@
+{
+  "index": 14,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Fighting",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 110,
+  "abilities": [
+    {
+      "name": "Furious Combo",
+      "element": "Fighting",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 50
+    },
+    {
+      "name": "Pound",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a gigantic mythical fighting-type gorilla pokemon::2.5, holding a regal lance, in a arena environment, galaxy background, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "014_untitled_card.png"
+}

@@ -1,0 +1,20 @@
+{
+  "index": 3,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Fire",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 80,
+  "abilities": [
+    {
+      "name": "Inferno",
+      "element": "Fire",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a mythical fire-type lion pokemon::2.5, with ancient claws, in a volcano environment, blue and red ambient lighting, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "003_untitled_card.png"
+}

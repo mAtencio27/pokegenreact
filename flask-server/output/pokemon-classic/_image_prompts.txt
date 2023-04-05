@@ -1,0 +1,69 @@
+[001] Untitled Card
+Untitled Card::0 a special neutral-type bird pokemon::1.8, with a white tail, in a grassland environment, pastel colors, anime sketch --niji --ar 3:2
+
+[002] Untitled Card
+Untitled Card::0 a chibi young fire-type lion pokemon::1.8, with ancient claws, in a volcano environment, lava texture background, anime chibi drawing style, pastel background --niji --ar 3:2
+
+[003] Untitled Card
+Untitled Card::0 a mythical fire-type lion pokemon::2.5, with ancient claws, in a volcano environment, blue and red ambient lighting, anime sketch with watercolor --niji --ar 3:2
+
+[004] Untitled Card
+Untitled Card::0 a mythical water-type swan pokemon::2.5, wearing ornate armor, in a river environment, aurora background, anime sketch --niji --ar 3:2
+
+[005] Untitled Card
+Untitled Card::0 a chibi young grass-type bear pokemon, in a forest environment, green and orange ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2
+
+[006] Untitled Card
+Untitled Card::0 a young grass-type bear pokemon::1.8, wearing a ornate crystal headband, in a forest environment, sunlight ray ambience, anime sketch with watercolor --niji --ar 3:2
+
+[007] Untitled Card
+Untitled Card::0 a chibi cute electric-type deer pokemon, in a city environment, lightning background, anime chibi drawing style, pastel background --niji --ar 3:2
+
+[008] Untitled Card
+Untitled Card::0 a dynamic electric-type deer pokemon::1.8, with yellow and teal antlers, in a city environment, yellow and teal ambient lighting, anime sketch with watercolor --niji --ar 3:2
+
+[009] Untitled Card
+Untitled Card::0 a gigantic mythical electric-type deer pokemon::2.5, with yellow and teal antlers, in a city environment, orange galaxy background, polished final by studio ghibli --niji --ar 3:2
+
+[010] Untitled Card
+Untitled Card::0 a chibi young psychic-type parrot pokemon, in a cave environment, pink bokeh lighting, anime chibi drawing style, pastel background --niji --ar 3:2
+
+[011] Untitled Card
+Untitled Card::0 a young psychic-type parrot pokemon::1.8, wearing dark armor, in a cave environment, violet shadows, anime sketch with watercolor --niji --ar 3:2
+
+[012] Untitled Card
+Untitled Card::0 a chibi young fighting-type gorilla pokemon, in a arena environment, orange and blue ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2
+
+[013] Untitled Card
+Untitled Card::0 a young fighting-type gorilla pokemon::1.8, holding a regal lance, in a arena environment, orange ambient lighting, anime sketch with watercolor --niji --ar 3:2
+
+[014] Untitled Card
+Untitled Card::0 a gigantic mythical fighting-type gorilla pokemon::2.5, holding a regal lance, in a arena environment, galaxy background, polished final by studio ghibli --niji --ar 3:2
+
+[015] Untitled Card
+Untitled Card::0 a chibi cute fairy-type horse pokemon, in a woods environment, pink ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2
+
+[016] Untitled Card
+Untitled Card::0 a young fairy-type horse pokemon::1.8, with cute hooves, in a woods environment, orange and blue ambient lighting, anime sketch with watercolor --niji --ar 3:2
+
+[017] Untitled Card
+Untitled Card::0 a chibi young dark-type fox pokemon, in a crypt environment, violent shadows, anime chibi drawing style, pastel background --niji --ar 3:2
+
+[018] Untitled Card
+Untitled Card::0 a dynamic dark-type fox pokemon::1.8, with a violet hypnotic tail, in a crypt environment, violent shadows, anime sketch with watercolor --niji --ar 3:2
+
+[019] Untitled Card
+Untitled Card::0 a gigantic mythical dark-type fox pokemon::2.5, with a violet hypnotic tail, in a crypt environment, galaxy background, polished final by studio ghibli --niji --ar 3:2
+
+[020] Untitled Card
+Untitled Card::0 a mythical dragon-type dragon pokemon::2.5, with a dark crystal core, in a volcano environment, sunny and dreamy ambient lighting, anime sketch --niji --ar 3:2
+
+[021] Untitled Card
+Untitled Card::0 a chibi cute metal-type ladybug pokemon, in a cave environment, earthtones, anime chibi drawing style, pastel background --niji --ar 3:2
+
+[022] Untitled Card
+Untitled Card::0 a young metal-type ladybug pokemon::1.8, with stern wings, in a cave environment, natural and brown ambient lighting, anime sketch with watercolor --niji --ar 3:2
+
+[023] Untitled Card
+Untitled Card::0 a massive epic metal-type ladybug pokemon::2.5, with stern wings, in a cave environment, galaxy background, polished final by studio ghibli --niji --ar 3:2
+

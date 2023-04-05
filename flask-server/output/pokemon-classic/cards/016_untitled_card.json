@@ -1,0 +1,27 @@
+{
+  "index": 16,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Fairy",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 90,
+  "abilities": [
+    {
+      "name": "Kickflip",
+      "element": "Fairy",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    },
+    {
+      "name": "Sweet Kiss",
+      "element": "Fairy",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a young fairy-type horse pokemon::1.8, with cute hooves, in a woods environment, orange and blue ambient lighting, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "016_untitled_card.png"
+}

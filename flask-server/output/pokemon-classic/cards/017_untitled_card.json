@@ -1,0 +1,27 @@
+{
+  "index": 17,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Dark",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 30,
+  "abilities": [
+    {
+      "name": "Knock Off",
+      "element": "Dark",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    },
+    {
+      "name": "Nudge",
+      "element": "Neutral",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 10
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a chibi young dark-type fox pokemon, in a crypt environment, violent shadows, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "017_untitled_card.png"
+}

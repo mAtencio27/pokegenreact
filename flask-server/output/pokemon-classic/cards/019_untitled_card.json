@@ -1,0 +1,27 @@
+{
+  "index": 19,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Dark",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 130,
+  "abilities": [
+    {
+      "name": "Fling",
+      "element": "Dark",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 50
+    },
+    {
+      "name": "Crunch",
+      "element": "Dark",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a gigantic mythical dark-type fox pokemon::2.5, with a violet hypnotic tail, in a crypt environment, galaxy background, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "019_untitled_card.png"
+}

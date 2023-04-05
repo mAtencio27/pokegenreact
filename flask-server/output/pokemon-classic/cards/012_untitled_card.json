@@ -1,0 +1,27 @@
+{
+  "index": 12,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Fighting",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 30,
+  "abilities": [
+    {
+      "name": "Kickflip",
+      "element": "Fighting",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    },
+    {
+      "name": "Smack",
+      "element": "Neutral",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 10
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a chibi young fighting-type gorilla pokemon, in a arena environment, orange and blue ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "012_untitled_card.png"
+}

@@ -1,0 +1,591 @@
+{
+  "collection_name": "pokemon-classic",
+  "cards": [
+    {
+      "index": 1,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Neutral",
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Strike",
+          "element": "Neutral",
+          "cost": 3,
+          "is_mixed_element": false,
+          "power": 30
+        },
+        {
+          "name": "Jab",
+          "element": "Neutral",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 10
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a special neutral-type bird pokemon::1.8, with a white tail, in a grassland environment, pastel colors, anime sketch --niji --ar 3:2",
+      "image_file": "001_untitled_card.png"
+    },
+    {
+      "index": 2,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Fire",
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 60,
+      "abilities": [
+        {
+          "name": "Ember Flare",
+          "element": "Fire",
+          "cost": 3,
+          "is_mixed_element": true,
+          "power": 40
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a chibi young fire-type lion pokemon::1.8, with ancient claws, in a volcano environment, lava texture background, anime chibi drawing style, pastel background --niji --ar 3:2",
+      "image_file": "002_untitled_card.png"
+    },
+    {
+      "index": 3,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Fire",
+      "rarity": "rare",
+      "rarity_index": 2,
+      "hp": 80,
+      "abilities": [
+        {
+          "name": "Inferno",
+          "element": "Fire",
+          "cost": 4,
+          "is_mixed_element": true,
+          "power": 50
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a mythical fire-type lion pokemon::2.5, with ancient claws, in a volcano environment, blue and red ambient lighting, anime sketch with watercolor --niji --ar 3:2",
+      "image_file": "003_untitled_card.png"
+    },
+    {
+      "index": 4,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Water",
+      "rarity": "rare",
+      "rarity_index": 2,
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Wave Strike",
+          "element": "Water",
+          "cost": 3,
+          "is_mixed_element": true,
+          "power": 40
+        },
+        {
+          "name": "Smack",
+          "element": "Neutral",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 10
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a mythical water-type swan pokemon::2.5, wearing ornate armor, in a river environment, aurora background, anime sketch --niji --ar 3:2",
+      "image_file": "004_untitled_card.png"
+    },
+    {
+      "index": 5,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Grass",
+      "rarity": "common",
+      "rarity_index": 0,
+      "hp": 30,
+      "abilities": [
+        {
+          "name": "Petal Pulse",
+          "element": "Grass",
+          "cost": 2,
+          "is_mixed_element": true,
+          "power": 30
+        },
+        {
+          "name": "Scratch",
+          "element": "Neutral",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 10
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a chibi young grass-type bear pokemon, in a forest environment, green and orange ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+      "image_file": "005_untitled_card.png"
+    },
+    {
+      "index": 6,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Grass",
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Vine Sweep",
+          "element": "Grass",
+          "cost": 3,
+          "is_mixed_element": true,
+          "power": 40
+        },
+        {
+          "name": "Bramble",
+          "element": "Grass",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 20
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a young grass-type bear pokemon::1.8, wearing a ornate crystal headband, in a forest environment, sunlight ray ambience, anime sketch with watercolor --niji --ar 3:2",
+      "image_file": "006_untitled_card.png"
+    },
+    {
+      "index": 7,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Electric",
+      "rarity": "common",
+      "rarity_index": 0,
+      "hp": 50,
+      "abilities": [
+        {
+          "name": "Sparkwave",
+          "element": "Electric",
+          "cost": 2,
+          "is_mixed_element": false,
+          "power": 40
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a chibi cute electric-type deer pokemon, in a city environment, lightning background, anime chibi drawing style, pastel background --niji --ar 3:2",
+      "image_file": "007_untitled_card.png"
+    },
+    {
+      "index": 8,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Electric",
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 50,
+      "abilities": [
+        {
+          "name": "Plasma Burst",
+          "element": "Electric",
+          "cost": 3,
+          "is_mixed_element": false,
+          "power": 50
+        },
+        {
+          "name": "Electrocute",
+          "element": "Electric",
+          "cost": 2,
+          "is_mixed_element": true,
+          "power": 30
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a dynamic electric-type deer pokemon::1.8, with yellow and teal antlers, in a city environment, yellow and teal ambient lighting, anime sketch with watercolor --niji --ar 3:2",
+      "image_file": "008_untitled_card.png"
+    },
+    {
+      "index": 9,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Electric",
+      "rarity": "rare",
+      "rarity_index": 2,
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Hypercharge",
+          "element": "Electric",
+          "cost": 4,
+          "is_mixed_element": true,
+          "power": 50
+        },
+        {
+          "name": "Plasma Burst",
+          "element": "Electric",
+          "cost": 3,
+          "is_mixed_element": false,
+          "power": 50
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a gigantic mythical electric-type deer pokemon::2.5, with yellow and teal antlers, in a city environment, orange galaxy background, polished final by studio ghibli --niji --ar 3:2",
+      "image_file": "009_untitled_card.png"
+    },
+    {
+      "index": 10,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Psychic",
+      "rarity": "common",
+      "rarity_index": 0,
+      "hp": 30,
+      "abilities": [
+        {
+          "name": "Psychwave",
+          "element": "Psychic",
+          "cost": 2,
+          "is_mixed_element": true,
+          "power": 30
+        },
+        {
+          "name": "Levitate",
+          "element": "Psychic",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 20
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a chibi young psychic-type parrot pokemon, in a cave environment, pink bokeh lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+      "image_file": "010_untitled_card.png"
+    },
+    {
+      "index": 11,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Psychic",
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 90,
+      "abilities": [
+        {
+          "name": "Psychwave",
+          "element": "Psychic",
+          "cost": 2,
+          "is_mixed_element": true,
+          "power": 30
+        },
+        {
+          "name": "Scratch",
+          "element": "Neutral",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 10
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a young psychic-type parrot pokemon::1.8, wearing dark armor, in a cave environment, violet shadows, anime sketch with watercolor --niji --ar 3:2",
+      "image_file": "011_untitled_card.png"
+    },
+    {
+      "index": 12,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Fighting",
+      "rarity": "common",
+      "rarity_index": 0,
+      "hp": 30,
+      "abilities": [
+        {
+          "name": "Kickflip",
+          "element": "Fighting",
+          "cost": 2,
+          "is_mixed_element": true,
+          "power": 30
+        },
+        {
+          "name": "Smack",
+          "element": "Neutral",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 10
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a chibi young fighting-type gorilla pokemon, in a arena environment, orange and blue ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+      "image_file": "012_untitled_card.png"
+    },
+    {
+      "index": 13,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Fighting",
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 90,
+      "abilities": [
+        {
+          "name": "Strike",
+          "element": "Fighting",
+          "cost": 2,
+          "is_mixed_element": false,
+          "power": 40
+        },
+        {
+          "name": "Jab",
+          "element": "Neutral",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 10
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a young fighting-type gorilla pokemon::1.8, holding a regal lance, in a arena environment, orange ambient lighting, anime sketch with watercolor --niji --ar 3:2",
+      "image_file": "013_untitled_card.png"
+    },
+    {
+      "index": 14,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Fighting",
+      "rarity": "rare",
+      "rarity_index": 2,
+      "hp": 110,
+      "abilities": [
+        {
+          "name": "Furious Combo",
+          "element": "Fighting",
+          "cost": 3,
+          "is_mixed_element": false,
+          "power": 50
+        },
+        {
+          "name": "Pound",
+          "element": "Neutral",
+          "cost": 2,
+          "is_mixed_element": false,
+          "power": 20
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a gigantic mythical fighting-type gorilla pokemon::2.5, holding a regal lance, in a arena environment, galaxy background, polished final by studio ghibli --niji --ar 3:2",
+      "image_file": "014_untitled_card.png"
+    },
+    {
+      "index": 15,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Fairy",
+      "rarity": "common",
+      "rarity_index": 0,
+      "hp": 30,
+      "abilities": [
+        {
+          "name": "Clobber",
+          "element": "Fairy",
+          "cost": 2,
+          "is_mixed_element": false,
+          "power": 40
+        },
+        {
+          "name": "Nudge",
+          "element": "Neutral",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 10
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a chibi cute fairy-type horse pokemon, in a woods environment, pink ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2",
+      "image_file": "015_untitled_card.png"
+    },
+    {
+      "index": 16,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Fairy",
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 90,
+      "abilities": [
+        {
+          "name": "Kickflip",
+          "element": "Fairy",
+          "cost": 2,
+          "is_mixed_element": true,
+          "power": 30
+        },
+        {
+          "name": "Sweet Kiss",
+          "element": "Fairy",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 20
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a young fairy-type horse pokemon::1.8, with cute hooves, in a woods environment, orange and blue ambient lighting, anime sketch with watercolor --niji --ar 3:2",
+      "image_file": "016_untitled_card.png"
+    },
+    {
+      "index": 17,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Dark",
+      "rarity": "common",
+      "rarity_index": 0,
+      "hp": 30,
+      "abilities": [
+        {
+          "name": "Knock Off",
+          "element": "Dark",
+          "cost": 2,
+          "is_mixed_element": true,
+          "power": 30
+        },
+        {
+          "name": "Nudge",
+          "element": "Neutral",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 10
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a chibi young dark-type fox pokemon, in a crypt environment, violent shadows, anime chibi drawing style, pastel background --niji --ar 3:2",
+      "image_file": "017_untitled_card.png"
+    },
+    {
+      "index": 18,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Dark",
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Dark Pulse",
+          "element": "Dark",
+          "cost": 3,
+          "is_mixed_element": true,
+          "power": 40
+        },
+        {
+          "name": "Jab",
+          "element": "Neutral",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 10
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a dynamic dark-type fox pokemon::1.8, with a violet hypnotic tail, in a crypt environment, violent shadows, anime sketch with watercolor --niji --ar 3:2",
+      "image_file": "018_untitled_card.png"
+    },
+    {
+      "index": 19,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Dark",
+      "rarity": "rare",
+      "rarity_index": 2,
+      "hp": 130,
+      "abilities": [
+        {
+          "name": "Fling",
+          "element": "Dark",
+          "cost": 3,
+          "is_mixed_element": false,
+          "power": 50
+        },
+        {
+          "name": "Crunch",
+          "element": "Dark",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 20
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a gigantic mythical dark-type fox pokemon::2.5, with a violet hypnotic tail, in a crypt environment, galaxy background, polished final by studio ghibli --niji --ar 3:2",
+      "image_file": "019_untitled_card.png"
+    },
+    {
+      "index": 20,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Dragon",
+      "rarity": "rare",
+      "rarity_index": 2,
+      "hp": 100,
+      "abilities": [
+        {
+          "name": "Eterna Beam",
+          "element": "Dragon",
+          "cost": 4,
+          "is_mixed_element": true,
+          "power": 50
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a mythical dragon-type dragon pokemon::2.5, with a dark crystal core, in a volcano environment, sunny and dreamy ambient lighting, anime sketch --niji --ar 3:2",
+      "image_file": "020_untitled_card.png"
+    },
+    {
+      "index": 21,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Metal",
+      "rarity": "common",
+      "rarity_index": 0,
+      "hp": 50,
+      "abilities": [
+        {
+          "name": "Metal Claw",
+          "element": "Metal",
+          "cost": 2,
+          "is_mixed_element": true,
+          "power": 30
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a chibi cute metal-type ladybug pokemon, in a cave environment, earthtones, anime chibi drawing style, pastel background --niji --ar 3:2",
+      "image_file": "021_untitled_card.png"
+    },
+    {
+      "index": 22,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Metal",
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 90,
+      "abilities": [
+        {
+          "name": "Metal Claw",
+          "element": "Metal",
+          "cost": 2,
+          "is_mixed_element": false,
+          "power": 40
+        },
+        {
+          "name": "Metal Claw",
+          "element": "Metal",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 20
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a young metal-type ladybug pokemon::1.8, with stern wings, in a cave environment, natural and brown ambient lighting, anime sketch with watercolor --niji --ar 3:2",
+      "image_file": "022_untitled_card.png"
+    },
+    {
+      "index": 23,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Metal",
+      "rarity": "rare",
+      "rarity_index": 2,
+      "hp": 70,
+      "abilities": [
+        {
+          "name": "Metal Burst",
+          "element": "Metal",
+          "cost": 4,
+          "is_mixed_element": false,
+          "power": 60
+        },
+        {
+          "name": "Metal Sound",
+          "element": "Metal",
+          "cost": 3,
+          "is_mixed_element": false,
+          "power": 50
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a massive epic metal-type ladybug pokemon::2.5, with stern wings, in a cave environment, galaxy background, polished final by studio ghibli --niji --ar 3:2",
+      "image_file": "023_untitled_card.png"
+    }
+  ]
+}
