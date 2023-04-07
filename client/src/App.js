@@ -7,17 +7,29 @@ function App() {
 
   const [data, setData] = useState([{}])
 
-  const generateScript = async(e) => {
-    const res = await fetch("/generate")
-    console.log(res)
+  // const generateScript = async(e) => {
+  //   const res = await fetch("/generate")
+  //   console.log(res)
+  //   return
+  // };
+
+  // const renderScript = async(e) => {
+  //   const res = await fetch("/render")
+  //   console.log(res)
+  //   return
+  // };
+
+  const create = async(e) => {
+    const res_1 = await fetch("/generate")
+    const res_2 = await fetch("/render")
+    console.log(res_1, res_2)
     return
   };
 
-  const renderScript = async(e) => {
-    const res = await fetch("/render")
+  const fetchPhotos = async(e) => {
+    const res = await fetch("/photos")
     console.log(res)
-    return
-  };
+  }
 
 
   useEffect(() => {
@@ -39,9 +51,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <button value={3} onClick={(e)=>{generateScript(e)}}> Generate </button>
-        <button value={3} onClick={(e)=>{renderScript(e)}}> Render </button>
-        <button value={3} onClick={(e)=>{buttonHandler(e)}}> Display </button>
+        <button value={3} onClick={(e)=>{fetchPhotos(e)}}> Display </button>
+        <button value={3} onClick={(e)=>{create(e)}}> make </button>
       </header>
     </div>
   );
