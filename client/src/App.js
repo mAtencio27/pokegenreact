@@ -29,7 +29,8 @@ function App() {
   const fetchPhotos = async(e) => {
     const res = await fetch("/photos")
     const data = await res.json()
-    console.log (data)
+    //console.log (data)
+    console.log(data.response)
     return
   }
 
