@@ -1,14 +1,10 @@
-import React from 'react';
-import './App.css';
-import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from 'react'
+import { useEffect, useState } from 'react'
 
-// ROUTES
-import Home from './components/Home';
+function Home() {
 
-function App() {
 
-  const [data, setData] = useState([{}])
+  const [data, setData] = useState([{}]);
 
   const generateScript = async(e) => {
     const res = await fetch("/generate")
@@ -49,7 +45,6 @@ function App() {
 
   }
 
-
   useEffect(() => {
     const fetchData = async() => {
       const res = await fetch("/members");
@@ -65,20 +60,17 @@ function App() {
     console.log(e.target.value);
     console.log(data)
   };
-
   return (
-    <Router>
-      <div className="App">
-        <div className='components'>
-          <Switch>
-            <Route path = "/">
-              <Home/>
-            </Route>
-          </Switch>
-        </div>
+    <div className='Home'>
+      <header className="Home-header">
+        <button value={3} onClick={(e)=>{generateScript(e)}}> Generate Script </button>
+        <button value={3} onClick={(e)=>{fetchPrompts(e)}}> Return prompts </button>
+      </header>
+      <div>
+        <img src='./pokegenreact/flask-server/pokemon-card-generator/gallery/renders/001_chippo.png'></img>
       </div>
-    </Router>
-  );
+    </div>
+  )
 }
 
-export default App;
+export default Home
