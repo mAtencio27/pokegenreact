@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, send_file
 import subprocess
 import asyncio
 import os
+import json
 
 app = Flask(__name__)
 
@@ -22,7 +23,7 @@ def members():
 # Generate API route 
 @app.route('/generate')
 def generate():
-    subprocess.call(['python', '../flask-server/pokemon-card-generator/src/generate.py'])
+    subprocess.call(['python', '../flask-server/pokemon-card-generator/src/generate.py', '-e', 'dark'])
     return 'Script executed successfully!'
 
 # render API route
@@ -31,19 +32,38 @@ def render():
     subprocess.call(['python', '../flask-server/pokemon-card-generator/src/render_cards.py'])
     return 'Script executed successfully!'
 
+# Fetching pokemon image prompts
+@app.route('/prompts')
+def prompts():
+    folder_path = '../flask-server/pokemon-card-generator/output/pokemon-classic/cards'
+    file_contents = []
+    for filename in os.listdir(folder_path):
+        filepath = f"./pokemon-card-generator/output/pokemon-classic/cards/{filename}"
+        with open(filepath, "r") as file:
+            # contents = file.read()
+            contents = json.load(file)
+        print (contents['image_prompt'])
+        file_contents.append(contents['image_prompt'])
+    return jsonify({"response":file_contents})
+    # return file_contents
+
+
 @app.route('/photos')
 def photos():
     folder_path = '../flask-server/pokemon-card-generator/gallery/renders'
     if not os.path.isdir(folder_path):
         return jsonify({'error': 'Invalid path provided'}),400
     
-    # files = os.listdir(folder_path)
-    # photos = [file for file in files]
-    # return photos.body
+    files = os.listdir(folder_path)
+    photos = [file for file in files]
+    #print(files[0])
+    #return photos.body
 
     res = os.getcwd()
     # res = response.body
-    return jsonify({"response":res})
+
+    return jsonify({"response":files})
+
 
 if __name__ == "__main__":
     app.run(debug=True)

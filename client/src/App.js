@@ -4,11 +4,13 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // ROUTES
-import Home from './components/Home';
+import Home from './components/Home.js'
+import ImageUpload from './components/ImageUpload.js';
+import Render from './components/Render'
 
 function App() {
 
-  const [data, setData] = useState([{}])
+  //const [data, setData] = useState([{}])
 
   const generateScript = async(e) => {
     const res = await fetch("/generate")
@@ -54,7 +56,7 @@ function App() {
     const fetchData = async() => {
       const res = await fetch("/members");
       const resData = await res.json()
-      setData(resData.members)
+      //setData(resData.members)
     };
 
     fetchData()
@@ -63,7 +65,7 @@ function App() {
   const buttonHandler = (e) => {
     console.log("button click");
     console.log(e.target.value);
-    console.log(data)
+    //console.log(data)
   };
 
   return (
@@ -71,8 +73,14 @@ function App() {
       <div className="App">
         <div className='components'>
           <Switch>
-            <Route path = "/">
+            <Route exact path = "/">
               <Home/>
+            </Route>
+            <Route path = "/ImageUpload">
+              <ImageUpload/>
+            </Route>
+            <Route path="/Render">
+              <Render/>
             </Route>
           </Switch>
         </div>
