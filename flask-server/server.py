@@ -21,10 +21,14 @@ def members():
     return {"members": ["Member 1", "Member 2", "Member 3"]}
 
 # Generate API route 
-@app.route('/generate')
+@app.route('/generate', methods=['GET'])
 def generate():
-    subprocess.call(['python', '../flask-server/pokemon-card-generator/src/generate.py', '-e', 'dark'])
-    return 'Script executed successfully!'
+    element = request.args.get("element", default="", type=str)
+    subject = request.args.get("subject", default="", type=str)
+    returnData = subprocess.call(['python', '../flask-server/pokemon-card-generator/src/generate.py', '-e', element ,'--subject', subject])
+    #print(element, subject)
+    #return 'Script executed successfully!', 200
+    return jsonify({"data":returnData})
 
 # render API route
 @app.route('/render')

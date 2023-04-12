@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ImageUpload = () => {
 
@@ -13,6 +14,10 @@ const ImageUpload = () => {
   return (
     <div>ImageUpload
       <button value={3} onClick={(e)=>{fetchPrompts(e)}}> Return prompts </button>
+      <div className='navButtons'>
+          <Link to="/">Back</Link>
+          <Link to="/Render">Next</Link>
+      </div>
     </div>
   )
 }
