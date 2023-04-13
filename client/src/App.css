@@ -42,3 +42,24 @@
   flex-direction: column;
   align-items: center;
 }
+
+.promptCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promptCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  border-color: black;
+  border-width: 2px;
+  border-style: double;
+  width: 55%;
+}
+
+.prompt {
+  padding-bottom: 5%;
+}
