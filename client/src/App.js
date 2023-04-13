@@ -52,15 +52,15 @@ function App() {
   }
 
 
-  useEffect(() => {
-    const fetchData = async() => {
-      const res = await fetch("/members");
-      const resData = await res.json()
-      //setData(resData.members)
-    };
+  // useEffect(() => {
+  //   const fetchData = async() => {
+  //     const res = await fetch("/members");
+  //     const resData = await res.json()
+  //     //setData(resData.members)
+  //   };
 
-    fetchData()
-  }, [])
+  //   fetchData()
+  // }, [])
 
   const buttonHandler = (e) => {
     console.log("button click");

@@ -46,8 +46,8 @@ def prompts():
         with open(filepath, "r") as file:
             # contents = file.read()
             contents = json.load(file)
-        print (contents['image_prompt'])
-        file_contents.append(contents['image_prompt'])
+        print (contents)
+        file_contents.append({"Name":contents['name'], "Prompt":contents['image_prompt']})
     return jsonify({"response":file_contents})
     # return file_contents
 
