@@ -67,13 +67,13 @@ def upload():
 
 @app.route('/photos')
 def photos():
-    folder_path = '../flask-server/pokemon-card-generator/gallery/renders'
+    folder_path = '../flask-server/pokemon-card-generator/output/pokemon-classic/renders'
     if not os.path.isdir(folder_path):
         return jsonify({'error': 'Invalid path provided'}),400
     
     files = os.listdir(folder_path)
     photos = [file for file in files]
-    #print(files[0])
+    print(files)
     #return photos.body
 
     res = os.getcwd()
