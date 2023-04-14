@@ -17,7 +17,7 @@ const ImageUpload = () => {
   //FILE SUBMIT HANDLER
   const submitHandler = async(e) => {
     e.preventDefault()
-    console.log(files[0])
+    //console.log(files[0])
     const fileToUpload = files[0]
     const formData = new FormData()
 
@@ -35,18 +35,7 @@ const ImageUpload = () => {
     };
 
     photoPasser();
-    // if(!files){
-    //   return
-    // };
-
-
-    // const res = await fetch('/upload', {method: 'GET',
-    //   body: files[0],
-    //   headers: {
-    //     'content-type': files[0].type,
-    //     'content-length': `${files[0].size}`,
-    //   },
-    // })
+    setFiles([])
   };
 
   //THIS WILL BUILD THE DISPLAYED PROMPTS AND GIVE THE DIVS TO UPLOAD PHOTOS

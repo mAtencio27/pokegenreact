@@ -1,10 +1,14 @@
 from flask import Flask, request, jsonify, send_file
+from werkzeug.utils import secure_filename
 import subprocess
 import asyncio
 import os
 import json
 
 app = Flask(__name__)
+
+UPLOAD_FOLDER= '../flask-server/pokemon-card-generator/output/pokemon-classic/images'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 ### async script runner
 
@@ -53,12 +57,12 @@ def prompts():
 
 @app.route('/upload', methods=['POST'])
 def upload():
+    file = request.files['file']
+    filename = secure_filename(file.filename)
 
-    #print (request.files)
-    files = request.files
-    file = files.get('file')
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 
-    print (file)
+    print ("📸", os.path.isdir('UPLOAD_FOLDER'), "📸")
     return jsonify({"response": request.form})
 
 @app.route('/photos')

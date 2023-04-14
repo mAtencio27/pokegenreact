@@ -81,9 +81,6 @@ const Home = () => {
           <Link to="/ImageUpload">Next</Link>
         </div>
       </div>
-      <div>
-        <img src='./pokegenreact/flask-server/pokemon-card-generator/gallery/renders/001_chippo.png'></img>
-      </div>
     </div>
   );
 }
