@@ -16,7 +16,7 @@ async def run_script(script_path):
 
 # Members API Route
 
-@app.route("/members")
+@app.route("/members", methods=['GET', 'POST'])
 def members():
     return {"members": ["Member 1", "Member 2", "Member 3"]}
 
@@ -51,6 +51,15 @@ def prompts():
     return jsonify({"response":file_contents})
     # return file_contents
 
+@app.route('/upload', methods=['POST'])
+def upload():
+
+    #print (request.files)
+    files = request.files
+    file = files.get('file')
+
+    print (file)
+    return jsonify({"response": request.form})
 
 @app.route('/photos')
 def photos():
