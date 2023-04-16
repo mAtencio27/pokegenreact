@@ -61,7 +61,7 @@ const Home = () => {
       </header>
       <div className='typeInput'>
         <select defaultValue={"select an element"} onChange={(e)=>{setElementString(e.target.value)}}>
-          <option selected disabled>select an element</option>
+          <option disabled>select an element</option>
           <option value="neutral">Neutral</option>
           <option value="fire">Fire</option>
           <option value="water">Water</option>

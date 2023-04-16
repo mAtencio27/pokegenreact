@@ -4,6 +4,7 @@ import subprocess
 import asyncio
 import os
 import json
+import base64
 
 app = Flask(__name__)
 
@@ -67,19 +68,35 @@ def upload():
 
 @app.route('/photos')
 def photos():
+    # Path to our photos
     folder_path = '../flask-server/pokemon-card-generator/output/pokemon-classic/renders'
     if not os.path.isdir(folder_path):
         return jsonify({'error': 'Invalid path provided'}),400
+    # Encoded image array
+    encoded_images = []
+
+    for filename in os.listdir(folder_path):
+        with open(os.path.join(folder_path, filename), 'rb') as image_file:
+                # read the image data
+            image_data = image_file.read()
+                # encode the image data as Base64
+            encoded_image = base64.b64encode(image_data).decode('utf-8')
+                # append the encoded image to the list of encoded images
+            encoded_images.append(encoded_image)
+
     
-    files = os.listdir(folder_path)
-    photos = [file for file in files]
-    print(files)
+    # Photo file names
+    #fileNames = os.listdir(folder_path)
+
+    #PHOTO URLS
+    #urls = [f'/photos/{filename}' for filename in fileNames]
+    #print("📸", urls)
     #return photos.body
 
-    res = os.getcwd()
+    #res = os.getcwd()
     # res = response.body
 
-    return jsonify({"response":files})
+    return jsonify({"response":encoded_images})
 
 
 if __name__ == "__main__":
