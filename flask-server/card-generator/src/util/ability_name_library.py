@@ -7,7 +7,7 @@ from mechanics.ability import Ability
 from pokemon_content.pokemon_elements import PokemonElements
 from util.gpt_call import gpt_client
 
-DEFAULT_PATH = "pokemon-card-generator/data/ability_names.json"
+DEFAULT_PATH = "card-generator/data/ability_names.json"
 
 
 def get_ability_name(ability: Ability) -> str:

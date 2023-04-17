@@ -8,7 +8,7 @@ import base64
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER= '../flask-server/pokemon-card-generator/output/pokemon-classic/images'
+UPLOAD_FOLDER= '../flask-server/card-generator/output/pokemon-classic/images'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 ### async script runner
@@ -30,7 +30,7 @@ def members():
 def generate():
     element = request.args.get("element", default="", type=str)
     subject = request.args.get("subject", default="", type=str)
-    returnData = subprocess.call(['python', '../flask-server/pokemon-card-generator/src/generate.py', '-e', element ,'--subject', subject])
+    returnData = subprocess.call(['python', '../flask-server/card-generator/src/generate.py', '-e', element ,'--subject', subject])
     #print(element, subject)
     #return 'Script executed successfully!', 200
     return jsonify({"data":returnData})
@@ -38,16 +38,16 @@ def generate():
 # render API route
 @app.route('/render')
 def render():
-    subprocess.call(['python', '../flask-server/pokemon-card-generator/src/render_cards.py'])
+    subprocess.call(['python', '../flask-server/card-generator/src/render_cards.py'])
     return 'Script executed successfully!'
 
 # Fetching pokemon image prompts
 @app.route('/prompts')
 def prompts():
-    folder_path = '../flask-server/pokemon-card-generator/output/pokemon-classic/cards'
+    folder_path = '../flask-server/card-generator/output/pokemon-classic/cards'
     file_contents = []
     for filename in os.listdir(folder_path):
-        filepath = f"./pokemon-card-generator/output/pokemon-classic/cards/{filename}"
+        filepath = f"./card-generator/output/pokemon-classic/cards/{filename}"
         with open(filepath, "r") as file:
             # contents = file.read()
             contents = json.load(file)
@@ -61,13 +61,13 @@ def upload():
     file = request.files['file']
     filename = secure_filename(file.filename)
     file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-    print("🏆", "upload success")
+    print("🏆","upload success")
     return jsonify({"response": request.form})
 
 @app.route('/photos')
 def photos():
     # Path to our photos
-    folder_path = '../flask-server/pokemon-card-generator/output/pokemon-classic/renders'
+    folder_path = '../flask-server/card-generator/output/pokemon-classic/renders'
     if not os.path.isdir(folder_path):
         return jsonify({'error': 'Invalid path provided'}),400
     # Encoded image array
