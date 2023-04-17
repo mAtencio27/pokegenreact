@@ -1,0 +1,303 @@
+{
+  "neutral_1_pure_standard": ["Jab", "Nudge", "Smack", "Scratch"],
+  "neutral_2_pure_standard": ["Slash", "Pound", "Tackle"],
+  "neutral_3_pure_standard": ["Strike", "Slam", "Charge"],
+  "neutral_4_pure_standard": [
+    "Giga Slam",
+    "Mega Bash",
+    "Brutalize",
+    "Hammer rush"
+  ],
+  "fire_1_pure_standard": ["Sizzle", "Smolder", "Ignite"],
+  "fire_2_pure_standard": ["Heat Ray", "Fire Storm", "Burn Bolt", "Scorch"],
+  "fire_2_mixed_standard": ["Cinder Slash", "Ember", "Heat", "Fire Punch"],
+  "fire_3_pure_standard": [
+    "Magma Blast",
+    "Heat Wave",
+    "Scorch",
+    "Volcanic Flash",
+    "Incinerator",
+    "Pyreburst",
+    "Flare Surge"
+  ],
+  "fire_3_mixed_standard": [
+    "Flame Bolt",
+    "Ember Flare",
+    "Magma Claw",
+    "Fire Blast",
+    "Combustion"
+  ],
+  "fire_4_pure_standard": [
+    "Lava Ray",
+    "Infernal Beam",
+    "Pyroclast",
+    "Flame Blitz",
+    "Volcanic Fury",
+    "Scorch Beam"
+  ],
+  "fire_4_mixed_standard": [
+    "Phoenix",
+    "Flamestorm",
+    "Magma Blast",
+    "Inferno",
+    "Blaze Spear",
+    "Magma Pulse",
+    "Ember Strike",
+    "Firestorm Wave",
+    "Ignition Surge"
+  ],
+  "water_1_pure_standard": ["Splash", "Douse", "Rainfall", "Gush"],
+  "water_1_mixed_standard": ["Bubble", "Drizzle", "Torrent", "Spray"],
+  "water_2_pure_standard": [
+    "Water Jet",
+    "Mist Strike",
+    "Bubble Beam",
+    "Aqua Jet"
+  ],
+  "water_2_mixed_standard": [
+    "Scald",
+    "Aquablast",
+    "Siphon",
+    "Riptide",
+    "Soak",
+    "Aqua Blast"
+  ],
+  "water_3_pure_standard": [
+    "Surf",
+    "Hydra Splash",
+    "Ice Blade",
+    "Tidal Shock",
+    "Glacial Surge",
+    "Torrential Rain"
+  ],
+  "water_3_mixed_standard": [
+    "Aqua Slash",
+    "Wave Strike",
+    "Aqua Impact",
+    "Hydro Burst",
+    "Water Cannon"
+  ],
+  "water_4_pure_standard": [
+    "Tidal Fury",
+    "Ocean Crush",
+    "Marine Vortex",
+    "Tsunami Surge",
+    "Aqua Quake",
+    "Hydro Cannon",
+    "Whirlpool",
+    "Torrent Strike"
+  ],
+  "water_4_mixed_standard": [
+    "Tidal Rage",
+    "Aqua Crush",
+    "Hydro Blast",
+    "Aquatic Surge",
+    "Hyrdofury",
+    "Maelstrom Slash",
+    "Tidal Surge"
+  ],
+  "grass_1_pure_standard": ["Sap", "Bramble", "Sprout"],
+  "grass_1_mixed_standard": ["Snip", "Prickle", "Bramble"],
+  "grass_2_pure_standard": [
+    "Photosynthesis",
+    "Vineshock",
+    "Whipwind",
+    "Solar Flare",
+    "Petal Burst"
+  ],
+  "grass_2_mixed_standard": [
+    "Sporeburst",
+    "Thornspray",
+    "Pollen Tangle",
+    "Leaf Wave",
+    "Petal Pulse",
+    "Grass Blast"
+  ],
+  "grass_3_pure_standard": [
+    "Verdant Strike",
+    "Leaf Blast",
+    "Wrath",
+    "Woodland Surge",
+    "Forest Strike",
+    "Grass Slicer"
+  ],
+  "grass_3_mixed_standard": [
+    "Vine Slash",
+    "Grassy Spikes",
+    "Thorn Burst",
+    "Vine Sweep",
+    "Foliage Lash",
+    "Verdant Rage"
+  ],
+  "grass_4_pure_standard": [
+    "Solar Beam",
+    "Petal Storm",
+    "Ivy Blast",
+    "Plant Quake",
+    "Nature Crush"
+  ],
+  "grass_4_mixed_standard": [
+    "Leaf Storm",
+    "Autumn Fury",
+    "Ivy Storm",
+    "Root Quake",
+    "Floral Crush",
+    "Blossom Burst"
+  ],
+  "electric_1_pure_standard": ["Zap", "Volt", "Shock", "Jolt"],
+  "electric_1_mixed_standard": ["Spark", "Flash", "Crackle"],
+  "electric_2_pure_standard": [
+    "Sparkwave",
+    "Joltzap",
+    "Shockbolt",
+    "Electroray"
+  ],
+  "electric_2_mixed_standard": [
+    "Voltric",
+    "Electrify",
+    "Zapstrike",
+    "Ionize",
+    "Electrocute",
+    "Surge Bolt"
+  ],
+  "electric_3_pure_standard": [
+    "Thunderlash",
+    "Voltstrike",
+    "Plasma Burst",
+    "Thunderclap",
+    "Thundebolt",
+    "Lightning Blast"
+  ],
+  "electric_3_mixed_standard": [
+    "Bolt Strike",
+    "Shock Slash",
+    "Voltage Uppercut",
+    "Electric Fury",
+    "Lightning Lance"
+  ],
+  "electric_4_pure_standard": [
+    "Thunderstorm",
+    "Voltage Surge",
+    "Ion Blaze",
+    "Lightning Strike",
+    "Plasmabolt"
+  ],
+  "electric_4_mixed_standard": [
+    "Thunder Surge",
+    "Static Strike",
+    "Voltage Storm",
+    "Shockwave Pulse",
+    "Hypercharge",
+    "Cyclonic Surge"
+  ],
+  "psychic_1_pure_standard": ["Levitate", "Psionic", "Synapse"],
+  "psychic_1_mixed_standard": ["Confuse Ray", "Mindlash", "Teleport"],
+  "psychic_2_pure_standard": ["Telekinesis", "Mana Burn", "Psychotize"],
+  "psychic_2_mixed_standard": ["Psychic Surge", "Psychwave", "Mystery Slash"],
+  "psychic_3_pure_standard": ["Spectral Ray", "Psycho Shock", "Astral Ring"],
+  "psychic_3_mixed_standard": ["Mindzap", "Cosmic Wave", "Ghost Strike"],
+  "psychic_4_pure_standard": [
+    "Astral Beam",
+    "Psychic Nova",
+    "Mind Blast",
+    "Hypnosis Torrent",
+    "Phantom Beam"
+  ],
+  "psychic_4_mixed_standard": [
+    "Astral Beam",
+    "Psychic Nova",
+    "Mind Blast",
+    "Hypnosis Torrent"
+  ],
+  "fighting_1_pure_standard": ["Jab", "Punch"],
+  "fighting_2_pure_standard": ["Uppercut", "Clobber", "Strike"],
+  "fighting_2_mixed_standard": ["Roundhouse", "Kickflip", "Wallop"],
+  "fighting_3_pure_standard": ["Terrastrike", "Furious Combo", "Rock Breaker"],
+  "fighting_3_mixed_standard": ["Pulverize", "Fissure", "Smash"],
+  "fighting_4_pure_standard": [
+    "Shockwave",
+    "Quake Blast",
+    "Juggernaut Slam",
+    "Avalanche",
+    "Mega Impact"
+  ],
+  "fighting_4_mixed_standard": [
+    "Hammerfist",
+    "Judo Crush",
+    "Battle Smash",
+    "Mega Punch"
+  ],
+  "fairy_1_pure_standard": ["Sweet Kiss", "Punch"],
+  "fairy_2_pure_standard": ["Charm", "Clobber", "Calm Mind"],
+  "fairy_2_mixed_standard": ["Moonlight", "Kickflip", "Wallop"],
+  "fairy_3_pure_standard": ["Punch", "Furious Combo", "Rock Breaker"],
+  "fairy_3_mixed_standard": ["Sweet Kiss", "Fissure", "Smash"],
+  "fairy_4_pure_standard": [
+    "Fairy Wind",
+    "Dazzling Gleam",
+    "Moonblast",
+    "Avalanche",
+    "Mega Impact"
+  ],
+  "fairy_4_mixed_standard": [
+    "Fleur Cannon",
+    "Dazzling Gleam",
+    "Battle Smash",
+    "Mega Punch"
+  ],
+  "dark_1_pure_standard": ["Bite", "Crunch"],
+  "dark_2_pure_standard": ["Bite", "Torment", "Theif"],
+  "dark_2_mixed_standard": ["Beat Up", "Knock Off", "Assurence"],
+  "dark_3_pure_standard": ["Dark Pulse", "Fling", "Night Slash"],
+  "dark_3_mixed_standard": ["Night Slash", "Dark Pulse", "Fling"],
+  "dark_4_pure_standard": [
+    "Dark Pulse",
+    "Payback",
+    "Sucker Punch",
+    "Foul Play",
+    "Snarl"
+  ],
+  "dark_4_mixed_standard": [
+    "Dark Pulse",
+    "Payback",
+    "Sucker Punch",
+    "Foul Play"
+  ],
+  "dragon_1_pure_standard": ["Bite", "Swipe"],
+  "dragon_2_pure_standard": ["Bite", "Swipe", "Dragon Breath"],
+  "dragon_2_mixed_standard": ["Dragon Claw", "Dragon Breath", "Dragon Breath"],
+  "dragon_3_pure_standard": ["Dragon Claw", "Dragon Dance", "Dragon Pulse"],
+  "dragon_3_mixed_standard": ["Dragon Claw", "Dragon Dance", "Dragon Pulse"],
+  "dragon_4_pure_standard": [
+    "Dragon Energy",
+    "Dragon Pulse",
+    "Dragon Rush",
+    "Dragon Tail",
+    "Eterna Beam"
+  ],
+  "dragon_4_mixed_standard": [
+    "Dragon Energy",
+    "Dragon Pulse",
+    "Dragon Rush",
+    "Eterna Beam"
+  ],
+  "metal_1_pure_standard": ["Iron Tail", "Metal Claw"],
+  "metal_2_pure_standard": ["Iron Tail", "Metal Claw", "Steel Wing"],
+  "metal_2_mixed_standard": ["Iron Tail", "Metal Claw", "Steel Wing"],
+  "metal_3_pure_standard": ["Metal Sound", "Meteor Smash", "Iron Head"],
+  "metal_3_mixed_standard": ["Metal Sound", "Meteor Smash", "Iron Head"],
+  "metal_4_pure_standard": [
+    "Magnet Bomb",
+    "Metal Burst",
+    "Mirror Shot",
+    "Gyro Ball",
+    "Bullet Punch"
+  ],
+  "metal_4_mixed_standard": [
+    "Magnet Bomb",
+    "Metal Burst",
+    "Mirror Shot",
+    "Gyro Ball"
+  ]
+
+}

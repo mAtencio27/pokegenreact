@@ -1,0 +1,79 @@
+{
+  "collection_name": "pokemon-classic",
+  "cards": [
+    {
+      "index": 1,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Grass",
+      "rarity": "common",
+      "rarity_index": 0,
+      "hp": 30,
+      "abilities": [
+        {
+          "name": "Photosynthesis",
+          "element": "Grass",
+          "cost": 2,
+          "is_mixed_element": false,
+          "power": 40
+        },
+        {
+          "name": "Scratch",
+          "element": "Neutral",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 10
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a chibi young grass-type raddish pokemon, in a jungle environment, sunlight ray ambience, anime chibi drawing style, pastel background --niji --ar 3:2",
+      "image_file": "001_untitled_card.png"
+    },
+    {
+      "index": 2,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Grass",
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 50,
+      "abilities": [
+        {
+          "name": "Autumn Fury",
+          "element": "Grass",
+          "cost": 4,
+          "is_mixed_element": true,
+          "power": 50
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a dynamic grass-type raddish pokemon::1.8, wearing ancient armor, in a jungle environment, emerald bokeh lighting, anime sketch with watercolor --niji --ar 3:2",
+      "image_file": "002_untitled_card.png"
+    },
+    {
+      "index": 3,
+      "name": "Untitled Card",
+      "description": "",
+      "element": "Grass",
+      "rarity": "rare",
+      "rarity_index": 2,
+      "hp": 110,
+      "abilities": [
+        {
+          "name": "Forest Strike",
+          "element": "Grass",
+          "cost": 3,
+          "is_mixed_element": false,
+          "power": 50
+        },
+        {
+          "name": "Solar Flare",
+          "element": "Grass",
+          "cost": 2,
+          "is_mixed_element": false,
+          "power": 40
+        }
+      ],
+      "image_prompt": "Untitled Card::0 a massive legendary grass-type raddish pokemon::2.5, wearing ancient armor, in a jungle environment, emerald galaxy background, polished final by studio ghibli --niji --ar 3:2",
+      "image_file": "003_untitled_card.png"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "index": 1,
+  "name": "Untitled Card",
+  "description": "",
+  "element": "Grass",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 30,
+  "abilities": [
+    {
+      "name": "Photosynthesis",
+      "element": "Grass",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 40
+    },
+    {
+      "name": "Scratch",
+      "element": "Neutral",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 10
+    }
+  ],
+  "image_prompt": "Untitled Card::0 a chibi young grass-type raddish pokemon, in a jungle environment, sunlight ray ambience, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "001_untitled_card.png"
+}

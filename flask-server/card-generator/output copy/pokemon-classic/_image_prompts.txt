@@ -1,0 +1,9 @@
+[001] Untitled Card
+Untitled Card::0 a chibi young grass-type raddish pokemon, in a jungle environment, sunlight ray ambience, anime chibi drawing style, pastel background --niji --ar 3:2
+
+[002] Untitled Card
+Untitled Card::0 a dynamic grass-type raddish pokemon::1.8, wearing ancient armor, in a jungle environment, emerald bokeh lighting, anime sketch with watercolor --niji --ar 3:2
+
+[003] Untitled Card
+Untitled Card::0 a massive legendary grass-type raddish pokemon::2.5, wearing ancient armor, in a jungle environment, emerald galaxy background, polished final by studio ghibli --niji --ar 3:2
+

@@ -60,10 +60,8 @@ def prompts():
 def upload():
     file = request.files['file']
     filename = secure_filename(file.filename)
-
     file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-
-    print ("📸", os.path.isdir('UPLOAD_FOLDER'), "📸")
+    print("🏆", "upload success")
     return jsonify({"response": request.form})
 
 @app.route('/photos')
