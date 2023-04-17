@@ -90,10 +90,10 @@ class Collection:
     #
     #
     def export(self):
-        collection_path = f"./pokemon-card-generator/output/{self.collection_name}/"
-        cards_folder = f"./pokemon-card-generator/output/{self.collection_name}/cards"
-        images_folder = f"./pokemon-card-generator/output/{self.collection_name}/images"
-        rendered_cards_folder = f"./pokemon-card-generator/output/{self.collection_name}/renders"
+        collection_path = f"./card-generator/output/{self.collection_name}/"
+        cards_folder = f"./card-generator/output/{self.collection_name}/cards"
+        images_folder = f"./card-generator/output/{self.collection_name}/images"
+        rendered_cards_folder = f"./card-generator/output/{self.collection_name}/renders"
 
         # If collection path exists, delete it.
         if os.path.exists(collection_path):
