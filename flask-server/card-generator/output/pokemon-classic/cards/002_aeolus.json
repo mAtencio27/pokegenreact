@@ -1,0 +1,20 @@
+{
+  "index": 2,
+  "name": "Aeolus",
+  "description": "Aeolus is an armored water-type Pokemon that is rarely seen outside of its preferred ocean-like habitats. Its unique white armor allows it to thrive in aquatic territory, where it can be seen gliding gracefully through the water with its powerful tail. Its Ocean Crush ability allows it to create a powerful wave of energy which can decimate any foe in its path. On a typical day, Aeolus can be seen hunting for food, swimming against fast-moving currents, or just lounging around in the shallows.",
+  "element": "Water",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 70,
+  "abilities": [
+    {
+      "name": "Ocean Crush",
+      "element": "Water",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 60
+    }
+  ],
+  "image_prompt": "Aeolus::0 a dynamic water-type bubble pokemon::1.8, wearing white armor, in a ocean environment, gleaming bubble background, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "002_aeolus.png"
+}

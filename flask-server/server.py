@@ -21,6 +21,10 @@ async def run_script(script_path):
 
 # Members API Route
 
+@app.route("/")
+def home():
+    return f"Hello welcome to the pokemon card Generator API lets generate some cool stuff"
+
 @app.route("/members", methods=['GET', 'POST'])
 def members():
     return {"members": ["Member 1", "Member 2", "Member 3"]}

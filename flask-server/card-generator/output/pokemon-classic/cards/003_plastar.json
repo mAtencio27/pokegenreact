@@ -1,0 +1,27 @@
+{
+  "index": 3,
+  "name": "Plastar",
+  "description": "The colossal Plastar, an epic Water-type Pokemon, is a sight to behold. It roams the deep ocean wearing its shining white armor and commanding the tides with its tidal power. It prefers to stay hidden under the waves and is rarely seen outside of its crystalline home. Its strength lies in its ability to strike with lightning fast speed and agility, capable of taking down its foes in mere moments. Plastar is a force to be reckoned with in the ocean \u2014 a peaceful and serene inhabitant of the depths by day and a merciless hunter by night.",
+  "element": "Water",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 70,
+  "abilities": [
+    {
+      "name": "Tidal Surge",
+      "element": "Water",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    },
+    {
+      "name": "Strike",
+      "element": "Neutral",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 30
+    }
+  ],
+  "image_prompt": "Plastar::0 a gigantic epic water-type bubble pokemon::2.5, wearing white armor, in a ocean environment, sapphire blue galaxy background, polished final by studio ghibli --niji --ar 3:2",
+  "image_file": "003_plastar.png"
+}
