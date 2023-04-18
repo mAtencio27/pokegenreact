@@ -3,63 +3,30 @@
   "cards": [
     {
       "index": 1,
-      "name": "Untitled Card",
-      "description": "",
-      "element": "Water",
-      "rarity": "common",
-      "rarity_index": 0,
-      "hp": 50,
-      "abilities": [
-        {
-          "name": "Soak",
-          "element": "Water",
-          "cost": 2,
-          "is_mixed_element": true,
-          "power": 30
-        }
-      ],
-      "image_prompt": "Untitled Card::0 a chibi cute water-type slug pokemon, in a lake environment, gleaming bubble background, anime chibi drawing style, pastel background --niji --ar 3:2",
-      "image_file": "001_untitled_card.png"
-    },
-    {
-      "index": 2,
-      "name": "Untitled Card",
-      "description": "",
-      "element": "Water",
+      "name": "Aurorne",
+      "description": "Aurorne, the mysterious cave dweller, is an intimidating presence with its dark armor and powerful psychic-type abilities. It is known to traverse cave-like environments with a unique and mysterious grace. It passes through the darkness with a stealth-like agility, almost as if it can sense its surroundings. Its mysterious slashing move and synapse powers give it an extra edge against any foe. Definitely not one to be trifled with!",
+      "element": "Psychic",
       "rarity": "uncommon",
       "rarity_index": 1,
       "hp": 90,
       "abilities": [
         {
-          "name": "Wave Strike",
-          "element": "Water",
-          "cost": 3,
+          "name": "Mystery Slash",
+          "element": "Psychic",
+          "cost": 2,
           "is_mixed_element": true,
-          "power": 40
-        }
-      ],
-      "image_prompt": "Untitled Card::0 a water-type slug pokemon::1.8, wearing ornate armor, in a lake environment, sparkling blue background, anime sketch with watercolor --niji --ar 3:2",
-      "image_file": "002_untitled_card.png"
-    },
-    {
-      "index": 3,
-      "name": "Untitled Card",
-      "description": "",
-      "element": "Water",
-      "rarity": "rare",
-      "rarity_index": 2,
-      "hp": 130,
-      "abilities": [
+          "power": 30
+        },
         {
-          "name": "Aquatic Surge",
-          "element": "Water",
-          "cost": 4,
-          "is_mixed_element": true,
-          "power": 50
+          "name": "Synapse",
+          "element": "Psychic",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 20
         }
       ],
-      "image_prompt": "Untitled Card::0 a massive mythical water-type slug pokemon::2.5, wearing ornate armor, in a lake environment, sapphire blue galaxy background, polished final by studio ghibli --niji --ar 3:2",
-      "image_file": "003_untitled_card.png"
+      "image_prompt": "Aurorne::0 a strong psychic-type gold grass slug pokemon::1.8, wearing dark armor, in a cave environment, pink bokeh lighting, anime sketch --niji --ar 3:2",
+      "image_file": "001_aurorne.png"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "index": 1,
+  "name": "Aurorne",
+  "description": "Aurorne, the mysterious cave dweller, is an intimidating presence with its dark armor and powerful psychic-type abilities. It is known to traverse cave-like environments with a unique and mysterious grace. It passes through the darkness with a stealth-like agility, almost as if it can sense its surroundings. Its mysterious slashing move and synapse powers give it an extra edge against any foe. Definitely not one to be trifled with!",
+  "element": "Psychic",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 90,
+  "abilities": [
+    {
+      "name": "Mystery Slash",
+      "element": "Psychic",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    },
+    {
+      "name": "Synapse",
+      "element": "Psychic",
+      "cost": 1,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "Aurorne::0 a strong psychic-type gold grass slug pokemon::1.8, wearing dark armor, in a cave environment, pink bokeh lighting, anime sketch --niji --ar 3:2",
+  "image_file": "001_aurorne.png"
+}
