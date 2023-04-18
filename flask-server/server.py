@@ -35,8 +35,6 @@ def generate():
     element = request.args.get("element", default="", type=str)
     subject = request.args.get("subject", default="", type=str)
     returnData = subprocess.call(['python', '../flask-server/card-generator/src/generate.py', '-e', element ,'--subject', subject])
-    #print(element, subject)
-    #return 'Script executed successfully!', 200
     return jsonify({"data":returnData})
 
 # render API route
@@ -85,18 +83,6 @@ def photos():
             encoded_image = base64.b64encode(image_data).decode('utf-8')
                 # append the encoded image to the list of encoded images
             encoded_images.append(encoded_image)
-
-    
-    # Photo file names
-    #fileNames = os.listdir(folder_path)
-
-    #PHOTO URLS
-    #urls = [f'/photos/{filename}' for filename in fileNames]
-    #print("📸", urls)
-    #return photos.body
-
-    #res = os.getcwd()
-    # res = response.body
 
     return jsonify({"response":encoded_images})
 
