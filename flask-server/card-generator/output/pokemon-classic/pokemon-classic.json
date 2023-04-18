@@ -3,77 +3,63 @@
   "cards": [
     {
       "index": 1,
-      "name": "Bloop",
-      "description": "Bloop is a playful pokemon that whizzes through the water, making it look like a small tornado. Its strange Aquablast and Smack abilities are used to both defend and attack, often leaving other pokemon in awe. It loves to flit around coral and wreak bubbly havoc on unsuspecting fish, always looking for a good time.",
+      "name": "Untitled Card",
+      "description": "",
       "element": "Water",
       "rarity": "common",
       "rarity_index": 0,
-      "hp": 30,
+      "hp": 50,
       "abilities": [
         {
-          "name": "Aquablast",
+          "name": "Soak",
           "element": "Water",
           "cost": 2,
           "is_mixed_element": true,
           "power": 30
-        },
-        {
-          "name": "Smack",
-          "element": "Neutral",
-          "cost": 1,
-          "is_mixed_element": false,
-          "power": 10
         }
       ],
-      "image_prompt": "Bloop::0 a chibi young water-type bubble pokemon, in a ocean environment, gleaming bubble background, anime chibi drawing style, pastel background --niji --ar 3:2",
-      "image_file": "001_bloop.png"
+      "image_prompt": "Untitled Card::0 a chibi cute water-type slug pokemon, in a lake environment, gleaming bubble background, anime chibi drawing style, pastel background --niji --ar 3:2",
+      "image_file": "001_untitled_card.png"
     },
     {
       "index": 2,
-      "name": "Aeolus",
-      "description": "Aeolus is an armored water-type Pokemon that is rarely seen outside of its preferred ocean-like habitats. Its unique white armor allows it to thrive in aquatic territory, where it can be seen gliding gracefully through the water with its powerful tail. Its Ocean Crush ability allows it to create a powerful wave of energy which can decimate any foe in its path. On a typical day, Aeolus can be seen hunting for food, swimming against fast-moving currents, or just lounging around in the shallows.",
+      "name": "Untitled Card",
+      "description": "",
       "element": "Water",
       "rarity": "uncommon",
       "rarity_index": 1,
-      "hp": 70,
+      "hp": 90,
       "abilities": [
         {
-          "name": "Ocean Crush",
+          "name": "Wave Strike",
           "element": "Water",
-          "cost": 4,
-          "is_mixed_element": false,
-          "power": 60
+          "cost": 3,
+          "is_mixed_element": true,
+          "power": 40
         }
       ],
-      "image_prompt": "Aeolus::0 a dynamic water-type bubble pokemon::1.8, wearing white armor, in a ocean environment, gleaming bubble background, anime sketch with watercolor --niji --ar 3:2",
-      "image_file": "002_aeolus.png"
+      "image_prompt": "Untitled Card::0 a water-type slug pokemon::1.8, wearing ornate armor, in a lake environment, sparkling blue background, anime sketch with watercolor --niji --ar 3:2",
+      "image_file": "002_untitled_card.png"
     },
     {
       "index": 3,
-      "name": "Plastar",
-      "description": "The colossal Plastar, an epic Water-type Pokemon, is a sight to behold. It roams the deep ocean wearing its shining white armor and commanding the tides with its tidal power. It prefers to stay hidden under the waves and is rarely seen outside of its crystalline home. Its strength lies in its ability to strike with lightning fast speed and agility, capable of taking down its foes in mere moments. Plastar is a force to be reckoned with in the ocean \u2014 a peaceful and serene inhabitant of the depths by day and a merciless hunter by night.",
+      "name": "Untitled Card",
+      "description": "",
       "element": "Water",
       "rarity": "rare",
       "rarity_index": 2,
-      "hp": 70,
+      "hp": 130,
       "abilities": [
         {
-          "name": "Tidal Surge",
+          "name": "Aquatic Surge",
           "element": "Water",
           "cost": 4,
           "is_mixed_element": true,
           "power": 50
-        },
-        {
-          "name": "Strike",
-          "element": "Neutral",
-          "cost": 3,
-          "is_mixed_element": false,
-          "power": 30
         }
       ],
-      "image_prompt": "Plastar::0 a gigantic epic water-type bubble pokemon::2.5, wearing white armor, in a ocean environment, sapphire blue galaxy background, polished final by studio ghibli --niji --ar 3:2",
-      "image_file": "003_plastar.png"
+      "image_prompt": "Untitled Card::0 a massive mythical water-type slug pokemon::2.5, wearing ornate armor, in a lake environment, sapphire blue galaxy background, polished final by studio ghibli --niji --ar 3:2",
+      "image_file": "003_untitled_card.png"
     }
   ]
 }

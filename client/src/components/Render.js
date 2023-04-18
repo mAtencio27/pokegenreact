@@ -34,6 +34,7 @@ const fetchPhotos = async(e) => {
 
   return (
     <div>
+      <button onClick={()=>{console.log(photos)}}>Tester boy</button>
       {photos.map(url => (
         <img src={url} key={url} alt="photo" />
       ))}

@@ -1,9 +1,9 @@
-[001] Bloop
-Bloop::0 a chibi young water-type bubble pokemon, in a ocean environment, gleaming bubble background, anime chibi drawing style, pastel background --niji --ar 3:2
+[001] Untitled Card
+Untitled Card::0 a chibi cute water-type slug pokemon, in a lake environment, gleaming bubble background, anime chibi drawing style, pastel background --niji --ar 3:2
 
-[002] Aeolus
-Aeolus::0 a dynamic water-type bubble pokemon::1.8, wearing white armor, in a ocean environment, gleaming bubble background, anime sketch with watercolor --niji --ar 3:2
+[002] Untitled Card
+Untitled Card::0 a water-type slug pokemon::1.8, wearing ornate armor, in a lake environment, sparkling blue background, anime sketch with watercolor --niji --ar 3:2
 
-[003] Plastar
-Plastar::0 a gigantic epic water-type bubble pokemon::2.5, wearing white armor, in a ocean environment, sapphire blue galaxy background, polished final by studio ghibli --niji --ar 3:2
+[003] Untitled Card
+Untitled Card::0 a massive mythical water-type slug pokemon::2.5, wearing ornate armor, in a lake environment, sapphire blue galaxy background, polished final by studio ghibli --niji --ar 3:2
 
