@@ -21,6 +21,10 @@ async def run_script(script_path):
 
 # Members API Route
 
+@app.route("/")
+def description():
+    return "This is the generate API"
+
 @app.route("/members", methods=['GET', 'POST'])
 def members():
     return {"members": ["Member 1", "Member 2", "Member 3"]}
