@@ -35,6 +35,7 @@ def generate():
     element = request.args.get("element", default="", type=str)
     subject = request.args.get("subject", default="", type=str)
     returnData = subprocess.call(['python', '../flask-server/card-generator/src/generate.py', '-e', element ,'--subject', subject])
+
     return jsonify({"data":returnData})
 
 # render API route
@@ -53,7 +54,7 @@ def prompts():
         with open(filepath, "r") as file:
             # contents = file.read()
             contents = json.load(file)
-        print (contents)
+        # print (contents)
         file_contents.append({"Name":contents['name'], "Prompt":contents['image_prompt']})
     return jsonify({"response":file_contents})
     # return file_contents

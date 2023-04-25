@@ -1,0 +1,20 @@
+{
+  "index": 1,
+  "name": "Cosmaur",
+  "description": "A tiny, cosmic creature formed by the concentrated power of the universe, Cosmaur is a formidable opponent. Capable of generating powerful energy blasts, it lurks in dark caverns and tunnels, waiting to surprise unsuspecting travelers with its dazzling, purple armor. When provoked, it has been known to unleash its signature move, the mysterious slash, in a dizzying display of power. Despite its powerful abilities, it still enjoys its peaceful life, quietly meditating and gathering energy to boost its strength.",
+  "element": "Psychic",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 80,
+  "abilities": [
+    {
+      "name": "Mystery Slash",
+      "element": "Psychic",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "Cosmaur::0 a chibi young psychic-type toad pokemon::1.8, wearing purple cosmic armor, in a cave environment, violet shadows, anime chibi drawing style, pastel background --niji --ar 3:2",
+  "image_file": "001_cosmaur.png"
+}

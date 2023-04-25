@@ -3,12 +3,12 @@
   "cards": [
     {
       "index": 1,
-      "name": "Aurorne",
-      "description": "Aurorne, the mysterious cave dweller, is an intimidating presence with its dark armor and powerful psychic-type abilities. It is known to traverse cave-like environments with a unique and mysterious grace. It passes through the darkness with a stealth-like agility, almost as if it can sense its surroundings. Its mysterious slashing move and synapse powers give it an extra edge against any foe. Definitely not one to be trifled with!",
+      "name": "Cosmaur",
+      "description": "A tiny, cosmic creature formed by the concentrated power of the universe, Cosmaur is a formidable opponent. Capable of generating powerful energy blasts, it lurks in dark caverns and tunnels, waiting to surprise unsuspecting travelers with its dazzling, purple armor. When provoked, it has been known to unleash its signature move, the mysterious slash, in a dizzying display of power. Despite its powerful abilities, it still enjoys its peaceful life, quietly meditating and gathering energy to boost its strength.",
       "element": "Psychic",
       "rarity": "uncommon",
       "rarity_index": 1,
-      "hp": 90,
+      "hp": 80,
       "abilities": [
         {
           "name": "Mystery Slash",
@@ -16,17 +16,30 @@
           "cost": 2,
           "is_mixed_element": true,
           "power": 30
-        },
-        {
-          "name": "Synapse",
-          "element": "Psychic",
-          "cost": 1,
-          "is_mixed_element": false,
-          "power": 20
         }
       ],
-      "image_prompt": "Aurorne::0 a strong psychic-type gold grass slug pokemon::1.8, wearing dark armor, in a cave environment, pink bokeh lighting, anime sketch --niji --ar 3:2",
-      "image_file": "001_aurorne.png"
+      "image_prompt": "Cosmaur::0 a chibi young psychic-type toad pokemon::1.8, wearing purple cosmic armor, in a cave environment, violet shadows, anime chibi drawing style, pastel background --niji --ar 3:2",
+      "image_file": "001_cosmaur.png"
+    },
+    {
+      "index": 2,
+      "name": "Plesyte",
+      "description": "Plesyte is a mysterious young pokemon, shrouded in a purple cosmic armor. It can often be found in dark caves, and some say that it has the power to tap into the cosmic energies that reside there. Plesyte is highly attuned to its surroundings, spending its days absorbing the atmosphere of the underground and gathering knowledge with its Mindzap ability. It has a mysterious aura that can be felt within the confines of the caves, as if it is protecting them.",
+      "element": "Psychic",
+      "rarity": "rare",
+      "rarity_index": 2,
+      "hp": 120,
+      "abilities": [
+        {
+          "name": "Mindzap",
+          "element": "Psychic",
+          "cost": 3,
+          "is_mixed_element": true,
+          "power": 40
+        }
+      ],
+      "image_prompt": "Plesyte::0 a young epic psychic-type toad pokemon::2.5, wearing purple cosmic armor, in a cave environment, pink bokeh lighting, anime sketch with watercolor --niji --ar 3:2",
+      "image_file": "002_plesyte.png"
     }
   ]
 }
