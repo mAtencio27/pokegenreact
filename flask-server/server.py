@@ -5,8 +5,10 @@ import asyncio
 import os
 import json
 import base64
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 UPLOAD_FOLDER= '../flask-server/card-generator/output/pokemon-classic/images'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
