@@ -1,6 +1,3 @@
-[001] Cosmaur
-Cosmaur::0 a chibi young psychic-type toad pokemon::1.8, wearing purple cosmic armor, in a cave environment, violet shadows, anime chibi drawing style, pastel background --niji --ar 3:2
-
-[002] Plesyte
-Plesyte::0 a young epic psychic-type toad pokemon::2.5, wearing purple cosmic armor, in a cave environment, pink bokeh lighting, anime sketch with watercolor --niji --ar 3:2
+[001] Gorger
+Gorger::0 a basic fighting-type punch pokemon, in a canyon environment, red and purple ambient lighting, anime sketch --niji --ar 3:2
 

@@ -72,7 +72,7 @@ const ImageUpload = () => {
         {prompts ? promptTagBuilder(): "no prompts"}
       </div>
       <div className='navButtons'>
-          <Link to="/">Back</Link>
+          <Link to="/Home">Back</Link>
           <Link to="/Render">Next</Link>
       </div>
     </div>

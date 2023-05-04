@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home.js'
 import ImageUpload from './components/ImageUpload.js';
 import Render from './components/Render'
+import Landing from './components/Landing';
 
 function App() {
 
@@ -74,6 +75,9 @@ function App() {
         <div className='components'>
           <Switch>
             <Route exact path = "/">
+              <Landing/>
+            </Route>
+            <Route exact path = "/home">
               <Home/>
             </Route>
             <Route path = "/ImageUpload">
