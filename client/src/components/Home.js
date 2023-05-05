@@ -8,15 +8,16 @@ const Home = () => {
   const [elementString, setElementString] = useState()
 
   const generateScript = async(e) => {
-    const res = await fetch(`https://pokegen-api.onrender.com/`)
+    //api
+    //const res = await fetch(`https://pokegen-api.onrender.com/`)
 
     //this one works locally
-    //const res = await fetch(`https://pokegen-api.onrender.com/generate?element=${elementString}&subject=${subjectString}`)
+    const res = await fetch(`https://pokegen-api.onrender.com/generate?element=${elementString}&subject=${subjectString}`)
 
-    //console.log(e.target.value)
-    // console.log(`Subject:${subjectString}`)
-    // console.log(`Element:${elementString}`)
-    //let data = await res.json()
+    console.log(e.target.value)
+    console.log(`Subject:${subjectString}`)
+    console.log(`Element:${elementString}`)
+    let data = await res.json()
     console.log(res)
     return
   };
