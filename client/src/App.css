@@ -130,6 +130,18 @@ body {
 
 }
 
+.generateBarLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  writing-mode: vertical-lr;
+  width: 10%;
+  height: 100vh;
+  position: absolute;
+  left:0%
+
+}
+
 .centerPhotoContainer {
   display: block;
   position: relative;

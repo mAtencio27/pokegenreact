@@ -13,9 +13,13 @@ const Landing = () => {
                 <div className="generateBarRight">
                     Generate 
                 </div>
+                <div className="generateBarLeft">
+                    ECO-POKEMON
+                </div>
                 <div className="centerPhotoContainer">
                     <img className="centerPhoto" src={centerPhoto}></img>
                 </div>
+
             </div>
             <Link to="/Home">Next</Link>
         </div>
