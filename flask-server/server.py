@@ -37,7 +37,6 @@ def generate():
     element = request.args.get("element", default="", type=str)
     subject = request.args.get("subject", default="", type=str)
     returnData = subprocess.call(['python', '../flask-server/card-generator/src/generate.py', '-e', element ,'--subject', subject])
-    print(returnData)
 
     return jsonify({"data":returnData})
 
