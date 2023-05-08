@@ -155,7 +155,63 @@ body {
 /* NEWS COMPONENT */
 .news {
   display: flex;
-  flex-direction: row;
   width: 90%;
   padding-left: 10%;
+}
+
+.newsHeader {
+  display: flex;
+  padding-left: 10%;
+  margin:0;
+}
+
+.singleNews {
+  display: flex;
+  flex-direction: row;
+  height: 25px;
+}
+
+/* GENERATE BLOCK */
+
+.character {
+  height: 70vh;
+}
+
+.characterContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.generateBlock{
+  background-color: rgb(238, 238, 238);
+}
+
+.conceptStuff{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.ecoHead {
+  font-size: 50px;
+  text-align: start;
+  padding-left: 15%;
+  margin-bottom: 10px;
+}
+
+.ecoHead2 {
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin:2px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+}
+
+.ecoHead2container{
+  margin: 0 auto;
+  width: 80%;
+  text-align: start;
 }
