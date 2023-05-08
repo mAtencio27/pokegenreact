@@ -151,3 +151,11 @@ body {
 .centerPhoto {
   width: 90%;
 }
+
+/* NEWS COMPONENT */
+.news {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding-left: 10%;
+}

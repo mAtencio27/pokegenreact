@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import triangle from '../Assets/Page1/triangle.png'
 import centerPhoto from '../Assets/Page1/main.png'
 import Header from "./Header"
+import News from "./News"
 
 const Landing = () => {
     return(<div>
@@ -18,10 +19,11 @@ const Landing = () => {
                 </div>
                 <div className="centerPhotoContainer">
                     <img className="centerPhoto" src={centerPhoto}></img>
+                    <News/>
                 </div>
-
+                
             </div>
-            <Link to="/Home">Next</Link>
+            {/* <Link to="/Home">Next</Link> */}
         </div>
         </div>)
 }
