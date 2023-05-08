@@ -173,8 +173,15 @@ body {
 
 /* GENERATE BLOCK */
 
+.generateHead{
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 10vh;
+}
+
 .character {
-  height: 70vh;
+  height: 75vh;
 }
 
 .characterContainer{
@@ -194,10 +201,12 @@ body {
 }
 
 .ecoHead {
+  position: relative;
   font-size: 50px;
   text-align: start;
   padding-left: 15%;
   margin-bottom: 10px;
+  margin-left: 0;
 }
 
 .ecoHead2 {
@@ -214,4 +223,58 @@ body {
   margin: 0 auto;
   width: 80%;
   text-align: start;
+}
+
+.ecoParagraph{
+
+  font-size: 14px;
+  text-align: start
+}
+
+.ecoParagraphContainer{
+  padding-top: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.generateButtonContainer{
+  margin: 0 auto;
+  padding-top: 25px;
+  text-align: left;
+  width: 80%;
+}
+
+.generateButton{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgb(255, 236, 0);
+  color: black;
+  border-radius: 5%;
+  border:none;
+  padding: 10px;
+  width: 140px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.generateButton:hover{
+  background-color: rgb(230, 215, 1);
+}
+
+.generateButton:active{
+  background-color: rgb(214, 200, 1);
+  color: black
+}
+
+/* FOOTER */
+.footerContainer{
+  background-color: rgb(238, 238, 238);
+  padding-top:10%;
+  width:100vw;
+}
+
+.footer{
+  width:100vw
 }
