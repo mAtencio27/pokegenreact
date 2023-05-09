@@ -354,10 +354,10 @@ body {
 
 .elementSelectorContainer{
   display: flex;
+  flex-direction: column;
   width: 100%;
   position: relative;
   justify-content: center;
-  background-color: black;
   margin-top: 10%;
 }
 
@@ -365,7 +365,59 @@ body {
   font-size: 25px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   margin:2px;
+  margin-bottom: 5%;
   color: white;
+  background-color: black;
   display: inline-block;
+}
+
+.generateElementBox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.generateElementTile{
+  display: flex;
+  width: 30%;
+  border: solid #efefef 2px;
+  margin: 5px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.generateElementTile:hover{
+  background-color: #e6e6e6;
+}
+
+.generateElementTile:active{
+  background-color: #cbcbcb;
+}
+
+.generateButtonContainer{
+
+}
+
+.generateButton{
+  background-color: rgb(230, 215, 1);
+  border-radius: 2%;
+}
+
+.footerContainer2{
+  display: flex;
+  padding-top:10%;
+  width:100vw;
+  justify-content: none;
+  transform: translateX(-10%);
+}
+
+.footer2{
+  width:100vw
 }

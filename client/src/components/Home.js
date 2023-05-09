@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import background from '../Assets/Page2/yellow.png'
 import Header from './Header';
+import footer from '../Assets/Page1/footer.png'
 
 const Home = () => {
 
@@ -79,35 +80,35 @@ const Home = () => {
               <input className='keywordInput' placeholder="This is where to enter" onChange={(e) => {setSubjectString(e.target.value)}}  type='text'></input>
             </div>
             <div className='elementSelectorContainer'>
-              <div className='keywordEntranceBar'>
+              <div className='elementEntranceBar'>
                 select an element from the list
               </div>
-            </div>
-            
-            <div className='typeInput'>
-              <select defaultValue={"select an element"} onChange={(e)=>{setElementString(e.target.value)}}>
-                <option disabled>select an element</option>
-                <option value="neutral">Neutral</option>
-                <option value="fire">Fire</option>
-                <option value="water">Water</option>
-                <option value="grass">Grass</option>
-                <option value="electric">Electric</option>
-                <option value="psychic">Psychic</option>
-                <option value="fighting">Fighting</option>
-                <option value="fairy">Fairy</option>
-                <option value="dark">Dark</option>
-                <option value="dragon">Dragon</option>
-                <option value="metal">Metal</option>
-              </select>
-              {/* <input onChange={(e) => {setSubjectString(e.target.value)}}  type='text'></input> */}
-              {elementString ? <button value={subjectString} onClick={(e)=>{generateScript(e)}}> Generate Script </button>: <button value={subjectString} onClick={(e)=>{generateScript(e)}} disabled> Generate Script </button>}
-              <div className='navButtons'>
-                <Link to="/">Back</Link>
-                <Link to="/ImageUpload">Next</Link>
+              <div className="generateElementBox">
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="grass">Grass</div>
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fire">Fire</div>
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="water">Water</div>
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="lightning">Lightning</div>
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="psychic">Psychic</div>
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="normal">Normal</div>
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fighting">Fighting</div>
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="darkness">Darkness</div>
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="rock">Rock</div>
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fairy">Fairy</div>
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="dragon">Dragon</div>
               </div>
             </div>
-
+            <div className='generateButtonContainer'>
+              {elementString ? <button className="generateButton" value={subjectString} onClick={(e)=>{generateScript(e)}}> Generate Script </button>: <button value={subjectString} onClick={(e)=>{generateScript(e)}} disabled> Generate Script </button>}
+            </div>
+            <div className='navButtons'>
+                <Link to="/">Back</Link>
+                <Link to="/ImageUpload">Next</Link>
+            </div>
+            <div className="footerContainer2">
+                <img src={footer} className="footer2"></img>
+            </div>
           </div>
+          
         </div>
       </div>
     </div>
