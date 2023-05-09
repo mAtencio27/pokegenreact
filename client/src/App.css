@@ -191,6 +191,7 @@ body {
 
 .generateBlock{
   background-color: rgb(238, 238, 238);
+  width: 100vw;
 }
 
 .conceptStuff{
@@ -226,7 +227,6 @@ body {
 }
 
 .ecoParagraph{
-
   font-size: 14px;
   text-align: start
 }
@@ -277,4 +277,95 @@ body {
 
 .footer{
   width:100vw
+}
+
+/* HOME COMPONENTS */
+.homeContainer{
+  position: relative;
+  width: 100vw;
+}
+
+.homeContainerBG {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-image: url("./Assets/Page2/yellow.png");
+  background-size:100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.typeKeywordHead{
+  position: relative;
+  margin: 0 auto;
+}
+
+.typeKeywordP{
+  margin: 0 auto;
+}
+
+.homeHeaderContainer{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 12%;
+  height: 100vh;
+  width: 80vw;
+}
+
+.keywordEntryContainer{
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  background-color: black;
+  margin-top: 25%;
+}
+
+.keywordEntranceBar{
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin:2px;
+  color: white;
+  display: inline-block;
+}
+
+.keywordInputContainer{
+  padding-top: 25px;
+}
+
+.keywordInput{
+  background-color: #efefef;
+  color: #6b6969;
+  border: none;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin:2px;
+  width: 65vw;
+  text-align: center;
+}
+
+.keywordInput:focus {
+  outline: none;
+}
+
+.elementSelectorContainer{
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  background-color: black;
+  margin-top: 10%;
+}
+
+.elementEntranceBar{
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin:2px;
+  color: white;
+  display: inline-block;
 }

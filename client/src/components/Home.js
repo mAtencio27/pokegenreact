@@ -1,6 +1,8 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import background from '../Assets/Page2/yellow.png'
+import Header from './Header';
 
 const Home = () => {
 
@@ -62,28 +64,50 @@ const Home = () => {
 
   return (
     <div className='Home'>
-      <header className="Home-header"> Let's Generate a new pokemon by putting in the Pokemon type and any subject we want.
-      </header>
-      <div className='typeInput'>
-        <select defaultValue={"select an element"} onChange={(e)=>{setElementString(e.target.value)}}>
-          <option disabled>select an element</option>
-          <option value="neutral">Neutral</option>
-          <option value="fire">Fire</option>
-          <option value="water">Water</option>
-          <option value="grass">Grass</option>
-          <option value="electric">Electric</option>
-          <option value="psychic">Psychic</option>
-          <option value="fighting">Fighting</option>
-          <option value="fairy">Fairy</option>
-          <option value="dark">Dark</option>
-          <option value="dragon">Dragon</option>
-          <option value="metal">Metal</option>
-        </select>
-        <input onChange={(e) => {setSubjectString(e.target.value)}}  type='text'></input>
-        {elementString ? <button value={subjectString} onClick={(e)=>{generateScript(e)}}> Generate Script </button>: <button value={subjectString} onClick={(e)=>{generateScript(e)}} disabled> Generate Script </button>}
-        <div className='navButtons'>
-          <Link to="/">Back</Link>
-          <Link to="/ImageUpload">Next</Link>
+      <div className='homeContainer'>
+        <div className='homeContainerBG'>
+          <Header/>
+          <div className='homeHeaderContainer'>
+            <h1 className='typeKeywordHead'>TYPE & KEYWORD</h1>
+            <p className='typeKeywordP'>eco pokemon element and keyword input</p>
+            <div className='keywordEntryContainer'>
+              <div className='keywordEntranceBar'>
+                keyword enter
+              </div>
+            </div>
+            <div className='keywordInputContainer'>
+              <input className='keywordInput' placeholder="This is where to enter" onChange={(e) => {setSubjectString(e.target.value)}}  type='text'></input>
+            </div>
+            <div className='elementSelectorContainer'>
+              <div className='keywordEntranceBar'>
+                select an element from the list
+              </div>
+            </div>
+            
+            <div className='typeInput'>
+              <select defaultValue={"select an element"} onChange={(e)=>{setElementString(e.target.value)}}>
+                <option disabled>select an element</option>
+                <option value="neutral">Neutral</option>
+                <option value="fire">Fire</option>
+                <option value="water">Water</option>
+                <option value="grass">Grass</option>
+                <option value="electric">Electric</option>
+                <option value="psychic">Psychic</option>
+                <option value="fighting">Fighting</option>
+                <option value="fairy">Fairy</option>
+                <option value="dark">Dark</option>
+                <option value="dragon">Dragon</option>
+                <option value="metal">Metal</option>
+              </select>
+              {/* <input onChange={(e) => {setSubjectString(e.target.value)}}  type='text'></input> */}
+              {elementString ? <button value={subjectString} onClick={(e)=>{generateScript(e)}}> Generate Script </button>: <button value={subjectString} onClick={(e)=>{generateScript(e)}} disabled> Generate Script </button>}
+              <div className='navButtons'>
+                <Link to="/">Back</Link>
+                <Link to="/ImageUpload">Next</Link>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
