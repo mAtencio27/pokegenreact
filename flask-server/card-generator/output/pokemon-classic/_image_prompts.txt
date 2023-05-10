@@ -1,3 +1,9 @@
-[001] Auregold
-Auregold::0 a epic fire-type pokemon::2.5, wearing golden armor, in a desert environment, lava texture background, anime sketch --niji --ar 3:2
+[001] Fumar
+Fumar::0 a chibi young fire-type pokemon, in a volcano environment, blue and red ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2
+
+[002] Armoryne
+Armoryne::0 a fire-type pokemon::1.8, wearing ornate armor, in a volcano environment, lava texture background, anime sketch with watercolor --niji --ar 3:2
+
+[003] Armortron
+Armortron::0 a massive legendary fire-type pokemon::2.5, wearing ornate armor, in a volcano environment, orange galaxy background, polished final by studio ghibli --niji --ar 3:2
 

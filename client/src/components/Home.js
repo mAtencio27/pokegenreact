@@ -7,17 +7,22 @@ import footer from '../Assets/Page1/footer.png'
 
 const Home = () => {
 
-  const [subjectString, setSubjectString] = useState(['test']);
+  const [subjectString, setSubjectString] = useState([]);
   const [elementString, setElementString] = useState()
 
   const generateScript = async(e) => {
     //api
     //const res = await fetch(`https://pokegen-api.onrender.com/`)
 
-    //this one works locally
-    const res = await fetch(`https://pokegen-api.onrender.com/generate?element=${elementString}&subject=${subjectString}`)
+    //PROXY
+    // set proxy in JSON to "https://pokegen-api.onrender.com/" once tempfiles work
 
-    console.log(e.target.value)
+    //this one works locally WIP need to implement tempfiles
+    //const res = await fetch(`https://pokegen-api.onrender.com/generate?element=${elementString}&subject=${subjectString}`)
+
+    const res = await fetch(`http://localhost:5000/generate?element=${elementString}&subject=${subjectString}`)
+
+    //console.log(e.target.value)
     console.log(`Subject:${subjectString}`)
     console.log(`Element:${elementString}`)
     let data = await res.json()
@@ -98,7 +103,7 @@ const Home = () => {
               </div>
             </div>
             <div className='generateButtonContainer'>
-              {elementString ? <button className="generateButton" value={subjectString} onClick={(e)=>{generateScript(e)}}> Generate Script </button>: <button value={subjectString} onClick={(e)=>{generateScript(e)}} disabled> Generate Script </button>}
+              {elementString ? <button className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}}> Generate Script </button>: <button className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}} disabled> Generate Script </button>}
             </div>
             <div className='navButtons'>
                 <Link to="/">Back</Link>
