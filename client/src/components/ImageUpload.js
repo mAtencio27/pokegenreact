@@ -59,6 +59,7 @@ const ImageUpload = () => {
   const fetchPrompts = async(e) => {
     const res = await fetch("/prompts")
     const data = await res.json()
+    console.log(data)
     setPrompts(data.response);
     return
   };

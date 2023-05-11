@@ -43,6 +43,7 @@ def generate():
 # render API route
 @app.route('/render')
 def render():
+    print("we only want one card to render by ")
     subprocess.call(['python', '../flask-server/card-generator/src/render_cards.py'])
     return 'Script executed successfully!'
 
@@ -71,6 +72,7 @@ def upload():
 
 @app.route('/photos')
 def photos():
+    print("we only want one card to render by passing this endpoint a state with the photo name saved from the first part")
     # Path to our photos
     folder_path = '../flask-server/card-generator/output/pokemon-classic/renders'
     if not os.path.isdir(folder_path):

@@ -28,7 +28,8 @@ class Collection:
         self, element: Element = None, subject_override: str = None
     ) -> list[Card]:
         element = element if element else random.choice(self.elements)
-        n_series = random.randint(1, 3)
+        # n_series = random.randint(1, 3)
+        n_series = 1
         return self.generate_card_series(element, n_series, subject_override)
 
     def generate_card_series(

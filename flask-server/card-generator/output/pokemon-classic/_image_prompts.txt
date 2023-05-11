@@ -1,6 +1,3 @@
-[001] Mysto
-Mysto::0 a chibi cute psychic-type pokemon, in a castle environment, violet shadows, anime chibi drawing style, pastel background --niji --ar 3:2
-
-[002] Vortexer
-Vortexer::0 a dynamic psychic-type pokemon::1.8, wearing violet hypnotic armor, in a castle environment, violet shadows, anime sketch with watercolor --niji --ar 3:2
+[001] Gothrune
+Gothrune::0 a strong grass-type pokemon::1.8, wearing dark armor, in a woods environment, emerald bokeh lighting, anime sketch --niji --ar 3:2
 
