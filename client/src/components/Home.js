@@ -71,7 +71,7 @@ const Home = () => {
   return (
     <div className='Home'>
       <div className='homeContainer'>
-        <div className='homeContainerBG'>
+      <div className='homeContainerBG'>
           <Header/>
           <div className='homeHeaderContainer'>
             <h1 className='typeKeywordHead'>TYPE & KEYWORD</h1>

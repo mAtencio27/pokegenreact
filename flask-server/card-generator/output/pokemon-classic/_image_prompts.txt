@@ -1,9 +1,6 @@
-[001] Fumar
-Fumar::0 a chibi young fire-type pokemon, in a volcano environment, blue and red ambient lighting, anime chibi drawing style, pastel background --niji --ar 3:2
+[001] Mysto
+Mysto::0 a chibi cute psychic-type pokemon, in a castle environment, violet shadows, anime chibi drawing style, pastel background --niji --ar 3:2
 
-[002] Armoryne
-Armoryne::0 a fire-type pokemon::1.8, wearing ornate armor, in a volcano environment, lava texture background, anime sketch with watercolor --niji --ar 3:2
-
-[003] Armortron
-Armortron::0 a massive legendary fire-type pokemon::2.5, wearing ornate armor, in a volcano environment, orange galaxy background, polished final by studio ghibli --niji --ar 3:2
+[002] Vortexer
+Vortexer::0 a dynamic psychic-type pokemon::1.8, wearing violet hypnotic armor, in a castle environment, violet shadows, anime sketch with watercolor --niji --ar 3:2
 

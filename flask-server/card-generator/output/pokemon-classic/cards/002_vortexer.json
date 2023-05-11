@@ -1,0 +1,27 @@
+{
+  "index": 2,
+  "name": "Vortexer",
+  "description": "Vortexer is a mysterious pokemon rarely seen in castle-like environments. Its vibrant violet armor glows and mesmerizes anyone unlucky enough to cross paths with it. It is an expert at manipulating its environment, able to bend the space around it to its will. It is said to spend its days quietly in its castle, imparting its psychic powers on the world and guiding unsuspecting travelers astray.",
+  "element": "Psychic",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Ghost Strike",
+      "element": "Psychic",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    },
+    {
+      "name": "Psychwave",
+      "element": "Psychic",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "Vortexer::0 a dynamic psychic-type pokemon::1.8, wearing violet hypnotic armor, in a castle environment, violet shadows, anime sketch with watercolor --niji --ar 3:2",
+  "image_file": "002_vortexer.png"
+}
