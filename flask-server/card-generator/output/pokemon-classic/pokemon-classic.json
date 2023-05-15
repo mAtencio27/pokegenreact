@@ -3,23 +3,23 @@
   "cards": [
     {
       "index": 1,
-      "name": "Armarchite",
-      "description": "Armarchite is a mysterious pokemon, which once lurked in the shadows and depths of crypt-like environments. It is now seen rarely and has become something of a legend. It is wearing ancient, white armor, and is endowed with great power and determination. Armarchite is known to spend its days meditating and plotting its next moves, never taking its eyes off its opponents. It moves with grace and understanding, able to sense the potential for conflict within any battle. When it does fight, it will do so swiftly and decisively, using its Astral Ring ability to bring swift and decisive victory.",
-      "element": "Psychic",
+      "name": "Armorgon",
+      "description": "Armorgon is a unique Pokemon that can be found in dark, cave-like environments. It is closely related to both steel and rock-type Pokemon and is protected by its gray and brown armor-like shell. Its primary ability is called Magnet Bomb and allows it to manipulate nearby metallic objects. Armorgon tends to laze about during the day, but when night falls, it can be seen patrolling its cave home for any intruders. It is an incredibly strong Pokemon and should not be taken lightly.",
+      "element": "Metal",
       "rarity": "uncommon",
       "rarity_index": 1,
-      "hp": 90,
+      "hp": 50,
       "abilities": [
         {
-          "name": "Astral Ring",
-          "element": "Psychic",
-          "cost": 3,
-          "is_mixed_element": false,
+          "name": "Magnet Bomb",
+          "element": "Metal",
+          "cost": 4,
+          "is_mixed_element": true,
           "power": 50
         }
       ],
-      "image_prompt": "Armarchite::0 a rare psychic-type pokemon::1.8, wearing white armor, in a crypt environment, violet shadows, anime sketch --niji --ar 3:2",
-      "image_file": "001_armarchite.png"
+      "image_prompt": "Armorgon::0 a strong metal-type pokemon::1.8, wearing gray and brown armor, in a cave environment, natural and brown ambient lighting, anime sketch --niji --ar 3:2",
+      "image_file": "001_armorgon.png"
     }
   ]
 }

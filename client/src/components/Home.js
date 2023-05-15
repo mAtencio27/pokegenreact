@@ -92,12 +92,12 @@ const Home = () => {
                   <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="grass">Grass</div>
                   <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fire">Fire</div>
                   <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="water">Water</div>
-                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="lightning">Lightning</div>
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="electric">Electric</div>
                   <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="psychic">Psychic</div>
-                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="normal">Normal</div>
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="neutral">Normal</div>
                   <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fighting">Fighting</div>
-                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="darkness">Darkness</div>
-                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="rock">Rock</div>
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="dark">Darkness</div>
+                  <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="metal">Metal</div>
                   <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fairy">Fairy</div>
                   <div className='generateElementTile' onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="dragon">Dragon</div>
               </div>
