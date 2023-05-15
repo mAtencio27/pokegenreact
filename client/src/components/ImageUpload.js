@@ -12,9 +12,26 @@ const ImageUpload = () => {
 
   //FILE UPLOAD HANDLER
   const uploadHandler = (e) => {
+    let uploadImage = e.target.files[0]
+    let newName = prompts[0]["Image_file"]
     //console.log(e.target) //this is the tag
-    console.log(e.target.files)//e.target.files is the actual file
-    setFiles([...files, e.target.files[0]])
+    //console.log(e.target.files)//e.target.files is the actual file
+    //console.log(e.target.files[0].name)//the name of the file that needs to be formatted
+    //console.log(prompts[0]["Image_file"])
+    //console.log(prompts[0]["Image_file"])
+    //console.log(uploadImage.name)
+    console.log(e.target.files[0])
+    const renamedFile = new File([uploadImage], newName, { type: uploadImage.type });
+    //console.log(renamedFile)
+    //setFiles([...files, e.target.files[0]]) working
+    setFiles([...files, renamedFile])
+  };
+
+  const uploadFileNamer = () => {
+    // This is the format to upload the image `{number}_{name}.png`
+    //"001_armorgon.png"
+    console.log("THIS IS OUR UPLOADFILENAMER FUNC")
+    console.log(files[0].name)
   };
 
   const uploadDropHandler = (e) => {
@@ -59,7 +76,7 @@ const ImageUpload = () => {
   const fetchPrompts = async(e) => {
     const res = await fetch("/prompts")
     const data = await res.json()
-    console.log(data)
+    //console.log(data)
     setPrompts(data.response);
     return
   };

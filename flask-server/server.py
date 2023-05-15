@@ -58,7 +58,9 @@ def prompts():
             # contents = file.read()
             contents = json.load(file)
         # print (contents)
-        file_contents.append({"Name":contents['name'], "Prompt":contents['image_prompt']})
+        # "image_file": "001_armorgon.png"
+        ##print(contents["image_file"]) send back to rename file
+        file_contents.append({"Name":contents['name'], "Prompt":contents['image_prompt'], "Image_file":contents['image_file']})
     return jsonify({"response":file_contents})
     # return file_contents
 

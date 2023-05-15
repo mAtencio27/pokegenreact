@@ -3,23 +3,23 @@
   "cards": [
     {
       "index": 1,
-      "name": "Gothrune",
-      "description": "Gothrune is a mysterious pokemon that is rarely seen, though its ominous presence can be felt in the shadows of wood-like environments. Covered in dark armor, this pokemon is surprisingly agile, able to slip in and out of hiding with incredible speed. Despite its intimidating exterior, Gothrune is gentle by nature, often taking time out of its day to admire the beauty of nature. It is able to defend itself by using its Floral Crush ability, which it uses to create stunning displays of power to ward off danger.",
-      "element": "Grass",
+      "name": "Armarchite",
+      "description": "Armarchite is a mysterious pokemon, which once lurked in the shadows and depths of crypt-like environments. It is now seen rarely and has become something of a legend. It is wearing ancient, white armor, and is endowed with great power and determination. Armarchite is known to spend its days meditating and plotting its next moves, never taking its eyes off its opponents. It moves with grace and understanding, able to sense the potential for conflict within any battle. When it does fight, it will do so swiftly and decisively, using its Astral Ring ability to bring swift and decisive victory.",
+      "element": "Psychic",
       "rarity": "uncommon",
       "rarity_index": 1,
-      "hp": 50,
+      "hp": 90,
       "abilities": [
         {
-          "name": "Floral Crush",
-          "element": "Grass",
-          "cost": 4,
-          "is_mixed_element": true,
+          "name": "Astral Ring",
+          "element": "Psychic",
+          "cost": 3,
+          "is_mixed_element": false,
           "power": 50
         }
       ],
-      "image_prompt": "Gothrune::0 a strong grass-type pokemon::1.8, wearing dark armor, in a woods environment, emerald bokeh lighting, anime sketch --niji --ar 3:2",
-      "image_file": "001_gothrune.png"
+      "image_prompt": "Armarchite::0 a rare psychic-type pokemon::1.8, wearing white armor, in a crypt environment, violet shadows, anime sketch --niji --ar 3:2",
+      "image_file": "001_armarchite.png"
     }
   ]
 }

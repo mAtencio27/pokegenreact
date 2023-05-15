@@ -1,3 +1,3 @@
-[001] Gothrune
-Gothrune::0 a strong grass-type pokemon::1.8, wearing dark armor, in a woods environment, emerald bokeh lighting, anime sketch --niji --ar 3:2
+[001] Armarchite
+Armarchite::0 a rare psychic-type pokemon::1.8, wearing white armor, in a crypt environment, violet shadows, anime sketch --niji --ar 3:2
 
