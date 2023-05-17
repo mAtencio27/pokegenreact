@@ -9,10 +9,10 @@ const [photos, setPhotos] = useState([])
 
   const renderScript = async() => {
     const res = await fetch("/render")
-    const data = await res.json()
+    //const data = await res.json()
     // console.log("renderscript function return")
     // console.log(data.response)
-    return data.response
+    //return data.response
     }
 
   const fetchPhotos = async(e) => {
@@ -36,8 +36,8 @@ const [photos, setPhotos] = useState([])
       //console.log(res)
 
       ///🎃🎃🎃🎃 This is currently working 
-      // const renderedResponse = await renderScript()
-      // const res = await fetchPhotos();
+      const renderedResponse = await renderScript()
+      const res = await fetchPhotos();
       ///🎃🎃🎃🎃
 
       //👽👽👽 line 33 render.js the string is already base 64 encoded going into the front end

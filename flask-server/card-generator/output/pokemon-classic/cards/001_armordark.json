@@ -1,0 +1,20 @@
+{
+  "index": 1,
+  "name": "Armordark",
+  "description": "Armordark is a unique Pokemon with a special set of armor adorning its body. It can typically be found lurking in the ruins of temples, fortresses, and other ancient sites. It is sneaky and elusive and rarely seen by people unless provoked. Armordark is strong and resilient, and not easily taken down. Its payback can be formidable if confronted. When not in battle, Armordark can be found attempting to uncover hidden treasures and forgotten artifacts, searching for anything of value to increase its strength and power.",
+  "element": "Dark",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 70,
+  "abilities": [
+    {
+      "name": "Payback",
+      "element": "Dark",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    }
+  ],
+  "image_prompt": "Armordark::0 a special dark-type pokemon::1.8, wearing ornate armor, in a ruins environment, dark and purple ambient lighting, anime sketch --niji --ar 3:2",
+  "image_file": "001_armordark.png"
+}

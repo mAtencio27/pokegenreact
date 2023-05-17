@@ -68,7 +68,7 @@ def render_card(card: Card, collection_path: str):
     ### Turning off pring to simplify passing the response
     ###print(f"Rendering {card.name}")
     card_template_name = f"{card.element.name.lower()}_card.png"
-    card_image = Image.open(f"card-generator/resources/cards/{card_template_name}")
+    card_image = Image.open(f"./resources/cards/{card_template_name}")
 
     card_art_path = pathlib.Path(collection_path, "images", card.image_file)
     if pathlib.Path(card_art_path).exists():
@@ -100,7 +100,7 @@ def render_card(card: Card, collection_path: str):
 
     # Write the name of the card.
     name_text_position = (48, 64)
-    title_font = ImageFont.truetype("card-generator/resources/font/Cabin-Bold.ttf", 28)
+    title_font = ImageFont.truetype("./resources/font/Cabin-Bold.ttf", 28)
     name_text = card.name
 
     # Draw the name text onto the card.
@@ -112,7 +112,7 @@ def render_card(card: Card, collection_path: str):
     # Draw the HP on the card.
     hp_x_position = card_image.width - 86
     hp_y_position = 64
-    hp_font = ImageFont.truetype("card-generator/resources/font/Cabin_Condensed-Regular.ttf", 28)
+    hp_font = ImageFont.truetype("./resources/font/Cabin_Condensed-Regular.ttf", 28)
     hp_text = f"{card.hp} HP"
     draw.text(
         (hp_x_position, hp_y_position),
@@ -167,7 +167,7 @@ def render_card(card: Card, collection_path: str):
 
     # Write the rarity of the Pokemon.
     rarity_text_position = (58, 602)
-    rarity_font = ImageFont.truetype("card-generator/resources/font/Cabin_Condensed-Regular.ttf", 18)
+    rarity_font = ImageFont.truetype("./resources/font/Cabin_Condensed-Regular.ttf", 18)
     rarity_text = f"{card.rarity.name} {card.element.name}-type Card"
     draw.text(
         rarity_text_position,
@@ -179,13 +179,13 @@ def render_card(card: Card, collection_path: str):
 
     # Write the rarity of the Pokemon.
     rarity_symbol_position = (card_image.width - 64, 605)
-    symbol_font = ImageFont.truetype("card-generator/resources/font/NotoSansSymbols2-Regular.ttf", 22)
+    symbol_font = ImageFont.truetype("./resources/font/NotoSansSymbols2-Regular.ttf", 22)
     rarity_symbols = ["⬤", "◆", "★"]
     rarity_symbol_sizes = [10, 14, 22]
 
     symbol_text = rarity_symbols[card.rarity.index]
     symbol_font = ImageFont.truetype(
-        "card-generator/resources/font/NotoSansSymbols2-Regular.ttf",
+        "./resources/font/NotoSansSymbols2-Regular.ttf",
         rarity_symbol_sizes[card.rarity.index],
     )
 
@@ -207,7 +207,7 @@ def render_ability(ability: Ability):
 
     # Ability name description.
     name_text_position = (ABILITY_WIDTH // 2, ABILITY_HEIGHT // 2)
-    name_font = ImageFont.truetype("card-generator/resources/font/Cabin-Bold.ttf", 24)
+    name_font = ImageFont.truetype("./resources/font/Cabin-Bold.ttf", 24)
     name_text = ability.name
     draw = ImageDraw.Draw(ability_image)
     draw.text(
@@ -216,7 +216,7 @@ def render_ability(ability: Ability):
 
     # Draw the ability power text.
     power_text_position = (ABILITY_WIDTH - 12, ABILITY_HEIGHT // 2)
-    power_font = ImageFont.truetype("card-generator/resources/font/Cabin_Condensed-Regular.ttf", 32)
+    power_font = ImageFont.truetype("./resources/font/Cabin_Condensed-Regular.ttf", 32)
     power_text = str(ability.power)
     draw.text(
         power_text_position,
@@ -271,7 +271,7 @@ def render_element_cost(elements: list[str]):
     for i, element in enumerate(elements):
         # Draw circles for each element.
 
-        element_image = Image.open(f"card-generator/resources/elements/{element.lower()}_element.png")
+        element_image = Image.open(f"./resources/elements/{element.lower()}_element.png")
         element_image = element_image.resize((ELEMENT_SIZE, ELEMENT_SIZE))
         cost_canvas.paste(
             element_image,
@@ -302,7 +302,7 @@ def render_weakness_and_resist(card: Card, image: Image):
 
 
 def render_status_element(card: Card, image: Image, element: Element, x_position: int):
-    element_image = Image.open(f"card-generator/resources/elements/{element.name.lower()}_element.png")
+    element_image = Image.open(f"./resources/elements/{element.name.lower()}_element.png")
     element_image = element_image.resize((STATUS_SIZE, STATUS_SIZE))
     image.paste(
         element_image,
@@ -341,7 +341,7 @@ def main():
     argparser.add_argument(
         "--collection",
         help="File path to the collection to render",
-        default="card-generator/output/pokemon-classic",
+        default="./output/pokemon-classic",
     )
     collection_path = argparser.parse_args().collection
     render_cards(collection_path)

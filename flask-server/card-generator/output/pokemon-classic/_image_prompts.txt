@@ -1,3 +1,3 @@
-[001] Amethystar
-Amethystar::0 a mythical psychic-type pokemon::2.5, wearing amethyst armor, in a cave environment, pink bokeh lighting, anime sketch --niji --ar 3:2
+[001] Armordark
+Armordark::0 a special dark-type pokemon::1.8, wearing ornate armor, in a ruins environment, dark and purple ambient lighting, anime sketch --niji --ar 3:2
 
