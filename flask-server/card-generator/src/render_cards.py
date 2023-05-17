@@ -350,7 +350,7 @@ def main():
     # print("🤢🤢🤢")
     #print(return_cards)
     # print("🤢🤢🤢")
-    return return_cards
+    #return return_cards
     ####🥰🥰🥰🥰MAYBE THIS IS WHERE WE CAN RETURN THE IMAGE INSTEAD OF SAVING IN FILE🥰🥰🥰🥰####
 
     
