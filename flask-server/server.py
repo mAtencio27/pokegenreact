@@ -6,6 +6,8 @@ import os
 import json
 import base64
 from flask_cors import CORS
+from io import BytesIO
+from PIL import Image
 
 app = Flask(__name__)
 CORS(app)
@@ -43,9 +45,25 @@ def generate():
 # render API route
 @app.route('/render')
 def render():
-    print("we only want one card to render by ")
-    subprocess.call(['python', '../flask-server/card-generator/src/render_cards.py'])
-    return 'Script executed successfully!'
+    encoded_images = []
+    ##print("we only want one card to render by ")
+    ##subprocess.call(['python', '../flask-server/card-generator/src/render_cards.py'])
+
+    #print("😘😘😘😘😘😘")
+    #output = subprocess.check_output(['python', '../flask-server/card-generator/src/render_cards.py'])
+    #print(output)
+    ###print("above is the output")
+    ##print("😘😘😘😘😘😘")
+    #return 'Script executed successfully!'
+
+    # Split the output by newline character
+    ##image_strings = output.split(b'\n')
+    # Get the first image string
+    # first_image_string = image_strings[0]
+    # print(first_image_string)
+
+    # encoded_images.append(first_image_string.decode('utf-8'))
+    return jsonify({"response":encoded_images})
 
 # Fetching pokemon image prompts
 @app.route('/prompts')
@@ -74,7 +92,7 @@ def upload():
 
 @app.route('/photos')
 def photos():
-    print("we only want one card to render by passing this endpoint a state with the photo name saved from the first part")
+    ##print("we only want one card to render by passing this endpoint a state with the photo name saved from the first part")
     # Path to our photos
     folder_path = '../flask-server/card-generator/output/pokemon-classic/renders'
     if not os.path.isdir(folder_path):

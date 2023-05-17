@@ -8,9 +8,12 @@ const Render = () => {
 const [photos, setPhotos] = useState([])
 
   const renderScript = async() => {
-  const res = await fetch("/render")
-  return
-  }
+    const res = await fetch("/render")
+    const data = await res.json()
+    // console.log("renderscript function return")
+    // console.log(data.response)
+    return data.response
+    }
 
   const fetchPhotos = async(e) => {
     const res = await fetch("/photos")
@@ -28,9 +31,20 @@ const [photos, setPhotos] = useState([])
 
   useEffect(() => {
     const fetchData = async() => {
-      const renderedResponse = await renderScript()
-      const res = await fetchPhotos();
-      const dataArray = res.map((encoded64) => {return `data:image/jpeg;base64,${encoded64}`})
+      //This is a test
+      //const res = await renderScript()
+      //console.log(res)
+
+      ///🎃🎃🎃🎃 This is currently working 
+      // const renderedResponse = await renderScript()
+      // const res = await fetchPhotos();
+      ///🎃🎃🎃🎃
+
+      //👽👽👽 line 33 render.js the string is already base 64 encoded going into the front end
+      // console.log("line 33 render.js")
+      // console.log(res)
+      //👽👽👽 
+      const dataArray = res.map((encoded64) => {return `data:image/png;base64,${encoded64}`})
       setPhotos(dataArray);
       //setPhotos(res)
       //console.log(res)

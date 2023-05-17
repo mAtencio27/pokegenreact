@@ -1,3 +1,3 @@
-[001] Armorgon
-Armorgon::0 a strong metal-type pokemon::1.8, wearing gray and brown armor, in a cave environment, natural and brown ambient lighting, anime sketch --niji --ar 3:2
+[001] Amethystar
+Amethystar::0 a mythical psychic-type pokemon::2.5, wearing amethyst armor, in a cave environment, pink bokeh lighting, anime sketch --niji --ar 3:2
 

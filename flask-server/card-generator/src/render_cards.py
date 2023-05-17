@@ -3,6 +3,9 @@ import json
 import os
 import pathlib
 from PIL import Image, ImageFont, ImageDraw
+####
+import base64
+####
 
 from pokemon_content.pokemon_elements import PokemonElements, get_resist, get_weakness
 from pokemon_content.pokemon_rarity import PokemonRarity
@@ -45,10 +48,25 @@ def render_cards(collection_path: str):
             image_name = f"{card.index:03d}_{card.snake_case_name}.png"
             card_image.save(card_render_path / f"{image_name}")
 
+        return
+        ####💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀 Dead but may need later
+        #     data = json.load(f)
+        #     card = card_from_json(data)
+        #     card_image = render_card(card, collection_path)
+        #     image_name = f"{card.index:03d}_{card.snake_case_name}.png"
+        #     card_image.save(card_render_path / f"{image_name}")
+        # #### NOw lets convert this image
+        #     image_bytes = card_image.tobytes()
+        #     image_base64 = base64.b64encode(image_bytes).decode('utf-8')
+        #     ###return {'image_base_64': image_base64}
+        #     print(image_base64)
+        #     return card_image
+        ####💀💀💀💀💀💀💀💀💀💀💀💀💀💀
+
 
 def render_card(card: Card, collection_path: str):
-
-    print(f"Rendering {card.name}")
+    ### Turning off pring to simplify passing the response
+    ###print(f"Rendering {card.name}")
     card_template_name = f"{card.element.name.lower()}_card.png"
     card_image = Image.open(f"card-generator/resources/cards/{card_template_name}")
 
@@ -327,7 +345,15 @@ def main():
     )
     collection_path = argparser.parse_args().collection
     render_cards(collection_path)
+    ####🥰🥰🥰🥰MAYBE THIS IS WHERE WE CAN RETURN THE IMAGE INSTEAD OF SAVING IN FILE🥰🥰🥰🥰####
+    return_cards = render_cards(collection_path)
+    # print("🤢🤢🤢")
+    #print(return_cards)
+    # print("🤢🤢🤢")
+    return return_cards
+    ####🥰🥰🥰🥰MAYBE THIS IS WHERE WE CAN RETURN THE IMAGE INSTEAD OF SAVING IN FILE🥰🥰🥰🥰####
 
+    
 
 if __name__ == "__main__":
     main()
