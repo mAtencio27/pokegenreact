@@ -12,6 +12,7 @@ import Landing from './components/Landing';
 function App() {
 
   const [pokeJson, setPokeJson] = useState([]);
+  const [ files , setFiles ] = useState([]);
 
   //const [data, setData] = useState([{}])
 
@@ -80,13 +81,13 @@ function App() {
               <Landing/>
             </Route>
             <Route exact path = "/home">
-              <Home pokeJson={pokeJson} setPokeJson={setPokeJson}/>
+              <Home pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles}/>
             </Route>
             <Route path = "/ImageUpload">
-              <ImageUpload pokeJson={pokeJson} setPokeJson={setPokeJson}/>
+              <ImageUpload pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles}/>
             </Route>
             <Route path="/Render">
-              <Render pokeJson={pokeJson} setPokeJson={setPokeJson}/>
+              <Render pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles}/>
             </Route>
           </Switch>
         </div>

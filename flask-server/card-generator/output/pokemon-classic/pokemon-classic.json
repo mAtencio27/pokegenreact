@@ -3,30 +3,23 @@
   "cards": [
     {
       "index": 1,
-      "name": "Armorite",
-      "description": "Armorite is a mysterious Pokemon rarely seen in its natural habitat of wooded areas. Wearing dark and powerful armor, Armorite can be intimidating at first glance. However, peaceful by nature, it can be seen calmly using its Fissure and Nudge abilities to find its way around the forest and find food. It is a swift and cunning Pokemon that can surprise foes with its unique strength.",
-      "element": "Fairy",
-      "rarity": "uncommon",
-      "rarity_index": 1,
-      "hp": 70,
+      "name": "Vephire",
+      "description": "Vephire is a majestic pokemon that walks through forests with its regal armor, looking like a king among its peers. It has a tranquil demeanor that belies its hidden power. The Foliage Lash ability allows Vephire to manipulate its environment into a weapon, creating vines and branches to deliver powerful blows to its opponents. By day, Vephire can be found admiring the beauty of its natural surroundings, but at night it protects its home with fierce determination.",
+      "element": "Grass",
+      "rarity": "rare",
+      "rarity_index": 2,
+      "hp": 120,
       "abilities": [
         {
-          "name": "Fissure",
-          "element": "Fairy",
+          "name": "Foliage Lash",
+          "element": "Grass",
           "cost": 3,
           "is_mixed_element": true,
           "power": 40
-        },
-        {
-          "name": "Nudge",
-          "element": "Neutral",
-          "cost": 1,
-          "is_mixed_element": false,
-          "power": 10
         }
       ],
-      "image_prompt": "Armorite::0 a strong fairy-type pokemon::1.8, wearing dark armor, in a woods environment, pink and purple ambient lighting, anime sketch --niji --ar 3:2",
-      "image_file": "001_armorite.png"
+      "image_prompt": "Vephire::0 a epic grass-type acid pokemon::2.5, wearing regal armor, in a woods environment, sunlight ray ambience, anime sketch --niji --ar 3:2",
+      "image_file": "001_vephire.png"
     }
   ]
 }

@@ -1,3 +1,3 @@
-[001] Armorite
-Armorite::0 a strong fairy-type pokemon::1.8, wearing dark armor, in a woods environment, pink and purple ambient lighting, anime sketch --niji --ar 3:2
+[001] Vephire
+Vephire::0 a epic grass-type acid pokemon::2.5, wearing regal armor, in a woods environment, sunlight ray ambience, anime sketch --niji --ar 3:2
 
