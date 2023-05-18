@@ -11,6 +11,8 @@ import Landing from './components/Landing';
 
 function App() {
 
+  const [pokeJson, setPokeJson] = useState([]);
+
   //const [data, setData] = useState([{}])
 
   const generateScript = async(e) => {
@@ -78,7 +80,7 @@ function App() {
               <Landing/>
             </Route>
             <Route exact path = "/home">
-              <Home/>
+              <Home pokeJson={pokeJson} setPokeJson={setPokeJson}/>
             </Route>
             <Route path = "/ImageUpload">
               <ImageUpload/>

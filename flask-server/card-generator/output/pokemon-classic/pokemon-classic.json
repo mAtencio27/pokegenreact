@@ -3,279 +3,30 @@
   "cards": [
     {
       "index": 1,
-      "name": "Fenwolf",
-      "description": "Fenwolf is an unusual Pok\u00e9mon found in field-like environments, wearing dark armor. Its day-to-day life is characterized by activities such as hunting, seeking out new places to explore, and sharpening its agility with acrobatic displays. Its two signature moves, Strike and Pound, serve as its primary defense and offense. Fenwolf is considered a master of its environment, known by locals as a creature of strength and resilience.",
-      "element": "Neutral",
-      "rarity": "uncommon",
-      "rarity_index": 1,
-      "hp": 50,
-      "abilities": [
-        {
-          "name": "Strike",
-          "element": "Neutral",
-          "cost": 3,
-          "is_mixed_element": false,
-          "power": 30
-        },
-        {
-          "name": "Pound",
-          "element": "Neutral",
-          "cost": 2,
-          "is_mixed_element": false,
-          "power": 20
-        }
-      ],
-      "image_prompt": "Fenwolf::0 a special neutral-type wolf pokemon::1.8, wearing dark armor, in a field environment, faded prismatic bokeh background, anime sketch --niji --ar 3:2",
-      "image_file": "001_fenwolf.png"
-    },
-    {
-      "index": 2,
-      "name": "Crownxo",
-      "description": "Crownxo, the regal fire-type pokemon, is a noble creature that can often be found looming atop volcanic lava-flows. It emanates a powerful orange and black aura that makes its regal crown appear as if it were crafted from fire itself. This pokemon's remarkable abilities allow it to shoot out intense flames from its eyes to scorch its opponents and also deliver powerful smacks that can knock its victims into submission. In its natural habitat, Crownxo will usually keep a watchful eye over the bustling activity of other pokemon, as if it were the king of the volcano.",
-      "element": "Fire",
-      "rarity": "rare",
-      "rarity_index": 2,
-      "hp": 120,
-      "abilities": [
-        {
-          "name": "Burn Bolt",
-          "element": "Fire",
-          "cost": 2,
-          "is_mixed_element": false,
-          "power": 40
-        },
-        {
-          "name": "Smack",
-          "element": "Neutral",
-          "cost": 1,
-          "is_mixed_element": false,
-          "power": 10
-        }
-      ],
-      "image_prompt": "Crownxo::0 a mythical fire-type lynx pokemon::2.5, wearing a orange and black crown, in a volcano environment, red and purple ambient lighting, anime sketch --niji --ar 3:2",
-      "image_file": "002_crownxo.png"
-    },
-    {
-      "index": 3,
-      "name": "Aurafin",
-      "description": "Meet Aurafin, the legendary pokemon with beautiful golden scales! This majestic creature skims through the ocean with grace and ease, its dazzling body glistening in the sun. It spends its days soaring through the waves, occasionally stopping to take a leisurely swim before twisting around and leading the sea with its graceful movements. With its powers of Hydrofury and Tackle, Aurafin is sure to leave an impression on any who cross its path.",
-      "element": "Water",
-      "rarity": "rare",
-      "rarity_index": 2,
-      "hp": 60,
-      "abilities": [
-        {
-          "name": "Hyrdofury",
-          "element": "Water",
-          "cost": 4,
-          "is_mixed_element": true,
-          "power": 50
-        },
-        {
-          "name": "Tackle",
-          "element": "Neutral",
-          "cost": 2,
-          "is_mixed_element": false,
-          "power": 20
-        }
-      ],
-      "image_prompt": "Aurafin::0 a legendary water-type fish pokemon::2.5, with golden scales, in a ocean environment, aurora background, anime sketch --niji --ar 3:2",
-      "image_file": "003_aurafin.png"
-    },
-    {
-      "index": 4,
-      "name": "Leafleo",
-      "description": "Leafleo is a mysterious and elusive Legendary Pokemon with white fur. It is an elusive creature of the wild, rarely seen prowling the lush jungle floors. Most assume it to have feline characteristics, but no one has been brave enough to get close enough to confirm. Its two mysterious powers, Foliage Lash and Petal Burst, are said to be used by Leafleo to protect its home from intruders. During the day, Leafleo can be found in its deep jungle home, keeping watch over its domain with curious eyes.",
-      "element": "Grass",
-      "rarity": "rare",
-      "rarity_index": 2,
-      "hp": 80,
-      "abilities": [
-        {
-          "name": "Foliage Lash",
-          "element": "Grass",
-          "cost": 3,
-          "is_mixed_element": true,
-          "power": 40
-        },
-        {
-          "name": "Petal Burst",
-          "element": "Grass",
-          "cost": 2,
-          "is_mixed_element": false,
-          "power": 40
-        }
-      ],
-      "image_prompt": "Leafleo::0 a legendary grass-type cat pokemon::2.5, with white fur, in a jungle environment, green and teal ambient lighting, anime sketch --niji --ar 3:2",
-      "image_file": "004_leafleo.png"
-    },
-    {
-      "index": 5,
-      "name": "Auroron",
-      "description": "Auroron is an elusive and mysterious legendary pokemon, often found inhabiting bustling city-like environments. It wears a dazzling golden crystal headband, which it sometimes uses to manipulate the energy of its surroundings. On sunny days, Auroron will bask in the glow of the sun, charging itself up with electricity. On rainy days, it can call down powerful storms to create a dazzling light show, illuminating its surroundings with vivid flashes of lightning.",
-      "element": "Electric",
-      "rarity": "rare",
-      "rarity_index": 2,
-      "hp": 100,
-      "abilities": [
-        {
-          "name": "Thunderstorm",
-          "element": "Electric",
-          "cost": 4,
-          "is_mixed_element": false,
-          "power": 60
-        }
-      ],
-      "image_prompt": "Auroron::0 a legendary electric-type boar pokemon::2.5, wearing a golden crystal headband, in a city environment, lightning background, anime sketch --niji --ar 3:2",
-      "image_file": "005_auroron.png"
-    },
-    {
-      "index": 6,
-      "name": "Mystma",
-      "description": "Mystma is a mysterious pokemon found in dark and secluded environments. Its body is decorated with an array of ornate designs, hinting at its powerful psychic capabilities. It has an uncanny knack for sensing the presence of others, and can use its Phantom Beam ability to disorient or even neutralize opponents. When left to its own devices, Mystma can often be found deep in thought, likely pondering the secrets of its strange habitat.",
-      "element": "Psychic",
-      "rarity": "common",
-      "rarity_index": 0,
-      "hp": 40,
-      "abilities": [
-        {
-          "name": "Phantom Beam",
-          "element": "Psychic",
-          "cost": 4,
-          "is_mixed_element": false,
-          "power": 60
-        }
-      ],
-      "image_prompt": "Mystma::0 a simple psychic-type ladybug pokemon, in a cave environment, pink bokeh lighting, anime sketch --niji --ar 3:2",
-      "image_file": "006_mystma.png"
-    },
-    {
-      "index": 7,
-      "name": "Hornari",
-      "description": "Hornari is a majestic and powerful pokemon that is rarely seen outside of its canyon-like habitats. With its ornate horns, it is well-known for its agility and cunning. This pokemon is an expert at anticipating its opponents' moves and using its powerful Judo Crush and Pound abilities to strike with precision. Hornari's day-to-day life consists of intense training and maintaining peak physical condition, as it is always ready to take on any foe that it may encounter.",
-      "element": "Fighting",
-      "rarity": "rare",
-      "rarity_index": 2,
-      "hp": 60,
-      "abilities": [
-        {
-          "name": "Judo Crush",
-          "element": "Fighting",
-          "cost": 4,
-          "is_mixed_element": true,
-          "power": 50
-        },
-        {
-          "name": "Pound",
-          "element": "Neutral",
-          "cost": 2,
-          "is_mixed_element": false,
-          "power": 20
-        }
-      ],
-      "image_prompt": "Hornari::0 a epic fighting-type bull pokemon::2.5, with ornate horns, in a canyon environment, orange ambient lighting, anime sketch --niji --ar 3:2",
-      "image_file": "007_hornari.png"
-    },
-    {
-      "index": 8,
-      "name": "Maskbear",
-      "description": "Maskbear is a mysterious pokemon found in wooded areas. Wearing an ancient mask, it has a powerful presence that draws fear and respect. Its dramatic entrance often catches its prey off-guard, and its amazing agility and powerful Smash and Tackle attacks make it a difficult adversary to overcome. Its day-to-day life consists of foraging for food and protecting its habitat from intruders.",
+      "name": "Armorite",
+      "description": "Armorite is a mysterious Pokemon rarely seen in its natural habitat of wooded areas. Wearing dark and powerful armor, Armorite can be intimidating at first glance. However, peaceful by nature, it can be seen calmly using its Fissure and Nudge abilities to find its way around the forest and find food. It is a swift and cunning Pokemon that can surprise foes with its unique strength.",
       "element": "Fairy",
       "rarity": "uncommon",
       "rarity_index": 1,
-      "hp": 50,
+      "hp": 70,
       "abilities": [
         {
-          "name": "Smash",
+          "name": "Fissure",
           "element": "Fairy",
           "cost": 3,
           "is_mixed_element": true,
           "power": 40
         },
         {
-          "name": "Tackle",
+          "name": "Nudge",
           "element": "Neutral",
-          "cost": 2,
+          "cost": 1,
           "is_mixed_element": false,
-          "power": 20
+          "power": 10
         }
       ],
-      "image_prompt": "Maskbear::0 a strong fairy-type bear pokemon::1.8, wearing a ancient mask, in a woods environment, orange and blue ambient lighting, anime sketch --niji --ar 3:2",
-      "image_file": "008_maskbear.png"
-    },
-    {
-      "index": 9,
-      "name": "Towerant",
-      "description": "Towerant is a rare and majestic sight to behold, with its golden wings shimmering in the twilight. Towerant may live in castle-like environments, but it is far from a sedentary pokemon. In the dark of night, Towerant is out and about, flitting around in search of prey. Its Dark Pulse and Knock Off abilities help it to quickly and accurately take down its targets. Towerant is an untamable wild spirit, always on the move and ever ready for battle.",
-      "element": "Dark",
-      "rarity": "uncommon",
-      "rarity_index": 1,
-      "hp": 50,
-      "abilities": [
-        {
-          "name": "Dark Pulse",
-          "element": "Dark",
-          "cost": 3,
-          "is_mixed_element": false,
-          "power": 50
-        },
-        {
-          "name": "Knock Off",
-          "element": "Dark",
-          "cost": 2,
-          "is_mixed_element": true,
-          "power": 30
-        }
-      ],
-      "image_prompt": "Towerant::0 a rare dark-type mantis pokemon::1.8, with golden wings, in a castle environment, dark and purple ambient lighting, anime sketch --niji --ar 3:2",
-      "image_file": "009_towerant.png"
-    },
-    {
-      "index": 10,
-      "name": "Regaldor",
-      "description": "Regaldor is a majestic pokemon with a regal mask adorning its face. It can often be found inhabiting mountain-like environments, where it spends its days lounging atop mountain peaks and soaring through the air. With its signature Eterna Beam and Dragon Breath abilities, this pokemon is a powerful ally to have by your side. Not to be messed with, it is best to admire this awe-inspiring pokemon from a distance.",
-      "element": "Dragon",
-      "rarity": "rare",
-      "rarity_index": 2,
-      "hp": 60,
-      "abilities": [
-        {
-          "name": "Eterna Beam",
-          "element": "Dragon",
-          "cost": 4,
-          "is_mixed_element": true,
-          "power": 50
-        },
-        {
-          "name": "Dragon Breath",
-          "element": "Dragon",
-          "cost": 2,
-          "is_mixed_element": true,
-          "power": 30
-        }
-      ],
-      "image_prompt": "Regaldor::0 a mythical dragon-type serpent pokemon::2.5, wearing a regal mask, in a mountain environment, orange and blue ambient lighting, anime sketch --niji --ar 3:2",
-      "image_file": "010_regaldor.png"
-    },
-    {
-      "index": 11,
-      "name": "Lanceor",
-      "description": "Lanceor is a majestic and powerful Pokemon that can often be found in mountainous regions. It wields a lance with a unique blend of gray and brown earth tones that matches its rocky environment, and its armor-like scales are no match for most attacks. It spends its days patrolling and protecting its turf with its signature move, Metal Burst, which can unleash a powerful and destructive shockwave of metallic energy. Don't underestimate its ferocity and strength; Lanceor is a formidable opponent with a ferocity that should not be underestimated.",
-      "element": "Metal",
-      "rarity": "rare",
-      "rarity_index": 2,
-      "hp": 100,
-      "abilities": [
-        {
-          "name": "Metal Burst",
-          "element": "Metal",
-          "cost": 4,
-          "is_mixed_element": false,
-          "power": 60
-        }
-      ],
-      "image_prompt": "Lanceor::0 a epic metal-type dragon pokemon::2.5, holding a gray and brown lance, in a mountain environment, natural and brown ambient lighting, anime sketch --niji --ar 3:2",
-      "image_file": "011_lanceor.png"
+      "image_prompt": "Armorite::0 a strong fairy-type pokemon::1.8, wearing dark armor, in a woods environment, pink and purple ambient lighting, anime sketch --niji --ar 3:2",
+      "image_file": "001_armorite.png"
     }
   ]
 }

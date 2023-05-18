@@ -124,3 +124,7 @@ class Collection:
                 f.write(f"[{card.index:03d}] {card.name}\n")
                 f.write(card.image_prompt)
                 f.write("\n\n")
+
+
+        ### returning the cards to JSON ####
+        return self.to_json()

@@ -49,8 +49,13 @@ def members():
 def generate():
     element = request.args.get("element", default="", type=str)
     subject = request.args.get("subject", default="", type=str)
-    # returnData = subprocess.call(['python', './src/generate.py', '-e', element ,'--subject', subject])
-    returnData = main({"-e":element, '--subject':subject})
+    number_of_monsters = 1
+    returnData = main(number_of_monsters, element, subject)
+    
+    ### These are working to prin the data
+    # print("return dataa")
+    #print(returnData)
+    ###
 
     return jsonify({"data":returnData})
 

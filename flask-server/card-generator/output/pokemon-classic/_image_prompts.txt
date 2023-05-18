@@ -1,33 +1,3 @@
-[001] Fenwolf
-Fenwolf::0 a special neutral-type wolf pokemon::1.8, wearing dark armor, in a field environment, faded prismatic bokeh background, anime sketch --niji --ar 3:2
-
-[002] Crownxo
-Crownxo::0 a mythical fire-type lynx pokemon::2.5, wearing a orange and black crown, in a volcano environment, red and purple ambient lighting, anime sketch --niji --ar 3:2
-
-[003] Aurafin
-Aurafin::0 a legendary water-type fish pokemon::2.5, with golden scales, in a ocean environment, aurora background, anime sketch --niji --ar 3:2
-
-[004] Leafleo
-Leafleo::0 a legendary grass-type cat pokemon::2.5, with white fur, in a jungle environment, green and teal ambient lighting, anime sketch --niji --ar 3:2
-
-[005] Auroron
-Auroron::0 a legendary electric-type boar pokemon::2.5, wearing a golden crystal headband, in a city environment, lightning background, anime sketch --niji --ar 3:2
-
-[006] Mystma
-Mystma::0 a simple psychic-type ladybug pokemon, in a cave environment, pink bokeh lighting, anime sketch --niji --ar 3:2
-
-[007] Hornari
-Hornari::0 a epic fighting-type bull pokemon::2.5, with ornate horns, in a canyon environment, orange ambient lighting, anime sketch --niji --ar 3:2
-
-[008] Maskbear
-Maskbear::0 a strong fairy-type bear pokemon::1.8, wearing a ancient mask, in a woods environment, orange and blue ambient lighting, anime sketch --niji --ar 3:2
-
-[009] Towerant
-Towerant::0 a rare dark-type mantis pokemon::1.8, with golden wings, in a castle environment, dark and purple ambient lighting, anime sketch --niji --ar 3:2
-
-[010] Regaldor
-Regaldor::0 a mythical dragon-type serpent pokemon::2.5, wearing a regal mask, in a mountain environment, orange and blue ambient lighting, anime sketch --niji --ar 3:2
-
-[011] Lanceor
-Lanceor::0 a epic metal-type dragon pokemon::2.5, holding a gray and brown lance, in a mountain environment, natural and brown ambient lighting, anime sketch --niji --ar 3:2
+[001] Armorite
+Armorite::0 a strong fairy-type pokemon::1.8, wearing dark armor, in a woods environment, pink and purple ambient lighting, anime sketch --niji --ar 3:2
 

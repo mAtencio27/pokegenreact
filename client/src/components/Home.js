@@ -5,7 +5,7 @@ import background from '../Assets/Page2/yellow.png'
 import Header from './Header';
 import footer from '../Assets/Page1/footer.png'
 
-const Home = () => {
+const Home = ({pokeJson, setPokeJson}) => {
 
   const [subjectString, setSubjectString] = useState([]);
   const [elementString, setElementString] = useState()
@@ -23,10 +23,13 @@ const Home = () => {
     const res = await fetch(`http://localhost:5000/generate?element=${elementString}&subject=${subjectString}`)
 
     //console.log(e.target.value)
-    console.log(`Subject:${subjectString}`)
-    console.log(`Element:${elementString}`)
-    let data = await res.json()
-    console.log(res)
+    //console.log(`Subject:${subjectString}`)
+    //console.log(`Element:${elementString}`)
+    let responseData = await res.json()
+    setPokeJson(responseData.data.cards)
+    //console.log(responseData.data.cards)
+    console.log(`THIS IS THE POKEJSONDATA`)
+    console.log(pokeJson)
     return
   };
 
