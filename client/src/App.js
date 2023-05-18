@@ -83,10 +83,10 @@ function App() {
               <Home pokeJson={pokeJson} setPokeJson={setPokeJson}/>
             </Route>
             <Route path = "/ImageUpload">
-              <ImageUpload/>
+              <ImageUpload pokeJson={pokeJson} setPokeJson={setPokeJson}/>
             </Route>
             <Route path="/Render">
-              <Render/>
+              <Render pokeJson={pokeJson} setPokeJson={setPokeJson}/>
             </Route>
           </Switch>
         </div>

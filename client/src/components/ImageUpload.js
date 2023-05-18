@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from './Header';
 import footer from '../Assets/Page1/footer.png'
 
-const ImageUpload = () => {
+const ImageUpload = ({pokeJson, setPokeJson}) => {
 
   const [ prompts, setPrompts ] = useState([]);
   const [ files , setFiles ] = useState([]);
