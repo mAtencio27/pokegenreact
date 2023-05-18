@@ -8,8 +8,8 @@ import footer from '../Assets/Page1/footer.png'
 const Home = ({pokeJson, setPokeJson}) => {
 
   const [subjectString, setSubjectString] = useState([]);
-  const [elementString, setElementString] = useState()
-
+  const [elementString, setElementString] = useState();
+  
   const generateScript = async(e) => {
     //api
     //const res = await fetch(`https://pokegen-api.onrender.com/`)
@@ -28,7 +28,7 @@ const Home = ({pokeJson, setPokeJson}) => {
     let responseData = await res.json()
     setPokeJson(responseData.data.cards)
     //console.log(responseData.data.cards)
-    console.log(`THIS IS THE POKEJSONDATA`)
+    //console.log(`THIS IS THE POKEJSONDATA`)
     console.log(pokeJson)
     return
   };
