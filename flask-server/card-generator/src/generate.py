@@ -2,13 +2,13 @@
 
 import argparse
 import random
-from pokemon_content.pokemon_collection import PokemonCollection
-from pokemon_content.pokemon_elements import PokemonElements
-from content.style import Style
-from pokemon_content.pokemon_rarity import PokemonRarity
+from src.pokemon_content.pokemon_collection import PokemonCollection
+from src.pokemon_content.pokemon_elements import PokemonElements
+from src.content.style import Style
+from src.pokemon_content.pokemon_rarity import PokemonRarity
 
 
-def main():
+def main(argsObj):
 
     argparser = argparse.ArgumentParser()
     argparser.add_argument(
@@ -82,6 +82,7 @@ def main():
             print(*monsters, sep="\n\n")
 
         current_collection.export()
+
 
 
 if __name__ == "__main__":

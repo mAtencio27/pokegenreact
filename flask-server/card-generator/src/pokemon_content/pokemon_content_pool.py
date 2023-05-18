@@ -1,8 +1,8 @@
 from dataclasses import dataclass, field
 import random
-from pokemon_content.pokemon_elements import PokemonElements
+from src.pokemon_content.pokemon_elements import PokemonElements
 
-from mechanics.element import Element
+from src.mechanics.element import Element
 
 
 @dataclass

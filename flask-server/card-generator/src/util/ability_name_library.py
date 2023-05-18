@@ -2,10 +2,10 @@ import json
 import random
 import re
 import string
-from mechanics.element import Element
-from mechanics.ability import Ability
-from pokemon_content.pokemon_elements import PokemonElements
-from util.gpt_call import gpt_client
+from src.mechanics.element import Element
+from src.mechanics.ability import Ability
+from src.pokemon_content.pokemon_elements import PokemonElements
+from src.util.gpt_call import gpt_client
 
 ###CHANGE
 DEFAULT_PATH = "./data/ability_names.json"

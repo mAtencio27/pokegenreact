@@ -1,0 +1,27 @@
+{
+  "index": 10,
+  "name": "Regaldor",
+  "description": "Regaldor is a majestic pokemon with a regal mask adorning its face. It can often be found inhabiting mountain-like environments, where it spends its days lounging atop mountain peaks and soaring through the air. With its signature Eterna Beam and Dragon Breath abilities, this pokemon is a powerful ally to have by your side. Not to be messed with, it is best to admire this awe-inspiring pokemon from a distance.",
+  "element": "Dragon",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 60,
+  "abilities": [
+    {
+      "name": "Eterna Beam",
+      "element": "Dragon",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    },
+    {
+      "name": "Dragon Breath",
+      "element": "Dragon",
+      "cost": 2,
+      "is_mixed_element": true,
+      "power": 30
+    }
+  ],
+  "image_prompt": "Regaldor::0 a mythical dragon-type serpent pokemon::2.5, wearing a regal mask, in a mountain environment, orange and blue ambient lighting, anime sketch --niji --ar 3:2",
+  "image_file": "010_regaldor.png"
+}

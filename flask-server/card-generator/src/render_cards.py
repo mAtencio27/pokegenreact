@@ -7,11 +7,11 @@ from PIL import Image, ImageFont, ImageDraw
 import base64
 ####
 
-from pokemon_content.pokemon_elements import PokemonElements, get_resist, get_weakness
-from pokemon_content.pokemon_rarity import PokemonRarity
-from mechanics.ability import Ability
-from mechanics.card import Card
-from mechanics.element import Element
+from src.pokemon_content.pokemon_elements import PokemonElements, get_resist, get_weakness
+from src.pokemon_content.pokemon_rarity import PokemonRarity
+from src.mechanics.ability import Ability
+from src.mechanics.card import Card
+from src.mechanics.element import Element
 
 
 MONSTER_IMAGE_SCALE = 0.255
@@ -29,6 +29,41 @@ STATUS_Y_POSITION = 568
 STATUS_X_GAP = 82
 STATUS_SIZE = 20
 
+#👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹
+def return_cards():
+    #card_path = pathlib.Path(collection_path, "cards")
+    #card_render_path = pathlib.Path(collection_path, "renders")
+    #os.makedirs(card_render_path, exist_ok=True)
+
+    # for card_path in card_path.iterdir():
+
+    #     # Only render .json files.
+    #     if not card_path.suffix == ".json":
+    #         continue
+
+    #     with open(card_path) as f:
+    #         data = json.load(f)
+    #         card = card_from_json(data)
+    #         card_image = render_card(card, collection_path)
+    #         image_name = f"{card.index:03d}_{card.snake_case_name}.png"
+    #         card_image.save(card_render_path / f"{image_name}")
+    print("func called")
+    return("hello")
+        ####💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀 Dead but may need later
+        #     data = json.load(f)
+        #     card = card_from_json(data)
+        #     card_image = render_card(card, collection_path)
+        #     image_name = f"{card.index:03d}_{card.snake_case_name}.png"
+        #     card_image.save(card_render_path / f"{image_name}")
+        # #### NOw lets convert this image
+        #     image_bytes = card_image.tobytes()
+        #     image_base64 = base64.b64encode(image_bytes).decode('utf-8')
+        #     ###return {'image_base_64': image_base64}
+        #     print(image_base64)
+        #     return card_image
+        ####💀💀💀💀💀💀💀💀💀💀💀💀💀💀
+
+#👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹
 
 def render_cards(collection_path: str):
     card_path = pathlib.Path(collection_path, "cards")

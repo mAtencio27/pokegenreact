@@ -4,10 +4,10 @@ import json
 import os
 import random
 import shutil
-from content.style import Style
-from mechanics.card import Card
-from mechanics.element import Element
-from mechanics.rarity import Rarity
+from src.content.style import Style
+from src.mechanics.card import Card
+from src.mechanics.element import Element
+from src.mechanics.rarity import Rarity
 
 
 @dataclass

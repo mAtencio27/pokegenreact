@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 import random
-from pokemon_content.pokemon_content_pool import (
+from src.pokemon_content.pokemon_content_pool import (
     AMBIENCE_BY_ELEMENT,
     get_closest_match,
     get_creature_types,
@@ -11,20 +11,20 @@ from pokemon_content.pokemon_content_pool import (
     get_random_series_adjective,
     get_random_style_suffix,
 )
-from content.collection import Collection
-from content.style import Style
-from mechanics.element import Element
-from mechanics.card import Card
-from mechanics.rarity import Rarity
-from mechanics.ability import Ability
-from pokemon_content.pokemon_prompts import (
+from src.content.collection import Collection
+from src.content.style import Style
+from src.mechanics.element import Element
+from src.mechanics.card import Card
+from src.mechanics.rarity import Rarity
+from src.mechanics.ability import Ability
+from src.pokemon_content.pokemon_prompts import (
     generate_card_name,
     generate_desc,
     get_image_prompt,
     get_visual_description,
 )
-from util.ability_name_library import get_ability_name
-from util.gpt_call import gpt_client
+from src.util.ability_name_library import get_ability_name
+from src.util.gpt_call import gpt_client
 
 
 @dataclass

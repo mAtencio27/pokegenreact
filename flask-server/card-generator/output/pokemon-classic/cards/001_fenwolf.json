@@ -1,0 +1,27 @@
+{
+  "index": 1,
+  "name": "Fenwolf",
+  "description": "Fenwolf is an unusual Pok\u00e9mon found in field-like environments, wearing dark armor. Its day-to-day life is characterized by activities such as hunting, seeking out new places to explore, and sharpening its agility with acrobatic displays. Its two signature moves, Strike and Pound, serve as its primary defense and offense. Fenwolf is considered a master of its environment, known by locals as a creature of strength and resilience.",
+  "element": "Neutral",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Strike",
+      "element": "Neutral",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 30
+    },
+    {
+      "name": "Pound",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "Fenwolf::0 a special neutral-type wolf pokemon::1.8, wearing dark armor, in a field environment, faded prismatic bokeh background, anime sketch --niji --ar 3:2",
+  "image_file": "001_fenwolf.png"
+}

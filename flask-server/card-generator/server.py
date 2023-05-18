@@ -7,7 +7,18 @@ import json
 import base64
 from flask_cors import CORS
 from io import BytesIO
-from PIL import Image
+from PIL import Image, ImageFont, ImageDraw
+import argparse
+import pathlib
+
+#### modules to run render_cards.py module and generate.py module
+from src.generate import main
+from src.render_cards import return_cards
+from src.pokemon_content.pokemon_elements import PokemonElements, get_resist, get_weakness
+from src.pokemon_content.pokemon_rarity import PokemonRarity
+from src.mechanics.ability import Ability
+from src.mechanics.card import Card
+from src.mechanics.element import Element
 
 app = Flask(__name__)
 CORS(app)
@@ -38,7 +49,8 @@ def members():
 def generate():
     element = request.args.get("element", default="", type=str)
     subject = request.args.get("subject", default="", type=str)
-    returnData = subprocess.call(['python', './src/generate.py', '-e', element ,'--subject', subject])
+    # returnData = subprocess.call(['python', './src/generate.py', '-e', element ,'--subject', subject])
+    returnData = main({"-e":element, '--subject':subject})
 
     return jsonify({"data":returnData})
 
@@ -46,6 +58,8 @@ def generate():
 @app.route('/render')
 def render():
     encoded_images = []
+    #res = return_cards()
+
     ##print("we only want one card to render by ")
     subprocess.call(['python', './src/render_cards.py'])
 
@@ -63,6 +77,7 @@ def render():
     # print(first_image_string)
 
     # encoded_images.append(first_image_string.decode('utf-8'))
+    #return jsonify({"response":encoded_images})
     return jsonify({"response":encoded_images})
 
 # Fetching pokemon image prompts

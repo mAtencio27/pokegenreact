@@ -1,0 +1,27 @@
+{
+  "index": 8,
+  "name": "Maskbear",
+  "description": "Maskbear is a mysterious pokemon found in wooded areas. Wearing an ancient mask, it has a powerful presence that draws fear and respect. Its dramatic entrance often catches its prey off-guard, and its amazing agility and powerful Smash and Tackle attacks make it a difficult adversary to overcome. Its day-to-day life consists of foraging for food and protecting its habitat from intruders.",
+  "element": "Fairy",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "Smash",
+      "element": "Fairy",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    },
+    {
+      "name": "Tackle",
+      "element": "Neutral",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 20
+    }
+  ],
+  "image_prompt": "Maskbear::0 a strong fairy-type bear pokemon::1.8, wearing a ancient mask, in a woods environment, orange and blue ambient lighting, anime sketch --niji --ar 3:2",
+  "image_file": "008_maskbear.png"
+}
