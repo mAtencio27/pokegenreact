@@ -13,12 +13,15 @@ import pathlib
 
 #### modules to run render_cards.py module and generate.py module
 from src.generate import main
-from src.render_cards import return_cards
+from src.render_cards import main_render
+#from src.render_cards import return_cards
 from src.pokemon_content.pokemon_elements import PokemonElements, get_resist, get_weakness
 from src.pokemon_content.pokemon_rarity import PokemonRarity
 from src.mechanics.ability import Ability
 from src.mechanics.card import Card
 from src.mechanics.element import Element
+
+
 
 app = Flask(__name__)
 CORS(app)
@@ -51,7 +54,7 @@ def generate():
     subject = request.args.get("subject", default="", type=str)
     number_of_monsters = 1
     returnData = main(number_of_monsters, element, subject)
-    
+
     ### These are working to prin the data
     # print("return dataa")
     #print(returnData)
@@ -60,20 +63,18 @@ def generate():
     return jsonify({"data":returnData})
 
 # render API route
-@app.route('/render')
+@app.route('/render', methods=['POST'])
 def render():
+
+    json_data = request.get_json()
+    print(request.get_json())
+    print(json_data)
+
     encoded_images = []
-    #res = return_cards()
-
-    ##print("we only want one card to render by ")
-    subprocess.call(['python', './src/render_cards.py'])
-
-    #print("😘😘😘😘😘😘")
-    #output = subprocess.check_output(['python', './src/render_cards.py'])
-    #print(output)
-    ###print("above is the output")
-    ##print("😘😘😘😘😘😘")
-    #return 'Script executed successfully!'
+    #### WORKING
+    #subprocess.call(['python', './src/render_cards.py'])
+    #### WORKING
+    main_render()
 
     # Split the output by newline character
     ##image_strings = output.split(b'\n')

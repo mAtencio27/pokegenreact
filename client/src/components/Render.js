@@ -8,11 +8,22 @@ const Render = ({pokeJson, setPokeJson}) => {
 const [photos, setPhotos] = useState([])
 
   const renderScript = async() => {
-    const res = await fetch("/render")
+    //const res = await fetch("/render")
     //const data = await res.json()
     // console.log("renderscript function return")
     // console.log(data.response)
     //return data.response
+    //lets try this one.
+    console.log(pokeJson)
+    const res = await fetch("/render", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body:JSON.stringify(pokeJson),
+    });
+    const data = await res.json();
+    console.log(data)
     }
 
   const fetchPhotos = async(e) => {

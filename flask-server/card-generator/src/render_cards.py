@@ -371,7 +371,7 @@ def ability_from_json(data: dict) -> Ability:
     )
 
 
-def main():
+def main_render():
     argparser = argparse.ArgumentParser()
     argparser.add_argument(
         "--collection",
@@ -391,4 +391,4 @@ def main():
     
 
 if __name__ == "__main__":
-    main()
+    main_render()

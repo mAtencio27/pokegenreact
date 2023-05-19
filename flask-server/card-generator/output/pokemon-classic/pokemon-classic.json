@@ -3,23 +3,30 @@
   "cards": [
     {
       "index": 1,
-      "name": "Vephire",
-      "description": "Vephire is a majestic pokemon that walks through forests with its regal armor, looking like a king among its peers. It has a tranquil demeanor that belies its hidden power. The Foliage Lash ability allows Vephire to manipulate its environment into a weapon, creating vines and branches to deliver powerful blows to its opponents. By day, Vephire can be found admiring the beauty of its natural surroundings, but at night it protects its home with fierce determination.",
-      "element": "Grass",
+      "name": "Sentinel",
+      "description": "Sentinel is a mythical pokemon clad in ornate armor, found in grassland environments. It has a peaceful nature and is often seen spending its day in solitude, enjoying the serenity of its surroundings. Despite its tranquil demeanor, it is not to be underestimated; its Giga Slam and Slash techniques are a force to be reckoned with. One must be careful when crossing paths with Sentinel, just as it takes care when it crosses paths with others.",
+      "element": "Neutral",
       "rarity": "rare",
       "rarity_index": 2,
-      "hp": 120,
+      "hp": 60,
       "abilities": [
         {
-          "name": "Foliage Lash",
-          "element": "Grass",
-          "cost": 3,
-          "is_mixed_element": true,
+          "name": "Giga Slam",
+          "element": "Neutral",
+          "cost": 4,
+          "is_mixed_element": false,
           "power": 40
+        },
+        {
+          "name": "Slash",
+          "element": "Neutral",
+          "cost": 2,
+          "is_mixed_element": false,
+          "power": 20
         }
       ],
-      "image_prompt": "Vephire::0 a epic grass-type acid pokemon::2.5, wearing regal armor, in a woods environment, sunlight ray ambience, anime sketch --niji --ar 3:2",
-      "image_file": "001_vephire.png"
+      "image_prompt": "Sentinel::0 a mythical neutral-type pokemon::2.5, wearing ornate armor, in a grassland environment, bright lighting, anime sketch --niji --ar 3:2",
+      "image_file": "001_sentinel.png"
     }
   ]
 }
