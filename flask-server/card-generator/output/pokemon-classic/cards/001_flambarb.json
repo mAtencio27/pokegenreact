@@ -1,0 +1,20 @@
+{
+  "index": 1,
+  "name": "Flambarb",
+  "description": "Flambarn is a majestic fire-type Pokemon clad in ornate armor. It can be found roaming deserts and other hot and arid environments. Flambarn is a solitary pokemon that patrols its domain with courage and strength. Its fiery presence is a sight to behold, and one Flare Surge is enough to send even the bravest of challengers running! Flambarn is a noble monster, feared and respected by all who cross its path.",
+  "element": "Fire",
+  "rarity": "rare",
+  "rarity_index": 2,
+  "hp": 120,
+  "abilities": [
+    {
+      "name": "Flare Surge",
+      "element": "Fire",
+      "cost": 3,
+      "is_mixed_element": false,
+      "power": 50
+    }
+  ],
+  "image_prompt": "Flambarb::0 a epic fire-type pokemon::2.5, wearing ornate armor, in a desert environment, blue and red ambient lighting, anime sketch --niji --ar 3:2",
+  "image_file": "001_flambarb.png"
+}

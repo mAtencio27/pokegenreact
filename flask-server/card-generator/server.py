@@ -7,6 +7,7 @@ import json
 import base64
 from flask_cors import CORS
 from io import BytesIO
+import io
 from PIL import Image, ImageFont, ImageDraw
 import argparse
 import pathlib
@@ -50,37 +51,38 @@ def members():
 # Generate API route 
 @app.route('/generate', methods=['GET'])
 def generate():
+    ## TAKE IN THE ARGS
     element = request.args.get("element", default="", type=str)
     subject = request.args.get("subject", default="", type=str)
     number_of_monsters = 1
-    returnData = main(number_of_monsters, element, subject)
 
-    ### These are working to prin the data
-    # print("return dataa")
-    #print(returnData)
-    ###
+    ## CALL THE SCRIPT AND RETURN THE JSON TO SAVE THE STATE
+    returnData = main(number_of_monsters, element, subject)
 
     return jsonify({"data":returnData})
 
 # render API route
 @app.route('/render', methods=['POST'])
 def render():
-
-    json_data = request.get_json()
-    print(request.get_json())
-    print(json_data)
-
+    #SET OUR RETURN ARRAY
     encoded_images = []
-    #### WORKING
-    #subprocess.call(['python', './src/render_cards.py'])
-    #### WORKING
-    main_render()
 
-    # Split the output by newline character
-    ##image_strings = output.split(b'\n')
-    # Get the first image string
-    # first_image_string = image_strings[0]
-    # print(first_image_string)
+    #TAKE IN OUT JSON DATA FROM OUT REACT STATE
+    json_data = request.get_json()
+
+    ## PASS THIS JSON THROUGH THE MAIN RENDER ALONG WITH PHOTO
+    PIL_image = main_render(json_data)
+
+    # RETURN PIL WHICH WILL GET SENT TO BUFFER
+    buffer = io.BytesIO()
+
+    PIL_image.save(buffer, format="PNG")
+    buffer.seek(0)
+    image_data = buffer.read()
+
+    ##CONVERT TO B64 to render in the front end
+    encoded_image = base64.b64encode(image_data).decode('utf-8')
+    encoded_images.append(encoded_image)
 
     # encoded_images.append(first_image_string.decode('utf-8'))
     #return jsonify({"response":encoded_images})
@@ -124,6 +126,8 @@ def photos():
     for filename in os.listdir(folder_path):
         with open(os.path.join(folder_path, filename), 'rb') as image_file:
                 # read the image data
+            # print("😡This is the file without processing from read")
+            # print(image_file)
             image_data = image_file.read()
                 # encode the image data as Base64
             encoded_image = base64.b64encode(image_data).decode('utf-8')

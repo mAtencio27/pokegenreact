@@ -3,30 +3,23 @@
   "cards": [
     {
       "index": 1,
-      "name": "Sentinel",
-      "description": "Sentinel is a mythical pokemon clad in ornate armor, found in grassland environments. It has a peaceful nature and is often seen spending its day in solitude, enjoying the serenity of its surroundings. Despite its tranquil demeanor, it is not to be underestimated; its Giga Slam and Slash techniques are a force to be reckoned with. One must be careful when crossing paths with Sentinel, just as it takes care when it crosses paths with others.",
-      "element": "Neutral",
+      "name": "Flambarb",
+      "description": "Flambarn is a majestic fire-type Pokemon clad in ornate armor. It can be found roaming deserts and other hot and arid environments. Flambarn is a solitary pokemon that patrols its domain with courage and strength. Its fiery presence is a sight to behold, and one Flare Surge is enough to send even the bravest of challengers running! Flambarn is a noble monster, feared and respected by all who cross its path.",
+      "element": "Fire",
       "rarity": "rare",
       "rarity_index": 2,
-      "hp": 60,
+      "hp": 120,
       "abilities": [
         {
-          "name": "Giga Slam",
-          "element": "Neutral",
-          "cost": 4,
+          "name": "Flare Surge",
+          "element": "Fire",
+          "cost": 3,
           "is_mixed_element": false,
-          "power": 40
-        },
-        {
-          "name": "Slash",
-          "element": "Neutral",
-          "cost": 2,
-          "is_mixed_element": false,
-          "power": 20
+          "power": 50
         }
       ],
-      "image_prompt": "Sentinel::0 a mythical neutral-type pokemon::2.5, wearing ornate armor, in a grassland environment, bright lighting, anime sketch --niji --ar 3:2",
-      "image_file": "001_sentinel.png"
+      "image_prompt": "Flambarb::0 a epic fire-type pokemon::2.5, wearing ornate armor, in a desert environment, blue and red ambient lighting, anime sketch --niji --ar 3:2",
+      "image_file": "001_flambarb.png"
     }
   ]
 }

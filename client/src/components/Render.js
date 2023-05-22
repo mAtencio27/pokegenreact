@@ -14,7 +14,7 @@ const [photos, setPhotos] = useState([])
     // console.log(data.response)
     //return data.response
     //lets try this one.
-    console.log(pokeJson)
+    //console.log(pokeJson)
     const res = await fetch("/render", {
       method: 'POST',
       headers: {
@@ -23,16 +23,16 @@ const [photos, setPhotos] = useState([])
       body:JSON.stringify(pokeJson),
     });
     const data = await res.json();
-    console.log(data)
-    }
-
-  const fetchPhotos = async(e) => {
-    const res = await fetch("/photos")
-    const data = await res.json()
-    //console.log (data)
-    //console.log(data.response)
     return data.response
-  }
+    }
+  //👻👻👻👻👻
+  // REDUNTANT HERE FOR REFERENCE
+  // const fetchPhotos = async(e) => {
+  //   const res = await fetch("/photos")
+  //   const data = await res.json()
+  //   return data.response
+  // }
+  //👻👻👻👻👻
 
   const displayPhoto = () => {
     return photos.map(url => (
@@ -42,23 +42,19 @@ const [photos, setPhotos] = useState([])
 
   useEffect(() => {
     const fetchData = async() => {
-      //This is a test
-      //const res = await renderScript()
-      //console.log(res)
 
       ///🎃🎃🎃🎃 This is currently working 
-      const renderedResponse = await renderScript()
-      const res = await fetchPhotos();
+      const res = await renderScript()
       ///🎃🎃🎃🎃
 
-      //👽👽👽 line 33 render.js the string is already base 64 encoded going into the front end
-      // console.log("line 33 render.js")
-      // console.log(res)
-      //👽👽👽 
+      //👻👻👻👻👻
+      ///Working but trying to render the return
+      /// reduntant
+      //const res = await fetchPhotos();
+      //👻👻👻👻👻
+      //working
       const dataArray = res.map((encoded64) => {return `data:image/png;base64,${encoded64}`})
       setPhotos(dataArray);
-      //setPhotos(res)
-      //console.log(res)
     };
 
     fetchData()

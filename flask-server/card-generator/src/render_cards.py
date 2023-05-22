@@ -30,25 +30,31 @@ STATUS_X_GAP = 82
 STATUS_SIZE = 20
 
 #👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹
-def return_cards():
-    #card_path = pathlib.Path(collection_path, "cards")
-    #card_render_path = pathlib.Path(collection_path, "renders")
-    #os.makedirs(card_render_path, exist_ok=True)
+def return_cards(json_state, collection_path:str):
+    ### add photo state to the args after we get the json render working
 
-    # for card_path in card_path.iterdir():
+    for cardData in json_state:
 
-    #     # Only render .json files.
-    #     if not card_path.suffix == ".json":
-    #         continue
+        # print('👽👽ITERATING OVER THE PASSED BACK JSON👽👽')
+        # print(cardData)
 
-    #     with open(card_path) as f:
-    #         data = json.load(f)
-    #         card = card_from_json(data)
-    #         card_image = render_card(card, collection_path)
-    #         image_name = f"{card.index:03d}_{card.snake_case_name}.png"
-    #         card_image.save(card_render_path / f"{image_name}")
-    print("func called")
-    return("hello")
+        ### STEP BY STEP
+        card = card_from_json(cardData)
+        #### need to pass render_card the image file after we are able to upload ####
+        card_image = render_card(card, collection_path)
+        image_name = f"{card.index:03d}_{card.snake_case_name}.png"
+
+
+        # print('👽👽ITERATING OVER THE PASSED BACK JSON calling json.load(cardData)👽👽')
+        # print("And card = card_from_json(data)")
+        # print(card_image)
+        # with open(card_path) as f:
+        #     data = json.load(f)
+        #     card = card_from_json(data)
+        #     card_image = render_card(card, collection_path)
+        #     image_name = f"{card.index:03d}_{card.snake_case_name}.png"
+        #     card_image.save(card_render_path / f"{image_name}")
+        return card_image
         ####💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀 Dead but may need later
         #     data = json.load(f)
         #     card = card_from_json(data)
@@ -79,6 +85,10 @@ def render_cards(collection_path: str):
         with open(card_path) as f:
             data = json.load(f)
             card = card_from_json(data)
+            ### TEST TO SEE IF THE CARD COMES OUT THE SAME
+            # print('👾👾👾👾👾THIS IS A TEST TO SEE IF THE ORIGINAL CARD DATA COMES OUT👾👾👾👾👾')
+            # print(card)
+            ####
             card_image = render_card(card, collection_path)
             image_name = f"{card.index:03d}_{card.snake_case_name}.png"
             card_image.save(card_render_path / f"{image_name}")
@@ -371,7 +381,7 @@ def ability_from_json(data: dict) -> Ability:
     )
 
 
-def main_render():
+def main_render(j):
     argparser = argparse.ArgumentParser()
     argparser.add_argument(
         "--collection",
@@ -381,11 +391,8 @@ def main_render():
     collection_path = argparser.parse_args().collection
     render_cards(collection_path)
     ####🥰🥰🥰🥰MAYBE THIS IS WHERE WE CAN RETURN THE IMAGE INSTEAD OF SAVING IN FILE🥰🥰🥰🥰####
-    return_cards = render_cards(collection_path)
-    # print("🤢🤢🤢")
-    #print(return_cards)
-    # print("🤢🤢🤢")
-    #return return_cards
+    return_complete = return_cards(j, collection_path)
+    return return_complete
     ####🥰🥰🥰🥰MAYBE THIS IS WHERE WE CAN RETURN THE IMAGE INSTEAD OF SAVING IN FILE🥰🥰🥰🥰####
 
     
