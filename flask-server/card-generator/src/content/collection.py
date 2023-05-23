@@ -4,10 +4,10 @@ import json
 import os
 import random
 import shutil
-from content.style import Style
-from mechanics.card import Card
-from mechanics.element import Element
-from mechanics.rarity import Rarity
+from src.content.style import Style
+from src.mechanics.card import Card
+from src.mechanics.element import Element
+from src.mechanics.rarity import Rarity
 
 
 @dataclass
@@ -91,10 +91,11 @@ class Collection:
     #
     #
     def export(self):
-        collection_path = f"./card-generator/output/{self.collection_name}/"
-        cards_folder = f"./card-generator/output/{self.collection_name}/cards"
-        images_folder = f"./card-generator/output/{self.collection_name}/images"
-        rendered_cards_folder = f"./card-generator/output/{self.collection_name}/renders"
+        ###CHANGE
+        collection_path = f"./output/{self.collection_name}/"
+        cards_folder = f"./output/{self.collection_name}/cards"
+        images_folder = f"./output/{self.collection_name}/images"
+        rendered_cards_folder = f"./output/{self.collection_name}/renders"
 
         # If collection path exists, delete it.
         if os.path.exists(collection_path):
@@ -123,3 +124,7 @@ class Collection:
                 f.write(f"[{card.index:03d}] {card.name}\n")
                 f.write(card.image_prompt)
                 f.write("\n\n")
+
+
+        ### returning the cards to JSON ####
+        return self.to_json()

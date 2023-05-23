@@ -3,30 +3,23 @@
   "cards": [
     {
       "index": 1,
-      "name": "Amethystar",
-      "description": "Amethystar is an elusive and mysterious pokemon often found lurking in dark caverns. To protect itself, it has clothed itself in an armor of sparkling amethyst, the glimmer of which can be seen from miles away. Although it can be quite skittish, its calm demeanor belies its formidable powers of Mindzap and Telekinesis. During the day, it can be found levitating high above the ground, silently observing and meditating on its surroundings.",
+      "name": "Nebulon",
+      "description": "Nebulon is a majestic Pokemon clad in mysterious, galaxy-patterned armour. Found in deep, mysterious caves, Nebulon is the master of its domain, and is known for its formidable Psychic Nova ability. It spends its days nestled among the ancient walls, and its nights soaring through the night sky, crests glinting as it searches for new puzzles and explorations.",
       "element": "Psychic",
       "rarity": "rare",
       "rarity_index": 2,
       "hp": 80,
       "abilities": [
         {
-          "name": "Mindzap",
+          "name": "Psychic Nova",
           "element": "Psychic",
-          "cost": 3,
-          "is_mixed_element": true,
-          "power": 40
-        },
-        {
-          "name": "Telekinesis",
-          "element": "Psychic",
-          "cost": 2,
+          "cost": 4,
           "is_mixed_element": false,
-          "power": 40
+          "power": 60
         }
       ],
-      "image_prompt": "Amethystar::0 a mythical psychic-type pokemon::2.5, wearing amethyst armor, in a cave environment, pink bokeh lighting, anime sketch --niji --ar 3:2",
-      "image_file": "001_amethystar.png"
+      "image_prompt": "Nebulon::0 a epic psychic-type book pokemon::2.5, wearing galaxy-pattern armor, in a cave environment, pink bokeh lighting, anime sketch --niji --ar 3:2",
+      "image_file": "001_nebulon.png"
     }
   ]
 }

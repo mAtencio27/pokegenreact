@@ -7,11 +7,11 @@ from PIL import Image, ImageFont, ImageDraw
 import base64
 ####
 
-from pokemon_content.pokemon_elements import PokemonElements, get_resist, get_weakness
-from pokemon_content.pokemon_rarity import PokemonRarity
-from mechanics.ability import Ability
-from mechanics.card import Card
-from mechanics.element import Element
+from src.pokemon_content.pokemon_elements import PokemonElements, get_resist, get_weakness
+from src.pokemon_content.pokemon_rarity import PokemonRarity
+from src.mechanics.ability import Ability
+from src.mechanics.card import Card
+from src.mechanics.element import Element
 
 
 MONSTER_IMAGE_SCALE = 0.255
@@ -29,6 +29,51 @@ STATUS_Y_POSITION = 568
 STATUS_X_GAP = 82
 STATUS_SIZE = 20
 
+#👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹
+def return_cards(json_state, photo, collection_path:str):
+    ### add photo state to the args after we get the json render working
+
+    for cardData in json_state:
+
+        ### print('👽👽ITERATING OVER THE PASSED BACK JSON👽👽')
+        # print("👽👽👽printing the opened image attempt👽👽👽")
+        # opened = Image.open(photo)
+        # print("line 39 in render.py photo")
+        # print(opened)
+
+
+        ### STEP BY STEP
+        card = card_from_json(cardData)
+        #### need to pass render_card the image file after we are able to upload ####
+        card_image = render_card(card, photo, collection_path)
+        image_name = f"{card.index:03d}_{card.snake_case_name}.png"
+
+
+        # print('👽👽ITERATING OVER THE PASSED BACK JSON calling json.load(cardData)👽👽')
+        # print("And card = card_from_json(data)")
+        # print(card_image)
+        # with open(card_path) as f:
+        #     data = json.load(f)
+        #     card = card_from_json(data)
+        #     card_image = render_card(card, collection_path)
+        #     image_name = f"{card.index:03d}_{card.snake_case_name}.png"
+        #     card_image.save(card_render_path / f"{image_name}")
+        return card_image
+        ####💀💀💀💀💀💀💀💀💀💀💀💀💀💀💀 Dead but may need later
+        #     data = json.load(f)
+        #     card = card_from_json(data)
+        #     card_image = render_card(card, collection_path)
+        #     image_name = f"{card.index:03d}_{card.snake_case_name}.png"
+        #     card_image.save(card_render_path / f"{image_name}")
+        # #### NOw lets convert this image
+        #     image_bytes = card_image.tobytes()
+        #     image_base64 = base64.b64encode(image_bytes).decode('utf-8')
+        #     ###return {'image_base_64': image_base64}
+        #     print(image_base64)
+        #     return card_image
+        ####💀💀💀💀💀💀💀💀💀💀💀💀💀💀
+
+#👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹
 
 def render_cards(collection_path: str):
     card_path = pathlib.Path(collection_path, "cards")
@@ -44,6 +89,10 @@ def render_cards(collection_path: str):
         with open(card_path) as f:
             data = json.load(f)
             card = card_from_json(data)
+            ### TEST TO SEE IF THE CARD COMES OUT THE SAME
+            # print('👾👾👾👾👾THIS IS A TEST TO SEE IF THE ORIGINAL CARD DATA COMES OUT👾👾👾👾👾')
+            # print(card)
+            ####
             card_image = render_card(card, collection_path)
             image_name = f"{card.index:03d}_{card.snake_case_name}.png"
             card_image.save(card_render_path / f"{image_name}")
@@ -63,17 +112,31 @@ def render_cards(collection_path: str):
         #     return card_image
         ####💀💀💀💀💀💀💀💀💀💀💀💀💀💀
 
-
-def render_card(card: Card, collection_path: str):
+#ADDED PHOTO AS AN ARG TO REVERT JUST DELETE
+def render_card(card: Card, photo, collection_path: str):
     ### Turning off pring to simplify passing the response
     ###print(f"Rendering {card.name}")
     card_template_name = f"{card.element.name.lower()}_card.png"
-    card_image = Image.open(f"card-generator/resources/cards/{card_template_name}")
-
-    card_art_path = pathlib.Path(collection_path, "images", card.image_file)
-    if pathlib.Path(card_art_path).exists():
+    card_image = Image.open(f"./resources/cards/{card_template_name}")
+    ###👻👻👻COMMENT THIS OUT AND PASS IN OUR IMAGE👻👻👻
+    # card_art_path = pathlib.Path(collection_path, "images", card.image_file)
+    ###👻👻👻COMMENT THIS OUT AND PASS IN OUR IMAGE👻👻👻
+    ###👻👻👻COMMENT THIS OUT AND PASS IN OUR IMAGE👻👻👻
+    # if pathlib.Path(card_art_path).exists():
+    ###👻👻👻COMMENT THIS OUT AND PASS IN OUR IMAGE👻👻👻
+    ### NEW CONDITIONAL STATEMENT FOR OUR PASSING IN CARD
+    if (photo):
         canvas = Image.new("RGBA", card_image.size, (0, 0, 0, 0))
-        card_art_image = Image.open(card_art_path)
+        #original card art image
+        #card_art_image = Image.open(card_art_path)
+        
+        card_art_image = Image.open(photo)
+
+        # print("😇😇😇line 124 this is in the rendercard after image.open is used. card image😇😇😇")
+        # print(card_art_image)
+        # # print(card_art_path)
+        # print("test to see if this passes into the func")
+        # print(photo)
 
         if card_art_image.width == card_art_image.height:
             rescale_factor = MONSTER_IMAGE_SCALE_SQ
@@ -100,7 +163,7 @@ def render_card(card: Card, collection_path: str):
 
     # Write the name of the card.
     name_text_position = (48, 64)
-    title_font = ImageFont.truetype("card-generator/resources/font/Cabin-Bold.ttf", 28)
+    title_font = ImageFont.truetype("./resources/font/Cabin-Bold.ttf", 28)
     name_text = card.name
 
     # Draw the name text onto the card.
@@ -112,7 +175,7 @@ def render_card(card: Card, collection_path: str):
     # Draw the HP on the card.
     hp_x_position = card_image.width - 86
     hp_y_position = 64
-    hp_font = ImageFont.truetype("card-generator/resources/font/Cabin_Condensed-Regular.ttf", 28)
+    hp_font = ImageFont.truetype("./resources/font/Cabin_Condensed-Regular.ttf", 28)
     hp_text = f"{card.hp} HP"
     draw.text(
         (hp_x_position, hp_y_position),
@@ -167,7 +230,7 @@ def render_card(card: Card, collection_path: str):
 
     # Write the rarity of the Pokemon.
     rarity_text_position = (58, 602)
-    rarity_font = ImageFont.truetype("card-generator/resources/font/Cabin_Condensed-Regular.ttf", 18)
+    rarity_font = ImageFont.truetype("./resources/font/Cabin_Condensed-Regular.ttf", 18)
     rarity_text = f"{card.rarity.name} {card.element.name}-type Card"
     draw.text(
         rarity_text_position,
@@ -179,13 +242,13 @@ def render_card(card: Card, collection_path: str):
 
     # Write the rarity of the Pokemon.
     rarity_symbol_position = (card_image.width - 64, 605)
-    symbol_font = ImageFont.truetype("card-generator/resources/font/NotoSansSymbols2-Regular.ttf", 22)
+    symbol_font = ImageFont.truetype("./resources/font/NotoSansSymbols2-Regular.ttf", 22)
     rarity_symbols = ["⬤", "◆", "★"]
     rarity_symbol_sizes = [10, 14, 22]
 
     symbol_text = rarity_symbols[card.rarity.index]
     symbol_font = ImageFont.truetype(
-        "card-generator/resources/font/NotoSansSymbols2-Regular.ttf",
+        "./resources/font/NotoSansSymbols2-Regular.ttf",
         rarity_symbol_sizes[card.rarity.index],
     )
 
@@ -207,7 +270,7 @@ def render_ability(ability: Ability):
 
     # Ability name description.
     name_text_position = (ABILITY_WIDTH // 2, ABILITY_HEIGHT // 2)
-    name_font = ImageFont.truetype("card-generator/resources/font/Cabin-Bold.ttf", 24)
+    name_font = ImageFont.truetype("./resources/font/Cabin-Bold.ttf", 24)
     name_text = ability.name
     draw = ImageDraw.Draw(ability_image)
     draw.text(
@@ -216,7 +279,7 @@ def render_ability(ability: Ability):
 
     # Draw the ability power text.
     power_text_position = (ABILITY_WIDTH - 12, ABILITY_HEIGHT // 2)
-    power_font = ImageFont.truetype("card-generator/resources/font/Cabin_Condensed-Regular.ttf", 32)
+    power_font = ImageFont.truetype("./resources/font/Cabin_Condensed-Regular.ttf", 32)
     power_text = str(ability.power)
     draw.text(
         power_text_position,
@@ -271,7 +334,7 @@ def render_element_cost(elements: list[str]):
     for i, element in enumerate(elements):
         # Draw circles for each element.
 
-        element_image = Image.open(f"card-generator/resources/elements/{element.lower()}_element.png")
+        element_image = Image.open(f"./resources/elements/{element.lower()}_element.png")
         element_image = element_image.resize((ELEMENT_SIZE, ELEMENT_SIZE))
         cost_canvas.paste(
             element_image,
@@ -302,7 +365,7 @@ def render_weakness_and_resist(card: Card, image: Image):
 
 
 def render_status_element(card: Card, image: Image, element: Element, x_position: int):
-    element_image = Image.open(f"card-generator/resources/elements/{element.name.lower()}_element.png")
+    element_image = Image.open(f"./resources/elements/{element.name.lower()}_element.png")
     element_image = element_image.resize((STATUS_SIZE, STATUS_SIZE))
     image.paste(
         element_image,
@@ -336,24 +399,22 @@ def ability_from_json(data: dict) -> Ability:
     )
 
 
-def main():
+def main_render(j, photo):
     argparser = argparse.ArgumentParser()
     argparser.add_argument(
         "--collection",
         help="File path to the collection to render",
-        default="card-generator/output/pokemon-classic",
+        default="./output/pokemon-classic",
     )
     collection_path = argparser.parse_args().collection
-    render_cards(collection_path)
+    ##render_cards(collection_path)
     ####🥰🥰🥰🥰MAYBE THIS IS WHERE WE CAN RETURN THE IMAGE INSTEAD OF SAVING IN FILE🥰🥰🥰🥰####
-    return_cards = render_cards(collection_path)
-    # print("🤢🤢🤢")
-    #print(return_cards)
-    # print("🤢🤢🤢")
-    return return_cards
+    # print(photo)
+    return_complete = return_cards(j, photo, collection_path)
+    return return_complete
     ####🥰🥰🥰🥰MAYBE THIS IS WHERE WE CAN RETURN THE IMAGE INSTEAD OF SAVING IN FILE🥰🥰🥰🥰####
 
     
 
 if __name__ == "__main__":
-    main()
+    main_render()

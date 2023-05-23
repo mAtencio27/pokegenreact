@@ -11,6 +11,9 @@ import Landing from './components/Landing';
 
 function App() {
 
+  const [pokeJson, setPokeJson] = useState([]);
+  const [ files , setFiles ] = useState([]);
+
   //const [data, setData] = useState([{}])
 
   const generateScript = async(e) => {
@@ -25,13 +28,15 @@ function App() {
     return
   };
 
-  const fetchPrompts = async(e) => {
-    const res = await fetch("/prompts")
-    const data = await res.json()
-    //console.log (data)
-    console.log(data.response)
-    return
-  };
+  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
+  // const fetchPrompts = async(e) => {
+  //   const res = await fetch("/prompts")
+  //   const data = await res.json()
+  //   //console.log (data)
+  //   console.log(data.response)
+  //   return
+  // };
+  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
 
   // const create = async(e) => {
   //   const res_1 = await fetch("/generate")
@@ -47,10 +52,6 @@ function App() {
   //   console.log(data.response)
   //   return
   // }
-
-  const imageSave = async() => {
-
-  }
 
 
   // useEffect(() => {
@@ -78,13 +79,13 @@ function App() {
               <Landing/>
             </Route>
             <Route exact path = "/home">
-              <Home/>
+              <Home pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles}/>
             </Route>
             <Route path = "/ImageUpload">
-              <ImageUpload/>
+              <ImageUpload pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles}/>
             </Route>
             <Route path="/Render">
-              <Render/>
+              <Render pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles}/>
             </Route>
           </Switch>
         </div>

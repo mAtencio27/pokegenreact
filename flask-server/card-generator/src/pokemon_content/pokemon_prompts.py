@@ -1,6 +1,6 @@
 import string
-from mechanics.card import Card
-from util.gpt_call import gpt_client
+from src.mechanics.card import Card
+from src.util.gpt_call import gpt_client
 
 
 def get_visual_description(card: Card) -> str:

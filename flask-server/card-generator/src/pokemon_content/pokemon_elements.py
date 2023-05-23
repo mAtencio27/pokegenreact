@@ -1,4 +1,4 @@
-from mechanics.element import Element
+from src.mechanics.element import Element
 
 
 class PokemonElements:

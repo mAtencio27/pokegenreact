@@ -1,4 +1,4 @@
-from mechanics.rarity import Rarity
+from src.mechanics.rarity import Rarity
 
 
 class PokemonRarity:

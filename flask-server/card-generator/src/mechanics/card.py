@@ -1,9 +1,9 @@
 from dataclasses import dataclass, field
 from functools import cached_property
-from content.style import Style
-from mechanics.element import Element
-from mechanics.rarity import Rarity
-from mechanics.ability import Ability
+from src.content.style import Style
+from src.mechanics.element import Element
+from src.mechanics.rarity import Rarity
+from src.mechanics.ability import Ability
 
 STAR_UNICODE = "★ "
 

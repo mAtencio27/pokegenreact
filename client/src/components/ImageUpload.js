@@ -4,22 +4,27 @@ import { Link } from 'react-router-dom';
 import Header from './Header';
 import footer from '../Assets/Page1/footer.png'
 
-const ImageUpload = () => {
+const ImageUpload = ({pokeJson, setPokeJson, files, setFiles}) => {
 
   const [ prompts, setPrompts ] = useState([]);
-  const [ files , setFiles ] = useState([]);
+  //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
+  //moved to app prop
+  //const [ files , setFiles ] = useState([]);
+  //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
   const [ selected, setSelected] = useState('')
 
   //FILE UPLOAD HANDLER
   const uploadHandler = (e) => {
     let uploadImage = e.target.files[0]
-    let newName = prompts[0]["Image_file"]
+    //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
+    //// NEED TO CHANGE THIS 
+    //let newName = prompts[0]["Image_file"]
+    let newName = pokeJson[0].image_file
+    //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
     //console.log(e.target) //this is the tag
     //console.log(e.target.files)//e.target.files is the actual file
     //console.log(e.target.files[0].name)//the name of the file that needs to be formatted
-    //console.log(prompts[0]["Image_file"])
-    //console.log(prompts[0]["Image_file"])
-    //console.log(uploadImage.name)
+    console.log("this is in the upload of the e.target.files[0]")
     console.log(e.target.files[0])
     const renamedFile = new File([uploadImage], newName, { type: uploadImage.type });
     //console.log(renamedFile)
@@ -27,12 +32,15 @@ const ImageUpload = () => {
     setFiles([...files, renamedFile])
   };
 
-  const uploadFileNamer = () => {
-    // This is the format to upload the image `{number}_{name}.png`
-    //"001_armorgon.png"
-    console.log("THIS IS OUR UPLOADFILENAMER FUNC")
-    console.log(files[0].name)
-  };
+//👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
+//THis is no longer needed to generate anything
+//   const uploadFileNamer = () => {
+//     // This is the format to upload the image `{number}_{name}.png`
+//     //"001_armorgon.png"
+//     console.log("THIS IS OUR UPLOADFILENAMER FUNC")
+//     console.log(files[0].name)
+//   };
+// //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
 
   const uploadDropHandler = (e) => {
     e.preventDefault()
@@ -57,36 +65,42 @@ const ImageUpload = () => {
     };
 
     photoPasser();
-    setFiles([])
+    //🎖🎖🎖Comment this out so it doesn't reset because I need to pass to render🎖🎖🎖
+    //setFiles([])
   };
 
   //THIS WILL BUILD THE DISPLAYED PROMPTS AND GIVE THE DIVS TO UPLOAD PHOTOS
   const promptTagBuilder = () => {
-    const promptList = prompts.map((p)=>{return <div className='promptCard' data-value={p.Name} onClick={(e)=>{setSelected(e.target.dataset.value)}}>
-      <h3 className='cardName'>{p.Name}</h3>
-      <div className='prompt'>{p.Prompt}</div>
-      {/* <form onSubmit={submitHandler} encType="multipart/form-data"> */}
-        {/* <input type='file' id='image' accept='image/*' name="file" onChange={(e)=>{uploadHandler(e)}}></input> */}
-        {/* <button type='submit'>Submit</button> //onClick={submitHandler(e)} */}
-      {/* </form> */}
+    const promptList = pokeJson.map((p)=>{return <div className='promptCard' data-value={p.name} onClick={(e)=>{setSelected(e.target.dataset.value)}}>
+      <h3 className='cardName'>{p.name}</h3>
+      <div className='prompt'>{p.image_prompt}</div>
     </div>});
     return promptList
   };
 
-  const fetchPrompts = async(e) => {
-    const res = await fetch("/prompts")
-    const data = await res.json()
-    //console.log(data)
-    setPrompts(data.response);
-    return
-  };
+  //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
+  // NO LONGER NEED TO FETCH PROPTS NOW THAT THEY ARE BEING PASSED CORRECTLY!!! FASTER TOO!!!
+  // const fetchPrompts = async(e) => {
+  //   const res = await fetch("/prompts")
+  //   const data = await res.json()
+  //   console.log(data)
+  //   setPrompts(data.response);
+  //   return
+  // };
+  //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
 
-  useEffect(()=>{
-    const display = async() => {
-      await fetchPrompts();
-    };
-    display()
-  },[])
+  //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
+  // useEffect(()=>{
+  //   const display = async() => {
+  //     await fetchPrompts();
+  //   };
+  //   display()
+  //   console.log(pokeJson)
+  //   // THESE ARE THE SAME
+  //   // console.log(`THIS IS FROM JSON STATE RETURN:${pokeJson[0].image_file}`);
+  //   // console.log(`THIS IS FROM THE FETCHED PROMPTS:${prompts[0]["Image_file"]}`)
+  // },[])
+  //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
 
   return (
     <div className='ImageUpload'>
