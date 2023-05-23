@@ -64,16 +64,23 @@ def generate():
 # render API route
 @app.route('/render', methods=['POST'])
 def render():
-    #SET OUR RETURN ARRAY
+    #now it's all working
+    json_string = request.form.get('json')  # Retrieve the JSON data from the form
+    photo = request.files['photo']  # Retrieve the photo file from the form
+
+    #### THIS IS AN ARRAY OF OBJECTS
+    json_data = json.loads(json_string)
+
+    ##SETUP ENCODED IMAGE RETURN
     encoded_images = []
 
-    #TAKE IN OUT JSON DATA FROM OUT REACT STATE
-    json_data = request.get_json()
+    ### files and JSON extracted now need to pass to the func
+    PIL_image = main_render(json_data, photo)
 
-    ## PASS THIS JSON THROUGH THE MAIN RENDER ALONG WITH PHOTO
-    PIL_image = main_render(json_data)
+    # print(PIL_image)
+    #WORKING
 
-    # RETURN PIL WHICH WILL GET SENT TO BUFFER
+    ## RETURN PIL WHICH WILL GET SENT TO BUFFER
     buffer = io.BytesIO()
 
     PIL_image.save(buffer, format="PNG")
@@ -86,7 +93,35 @@ def render():
 
     # encoded_images.append(first_image_string.decode('utf-8'))
     #return jsonify({"response":encoded_images})
-    return jsonify({"response":encoded_images})
+
+    return jsonify({"response": encoded_images})
+
+    # #🎖🎖🎖THIS IS WORKING BUT NEED TO CHANGE FOR DEV
+    # #SET OUR RETURN ARRAY
+    # encoded_images = []
+
+    # #TAKE IN OUT JSON DATA FROM OUT REACT STATE
+    # json_data = request.get_json()
+
+    # ## PASS THIS JSON THROUGH THE MAIN RENDER ALONG WITH PHOTO
+    # PIL_image = main_render(json_data)
+
+    # # RETURN PIL WHICH WILL GET SENT TO BUFFER
+    # buffer = io.BytesIO()
+
+    # PIL_image.save(buffer, format="PNG")
+    # buffer.seek(0)
+    # image_data = buffer.read()
+
+    # ##CONVERT TO B64 to render in the front end
+    # encoded_image = base64.b64encode(image_data).decode('utf-8')
+    # encoded_images.append(encoded_image)
+
+    # # encoded_images.append(first_image_string.decode('utf-8'))
+    # #return jsonify({"response":encoded_images})
+
+    # #🎖🎖🎖THIS IS WORKING BUT NEED TO CHANGE FOR DEV
+    # ##return jsonify({"response":encoded_images})🎖🎖🎖
 
 # Fetching pokemon image prompts
 @app.route('/prompts')

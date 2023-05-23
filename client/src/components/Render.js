@@ -3,28 +3,48 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 import logo from "../Assets/Page1/logo.png"
 
-const Render = ({pokeJson, setPokeJson}) => {
+const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
 
-const [photos, setPhotos] = useState([])
+  const [photos, setPhotos] = useState([])
 
+  //THIS NEEDS TO TAKE FILES WHICH IS THE IMAGE AND SEND IT BACK WITH THE JSON
   const renderScript = async() => {
-    //const res = await fetch("/render")
-    //const data = await res.json()
-    // console.log("renderscript function return")
-    // console.log(data.response)
-    //return data.response
-    //lets try this one.
-    //console.log(pokeJson)
+    // THESE BOTH CONRIFM THE FILE IS SAVED IN THE STATE AND READY TO BE PASSED BACK IN FORM
+    // console.log("this is the render script")
+    // console.log(files[0])
+    const fileToUpload = files[0]
+    const jsonArrToUpload = JSON.stringify(pokeJson)
+    
+    const formData = new FormData()
+    formData.append('photo', fileToUpload)
+    formData.append('json', jsonArrToUpload)
+
+    // console.log(jsonArrToUpload)
+    // console.log(fileToUpload)
+    //console.log(formData)
+
     const res = await fetch("/render", {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body:JSON.stringify(pokeJson),
-    });
+        method: 'POST',
+        body: formData,
+      });
+
     const data = await res.json();
+    console.log(data)
     return data.response
+
+    // 🎖🎖🎖WORKING LEAVE UNCHANGED AS REFERENCE🎖🎖🎖
+    // const res = await fetch("/render", {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body:JSON.stringify(pokeJson),
+    // });
+    // const data = await res.json();
+    // return data.response
+    //🎖🎖🎖WORKING LEAVE UNCHANGED AS REFERENCE🎖🎖🎖
     }
+
   //👻👻👻👻👻
   // REDUNTANT HERE FOR REFERENCE
   // const fetchPhotos = async(e) => {

@@ -30,18 +30,22 @@ STATUS_X_GAP = 82
 STATUS_SIZE = 20
 
 #👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹
-def return_cards(json_state, collection_path:str):
+def return_cards(json_state, photo, collection_path:str):
     ### add photo state to the args after we get the json render working
 
     for cardData in json_state:
 
-        # print('👽👽ITERATING OVER THE PASSED BACK JSON👽👽')
-        # print(cardData)
+        ### print('👽👽ITERATING OVER THE PASSED BACK JSON👽👽')
+        # print("👽👽👽printing the opened image attempt👽👽👽")
+        # opened = Image.open(photo)
+        # print("line 39 in render.py photo")
+        # print(opened)
+
 
         ### STEP BY STEP
         card = card_from_json(cardData)
         #### need to pass render_card the image file after we are able to upload ####
-        card_image = render_card(card, collection_path)
+        card_image = render_card(card, photo, collection_path)
         image_name = f"{card.index:03d}_{card.snake_case_name}.png"
 
 
@@ -108,17 +112,31 @@ def render_cards(collection_path: str):
         #     return card_image
         ####💀💀💀💀💀💀💀💀💀💀💀💀💀💀
 
-
-def render_card(card: Card, collection_path: str):
+#ADDED PHOTO AS AN ARG TO REVERT JUST DELETE
+def render_card(card: Card, photo, collection_path: str):
     ### Turning off pring to simplify passing the response
     ###print(f"Rendering {card.name}")
     card_template_name = f"{card.element.name.lower()}_card.png"
     card_image = Image.open(f"./resources/cards/{card_template_name}")
-
-    card_art_path = pathlib.Path(collection_path, "images", card.image_file)
-    if pathlib.Path(card_art_path).exists():
+    ###👻👻👻COMMENT THIS OUT AND PASS IN OUR IMAGE👻👻👻
+    # card_art_path = pathlib.Path(collection_path, "images", card.image_file)
+    ###👻👻👻COMMENT THIS OUT AND PASS IN OUR IMAGE👻👻👻
+    ###👻👻👻COMMENT THIS OUT AND PASS IN OUR IMAGE👻👻👻
+    # if pathlib.Path(card_art_path).exists():
+    ###👻👻👻COMMENT THIS OUT AND PASS IN OUR IMAGE👻👻👻
+    ### NEW CONDITIONAL STATEMENT FOR OUR PASSING IN CARD
+    if (photo):
         canvas = Image.new("RGBA", card_image.size, (0, 0, 0, 0))
-        card_art_image = Image.open(card_art_path)
+        #original card art image
+        #card_art_image = Image.open(card_art_path)
+        
+        card_art_image = Image.open(photo)
+
+        # print("😇😇😇line 124 this is in the rendercard after image.open is used. card image😇😇😇")
+        # print(card_art_image)
+        # # print(card_art_path)
+        # print("test to see if this passes into the func")
+        # print(photo)
 
         if card_art_image.width == card_art_image.height:
             rescale_factor = MONSTER_IMAGE_SCALE_SQ
@@ -381,7 +399,7 @@ def ability_from_json(data: dict) -> Ability:
     )
 
 
-def main_render(j):
+def main_render(j, photo):
     argparser = argparse.ArgumentParser()
     argparser.add_argument(
         "--collection",
@@ -389,9 +407,10 @@ def main_render(j):
         default="./output/pokemon-classic",
     )
     collection_path = argparser.parse_args().collection
-    render_cards(collection_path)
+    ##render_cards(collection_path)
     ####🥰🥰🥰🥰MAYBE THIS IS WHERE WE CAN RETURN THE IMAGE INSTEAD OF SAVING IN FILE🥰🥰🥰🥰####
-    return_complete = return_cards(j, collection_path)
+    # print(photo)
+    return_complete = return_cards(j, photo, collection_path)
     return return_complete
     ####🥰🥰🥰🥰MAYBE THIS IS WHERE WE CAN RETURN THE IMAGE INSTEAD OF SAVING IN FILE🥰🥰🥰🥰####
 

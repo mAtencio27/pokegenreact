@@ -28,13 +28,15 @@ function App() {
     return
   };
 
-  const fetchPrompts = async(e) => {
-    const res = await fetch("/prompts")
-    const data = await res.json()
-    //console.log (data)
-    console.log(data.response)
-    return
-  };
+  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
+  // const fetchPrompts = async(e) => {
+  //   const res = await fetch("/prompts")
+  //   const data = await res.json()
+  //   //console.log (data)
+  //   console.log(data.response)
+  //   return
+  // };
+  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
 
   // const create = async(e) => {
   //   const res_1 = await fetch("/generate")
@@ -50,10 +52,6 @@ function App() {
   //   console.log(data.response)
   //   return
   // }
-
-  const imageSave = async() => {
-
-  }
 
 
   // useEffect(() => {

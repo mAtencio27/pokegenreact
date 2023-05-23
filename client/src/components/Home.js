@@ -9,7 +9,9 @@ const Home = ({pokeJson, setPokeJson}) => {
 
   const [subjectString, setSubjectString] = useState([]);
   const [elementString, setElementString] = useState();
-  
+
+
+  //THIS IS GENERATING THE JSON SCRIPT AND SAVING THE JSON TO STATE
   const generateScript = async(e) => {
     //api
     //const res = await fetch(`https://pokegen-api.onrender.com/`)
@@ -33,20 +35,24 @@ const Home = ({pokeJson, setPokeJson}) => {
     return
   };
 
+  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
   // const renderScript = async(e) => {
   //   const res = await fetch("/render")
   //   console.log(res)
   //   return
   // };
+  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
 
-
+  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
   // const create = async(e) => {
   //   const res_1 = await fetch("/generate")
   //   const res_2 = await fetch("/render")
   //   console.log(res_1, res_2)
   //   return
   // };
+  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
 
+  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
   // const fetchPhotos = async(e) => {
   //   const res = await fetch("/photos")
   //   const data = await res.json()
@@ -54,7 +60,9 @@ const Home = ({pokeJson, setPokeJson}) => {
   //   console.log(data.response)
   //   return
   // }
+  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
   
+  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
   // useEffect(() => {
   //   const fetchData = async() => {
   //     const res = await fetch("/members");
@@ -64,12 +72,15 @@ const Home = ({pokeJson, setPokeJson}) => {
 
   //   fetchData()
   // }, [])
+  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
 
+  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
   // const buttonHandler = (e) => {
   //   console.log("button click");
   //   console.log(e.target.value);
   //   console.log(data)
   // };
+  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
 
   return (
     <div className='Home'>

@@ -3,23 +3,23 @@
   "cards": [
     {
       "index": 1,
-      "name": "Flambarb",
-      "description": "Flambarn is a majestic fire-type Pokemon clad in ornate armor. It can be found roaming deserts and other hot and arid environments. Flambarn is a solitary pokemon that patrols its domain with courage and strength. Its fiery presence is a sight to behold, and one Flare Surge is enough to send even the bravest of challengers running! Flambarn is a noble monster, feared and respected by all who cross its path.",
-      "element": "Fire",
-      "rarity": "rare",
-      "rarity_index": 2,
-      "hp": 120,
+      "name": "Shieldon",
+      "description": "Shieldon, a curious Pokemon with a white armor-like shell, is often found in grassy fields basking in the warm sun. With its powerful Slam attack, Shieldon easily defends itself from any potential predators. During the day, Shieldon can be seen roaming around, exploring its surroundings with a fondness for new experiences.",
+      "element": "Neutral",
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 90,
       "abilities": [
         {
-          "name": "Flare Surge",
-          "element": "Fire",
+          "name": "Slam",
+          "element": "Neutral",
           "cost": 3,
           "is_mixed_element": false,
-          "power": 50
+          "power": 30
         }
       ],
-      "image_prompt": "Flambarb::0 a epic fire-type pokemon::2.5, wearing ornate armor, in a desert environment, blue and red ambient lighting, anime sketch --niji --ar 3:2",
-      "image_file": "001_flambarb.png"
+      "image_prompt": "Shieldon::0 a special neutral-type pokemon::1.8, wearing white armor, in a field environment, soft ambient light, anime sketch --niji --ar 3:2",
+      "image_file": "001_shieldon.png"
     }
   ]
 }

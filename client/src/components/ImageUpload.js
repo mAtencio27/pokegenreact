@@ -24,9 +24,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles}) => {
     //console.log(e.target) //this is the tag
     //console.log(e.target.files)//e.target.files is the actual file
     //console.log(e.target.files[0].name)//the name of the file that needs to be formatted
-    //console.log(prompts[0]["Image_file"])
-    //console.log(prompts[0]["Image_file"])
-    //console.log(uploadImage.name)
+    console.log("this is in the upload of the e.target.files[0]")
     console.log(e.target.files[0])
     const renamedFile = new File([uploadImage], newName, { type: uploadImage.type });
     //console.log(renamedFile)
@@ -67,7 +65,8 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles}) => {
     };
 
     photoPasser();
-    setFiles([])
+    //🎖🎖🎖Comment this out so it doesn't reset because I need to pass to render🎖🎖🎖
+    //setFiles([])
   };
 
   //THIS WILL BUILD THE DISPLAYED PROMPTS AND GIVE THE DIVS TO UPLOAD PHOTOS
