@@ -3,23 +3,30 @@
   "cards": [
     {
       "index": 1,
-      "name": "Nebulon",
-      "description": "Nebulon is a majestic Pokemon clad in mysterious, galaxy-patterned armour. Found in deep, mysterious caves, Nebulon is the master of its domain, and is known for its formidable Psychic Nova ability. It spends its days nestled among the ancient walls, and its nights soaring through the night sky, crests glinting as it searches for new puzzles and explorations.",
-      "element": "Psychic",
-      "rarity": "rare",
-      "rarity_index": 2,
-      "hp": 80,
+      "name": "Bronzite",
+      "description": "Bronzite is a sturdy pokemon donning gray and brown armor. It resides in and around mountainous regions, and is seen spending its days scaling rocky ledges and exploring treacherous caves. Its incredible endurance and strength allows it to easily tackle any challenge that comes its way. Its signature move, Meteor Smash, is a powerful attack that shows just how tough Bronzite really is. Iron Tail is another one of its special moves that is used to ward off potential predators. With its strong defenses, there is nothing Bronzite can't handle.",
+      "element": "Metal",
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 70,
       "abilities": [
         {
-          "name": "Psychic Nova",
-          "element": "Psychic",
-          "cost": 4,
+          "name": "Meteor Smash",
+          "element": "Metal",
+          "cost": 3,
           "is_mixed_element": false,
-          "power": 60
+          "power": 50
+        },
+        {
+          "name": "Iron Tail",
+          "element": "Metal",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 20
         }
       ],
-      "image_prompt": "Nebulon::0 a epic psychic-type book pokemon::2.5, wearing galaxy-pattern armor, in a cave environment, pink bokeh lighting, anime sketch --niji --ar 3:2",
-      "image_file": "001_nebulon.png"
+      "image_prompt": "Bronzite::0 a strong metal-type pokemon::1.8, wearing gray and brown armor, in a mountain environment, earthtones, anime sketch --niji --ar 3:2",
+      "image_file": "001_bronzite.png"
     }
   ]
 }

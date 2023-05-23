@@ -1,3 +1,3 @@
-[001] Nebulon
-Nebulon::0 a epic psychic-type book pokemon::2.5, wearing galaxy-pattern armor, in a cave environment, pink bokeh lighting, anime sketch --niji --ar 3:2
+[001] Bronzite
+Bronzite::0 a strong metal-type pokemon::1.8, wearing gray and brown armor, in a mountain environment, earthtones, anime sketch --niji --ar 3:2
 
