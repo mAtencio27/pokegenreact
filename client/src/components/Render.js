@@ -9,19 +9,12 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
 
   //THIS NEEDS TO TAKE FILES WHICH IS THE IMAGE AND SEND IT BACK WITH THE JSON
   const renderScript = async() => {
-    // THESE BOTH CONRIFM THE FILE IS SAVED IN THE STATE AND READY TO BE PASSED BACK IN FORM
-    // console.log("this is the render script")
-    // console.log(files[0])
     const fileToUpload = files[0]
     const jsonArrToUpload = JSON.stringify(pokeJson)
     
     const formData = new FormData()
     formData.append('photo', fileToUpload)
     formData.append('json', jsonArrToUpload)
-
-    // console.log(jsonArrToUpload)
-    // console.log(fileToUpload)
-    //console.log(formData)
 
     const res = await fetch("/render", {
         method: 'POST',
@@ -31,18 +24,6 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
     const data = await res.json();
     console.log(data)
     return data.response
-
-    // 🎖🎖🎖WORKING LEAVE UNCHANGED AS REFERENCE🎖🎖🎖
-    // const res = await fetch("/render", {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body:JSON.stringify(pokeJson),
-    // });
-    // const data = await res.json();
-    // return data.response
-    //🎖🎖🎖WORKING LEAVE UNCHANGED AS REFERENCE🎖🎖🎖
     }
 
   //👻👻👻👻👻
@@ -67,12 +48,6 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
       const res = await renderScript()
       ///🎃🎃🎃🎃
 
-      //👻👻👻👻👻
-      ///Working but trying to render the return
-      /// reduntant
-      //const res = await fetchPhotos();
-      //👻👻👻👻👻
-      //working
       const dataArray = res.map((encoded64) => {return `data:image/png;base64,${encoded64}`})
       setPhotos(dataArray);
     };

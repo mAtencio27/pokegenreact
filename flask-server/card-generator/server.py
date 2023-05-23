@@ -123,53 +123,53 @@ def render():
     # #🎖🎖🎖THIS IS WORKING BUT NEED TO CHANGE FOR DEV
     # ##return jsonify({"response":encoded_images})🎖🎖🎖
 
-# Fetching pokemon image prompts
-@app.route('/prompts')
-def prompts():
-    folder_path = './output/pokemon-classic/cards'
-    file_contents = []
-    for filename in os.listdir(folder_path):
-        filepath = f"./output/pokemon-classic/cards/{filename}"
-        with open(filepath, "r") as file:
-            # contents = file.read()
-            contents = json.load(file)
-        # print (contents)
-        # "image_file": "001_armorgon.png"
-        ##print(contents["image_file"]) send back to rename file
-        file_contents.append({"Name":contents['name'], "Prompt":contents['image_prompt'], "Image_file":contents['image_file']})
-    return jsonify({"response":file_contents})
-    # return file_contents
+# # Fetching pokemon image prompts
+# @app.route('/prompts')
+# def prompts():
+#     folder_path = './output/pokemon-classic/cards'
+#     file_contents = []
+#     for filename in os.listdir(folder_path):
+#         filepath = f"./output/pokemon-classic/cards/{filename}"
+#         with open(filepath, "r") as file:
+#             # contents = file.read()
+#             contents = json.load(file)
+#         # print (contents)
+#         # "image_file": "001_armorgon.png"
+#         ##print(contents["image_file"]) send back to rename file
+#         file_contents.append({"Name":contents['name'], "Prompt":contents['image_prompt'], "Image_file":contents['image_file']})
+#     return jsonify({"response":file_contents})
+#     # return file_contents
 
-@app.route('/upload', methods=['POST'])
-def upload():
-    file = request.files['file']
-    filename = secure_filename(file.filename)
-    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-    print("🏆","upload success")
-    return jsonify({"response": request.form})
+# @app.route('/upload', methods=['POST'])
+# def upload():
+#     file = request.files['file']
+#     filename = secure_filename(file.filename)
+#     file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+#     print("🏆","upload success")
+#     return jsonify({"response": request.form})
 
-@app.route('/photos')
-def photos():
-    ##print("we only want one card to render by passing this endpoint a state with the photo name saved from the first part")
-    # Path to our photos
-    folder_path = './output/pokemon-classic/renders'
-    if not os.path.isdir(folder_path):
-        return jsonify({'error': 'Invalid path provided'}),400
-    # Encoded image array
-    encoded_images = []
+# @app.route('/photos')
+# def photos():
+#     ##print("we only want one card to render by passing this endpoint a state with the photo name saved from the first part")
+#     # Path to our photos
+#     folder_path = './output/pokemon-classic/renders'
+#     if not os.path.isdir(folder_path):
+#         return jsonify({'error': 'Invalid path provided'}),400
+#     # Encoded image array
+#     encoded_images = []
 
-    for filename in os.listdir(folder_path):
-        with open(os.path.join(folder_path, filename), 'rb') as image_file:
-                # read the image data
-            # print("😡This is the file without processing from read")
-            # print(image_file)
-            image_data = image_file.read()
-                # encode the image data as Base64
-            encoded_image = base64.b64encode(image_data).decode('utf-8')
-                # append the encoded image to the list of encoded images
-            encoded_images.append(encoded_image)
+#     for filename in os.listdir(folder_path):
+#         with open(os.path.join(folder_path, filename), 'rb') as image_file:
+#                 # read the image data
+#             # print("😡This is the file without processing from read")
+#             # print(image_file)
+#             image_data = image_file.read()
+#                 # encode the image data as Base64
+#             encoded_image = base64.b64encode(image_data).decode('utf-8')
+#                 # append the encoded image to the list of encoded images
+#             encoded_images.append(encoded_image)
 
-    return jsonify({"response":encoded_images})
+#     return jsonify({"response":encoded_images})
 
 
 if __name__ == "__main__":

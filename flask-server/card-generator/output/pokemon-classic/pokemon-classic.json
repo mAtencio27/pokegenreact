@@ -3,23 +3,23 @@
   "cards": [
     {
       "index": 1,
-      "name": "Shieldon",
-      "description": "Shieldon, a curious Pokemon with a white armor-like shell, is often found in grassy fields basking in the warm sun. With its powerful Slam attack, Shieldon easily defends itself from any potential predators. During the day, Shieldon can be seen roaming around, exploring its surroundings with a fondness for new experiences.",
-      "element": "Neutral",
-      "rarity": "uncommon",
-      "rarity_index": 1,
-      "hp": 90,
+      "name": "Nebulon",
+      "description": "Nebulon is a majestic Pokemon clad in mysterious, galaxy-patterned armour. Found in deep, mysterious caves, Nebulon is the master of its domain, and is known for its formidable Psychic Nova ability. It spends its days nestled among the ancient walls, and its nights soaring through the night sky, crests glinting as it searches for new puzzles and explorations.",
+      "element": "Psychic",
+      "rarity": "rare",
+      "rarity_index": 2,
+      "hp": 80,
       "abilities": [
         {
-          "name": "Slam",
-          "element": "Neutral",
-          "cost": 3,
+          "name": "Psychic Nova",
+          "element": "Psychic",
+          "cost": 4,
           "is_mixed_element": false,
-          "power": 30
+          "power": 60
         }
       ],
-      "image_prompt": "Shieldon::0 a special neutral-type pokemon::1.8, wearing white armor, in a field environment, soft ambient light, anime sketch --niji --ar 3:2",
-      "image_file": "001_shieldon.png"
+      "image_prompt": "Nebulon::0 a epic psychic-type book pokemon::2.5, wearing galaxy-pattern armor, in a cave environment, pink bokeh lighting, anime sketch --niji --ar 3:2",
+      "image_file": "001_nebulon.png"
     }
   ]
 }
