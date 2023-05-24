@@ -13,7 +13,7 @@ import argparse
 import pathlib
 
 #### modules to run render_cards.py module and generate.py module
-from src.generate import main
+from src.generate import main_generate
 from src.render_cards import main_render
 #from src.render_cards import return_cards
 from src.pokemon_content.pokemon_elements import PokemonElements, get_resist, get_weakness
@@ -57,7 +57,7 @@ def generate():
     number_of_monsters = 1
 
     ## CALL THE SCRIPT AND RETURN THE JSON TO SAVE THE STATE
-    returnData = main(number_of_monsters, element, subject)
+    returnData = main_generate(number_of_monsters, element, subject)
 
     return jsonify({"data":returnData})
 

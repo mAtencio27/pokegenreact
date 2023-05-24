@@ -3,30 +3,23 @@
   "cards": [
     {
       "index": 1,
-      "name": "Bronzite",
-      "description": "Bronzite is a sturdy pokemon donning gray and brown armor. It resides in and around mountainous regions, and is seen spending its days scaling rocky ledges and exploring treacherous caves. Its incredible endurance and strength allows it to easily tackle any challenge that comes its way. Its signature move, Meteor Smash, is a powerful attack that shows just how tough Bronzite really is. Iron Tail is another one of its special moves that is used to ward off potential predators. With its strong defenses, there is nothing Bronzite can't handle.",
+      "name": "Armouron",
+      "description": "Armouron is a legendary Pok\u00e9mon that can be found in the deepest and darkest of caverns. Covered in ornate armour from head to toe, this powerful being is as indestructible as steel. With its mysterious ability of Magnet Bomb, Armouron can utilize the magnetic fields of the caves it inhabits to its advantage to surprise and overwhelm opponents. During its down time, Armouron relaxes by polishing its armour to keep it shining and sharp.",
       "element": "Metal",
-      "rarity": "uncommon",
-      "rarity_index": 1,
-      "hp": 70,
+      "rarity": "rare",
+      "rarity_index": 2,
+      "hp": 80,
       "abilities": [
         {
-          "name": "Meteor Smash",
+          "name": "Magnet Bomb",
           "element": "Metal",
-          "cost": 3,
+          "cost": 4,
           "is_mixed_element": false,
-          "power": 50
-        },
-        {
-          "name": "Iron Tail",
-          "element": "Metal",
-          "cost": 1,
-          "is_mixed_element": false,
-          "power": 20
+          "power": 60
         }
       ],
-      "image_prompt": "Bronzite::0 a strong metal-type pokemon::1.8, wearing gray and brown armor, in a mountain environment, earthtones, anime sketch --niji --ar 3:2",
-      "image_file": "001_bronzite.png"
+      "image_prompt": "Armouron::0 a legendary metal-type pokemon::2.5, wearing ornate armor, in a cave environment, natural and brown ambient lighting, anime sketch --niji --ar 3:2",
+      "image_file": "001_armouron.png"
     }
   ]
 }

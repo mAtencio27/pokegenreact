@@ -1,3 +1,3 @@
-[001] Bronzite
-Bronzite::0 a strong metal-type pokemon::1.8, wearing gray and brown armor, in a mountain environment, earthtones, anime sketch --niji --ar 3:2
+[001] Armouron
+Armouron::0 a legendary metal-type pokemon::2.5, wearing ornate armor, in a cave environment, natural and brown ambient lighting, anime sketch --niji --ar 3:2
 
