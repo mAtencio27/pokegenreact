@@ -22,15 +22,14 @@ const Home = ({pokeJson, setPokeJson}) => {
     //this one works locally WIP need to implement tempfiles
     //const res = await fetch(`https://pokegen-api.onrender.com/generate?element=${elementString}&subject=${subjectString}`)
 
-    const res = await fetch(`http://localhost:5000/generate?element=${elementString}&subject=${subjectString}`)
+    //🏠🏠🏠🏠🏠🏠 LOCAL 🏠🏠🏠🏠🏠
+    //const res = await fetch(`http://localhost:5000/generate?element=${elementString}&subject=${subjectString}`)
 
-    //console.log(e.target.value)
-    //console.log(`Subject:${subjectString}`)
-    //console.log(`Element:${elementString}`)
+    //🏩🏩🏩🏩🏩🏩 PRODUCTION 🏩🏩🏩🏩🏩
+    const res = await fetch(`https://pokegen-api.onrender.com/generate?element=${elementString}&subject=${subjectString}`)
+    console.log('production test')
     let responseData = await res.json()
     setPokeJson(responseData.data.cards)
-    //console.log(responseData.data.cards)
-    //console.log(`THIS IS THE POKEJSONDATA`)
     console.log(pokeJson)
     return
   };

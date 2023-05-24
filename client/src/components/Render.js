@@ -16,10 +16,24 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
     formData.append('photo', fileToUpload)
     formData.append('json', jsonArrToUpload)
 
-    const res = await fetch("/render", {
+    //🏠🏠🏠 LOCAL 🏠🏠🏠🏠
+    // const res = await fetch("/render", {
+    //     method: 'POST',
+    //     body: formData,
+    //   });
+    // 🏠🏠🏠 LOCAL 🏠🏠🏠🏠
+    //
+    //LOCAL GUNICORN
+    //http://127.0.0.1:8000/
+    //
+    //const res = await fetch("https://pokegen-api.onrender.com/render", {
+    const res = await fetch("http://127.0.0.1:8000/render", {
         method: 'POST',
         body: formData,
       });
+
+    console.log(res)
+      
 
     const data = await res.json();
     console.log(data)
