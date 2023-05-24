@@ -30,7 +30,7 @@ STATUS_X_GAP = 82
 STATUS_SIZE = 20
 
 #👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹👹
-def return_cards(json_state, photo, collection_path:str):
+def return_cards(json_state, photo):
     ### add photo state to the args after we get the json render working
 
     for cardData in json_state:
@@ -45,8 +45,12 @@ def return_cards(json_state, photo, collection_path:str):
         ### STEP BY STEP
         card = card_from_json(cardData)
         #### need to pass render_card the image file after we are able to upload ####
-        card_image = render_card(card, photo, collection_path)
+        ### 🎪🎪🎪Get rid of collection path arg🎪🎪🎪
+        #card_image = render_card(card, photo, collection_path)
+        card_image = render_card(card, photo)
+        ### 🎪🎪🎪Get rid of collection path arg🎪🎪🎪
         image_name = f"{card.index:03d}_{card.snake_case_name}.png"
+        
 
 
         # print('👽👽ITERATING OVER THE PASSED BACK JSON calling json.load(cardData)👽👽')
@@ -113,7 +117,10 @@ def render_cards(collection_path: str):
         ####💀💀💀💀💀💀💀💀💀💀💀💀💀💀
 
 #ADDED PHOTO AS AN ARG TO REVERT JUST DELETE
-def render_card(card: Card, photo, collection_path: str):
+### 🎪🎪🎪Get rid of collection path arg🎪🎪🎪
+#def render_card(card: Card, photo, collection_path: str):
+def render_card(card: Card, photo):
+### 🎪🎪🎪Get rid of collection path arg🎪🎪🎪
     ### Turning off pring to simplify passing the response
     ###print(f"Rendering {card.name}")
     card_template_name = f"{card.element.name.lower()}_card.png"
@@ -159,7 +166,8 @@ def render_card(card: Card, photo, collection_path: str):
         card_image = canvas
     else:
         # Print in yellow ASCII.
-        print(f"\033[93m [WARN] {card_art_path} not found.\033[0m")
+        #print(f"\033[93m [WARN] {card_art_path} not found.\033[0m")
+         print("card not found")
 
     # Write the name of the card.
     name_text_position = (48, 64)
@@ -400,17 +408,20 @@ def ability_from_json(data: dict) -> Ability:
 
 
 def main_render(j, photo):
-    argparser = argparse.ArgumentParser()
-    argparser.add_argument(
-        "--collection",
-        help="File path to the collection to render",
-        default="./output/pokemon-classic",
-    )
-    collection_path = argparser.parse_args().collection
+    ### 🎪🎪🎪Get rid of collection path arg🎪🎪🎪
+    # argparser = argparse.ArgumentParser()
+    # argparser.add_argument(
+    #     "--collection",
+    #     help="File path to the collection to render",
+    #     default="./output/pokemon-classic",
+    # )
+    # collection_path = argparser.parse_args().collection
+    ### 🎪🎪🎪Get rid of collection path arg🎪🎪🎪
     ##render_cards(collection_path)
     ####🥰🥰🥰🥰MAYBE THIS IS WHERE WE CAN RETURN THE IMAGE INSTEAD OF SAVING IN FILE🥰🥰🥰🥰####
     # print(photo)
-    return_complete = return_cards(j, photo, collection_path)
+    #return_complete = return_cards(j, photo, collection_path)
+    return_complete = return_cards(j, photo)
     return return_complete
     ####🥰🥰🥰🥰MAYBE THIS IS WHERE WE CAN RETURN THE IMAGE INSTEAD OF SAVING IN FILE🥰🥰🥰🥰####
 
