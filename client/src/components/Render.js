@@ -26,8 +26,8 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
     //LOCAL GUNICORN
     //http://127.0.0.1:8000/
     //
-    //const res = await fetch("https://pokegen-api.onrender.com/render", {
-    const res = await fetch("http://127.0.0.1:8000/render", {
+    const res = await fetch("https://pokegen-api.onrender.com/render", {
+    //const res = await fetch("http://127.0.0.1:8000/render", {
         method: 'POST',
         body: formData,
       });
