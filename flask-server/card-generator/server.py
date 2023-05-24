@@ -64,10 +64,14 @@ def generate():
 # render API route
 @app.route('/render', methods=['POST'])
 def render():
+    print("👾👾👾STEP1: accessing render endpoint")
     #now it's all working
     json_string = request.form.get('json')  # Retrieve the JSON data from the form
     photo = request.files['photo']  # Retrieve the photo file from the form
 
+    print("👾👾👾STEP2: READING THE ARGS")
+    print(json_string)
+    print(photo)
     #### THIS IS AN ARRAY OF OBJECTS
     json_data = json.loads(json_string)
 
@@ -75,6 +79,7 @@ def render():
     encoded_images = []
 
     ### files and JSON extracted now need to pass to the func
+    print('STEP 3: checking if the correct args are being passed to main_render')
     PIL_image = main_render(json_data, photo)
 
     # print(PIL_image)
