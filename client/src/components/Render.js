@@ -7,7 +7,6 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
 
   const [photos, setPhotos] = useState([])
 
-  //THIS NEEDS TO TAKE FILES WHICH IS THE IMAGE AND SEND IT BACK WITH THE JSON
   const renderScript = async() => {
     const fileToUpload = files[0]
     const jsonArrToUpload = JSON.stringify(pokeJson)
@@ -16,17 +15,8 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
     formData.append('photo', fileToUpload)
     formData.append('json', jsonArrToUpload)
 
-    //🏠🏠🏠 LOCAL 🏠🏠🏠🏠
-    // const res = await fetch("/render", {
-    //     method: 'POST',
-    //     body: formData,
-    //   });
-    // 🏠🏠🏠 LOCAL 🏠🏠🏠🏠
-    //
-    //LOCAL GUNICORN
-    //http://127.0.0.1:8000/
-    //
     const res = await fetch("https://pokegen-api.onrender.com/render", {
+    //LOCAL
     //const res = await fetch("http://127.0.0.1:8000/render", {
         method: 'POST',
         body: formData,
@@ -40,15 +30,6 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
     return data.response
     }
 
-  //👻👻👻👻👻
-  // REDUNTANT HERE FOR REFERENCE
-  // const fetchPhotos = async(e) => {
-  //   const res = await fetch("/photos")
-  //   const data = await res.json()
-  //   return data.response
-  // }
-  //👻👻👻👻👻
-
   const displayPhoto = () => {
     return photos.map(url => (
       <img src={url} key={url} alt="photo" className='renderCard' />
@@ -58,11 +39,8 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
   useEffect(() => {
     const fetchData = async() => {
 
-      ///🎃🎃🎃🎃 This is currently working 
       const res = await renderScript()
-      ///🎃🎃🎃🎃
-
-      const dataArray = res.map((encoded64) => {return `data:image/png;base64,${encoded64}`})
+      const dataArray = res.map((encoded64) => {return `data:image/png;base64,${encoded64}`});
       setPhotos(dataArray);
     };
 
