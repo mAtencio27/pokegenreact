@@ -7,10 +7,6 @@ import footer from '../Assets/Page1/footer.png'
 const ImageUpload = ({pokeJson, setPokeJson, files, setFiles}) => {
 
   const [ prompts, setPrompts ] = useState([]);
-  //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
-  //moved to app prop
-  //const [ files , setFiles ] = useState([]);
-  //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
   const [ selected, setSelected] = useState('')
 
   //FILE UPLOAD HANDLER
@@ -21,9 +17,6 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles}) => {
     //let newName = prompts[0]["Image_file"]
     let newName = pokeJson[0].image_file
     //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
-    //console.log(e.target) //this is the tag
-    //console.log(e.target.files)//e.target.files is the actual file
-    //console.log(e.target.files[0].name)//the name of the file that needs to be formatted
     console.log("this is in the upload of the e.target.files[0]")
     console.log(e.target.files[0])
     const renamedFile = new File([uploadImage], newName, { type: uploadImage.type });
@@ -31,16 +24,6 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles}) => {
     //setFiles([...files, e.target.files[0]]) working
     setFiles([...files, renamedFile])
   };
-
-//👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
-//THis is no longer needed to generate anything
-//   const uploadFileNamer = () => {
-//     // This is the format to upload the image `{number}_{name}.png`
-//     //"001_armorgon.png"
-//     console.log("THIS IS OUR UPLOADFILENAMER FUNC")
-//     console.log(files[0].name)
-//   };
-// //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
 
   const uploadDropHandler = (e) => {
     e.preventDefault()
@@ -56,15 +39,17 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles}) => {
     const formData = new FormData()
 
     formData.append("file", fileToUpload)
-      const photoPasser = async() => {
-        const res = await fetch('/upload', {
-          method: 'POST',
-          body: formData
-        });
-      return res
-    };
 
-    photoPasser();
+      // const photoPasser = async() => {
+      //   const res = await fetch('/upload', {
+      //     method: 'POST',
+      //     body: formData
+      //   });
+      // return res
+      // };
+
+    console.log("useless now")
+     //photoPasser();
     //🎖🎖🎖Comment this out so it doesn't reset because I need to pass to render🎖🎖🎖
     //setFiles([])
   };

@@ -88,7 +88,7 @@ from src.pokemon_content.pokemon_rarity import PokemonRarity
 # if __name__ == "__main__":
 #     main()
 
-def main(number_of_monsters, element_name, subject_override):
+def main_generate(number_of_monsters, element_name, subject_override):
     element = (
         None
         if element_name is None
@@ -168,4 +168,4 @@ if __name__ == "__main__":
     element_name = args.element
     subject_override = args.subject
 
-    main(number_of_monsters, element_name, subject_override)
+    main_generate(number_of_monsters, element_name, subject_override)
