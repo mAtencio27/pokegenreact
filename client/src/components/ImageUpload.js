@@ -125,13 +125,13 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles}) => {
                   </input>
                 </label>
                 <div className='submitPhotoFileContainer'>
-                  <button className="photoInputName" type='submit'/**onClick={submitHandler(e)**/>Submit</button>
+                  <Link to="/Render" className="photoInputName" type='submit'/**onClick={submitHandler(e)**/>Submit</Link>
                 </div>
               </form>
             </div>
             <div className='navButtons'>
-              <Link to="/Home">Back</Link>
-              <Link to="/Render">Next</Link>
+              {/* <Link to="/Home">Back</Link> */}
+              {/* <Link to="/Render">Next</Link> */}
             </div>
             <div className="footerContainer3">
                 <img src={footer} className="footer3"></img>

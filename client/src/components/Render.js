@@ -67,8 +67,8 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
             {displayPhoto()}
             </div>
             <div className='renderNavButtons'>
-              <Link to="/ImageUpload">Back</Link>
-              <Link to="/Render">Next</Link>
+              {/* <Link to="/ImageUpload">Back</Link> */}
+              {/* <Link to="/Render">Next</Link> */}
             </div>
           </div>
         </div>

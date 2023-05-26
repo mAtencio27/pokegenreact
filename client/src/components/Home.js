@@ -116,11 +116,12 @@ const Home = ({pokeJson, setPokeJson}) => {
               </div>
             </div>
             <div className='generateButtonContainer'>
-              {elementString ? <button className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}}> Generate Script </button>: <button className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}} disabled> Generate Script </button>}
+              {/* {elementString ? <button className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}}> Generate Script </button>: <button className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}} disabled> Generate Script </button>} */}
+              {elementString ? <Link to="/ImageUpload" className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}}> Generate Script </Link>: <Link className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}} disabled> Generate Script </Link>}
             </div>
             <div className='navButtons'>
-                <Link to="/">Back</Link>
-                <Link to="/ImageUpload">Next</Link>
+                {/* <Link to="/">Back</Link> */}
+                {/* <Link className="generateScriptButton" to="/ImageUpload" onClick={(e)=>{console.log(e)}}>Next</Link> */}
             </div>
             <div className="footerContainer2">
                 <img src={footer} className="footer2"></img>
