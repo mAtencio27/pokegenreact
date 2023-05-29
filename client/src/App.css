@@ -382,7 +382,11 @@ body {
   background-color: #e6e6e6;
 }
 
-.generateElementTile:active{
+/* .generateElementTile:active{
+  background-color: #cbcbcb;
+} */
+
+.generateElementTile.selected{
   background-color: #cbcbcb;
 }
 
