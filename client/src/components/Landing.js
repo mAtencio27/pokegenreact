@@ -13,9 +13,9 @@ const Landing = () => {
             <div className="containerBG">
             <Header/>
                 {/* <img src={triangle} className="landingBG"></img> */}
-                <div className="generateBarRight">
+                {/* <div className="generateBarRight">
                     Generate 
-                </div>
+                </div> */}
                 <div className="generateBarLeft">
                     ECO-POKEMON
                 </div>
