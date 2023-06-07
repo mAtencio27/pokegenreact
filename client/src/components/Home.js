@@ -7,6 +7,10 @@ import footer from '../Assets/Page1/footer.png'
 
 const Home = ({pokeJson, setPokeJson}) => {
 
+  //This is going to conditionally render an is loading view once the API call starts🎤
+  const [isLoading, setIsLoading] = useState(false);
+  🎤
+
   const [subjectString, setSubjectString] = useState([]);
   const [elementString, setElementString] = useState();
 
