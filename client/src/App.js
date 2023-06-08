@@ -13,9 +13,10 @@ function App() {
 
   const [pokeJson, setPokeJson] = useState([]);
   const [ files , setFiles ] = useState([]);
-  const [location, setLocation] = useState(0)
-
   //THIS IS TO RESET THE PAGE TO THE TOP WHEN ROUTING
+  const [location, setLocation] = useState(0)
+  //THIS STATE IS TO CONDITIONALLY RENDER A LOADING PAGE
+  const [isLoading, setIsLoading] = useState(false)
 
   //const [data, setData] = useState([{}])
 
@@ -89,13 +90,13 @@ function App() {
               <Landing setLocation={setLocation}/>
             </Route>
             <Route exact path = "/home">
-              <Home pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation}/>
+              <Home pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation} isLoading={isLoading} setIsLoading={setIsLoading}/>
             </Route>
             <Route path = "/ImageUpload">
-              <ImageUpload pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation}/>
+              <ImageUpload pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation} isLoading={isLoading} setIsLoading={setIsLoading}/>
             </Route>
             <Route path="/Render">
-              <Render pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation}/>
+              <Render pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation} isLoading={isLoading} setIsLoading={setIsLoading}/>
             </Route>
           </Switch>
         </div>

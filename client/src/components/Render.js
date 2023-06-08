@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 import logo from "../Assets/Page1/logo.png"
 
-const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
+const Render = ({pokeJson, setPokeJson, files, setFiles, isLoading, setIsLoading}) => {
 
   const [photos, setPhotos] = useState([])
 

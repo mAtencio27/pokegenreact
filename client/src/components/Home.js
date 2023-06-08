@@ -5,37 +5,39 @@ import background from '../Assets/Page2/yellow.png'
 import Header from './Header';
 import footer from '../Assets/Page1/footer.png'
 
-const Home = ({pokeJson, setPokeJson, setLocation}) => {
-
-  //This is going to conditionally render an is loading view once the API call starts🎤
-  const [isLoading, setIsLoading] = useState(false);
-  //🎤
+const Home = ({pokeJson, setPokeJson, setLocation, isLoading, setIsLoading}) => {
 
   const [subjectString, setSubjectString] = useState([]);
-  const [elementString, setElementString] = useState();
+  const [elementString, setElementString] = useState("");
 
 
   //THIS IS GENERATING THE JSON SCRIPT AND SAVING THE JSON TO STATE
   const generateScript = async(e) => {
-    //api
-    //const res = await fetch(`https://pokegen-api.onrender.com/`)
-
-    //PROXY
-    // set proxy in JSON to "https://pokegen-api.onrender.com/" once tempfiles work
-
-    //this one works locally WIP need to implement tempfiles
-    //const res = await fetch(`https://pokegen-api.onrender.com/generate?element=${elementString}&subject=${subjectString}`)
-
     //🏠🏠🏠🏠🏠🏠 LOCAL 🏠🏠🏠🏠🏠
     //const res = await fetch(`http://localhost:5000/generate?element=${elementString}&subject=${subjectString}`)
-
+    //🎹🎹 THIS IS A TEST TO TEST LOADING SCREEN
+    //console.log(isLoading)
     //🏩🏩🏩🏩🏩🏩 PRODUCTION 🏩🏩🏩🏩🏩
     const res = await fetch(`https://pokegen-api.onrender.com/generate?element=${elementString}&subject=${subjectString}`)
-    console.log('production test')
     let responseData = await res.json()
     setPokeJson(responseData.data.cards)
-    console.log(pokeJson)
-    return
+    setIsLoading(false)
+    console.log(isLoading)
+    return responseData.data.cards
+  };
+
+  const clickHandler = async(e) => {
+    setIsLoading(true);
+    setLocation(2);
+    try {
+      const response = await generateScript(e);
+      console.log(response)
+      console.log(pokeJson)
+    }catch(error){
+
+    }finally {
+      setIsLoading(false);
+    }
   };
 
   // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
@@ -121,7 +123,9 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
             </div>
             <div className='generateButtonContainer'>
               {/* {elementString ? <button className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}}> Generate Script </button>: <button className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}} disabled> Generate Script </button>} */}
-              {elementString ? <Link to="/ImageUpload" className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e); setLocation(2)}}> Generate Script </Link>: <Link className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}} disabled> Generate Script </Link>}
+              {elementString ? <Link to="/ImageUpload" className="generateScriptButton" value={subjectString} onClick={(e)=>{clickHandler(e)}}> Generate Script </Link>: <Link to='/Home' className="generateScriptButtonDisabled" value={subjectString}> Select an element to continue </Link>}
+              {/* {<Link to="/ImageUpload" className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e); setLocation(2)}}> Generate Script </Link>} */}
+              {/* {<Link to="/ImageUpload" className="generateScriptButton" value={subjectString} onClick={(e)=>{clickHandler(e)}}> Generate Script </Link>} */}
             </div>
             <div className='navButtons'>
                 {/* <Link to="/">Back</Link> */}

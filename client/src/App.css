@@ -410,9 +410,17 @@ body {
   cursor: pointer;
 }
 
-.generateScriptButton:disabled {
+.generateScriptButtonDisabled {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
   background-color: rgb(222, 222, 222);
   color: black;
+  border:none;
+  padding: 15px;
+  width: 260px;
+  text-decoration: none;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -580,6 +588,21 @@ body {
   font-weight: bold;
   font-size: 18px;
   background-color: rgb(255, 236, 0);
+  color: black;
+  border-radius: 5%;
+  border:none;
+  padding: 10px;
+  width: 300px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.photoInputNameDisabled{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgb(222, 222, 222);
   color: black;
   border-radius: 5%;
   border:none;

@@ -4,14 +4,19 @@ import { Link } from 'react-router-dom';
 import Header from './Header';
 import footer from '../Assets/Page1/footer.png'
 
-const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
+const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation, isLoading, setIsLoading}) => {
 
   const [ prompts, setPrompts ] = useState([]);
   const [ selected, setSelected] = useState('')
 
+  useEffect(()=>{
+    console.log(pokeJson[0])
+  },[])
+
   //FILE UPLOAD HANDLER
   const uploadHandler = (e) => {
-    let uploadImage = e.target.files[0]
+    setFiles([])
+    let uploadImage = e.target.files[0];
     //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
     //// NEED TO CHANGE THIS 
     //let newName = prompts[0]["Image_file"]
@@ -22,7 +27,9 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
     const renamedFile = new File([uploadImage], newName, { type: uploadImage.type });
     //console.log(renamedFile)
     //setFiles([...files, e.target.files[0]]) working
-    setFiles([...files, renamedFile])
+    //working
+    //setFiles([...files, renamedFile])
+    setFiles([renamedFile])
   };
 
   const uploadDropHandler = (e) => {
@@ -63,30 +70,6 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
     return promptList
   };
 
-  //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
-  // NO LONGER NEED TO FETCH PROPTS NOW THAT THEY ARE BEING PASSED CORRECTLY!!! FASTER TOO!!!
-  // const fetchPrompts = async(e) => {
-  //   const res = await fetch("/prompts")
-  //   const data = await res.json()
-  //   console.log(data)
-  //   setPrompts(data.response);
-  //   return
-  // };
-  //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
-
-  //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
-  // useEffect(()=>{
-  //   const display = async() => {
-  //     await fetchPrompts();
-  //   };
-  //   display()
-  //   console.log(pokeJson)
-  //   // THESE ARE THE SAME
-  //   // console.log(`THIS IS FROM JSON STATE RETURN:${pokeJson[0].image_file}`);
-  //   // console.log(`THIS IS FROM THE FETCHED PROMPTS:${prompts[0]["Image_file"]}`)
-  // },[])
-  //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
-
   return (
     <div className='ImageUpload'>
       <div className="uploadContainer">
@@ -101,7 +84,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
               </div>
             </div>
             <div className="uploadSelectorContainer">
-              {prompts ? promptTagBuilder(): "no prompts"}
+              {pokeJson[0] ? promptTagBuilder(): "LOADING"}
             </div>
             <div className='photoUploadContainer'>
               <div className='photouploadEntranceBar'>
@@ -111,7 +94,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
             <div className='uploadInputContainer'>
               <form className="photoInputForm" onSubmit={submitHandler} encType="multipart/form-data">
                 <label htmlFor="image" className='custom-file-upload' onDrop={uploadDropHandler}>
-                  Drag and drop your photo from midjourney here!
+                  {files[0]? `${files[0].name} has been uploaded` : "Drag and drop your photo from midjourney here!"}
                   <input 
                     className="fileInput" 
                     type='file' 
@@ -125,7 +108,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
                   </input>
                 </label>
                 <div className='submitPhotoFileContainer'>
-                  <Link to="/Render" className="photoInputName" type='submit' onClick={setLocation(3)}/**onClick={submitHandler(e)**/>Submit</Link>
+                  {files[0]? <Link to="/Render" className="photoInputName" type='submit' onClick={setLocation(3)}/**onClick={submitHandler(e)**/>Submit</Link>: <Link to="/ImageUpload" className="photoInputNameDisabled" type='submit'>Please upload a photo</Link>}
                 </div>
               </form>
             </div>
