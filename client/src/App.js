@@ -13,8 +13,18 @@ function App() {
 
   const [pokeJson, setPokeJson] = useState([]);
   const [ files , setFiles ] = useState([]);
+  const [location, setLocation] = useState(0)
+
+  //THIS IS TO RESET THE PAGE TO THE TOP WHEN ROUTING
 
   //const [data, setData] = useState([{}])
+
+  //THIS USE EFFECT IS TO RESET TO THE TOP WHICH USES LOCATION
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    setLocation(0)
+  },[location])
 
   const generateScript = async(e) => {
     const res = await fetch("/generate")
@@ -76,16 +86,16 @@ function App() {
         <div className='components'>
           <Switch>
             <Route exact path = "/">
-              <Landing/>
+              <Landing setLocation={setLocation}/>
             </Route>
             <Route exact path = "/home">
-              <Home pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles}/>
+              <Home pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation}/>
             </Route>
             <Route path = "/ImageUpload">
-              <ImageUpload pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles}/>
+              <ImageUpload pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation}/>
             </Route>
             <Route path="/Render">
-              <Render pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles}/>
+              <Render pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation}/>
             </Route>
           </Switch>
         </div>

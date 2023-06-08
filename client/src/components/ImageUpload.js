@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from './Header';
 import footer from '../Assets/Page1/footer.png'
 
-const ImageUpload = ({pokeJson, setPokeJson, files, setFiles}) => {
+const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
 
   const [ prompts, setPrompts ] = useState([]);
   const [ selected, setSelected] = useState('')
@@ -125,7 +125,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles}) => {
                   </input>
                 </label>
                 <div className='submitPhotoFileContainer'>
-                  <Link to="/Render" className="photoInputName" type='submit'/**onClick={submitHandler(e)**/>Submit</Link>
+                  <Link to="/Render" className="photoInputName" type='submit' onClick={setLocation(3)}/**onClick={submitHandler(e)**/>Submit</Link>
                 </div>
               </form>
             </div>

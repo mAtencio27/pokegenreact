@@ -7,7 +7,7 @@ import character from '../Assets/Page1/character.png'
 import Header from "./Header"
 import News from "./News"
 
-const Landing = () => {
+const Landing = ({setLocation}) => {
     return(<div>
         <div className="containerLanding">
             <div className="containerBG">
@@ -42,7 +42,7 @@ const Landing = () => {
                         </div>
                         <div className="generateButtonContainer">
                             {/* <button className="generateButton">GENERATE</button> */}
-                            <Link to="/Home" className="generateButton">GENERATE</Link>
+                            <Link to="/Home" className="generateButton" onClick={()=>{setLocation(1)}}>GENERATE</Link>
                         </div>
                     </div>
                 </div>
