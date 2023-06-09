@@ -7,15 +7,13 @@ import footer from '../Assets/Page1/footer.png'
 const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
 
   const [ prompts, setPrompts ] = useState([]);
-  const [ selected, setSelected] = useState('')
-
-  useEffect(()=>{
-    console.log("use effect kicking off")
-  },[])
+  const [ selected, setSelected] = useState('');
+  //UPLOAD PHOTO CONFORMATION
+  //const [uploadDisplay, setUploadDisplay] = useState("");
 
   //FILE UPLOAD HANDLER
   const uploadHandler = (e) => {
-    setFiles([])
+    //setFiles([])
     let uploadImage = e.target.files[0];
     //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
     //// NEED TO CHANGE THIS 
@@ -31,28 +29,6 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
     e.preventDefault()
     e.stopPropagation()
     console.log(e.target)
-  };
-
-  //FILE SUBMIT HANDLER
-  const submitHandler = async(e) => {
-    e.preventDefault()
-    const fileToUpload = files[0]
-    const formData = new FormData()
-
-    formData.append("file", fileToUpload)
-
-      // const photoPasser = async() => {
-      //   const res = await fetch('/upload', {
-      //     method: 'POST',
-      //     body: formData
-      //   });
-      // return res
-      // };
-
-    console.log("useless now")
-     //photoPasser();
-    //🎖🎖🎖Comment this out so it doesn't reset because I need to pass to render🎖🎖🎖
-    //setFiles([])
   };
 
   //THIS WILL BUILD THE DISPLAYED PROMPTS AND GIVE THE DIVS TO UPLOAD PHOTOS
@@ -78,7 +54,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
               </div>
             </div>
             <div className="uploadSelectorContainer">
-              {pokeJson[0] ? promptTagBuilder(): "LOADING"}
+              {pokeJson[0] ? promptTagBuilder(): "LOADING . . ."}
             </div>
             <div className='photoUploadContainer'>
               <div className='photouploadEntranceBar'>
@@ -86,7 +62,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
               </div>
             </div>
             <div className='uploadInputContainer'>
-              <form className="photoInputForm" onSubmit={submitHandler} encType="multipart/form-data">
+              <form className="photoInputForm" encType="multipart/form-data">
                 <label htmlFor="image" className='custom-file-upload' onDrop={uploadDropHandler}>
                   {files[0]? `${files[0].name} has been uploaded` : "Drag and drop your photo from midjourney here!"}
                   <input 
@@ -103,7 +79,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
                 </label>
                 <div className='submitPhotoFileContainer'>
                   {files[0]?
-                  <Link to="/Render" className="photoInputName" type='submit' onClick={setLocation(3)}/**onClick={submitHandler(e)**/>Submit</Link>:
+                  <Link to="/Render" className="photoInputName" type='submit' onClick={()=>{setLocation(3)}}>Submit</Link>:
                   <Link to="/ImageUpload" className="photoInputNameDisabled" type='submit'>Please upload a photo</Link>
                   }
                 </div>

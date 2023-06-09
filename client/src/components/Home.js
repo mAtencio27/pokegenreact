@@ -5,7 +5,7 @@ import background from '../Assets/Page2/yellow.png'
 import Header from './Header';
 import footer from '../Assets/Page1/footer.png'
 
-const Home = ({pokeJson, setPokeJson, setLocation, isLoading, setIsLoading}) => {
+const Home = ({pokeJson, setPokeJson, setLocation}) => {
 
   const [subjectString, setSubjectString] = useState([]);
   const [elementString, setElementString] = useState("");
@@ -21,8 +21,6 @@ const Home = ({pokeJson, setPokeJson, setLocation, isLoading, setIsLoading}) => 
     const res = await fetch(`https://pokegen-api.onrender.com/generate?element=${elementString}&subject=${subjectString}`)
     let responseData = await res.json()
     setPokeJson(responseData.data.cards)
-    setIsLoading(false)
-    console.log(isLoading)
     return responseData.data.cards
   };
 
