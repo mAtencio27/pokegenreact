@@ -9,9 +9,8 @@ const News = () => {
         let articleArr = [];
 
         for(let article of news){
-            console.log(article)
             articleArr.push(
-                <div className="singleNews">
+                <div className="singleNews" key={article.date}>
                     <ul>
                         <li>{article.date}</li>
                     </ul>

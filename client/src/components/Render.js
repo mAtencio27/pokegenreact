@@ -2,8 +2,9 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 import logo from "../Assets/Page1/logo.png"
+import Loading from './Loading';
 
-const Render = ({pokeJson, setPokeJson, files, setFiles, isLoading, setIsLoading}) => {
+const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
 
   const [photos, setPhotos] = useState([])
 
@@ -38,8 +39,7 @@ const Render = ({pokeJson, setPokeJson, files, setFiles, isLoading, setIsLoading
 
   useEffect(() => {
     const fetchData = async() => {
-
-      const res = await renderScript()
+      const res = await renderScript();
       const dataArray = res.map((encoded64) => {return `data:image/png;base64,${encoded64}`});
       setPhotos(dataArray);
     };
@@ -49,6 +49,7 @@ const Render = ({pokeJson, setPokeJson, files, setFiles, isLoading, setIsLoading
 
   return (
     <div className='render'>
+      {photos[0]?
       <div className='renderPageContainer'>
         <div className='renderContainerBG'>
           <div className="renderNavbarContainer">
@@ -72,8 +73,7 @@ const Render = ({pokeJson, setPokeJson, files, setFiles, isLoading, setIsLoading
             </div>
           </div>
         </div>
-
-      </div>
+      </div>:<Loading/>}
     </div>
   )
 }

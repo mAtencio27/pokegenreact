@@ -27,16 +27,14 @@ const Home = ({pokeJson, setPokeJson, setLocation, isLoading, setIsLoading}) => 
   };
 
   const clickHandler = async(e) => {
-    setIsLoading(true);
     setLocation(2);
     try {
       const response = await generateScript(e);
-      console.log(response)
-      console.log(pokeJson)
+      console.log(`This is the response ${response}`)
     }catch(error){
 
     }finally {
-      setIsLoading(false);
+      return
     }
   };
 

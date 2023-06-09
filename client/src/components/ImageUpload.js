@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 import Header from './Header';
 import footer from '../Assets/Page1/footer.png'
 
-const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation, isLoading, setIsLoading}) => {
+const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
 
   const [ prompts, setPrompts ] = useState([]);
   const [ selected, setSelected] = useState('')
 
   useEffect(()=>{
-    console.log(pokeJson[0])
+    console.log("use effect kicking off")
   },[])
 
   //FILE UPLOAD HANDLER
@@ -19,14 +19,9 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation, isLoa
     let uploadImage = e.target.files[0];
     //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
     //// NEED TO CHANGE THIS 
-    //let newName = prompts[0]["Image_file"]
     let newName = pokeJson[0].image_file
     //👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻
-    console.log("this is in the upload of the e.target.files[0]")
-    console.log(e.target.files[0])
     const renamedFile = new File([uploadImage], newName, { type: uploadImage.type });
-    //console.log(renamedFile)
-    //setFiles([...files, e.target.files[0]]) working
     //working
     //setFiles([...files, renamedFile])
     setFiles([renamedFile])
@@ -41,7 +36,6 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation, isLoa
   //FILE SUBMIT HANDLER
   const submitHandler = async(e) => {
     e.preventDefault()
-    //console.log(files[0])
     const fileToUpload = files[0]
     const formData = new FormData()
 
@@ -63,7 +57,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation, isLoa
 
   //THIS WILL BUILD THE DISPLAYED PROMPTS AND GIVE THE DIVS TO UPLOAD PHOTOS
   const promptTagBuilder = () => {
-    const promptList = pokeJson.map((p)=>{return <div className='promptCard' data-value={p.name} onClick={(e)=>{setSelected(e.target.dataset.value)}}>
+    const promptList = pokeJson.map((p,i)=>{return <div className='promptCard' key={i} data-value={p.name} onClick={(e)=>{setSelected(e.target.dataset.value)}}>
       <h3 className='cardName'>{p.name}</h3>
       <div className='prompt'>{p.image_prompt}</div>
     </div>});
@@ -108,7 +102,10 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation, isLoa
                   </input>
                 </label>
                 <div className='submitPhotoFileContainer'>
-                  {files[0]? <Link to="/Render" className="photoInputName" type='submit' onClick={setLocation(3)}/**onClick={submitHandler(e)**/>Submit</Link>: <Link to="/ImageUpload" className="photoInputNameDisabled" type='submit'>Please upload a photo</Link>}
+                  {files[0]?
+                  <Link to="/Render" className="photoInputName" type='submit' onClick={setLocation(3)}/**onClick={submitHandler(e)**/>Submit</Link>:
+                  <Link to="/ImageUpload" className="photoInputNameDisabled" type='submit'>Please upload a photo</Link>
+                  }
                 </div>
               </form>
             </div>
@@ -121,20 +118,6 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation, isLoa
             </div>
           </div>
         </div>
-
-
-
-
-
-
-        {/* <h1>Image Prompts</h1>
-        <div className='promptCardContainer'>
-          {prompts ? promptTagBuilder(): "no prompts"}
-        </div>
-        <div className='navButtons'>
-            <Link to="/Home">Back</Link>
-            <Link to="/Render">Next</Link>
-        </div> */}
       </div>
     </div>
   )
