@@ -15,8 +15,6 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
   const generateScript = async(e) => {
     //🏠🏠🏠🏠🏠🏠 LOCAL 🏠🏠🏠🏠🏠
     //const res = await fetch(`http://localhost:5000/generate?element=${elementString}&subject=${subjectString}`)
-    //🎹🎹 THIS IS A TEST TO TEST LOADING SCREEN
-    //console.log(isLoading)
     //🏩🏩🏩🏩🏩🏩 PRODUCTION 🏩🏩🏩🏩🏩
     const res = await fetch(`https://pokegen-api.onrender.com/generate?element=${elementString}&subject=${subjectString}`)
     let responseData = await res.json()
