@@ -90,18 +90,18 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
           <Header/>
           <div className='homeHeaderContainer'>
             <h1 className='typeKeywordHead'>TYPE & KEYWORD</h1>
-            <p className='typeKeywordP'>eco pokemon element and keyword input</p>
+            <p className='typeKeywordP'>シールダーの属性とキーワードを入力しよう</p>
             <div className='keywordEntryContainer'>
               <div className='keywordEntranceBar'>
-                keyword enter
+                キーワードを入力
               </div>
             </div>
             <div className='keywordInputContainer'>
-              <input className='keywordInput' placeholder="This is where to enter" onChange={(e) => {setSubjectString(e.target.value)}}  type='text'></input>
+              <input className='keywordInput' placeholder="例）リユース燃料" onChange={(e) => {setSubjectString(e.target.value)}}  type='text'></input>
             </div>
             <div className='elementSelectorContainer'>
               <div className='elementEntranceBar'>
-                select an element from the list
+                属性を選ぶ
               </div>
               <div className="generateElementBox">
                   <div className={`generateElementTile${elementString === 'grass' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="grass">Grass</div>

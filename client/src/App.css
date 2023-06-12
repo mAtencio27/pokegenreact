@@ -234,7 +234,8 @@ body {
   font-weight: bold;
   font-size: 18px;
   background-color: rgb(255, 236, 0);
-  color: black;
+  background: linear-gradient(to right,#0823dd,#4debc0);
+  color: white;
   border-radius: 5%;
   border:none;
   padding: 10px;
@@ -274,7 +275,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  background-image: url("./Assets/Page2/yellow.png");
+  background-image: url("./Assets/Page2/top.png");
   background-size:100%;
   background-repeat: no-repeat;
   height: 100vh;
@@ -284,10 +285,12 @@ body {
 .typeKeywordHead{
   position: relative;
   margin: 0 auto;
+  color: white;
 }
 
 .typeKeywordP{
   margin: 0 auto;
+  color: white;
 }
 
 .homeHeaderContainer{
@@ -400,7 +403,8 @@ body {
   font-weight: bold;
   font-size: 18px;
   background-color: rgb(255, 236, 0);
-  color: black;
+  background: linear-gradient(to right,#0823dd,#4debc0);
+  color: White;
   border-radius: 1%;
   border:none;
   padding: 15px;
