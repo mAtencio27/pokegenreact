@@ -453,7 +453,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  background-image: url("./Assets/Page2/yellow.png");
+  background-image: url("./Assets/Page2/top.png");
   background-size:100%;
   background-repeat: no-repeat;
   height: 100vh;
@@ -472,10 +472,12 @@ body {
 .typeUploadHead{
   position: relative;
   margin: 0 auto;
+  color: white;
 }
 
 .typeUploadP{
   margin: 0 auto;
+  color: white;
 }
 
 .uploadEntryContainer{
@@ -562,7 +564,7 @@ body {
   background-color: #fff;
   color: black;
   border-radius: 4px;
-  border: solid #ccc 1px;
+  border: dashed #ccc 1px;
   cursor: pointer;
   height: 15vh;
   margin-top: 10px;
@@ -592,7 +594,8 @@ body {
   font-weight: bold;
   font-size: 18px;
   background-color: rgb(255, 236, 0);
-  color: black;
+  background: linear-gradient(to right,#0823dd,#4debc0);
+  color: white;
   border-radius: 5%;
   border:none;
   padding: 10px;
@@ -711,4 +714,20 @@ body {
 
 .renderNavButtons{
   align-items: center;
+  padding-top: 30px;
+}
+
+.renderReturnButton{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(to right,#0823dd,#4debc0);
+  color: white;
+  border-radius: 1%;
+  border:none;
+  padding: 10px;
+  width: 300px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
 }

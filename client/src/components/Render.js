@@ -62,12 +62,13 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
           <div className='renderBodyContainer'>
             <div className='renderHeaderContainer'>
               <h1 className="renderh1">IT'S YOUR CARD!!</h1>
-              <h3 className='renderh2'>Here it your pokemon card</h3>
+              <h3 className='renderh2'>君だけのアースシールダーの出来上がり！</h3>
             </div>
             <div className='renderCardContainer'>
             {displayPhoto()}
             </div>
             <div className='renderNavButtons'>
+              <Link to="/" className="renderReturnButton" type='submit'>RETURN TO TOP</Link>:
               {/* <Link to="/ImageUpload">Back</Link> */}
               {/* <Link to="/Render">Next</Link> */}
             </div>
