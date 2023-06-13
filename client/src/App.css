@@ -644,9 +644,11 @@ body {
   justify-content: center;
   position: relative;
   background-image: url("./Assets/Page4/background.png");
-  background-size:100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  max-height: 150vh;
+  min-height: 100vh;
+  height: 150vh;
   width: 100vw;
 }
 
@@ -719,6 +721,7 @@ body {
 }
 
 .renderReturnButton{
+  position: relative;
   display: inline-block;
   font-weight: bold;
   font-size: 18px;
@@ -731,4 +734,25 @@ body {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+}
+
+.renderDataContainer{
+  position: relative;
+  margin: 10%;
+  padding: 3%;
+  background: white;
+  overflow: hidden;
+}
+
+.infoCardPanel{
+  padding: 10px;
+  display: flex;
+  border-top: dashed #ccc 1px;
+  color: black;
+}
+
+.infoCardDescription{
+  display: flex;
+  border-top: dashed #ccc 1px;
+  color: black;
 }
