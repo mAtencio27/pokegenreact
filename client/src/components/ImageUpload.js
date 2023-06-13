@@ -80,7 +80,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
                 <div className='submitPhotoFileContainer'>
                   {files[0]?
                   <Link to="/Render" className="photoInputName" type='submit' onClick={()=>{setLocation(3)}}>GENERATE YOUR CARD</Link>:
-                  <Link to="/ImageUpload" className="photoInputNameDisabled" type='submit'>Please upload a photo</Link>
+                  <Link to="/ImageUpload" className="photoInputNameDisabled" type='submit'>PLEASE UPLOAD A PHOTO</Link>
                   }
                 </div>
               </form>
