@@ -92,7 +92,7 @@ body {
   display: flex;
   justify-content: end;
   position: relative;
-  background-image: url("./Assets/Page1/triangle.png");
+  background-image: url("./Assets/Page1/blue.png");
   background-size:80%;
   background-repeat: no-repeat;
   height: 100vw;
@@ -518,6 +518,7 @@ body {
 
 .promptCard:hover{
   background-color: #2873f6;
+  background: linear-gradient(to bottom right,#4debc0,#0823dd);
   color: white
 }
 
@@ -714,7 +715,7 @@ body {
 
 .renderNavButtons{
   align-items: center;
-  padding-top: 30px;
+  padding-top: 5%;
 }
 
 .renderReturnButton{

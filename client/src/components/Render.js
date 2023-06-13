@@ -29,12 +29,17 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
     const data = await res.json();
     console.log(data)
     return data.response
-    }
+  };
 
   const displayPhoto = () => {
     return photos.map(url => (
       <img src={url} key={url} alt="photo" className='renderCard' />
     ))
+  };
+
+  const resetData = () => {
+    setPokeJson([]);
+    setFiles([]);
   }
 
   useEffect(() => {
@@ -68,9 +73,7 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
             {displayPhoto()}
             </div>
             <div className='renderNavButtons'>
-              <Link to="/" className="renderReturnButton" type='submit'>RETURN TO TOP</Link>:
-              {/* <Link to="/ImageUpload">Back</Link> */}
-              {/* <Link to="/Render">Next</Link> */}
+              <Link to="/" className="renderReturnButton" type='submit' onClick={()=>{resetData()}}>RETURN TO TOP</Link>:
             </div>
           </div>
         </div>
