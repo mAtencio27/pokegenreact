@@ -92,7 +92,7 @@ body {
   display: flex;
   justify-content: end;
   position: relative;
-  background-image: url("./Assets/Page1/triangle.png");
+  background-image: url("./Assets/Page1/blue.png");
   background-size:80%;
   background-repeat: no-repeat;
   height: 100vw;
@@ -234,7 +234,8 @@ body {
   font-weight: bold;
   font-size: 18px;
   background-color: rgb(255, 236, 0);
-  color: black;
+  background: linear-gradient(to right,#0823dd,#4debc0);
+  color: white;
   border-radius: 5%;
   border:none;
   padding: 10px;
@@ -274,7 +275,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  background-image: url("./Assets/Page2/yellow.png");
+  background-image: url("./Assets/Page2/top.png");
   background-size:100%;
   background-repeat: no-repeat;
   height: 100vh;
@@ -284,10 +285,12 @@ body {
 .typeKeywordHead{
   position: relative;
   margin: 0 auto;
+  color: white;
 }
 
 .typeKeywordP{
   margin: 0 auto;
+  color: white;
 }
 
 .homeHeaderContainer{
@@ -400,7 +403,8 @@ body {
   font-weight: bold;
   font-size: 18px;
   background-color: rgb(255, 236, 0);
-  color: black;
+  background: linear-gradient(to right,#0823dd,#4debc0);
+  color: White;
   border-radius: 1%;
   border:none;
   padding: 15px;
@@ -449,7 +453,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  background-image: url("./Assets/Page2/yellow.png");
+  background-image: url("./Assets/Page2/top.png");
   background-size:100%;
   background-repeat: no-repeat;
   height: 100vh;
@@ -468,10 +472,12 @@ body {
 .typeUploadHead{
   position: relative;
   margin: 0 auto;
+  color: white;
 }
 
 .typeUploadP{
   margin: 0 auto;
+  color: white;
 }
 
 .uploadEntryContainer{
@@ -512,6 +518,7 @@ body {
 
 .promptCard:hover{
   background-color: #2873f6;
+  background: linear-gradient(to bottom right,#4debc0,#0823dd);
   color: white
 }
 
@@ -558,7 +565,7 @@ body {
   background-color: #fff;
   color: black;
   border-radius: 4px;
-  border: solid #ccc 1px;
+  border: dashed #ccc 1px;
   cursor: pointer;
   height: 15vh;
   margin-top: 10px;
@@ -588,7 +595,8 @@ body {
   font-weight: bold;
   font-size: 18px;
   background-color: rgb(255, 236, 0);
-  color: black;
+  background: linear-gradient(to right,#0823dd,#4debc0);
+  color: white;
   border-radius: 5%;
   border:none;
   padding: 10px;
@@ -636,9 +644,11 @@ body {
   justify-content: center;
   position: relative;
   background-image: url("./Assets/Page4/background.png");
-  background-size:100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  max-height: 150vh;
+  min-height: 100vh;
+  height: 150vh;
   width: 100vw;
 }
 
@@ -707,4 +717,42 @@ body {
 
 .renderNavButtons{
   align-items: center;
+  padding-top: 5%;
+}
+
+.renderReturnButton{
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  background: linear-gradient(to right,#0823dd,#4debc0);
+  color: white;
+  border-radius: 1%;
+  border:none;
+  padding: 10px;
+  width: 300px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.renderDataContainer{
+  position: relative;
+  margin: 10%;
+  padding: 3%;
+  background: white;
+  overflow: hidden;
+}
+
+.infoCardPanel{
+  padding: 10px;
+  display: flex;
+  border-top: dashed #ccc 1px;
+  color: black;
+}
+
+.infoCardDescription{
+  display: flex;
+  border-top: dashed #ccc 1px;
+  color: black;
 }

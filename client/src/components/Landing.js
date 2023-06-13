@@ -17,7 +17,7 @@ const Landing = ({setLocation}) => {
                     Generate 
                 </div> */}
                 <div className="generateBarLeft">
-                    ECO-POKEMON
+                    EARTH-SHIELD
                 </div>
                 <div className="centerPhotoContainer">
                     <img className="centerPhoto" src={centerPhoto}></img>
@@ -31,7 +31,7 @@ const Landing = ({setLocation}) => {
                     <img className="character" src={character}></img>
                     <div className="conceptStuff">
                         <div className="generateHead"></div>
-                        <h1 className="ecoHead">ECO-POKE CONCEPT</h1>
+                        <h1 className="ecoHead">EARTH-SHIELD</h1>
                         <div className="ecoHead2container">
                             <h2 className="ecoHead2">lorum ipsum more stuff</h2>
                             <h2 className="ecoHead2">lorum ipsum</h2>

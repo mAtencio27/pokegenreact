@@ -50,7 +50,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
             <p className='typeUploadP'>Using AI generated promps upload the image</p>
             <div className='uploadEntryContainer'>
               <div className='uploadEntranceBar'>
-                好きなポケモンをクリック
+                好きなキャラクターをクリック
               </div>
             </div>
             <div className="uploadSelectorContainer">
@@ -58,13 +58,13 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
             </div>
             <div className='photoUploadContainer'>
               <div className='photouploadEntranceBar'>
-                Photo Upload
+                画像を挿入する
               </div>
             </div>
             <div className='uploadInputContainer'>
               <form className="photoInputForm" encType="multipart/form-data">
                 <label htmlFor="image" className='custom-file-upload' onDrop={uploadDropHandler}>
-                  {files[0]? `${files[0].name} has been uploaded` : "Drag and drop your photo from midjourney here!"}
+                  {files[0]? `${files[0].name} has been uploaded` : "画像をドラッグ＆ドロップしてください。"}
                   <input 
                     className="fileInput" 
                     type='file' 
@@ -79,7 +79,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
                 </label>
                 <div className='submitPhotoFileContainer'>
                   {files[0]?
-                  <Link to="/Render" className="photoInputName" type='submit' onClick={()=>{setLocation(3)}}>Submit</Link>:
+                  <Link to="/Render" className="photoInputName" type='submit' onClick={()=>{setLocation(3)}}>GENERATE YOUR CARD</Link>:
                   <Link to="/ImageUpload" className="photoInputNameDisabled" type='submit'>Please upload a photo</Link>
                   }
                 </div>
