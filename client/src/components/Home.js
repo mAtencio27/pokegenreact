@@ -112,9 +112,9 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
                   <div className={`generateElementTile${elementString === 'neutral' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="neutral">Normal</div>
                   <div className={`generateElementTile${elementString === 'fighting' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fighting">Fighting</div>
                   <div className={`generateElementTile${elementString === 'dark' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="dark">Darkness</div>
-                  <div className={`generateElementTile${elementString === 'metal' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="metal">Metal</div>
                   <div className={`generateElementTile${elementString === 'fairy' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fairy">Fairy</div>
-                  <div className={`generateElementTile${elementString === 'dragon' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="dragon">Dragon</div>
+                  {/* <div className={`generateElementTile${elementString === 'dragon' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="dragon">Dragon</div>
+                  <div className={`generateElementTile${elementString === 'metal' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="metal">Metal</div> */}
               </div>
             </div>
             <div className='generateButtonContainer'>

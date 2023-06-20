@@ -3,23 +3,23 @@
   "cards": [
     {
       "index": 1,
-      "name": "Armouron",
-      "description": "Armouron is a legendary Pok\u00e9mon that can be found in the deepest and darkest of caverns. Covered in ornate armour from head to toe, this powerful being is as indestructible as steel. With its mysterious ability of Magnet Bomb, Armouron can utilize the magnetic fields of the caves it inhabits to its advantage to surprise and overwhelm opponents. During its down time, Armouron relaxes by polishing its armour to keep it shining and sharp.",
-      "element": "Metal",
+      "name": "Voltgor",
+      "description": "Voltgor is a mythical pokemon that can be found in mountainous environments. It is said to wear ancient armor, a sign of its extraordinary strength. This pokemon is known to live a solitary life, spending most of its days atop the tallest peaks surveying its domain. The best way to catch a glimpse of Voltgor is usually after a storm, as it is known to use its powerful Thunderlash to ward off any intruders.",
+      "element": "Electric",
       "rarity": "rare",
       "rarity_index": 2,
-      "hp": 80,
+      "hp": 120,
       "abilities": [
         {
-          "name": "Magnet Bomb",
-          "element": "Metal",
-          "cost": 4,
+          "name": "Thunderlash",
+          "element": "Electric",
+          "cost": 3,
           "is_mixed_element": false,
-          "power": 60
+          "power": 50
         }
       ],
-      "image_prompt": "Armouron::0 a legendary metal-type pokemon::2.5, wearing ornate armor, in a cave environment, natural and brown ambient lighting, anime sketch --niji --ar 3:2",
-      "image_file": "001_armouron.png"
+      "image_prompt": "Voltgor::0 a mythical electric-type pokemon::2.5, wearing ancient armor, in a mountain environment, lightning background, anime sketch --niji --ar 3:2",
+      "image_file": "001_voltgor.png"
     }
   ]
 }
