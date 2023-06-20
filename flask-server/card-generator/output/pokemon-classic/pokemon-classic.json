@@ -3,23 +3,23 @@
   "cards": [
     {
       "index": 1,
-      "name": "Voltgor",
-      "description": "Voltgor is a mythical pokemon that can be found in mountainous environments. It is said to wear ancient armor, a sign of its extraordinary strength. This pokemon is known to live a solitary life, spending most of its days atop the tallest peaks surveying its domain. The best way to catch a glimpse of Voltgor is usually after a storm, as it is known to use its powerful Thunderlash to ward off any intruders.",
+      "name": "Voltex",
+      "description": "Voltex is a mysterious pokemon that can be found lurking in rocky mountain-like environments. Its yellow and teal armor provides it with a unique look, and it is rarely seen without its signature electric aura surrounding it. When it is time to hunt, Voltex scans its terrain with lightning-like speed and agility to find its prey. It can remain perfectly still for hours, waiting for the perfect moment to unleash its powerful Thunderstorm ability and devour its unsuspecting prey. Voltex is an intimidating force of nature and is a sight to behold.",
       "element": "Electric",
       "rarity": "rare",
       "rarity_index": 2,
-      "hp": 120,
+      "hp": 80,
       "abilities": [
         {
-          "name": "Thunderlash",
+          "name": "Thunderstorm",
           "element": "Electric",
-          "cost": 3,
+          "cost": 4,
           "is_mixed_element": false,
-          "power": 50
+          "power": 60
         }
       ],
-      "image_prompt": "Voltgor::0 a mythical electric-type pokemon::2.5, wearing ancient armor, in a mountain environment, lightning background, anime sketch --niji --ar 3:2",
-      "image_file": "001_voltgor.png"
+      "image_prompt": "Voltex::0 a epic electric-type pokemon::2.5, wearing yellow and teal armor, in a mountain environment, lightning background, anime sketch --niji --ar 3:2",
+      "image_file": "001_voltex.png"
     }
   ]
 }
