@@ -3,23 +3,23 @@
   "cards": [
     {
       "index": 1,
-      "name": "Voltex",
-      "description": "Voltex is a mysterious pokemon that can be found lurking in rocky mountain-like environments. Its yellow and teal armor provides it with a unique look, and it is rarely seen without its signature electric aura surrounding it. When it is time to hunt, Voltex scans its terrain with lightning-like speed and agility to find its prey. It can remain perfectly still for hours, waiting for the perfect moment to unleash its powerful Thunderstorm ability and devour its unsuspecting prey. Voltex is an intimidating force of nature and is a sight to behold.",
-      "element": "Electric",
+      "name": "Aquarmor",
+      "description": "Aquarmor is a legendary pokemon of mythical power, residing in serene, river-like environments. Clad in ornate armor, this pokemon exudes a regal presence and commands respect from its peers. Its main weapon is the Hydro Burst, a formidable attack that unleashes a torrent of energy strong enough to break even the sturdiest of walls. In its daily life, Aquarmor can be spotted enjoying a leisurely swim in its natural habitat, or using its powerful Hydro Burst to create a beautiful light show for visitors.",
+      "element": "Water",
       "rarity": "rare",
       "rarity_index": 2,
-      "hp": 80,
+      "hp": 120,
       "abilities": [
         {
-          "name": "Thunderstorm",
-          "element": "Electric",
-          "cost": 4,
-          "is_mixed_element": false,
-          "power": 60
+          "name": "Hydro Burst",
+          "element": "Water",
+          "cost": 3,
+          "is_mixed_element": true,
+          "power": 40
         }
       ],
-      "image_prompt": "Voltex::0 a epic electric-type pokemon::2.5, wearing yellow and teal armor, in a mountain environment, lightning background, anime sketch --niji --ar 3:2",
-      "image_file": "001_voltex.png"
+      "image_prompt": "Aquarmor::0 a legendary water-type pokemon::2.5, wearing ornate armor, in a river environment, sparkling blue background, anime sketch --niji --ar 3:2",
+      "image_file": "001_aquarmor.png"
     }
   ]
 }

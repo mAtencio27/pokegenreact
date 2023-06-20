@@ -1,3 +1,3 @@
-[001] Voltex
-Voltex::0 a epic electric-type pokemon::2.5, wearing yellow and teal armor, in a mountain environment, lightning background, anime sketch --niji --ar 3:2
+[001] Aquarmor
+Aquarmor::0 a legendary water-type pokemon::2.5, wearing ornate armor, in a river environment, sparkling blue background, anime sketch --niji --ar 3:2
 
