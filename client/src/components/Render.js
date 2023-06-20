@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 import logo from "../Assets/Page1/logo.png"
 import Loading from './Loading';
+import QRCode from 'react-qr-code'
 
 const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
 
@@ -52,7 +53,15 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
   const resetData = () => {
     setPokeJson([]);
     setFiles([]);
-  }
+  };
+
+  const handleScan = () => {
+    const link = document.createElement('a');
+    link.href = photos[0];
+    link.download = 'image.png';
+    link.click();
+    console.log("hello")
+  };
 
   useEffect(() => {
     const fetchData = async() => {
@@ -62,7 +71,11 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
     };
 
     fetchData()
-  }, [])
+  }, []);
+
+
+
+
 
   return (
     <div className='render'>
@@ -86,6 +99,10 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
             </div>
             {/* <div className='renderDataContainer'>
               {dataCardBuilder()}
+            </div> */}
+            {/* <div>
+              <QRCodeRenderer value={"stupid"}/>
+              <button onClick={handleScan}></button>
             </div> */}
             <div className='renderNavButtons'>
               <Link to="/" className="renderReturnButton" type='submit' onClick={()=>{resetData()}}>RETURN TO TOP</Link>
