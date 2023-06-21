@@ -3,23 +3,30 @@
   "cards": [
     {
       "index": 1,
-      "name": "Aquarmor",
-      "description": "Aquarmor is a legendary pokemon of mythical power, residing in serene, river-like environments. Clad in ornate armor, this pokemon exudes a regal presence and commands respect from its peers. Its main weapon is the Hydro Burst, a formidable attack that unleashes a torrent of energy strong enough to break even the sturdiest of walls. In its daily life, Aquarmor can be spotted enjoying a leisurely swim in its natural habitat, or using its powerful Hydro Burst to create a beautiful light show for visitors.",
-      "element": "Water",
-      "rarity": "rare",
-      "rarity_index": 2,
-      "hp": 120,
+      "name": "Dreramor",
+      "description": "Dreramor is a mysterious pokemon, shrouded in dark armor. It is rarely seen, unless one is brave enough to explore its crypt-like habitats. It spends its time honing its formidable skills, and its swift and precise strikes are sure to catch the eye of any potential challengers. Its Mystery Slash and Nudge abilities make it a powerful opponent. Dreramor is a true force to be reckoned with.",
+      "element": "Psychic",
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 90,
       "abilities": [
         {
-          "name": "Hydro Burst",
-          "element": "Water",
-          "cost": 3,
+          "name": "Mystery Slash",
+          "element": "Psychic",
+          "cost": 2,
           "is_mixed_element": true,
-          "power": 40
+          "power": 30
+        },
+        {
+          "name": "Nudge",
+          "element": "Neutral",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 10
         }
       ],
-      "image_prompt": "Aquarmor::0 a legendary water-type pokemon::2.5, wearing ornate armor, in a river environment, sparkling blue background, anime sketch --niji --ar 3:2",
-      "image_file": "001_aquarmor.png"
+      "image_prompt": "Dreramor::0 a special psychic-type pokemon::1.8, wearing dark armor, in a crypt environment, dreamy background, anime sketch --niji --ar 3:2",
+      "image_file": "001_dreramor.png"
     }
   ]
 }
