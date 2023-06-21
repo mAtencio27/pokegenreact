@@ -3,23 +3,30 @@
   "cards": [
     {
       "index": 1,
-      "name": "Armouron",
-      "description": "Armouron is a legendary Pok\u00e9mon that can be found in the deepest and darkest of caverns. Covered in ornate armour from head to toe, this powerful being is as indestructible as steel. With its mysterious ability of Magnet Bomb, Armouron can utilize the magnetic fields of the caves it inhabits to its advantage to surprise and overwhelm opponents. During its down time, Armouron relaxes by polishing its armour to keep it shining and sharp.",
-      "element": "Metal",
-      "rarity": "rare",
-      "rarity_index": 2,
-      "hp": 80,
+      "name": "Dreramor",
+      "description": "Dreramor is a mysterious pokemon, shrouded in dark armor. It is rarely seen, unless one is brave enough to explore its crypt-like habitats. It spends its time honing its formidable skills, and its swift and precise strikes are sure to catch the eye of any potential challengers. Its Mystery Slash and Nudge abilities make it a powerful opponent. Dreramor is a true force to be reckoned with.",
+      "element": "Psychic",
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 90,
       "abilities": [
         {
-          "name": "Magnet Bomb",
-          "element": "Metal",
-          "cost": 4,
+          "name": "Mystery Slash",
+          "element": "Psychic",
+          "cost": 2,
+          "is_mixed_element": true,
+          "power": 30
+        },
+        {
+          "name": "Nudge",
+          "element": "Neutral",
+          "cost": 1,
           "is_mixed_element": false,
-          "power": 60
+          "power": 10
         }
       ],
-      "image_prompt": "Armouron::0 a legendary metal-type pokemon::2.5, wearing ornate armor, in a cave environment, natural and brown ambient lighting, anime sketch --niji --ar 3:2",
-      "image_file": "001_armouron.png"
+      "image_prompt": "Dreramor::0 a special psychic-type pokemon::1.8, wearing dark armor, in a crypt environment, dreamy background, anime sketch --niji --ar 3:2",
+      "image_file": "001_dreramor.png"
     }
   ]
 }
