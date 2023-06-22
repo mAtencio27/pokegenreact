@@ -756,3 +756,34 @@ body {
   border-top: dashed #ccc 1px;
   color: black;
 }
+
+.loadingPageBG{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("./Assets/Loading/01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 150vh;
+  min-height: 100vh;
+  height: 150vh;
+  width: 100vw;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.loadingText{
+  animation: fade 2.5s infinite;
+}
+
+.loadingPageLoadingText{
+  animation: fade 2.5s infinite;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
