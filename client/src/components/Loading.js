@@ -1,7 +1,11 @@
 const Loading = () =>{
     return(
         <div>
-            LOADING!
+            <div className="loadingPageBG">
+                <h1 className="loadingPageLoadingText">
+                    LOADING...
+                </h1>
+            </div>
         </div>
     )
 }

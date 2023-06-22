@@ -54,7 +54,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
               </div>
             </div>
             <div className="uploadSelectorContainer">
-              {pokeJson[0] ? promptTagBuilder(): "NOW LOADING . . ."}
+              {pokeJson[0] ? promptTagBuilder(): <div className="loadingText">NOW LOADING . . .</div>}
             </div>
             <div className='photoUploadContainer'>
               <div className='photouploadEntranceBar'>
