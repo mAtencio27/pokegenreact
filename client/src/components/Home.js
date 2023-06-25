@@ -29,6 +29,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
     try {
       const response = await generateScript(e);
       console.log(`This is the response ${response}`)
+      console.log("test")
     }catch(error){
 
     }finally {
