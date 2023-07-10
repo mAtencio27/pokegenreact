@@ -10,6 +10,10 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
   const [subjectString, setSubjectString] = useState([]);
   const [elementString, setElementString] = useState("");
 
+  useEffect(()=>{
+    setPokeJson([]);
+  },[])
+
 
   //THIS IS GENERATING THE JSON SCRIPT AND SAVING THE JSON TO STATE
   const generateScript = async(e) => {
@@ -29,6 +33,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
     try {
       const response = await generateScript(e);
       console.log(`This is the response ${response}`)
+      console.log(response)
     }catch(error){
 
     }finally {
