@@ -10,6 +10,10 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
   const [subjectString, setSubjectString] = useState([]);
   const [elementString, setElementString] = useState("");
 
+  useEffect(()=>{
+    setPokeJson([]);
+  },[])
+
 
   //THIS IS GENERATING THE JSON SCRIPT AND SAVING THE JSON TO STATE
   const generateScript = async(e) => {
