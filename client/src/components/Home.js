@@ -102,7 +102,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
               </div>
             </div>
             <div className='keywordInputContainer'>
-              <input className='keywordInput' placeholder="例）リユース燃料" onChange={(e) => {setSubjectString(e.target.value)}}  type='text'></input>
+              <input className='keywordInput' placeholder="例）Recycle" onChange={(e) => {setSubjectString(e.target.value)}}  type='text'></input>
             </div>
             <div className='elementSelectorContainer'>
               <div className='elementEntranceBar'>
@@ -124,7 +124,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
             </div>
             <div className='generateButtonContainer'>
               {/* {elementString ? <button className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}}> Generate Script </button>: <button className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}} disabled> Generate Script </button>} */}
-              {elementString ? <Link to="/ImageUpload" className="generateScriptButton" value={subjectString} onClick={(e)=>{clickHandler(e)}}> Generate Script </Link>: <Link to='/Home' className="generateScriptButtonDisabled" value={subjectString}> Select an element to continue </Link>}
+              {elementString ? <Link to="/ImageUpload" className="generateScriptButton" value={subjectString} onClick={(e)=>{clickHandler(e)}}> GENERATE SCRIPT </Link>: <Link to='/Home' className="generateScriptButtonDisabled" value={subjectString}> Select an element to continue </Link>}
               {/* {<Link to="/ImageUpload" className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e); setLocation(2)}}> Generate Script </Link>} */}
               {/* {<Link to="/ImageUpload" className="generateScriptButton" value={subjectString} onClick={(e)=>{clickHandler(e)}}> Generate Script </Link>} */}
             </div>

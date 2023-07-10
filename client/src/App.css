@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Din';
+  src: url('../src/Assets/fonts/DIN_Condensed_Bold.ttf') format('truetype'),
+  /* Additional font formats if available */
+}
+
+@font-face {
+  font-family: 'NotoSansJP-Black';
+  src: url('../src/Assets/fonts/NotoSansJP-Black.otf') format('opentype'),
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -73,6 +86,8 @@ body {
 }
 
 .headerTopics {
+  font-family: 'NotoSansJP-Black', sans-serif;
+  font-weight: bold;
   font-size: 9px;
   border-right: 1px solid black;
   padding-left: 5px;
@@ -283,13 +298,19 @@ body {
 }
 
 .typeKeywordHead{
+  font-family: 'Din', sans-serif;
   position: relative;
   margin: 0 auto;
   color: white;
+  font-size: 2.5em;
 }
 
 .typeKeywordP{
+  font-family: 'NotoSansJP-Black', sans-serif;
+  font-size: .83em;
   margin: 0 auto;
+  margin-top: 10px;
+  font-weight: bold;
   color: white;
 }
 
@@ -312,6 +333,8 @@ body {
 }
 
 .keywordEntranceBar{
+  font-family: 'NotoSansJP-Black', sans-serif;
+  font-weight: bold;
   font-size: 25px;
   padding-left: 10px;
   padding-right: 10px;
@@ -325,6 +348,7 @@ body {
 }
 
 .keywordInput{
+  font-family: 'Din', sans-serif;
   background-color: #efefef;
   color: #6b6969;
   border: none;
@@ -350,6 +374,8 @@ body {
 }
 
 .elementEntranceBar{
+  font-family: 'NotoSansJP-Black', sans-serif;
+  font-weight: bold;
   font-size: 25px;
   padding-left: 10px;
   padding-right: 10px;
@@ -372,6 +398,8 @@ body {
 }
 
 .generateElementTile{
+  font-family: 'Din', sans-serif;
+  font-weight: bold;
   display: flex;
   width: 30%;
   border: solid #efefef 2px;
@@ -399,6 +427,8 @@ body {
 }
 
 .generateScriptButton{
+  font-family: 'Din', sans-serif;
+  font-weight: bold;
   display: inline-block;
   font-weight: bold;
   font-size: 18px;
@@ -415,6 +445,8 @@ body {
 }
 
 .generateScriptButtonDisabled {
+  font-family: 'Din', sans-serif;
+  font-weight: bold;
   display: inline-block;
   font-weight: bold;
   font-size: 18px;
@@ -470,13 +502,19 @@ body {
 }
 
 .typeUploadHead{
+  font-family: 'Din', sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
   position: relative;
   margin: 0 auto;
   color: white;
 }
 
 .typeUploadP{
-  margin: 0 auto;
+  font-family: 'NotoSansJP-Black', sans-serif;
+  font-weight: bold;
+  font-size: .83em;
+  margin-top: 10px;
   color: white;
 }
 
@@ -491,6 +529,8 @@ body {
 }
 
 .uploadEntranceBar{
+  font-family: 'NotoSansJP-Black', sans-serif;
+  font-weight: bold;
   font-size: 25px;
   padding-left: 10px;
   padding-right: 10px;
@@ -528,14 +568,18 @@ body {
 }
 
 .cardName{
-
+  font-family: 'NotoSansJP-Black', sans-serif;
+  font-weight: bold;
 }
 
 .prompt{
-
+  font-family: 'NotoSansJP-Black', sans-serif;
+  font-weight: bold;
 }
 
 .photoUploadContainer{
+  font-family: 'NotoSansJP-Black', sans-serif;
+  font-weight: bold;
   display: flex;
   width: 100%;
   position: relative;
@@ -560,6 +604,8 @@ body {
 }
 
 .custom-file-upload {
+  font-family: 'NotoSansJP-Black', sans-serif;
+  font-weight: bold;
   display: flex;
   padding: 8px 20px;
   background-color: #fff;
@@ -593,13 +639,14 @@ body {
 }
 
 .photoInputName{
+  font-family: 'Din', sans-serif;
+  font-weight: bold;
   display: inline-block;
   font-weight: bold;
   font-size: 18px;
   background-color: rgb(255, 236, 0);
   background: linear-gradient(to right,#0823dd,#4debc0);
   color: white;
-  border-radius: 5%;
   border:none;
   padding: 10px;
   width: 300px;
@@ -609,12 +656,13 @@ body {
 }
 
 .photoInputNameDisabled{
+  font-family: 'Din', sans-serif;
+  font-weight: bold;
   display: inline-block;
   font-weight: bold;
   font-size: 18px;
   background-color: rgb(222, 222, 222);
   color: black;
-  border-radius: 5%;
   border:none;
   padding: 10px;
   width: 300px;
@@ -686,6 +734,8 @@ body {
 }
 
 .renderh1{
+  font-family: 'Din', sans-serif;
+  font-weight: bold;
   background-color: white;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -695,6 +745,8 @@ body {
 }
 
 .renderh2{
+  font-family: 'NotoSansJP-Black', sans-serif;
+  font-weight: bold;
   background-color: #141414;
   color: white;
   margin: 0 auto;
@@ -723,6 +775,7 @@ body {
 }
 
 .renderReturnButton{
+  font-family: 'Din', sans-serif;
   position: relative;
   display: inline-block;
   font-weight: bold;
@@ -780,10 +833,14 @@ body {
 }
 
 .loadingText{
+  font-family: 'NotoSansJP-Black', sans-serif;
+  font-weight: bold;
   animation: fade 2.5s infinite;
 }
 
 .loadingPageLoadingText{
+  font-family: 'NotoSansJP-Black', sans-serif;
+  font-weight: bold;
   animation: fade 2.5s infinite;
   color: white;
   justify-content: center;

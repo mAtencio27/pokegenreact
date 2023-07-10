@@ -47,7 +47,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
           <Header/>
           <div className='uploadHeaderContainer'>
             <h1 className='typeUploadHead'>GENERATE IMAGE</h1>
-            <p className='typeUploadP'>Using AI generated promps upload the image</p>
+            <p className='typeUploadP'>AIでシールダーの画像を生成しよう</p>
             <div className='uploadEntryContainer'>
               <div className='uploadEntranceBar'>
                 好きなキャラクターをクリック
@@ -64,7 +64,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
             <div className='uploadInputContainer'>
               <form className="photoInputForm" encType="multipart/form-data">
                 <label htmlFor="image" className='custom-file-upload' onDrop={uploadDropHandler}>
-                  {files[0]? `${files[0].name} has been uploaded` : "画像をドラッグ＆ドロップしてください。"}
+                  {files[0]? `${files[0].name} has been uploaded` : "画像を選択してください"}
                   <input 
                     className="fileInput" 
                     type='file' 
