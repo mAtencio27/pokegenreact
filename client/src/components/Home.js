@@ -5,6 +5,9 @@ import background from '../Assets/Page2/yellow.png'
 import Header from './Header';
 import footer from '../Assets/Page1/footer.png'
 
+//ELEMENT IMPORTS
+import dark from '../Assets/elements/dark_element.png'
+
 const Home = ({pokeJson, setPokeJson, setLocation}) => {
 
   const [subjectString, setSubjectString] = useState([]);
@@ -116,7 +119,10 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
                   <div className={`generateElementTile${elementString === 'psychic' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="psychic">MIND</div>
                   <div className={`generateElementTile${elementString === 'neutral' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="neutral">CLEAN</div>
                   <div className={`generateElementTile${elementString === 'fighting' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fighting">PROTECT</div>
-                  <div className={`generateElementTile${elementString === 'dark' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="dark">FEAR</div>
+                  <div className={`generateElementTile${elementString === 'dark' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="dark">
+                    <img src={dark}></img>
+                    FEAR
+                  </div>
                   <div className={`generateElementTile${elementString === 'fairy' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fairy">SPIRIT</div>
                   {/* <div className={`generateElementTile${elementString === 'dragon' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="dragon">Dragon</div>
                   <div className={`generateElementTile${elementString === 'metal' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="metal">Metal</div> */}
