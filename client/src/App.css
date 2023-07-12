@@ -846,3 +846,7 @@ body {
   justify-content: center;
   text-align: center;
 }
+
+.buttonElementImage {
+  height:100%
+};

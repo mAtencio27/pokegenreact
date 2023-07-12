@@ -120,7 +120,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
                   <div className={`generateElementTile${elementString === 'neutral' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="neutral">CLEAN</div>
                   <div className={`generateElementTile${elementString === 'fighting' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fighting">PROTECT</div>
                   <div className={`generateElementTile${elementString === 'dark' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="dark">
-                    <img src={dark}></img>
+                    <div className='buttonElementImageDiv'><img className='buttonElementImage' src={dark}></img></div>
                     FEAR
                   </div>
                   <div className={`generateElementTile${elementString === 'fairy' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fairy">SPIRIT</div>
