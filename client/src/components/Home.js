@@ -7,6 +7,14 @@ import footer from '../Assets/Page1/footer.png'
 
 //ELEMENT IMPORTS
 import dark from '../Assets/elements/dark_element.png'
+import electric from '../Assets/elements/electric_element.png'
+import fairy from '../Assets/elements/fairy_element.png'
+import fighting from '../Assets/elements/fighting_element.png'
+import fire from '../Assets/elements/fire_element.png'
+import grass from '../Assets/elements/grass_element.png'
+import neutral from '../Assets/elements/neutral_element.png'
+import psychic from '../Assets/elements/psychic_element.png'
+import water from '../Assets/elements/water_element.png'
 
 const Home = ({pokeJson, setPokeJson, setLocation}) => {
 
@@ -111,19 +119,106 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
               <div className='elementEntranceBar'>
                 属性を選ぶ
               </div>
-              <div className="generateElementBox">
-                  <div className={`generateElementTile${elementString === 'grass' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="grass">TREE</div>
-                  <div className={`generateElementTile${elementString === 'fire' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fire">FIRE</div>
-                  <div className={`generateElementTile${elementString === 'water' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="water">WATER</div>
-                  <div className={`generateElementTile${elementString === 'electric' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="electric">ENERGY</div>
-                  <div className={`generateElementTile${elementString === 'psychic' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="psychic">MIND</div>
-                  <div className={`generateElementTile${elementString === 'neutral' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="neutral">CLEAN</div>
-                  <div className={`generateElementTile${elementString === 'fighting' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fighting">PROTECT</div>
-                  <div className={`generateElementTile${elementString === 'dark' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="dark">
-                    <div className='buttonElementImageDiv'><img className='buttonElementImage' src={dark}></img></div>
-                    FEAR
+              <div className="generateElementBox" >
+                  <div className={`generateElementTile${elementString === 'grass' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.currentTarget.dataset.value)}} data-value="grass">
+                    <div className='buttonElementContentDiv'>
+                      <div className='buttonElementImageDiv'>
+                          <img className='buttonElementImage' src={grass}></img>
+                      </div>
+                      <div className='buttonElementTextDiv'>
+                        <p className='buttonElementText'> TREE </p>
+                        <p className='buttonElementText'>日本語</p>
+                      </div>
+                    </div>
                   </div>
-                  <div className={`generateElementTile${elementString === 'fairy' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="fairy">SPIRIT</div>
+                  <div className={`generateElementTile${elementString === 'fire' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.currentTarget.dataset.value)}} data-value="fire">
+                    <div className='buttonElementContentDiv'>
+                      <div className='buttonElementImageDiv'>
+                          <img className='buttonElementImage' src={fire}></img>
+                      </div>
+                      <div className='buttonElementTextDiv'>
+                        <p className='buttonElementText'> FIRE </p>
+                        <p className='buttonElementText'>日本語</p>
+                      </div>
+                    </div>  
+                  </div>
+                  <div className={`generateElementTile${elementString === 'water' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.currentTarget.dataset.value)}} data-value="water">
+                    <div className='buttonElementContentDiv'>
+                      <div className='buttonElementImageDiv'>
+                          <img className='buttonElementImage' src={water}></img>
+                      </div>
+                      <div className='buttonElementTextDiv'>
+                        <p className='buttonElementText'> WATER </p>
+                        <p className='buttonElementText'>日本語</p>
+                      </div>
+                    </div>  
+                  </div>
+                  <div className={`generateElementTile${elementString === 'electric' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.currentTarget.dataset.value)}} data-value="electric">
+                    <div className='buttonElementContentDiv'>
+                      <div className='buttonElementImageDiv'>
+                          <img className='buttonElementImage' src={electric}></img>
+                      </div>
+                      <div className='buttonElementTextDiv'>
+                        <p className='buttonElementText'>ENERGY</p>
+                        <p className='buttonElementText'>日本語</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={`generateElementTile${elementString === 'psychic' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.currentTarget.dataset.value)}} data-value="psychic">
+                    <div className='buttonElementContentDiv'>
+                      <div className='buttonElementImageDiv'>
+                          <img className='buttonElementImage' src={psychic}></img>
+                      </div>
+                      <div className='buttonElementTextDiv'>
+                        <p className='buttonElementText'> MIND </p>
+                        <p className='buttonElementText'>日本語</p>
+                      </div>
+                    </div>    
+                  </div>
+                  <div className={`generateElementTile${elementString === 'neutral' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.currentTarget.dataset.value)}} data-value="neutral">
+                    <div className='buttonElementContentDiv'>
+                      <div className='buttonElementImageDiv'>
+                          <img className='buttonElementImage' src={neutral}></img>
+                      </div>
+                      <div className='buttonElementTextDiv'>
+                        <p className='buttonElementText'> CLEAN </p>
+                        <p className='buttonElementText'>日本語</p>
+                      </div>
+                    </div>  
+                  </div>
+                  <div className={`generateElementTile${elementString === 'fighting' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.currentTarget.dataset.value)}} data-value="fighting">
+                    <div className='buttonElementContentDiv'>
+                      <div className='buttonElementImageDiv'>
+                          <img className='buttonElementImage' src={fighting}></img>
+                      </div>
+                      <div className='buttonElementTextDiv'>
+                        <p className='buttonElementText'> PROTECT </p>
+                        <p className='buttonElementText'>日本語</p>
+                      </div>
+                    </div>  
+                  </div>
+                  <div className={`generateElementTile${elementString === 'dark' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.currentTarget.dataset.value)}} data-value="dark">
+                    <div className='buttonElementContentDiv'>
+                      <div className='buttonElementImageDiv'>
+                          <img className='buttonElementImage' src={dark}></img>
+                      </div>
+                      <div className='buttonElementTextDiv'>
+                        <p className='buttonElementText'> FEAR </p>
+                        <p className='buttonElementText'>日本語</p>
+                      </div>
+                    </div>  
+                  </div>
+                  <div className={`generateElementTile${elementString === 'fairy' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.currentTarget.dataset.value)}} data-value="fairy">
+                    <div className='buttonElementContentDiv'>
+                      <div className='buttonElementImageDiv'>
+                          <img className='buttonElementImage' src={fairy}></img>
+                      </div>
+                      <div className='buttonElementTextDiv'>
+                        <p className='buttonElementText'> SPIRIT </p>
+                        <p className='buttonElementText'>日本語</p>
+                      </div>
+                    </div>    
+                  </div>
                   {/* <div className={`generateElementTile${elementString === 'dragon' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="dragon">Dragon</div>
                   <div className={`generateElementTile${elementString === 'metal' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.target.dataset.value)}} data-value="metal">Metal</div> */}
               </div>
