@@ -1,10 +1,17 @@
+import React from "react"
+import { Link } from "react-router-dom"
 
+const GenerateBar = ({setLocation}) => {
 
-const GenerateBar = () => {
+    const genClickHandler = () => {
+
+    };
 
     return (
-        <div className="GemerateBar">
-            <h3>GENERATE</h3>
+        <div>
+            <Link to="/Home" className="generateBarRight" onClick={()=>{setLocation(1)}}>
+                GENERATE
+            </Link>
         </div>
     )
 }

@@ -105,7 +105,7 @@ body {
 
 .containerBG {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   position: relative;
   background-image: url("./Assets/Page1/blue.png");
   background-size:80%;
@@ -127,7 +127,8 @@ body {
   background-color: #282c34;
   position: absolute;
   writing-mode: vertical-lr;
-
+  top: 0;
+  right: 0;
 }
 
 .generateBarLeft {
@@ -874,7 +875,8 @@ body {
   overflow: hidden;
 }
 
-.generateBar{
+.GenerateBar{
   color: #141414;
   height: 80vh;
+  position: relative;
 }

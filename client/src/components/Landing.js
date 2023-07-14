@@ -11,9 +11,11 @@ import GenerateBar from "./GenerateBar"
 const Landing = ({setLocation}) => {
     return(<div>
         <div className="containerLanding">
+        
             <div className="containerBG">
+            <GenerateBar setLocation={setLocation}/>
             <Header/>
-            <GenerateBar/>
+            
                 {/* <img src={triangle} className="landingBG"></img> */}
                 {/* <div className="generateBarRight">
                     Generate 
