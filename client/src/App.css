@@ -873,3 +873,8 @@ body {
   justify-content: space-between;
   overflow: hidden;
 }
+
+.generateBar{
+  color: #141414;
+  height: 80vh;
+}

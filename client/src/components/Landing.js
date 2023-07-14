@@ -6,12 +6,14 @@ import footer from '../Assets/Page1/footer.png'
 import character from '../Assets/Page1/character.png'
 import Header from "./Header"
 import News from "./News"
+import GenerateBar from "./GenerateBar"
 
 const Landing = ({setLocation}) => {
     return(<div>
         <div className="containerLanding">
             <div className="containerBG">
             <Header/>
+            <GenerateBar/>
                 {/* <img src={triangle} className="landingBG"></img> */}
                 {/* <div className="generateBarRight">
                     Generate 
