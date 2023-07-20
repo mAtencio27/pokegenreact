@@ -74,7 +74,7 @@ body {
   display: flex;
   flex-direction: row;
   position:absolute;
-  height: 50px;
+  height: 5%;
   width: 100vw
 }
 
@@ -115,6 +115,8 @@ body {
 
 .containerLanding {
   position: relative;
+  display:flex;
+  flex-direction: column;
 }
 
 .generateBarRight{
@@ -144,13 +146,18 @@ body {
 }
 
 .centerPhotoContainer {
-  display: block;
+  margin-top: 2%;
+  display: flex;
   position: relative;
-  top: 50px
+  justify-content: end;
+  top: 50px;
+  width: 95%;
+  right:2.5%
 }
 
 .centerPhoto {
-  width: 90%;
+  height: fit-content;
+  width: 80%;
 }
 
 /* NEWS COMPONENT */

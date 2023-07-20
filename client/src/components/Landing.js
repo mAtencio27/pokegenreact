@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import triangle from '../Assets/Page1/triangle.png'
-import centerPhoto from '../Assets/Page1/main.png'
+import centerPhoto from '../Assets/Page1/main_visual.png'
 import footer from '../Assets/Page1/footer.png'
 import character from '../Assets/Page1/character.png'
 import Header from "./Header"
@@ -25,8 +25,8 @@ const Landing = ({setLocation}) => {
                 </div>
                 <div className="centerPhotoContainer">
                     <img className="centerPhoto" src={centerPhoto}></img>
-                    <h2 className="newsHeader">NEWS</h2>
-                    <News/>
+                    {/* <h2 className="newsHeader">NEWS</h2>
+                    <News/> */}
                 </div>
                 
             </div>
