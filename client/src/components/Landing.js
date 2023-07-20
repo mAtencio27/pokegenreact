@@ -13,21 +13,20 @@ const Landing = ({setLocation}) => {
         <div className="containerLanding">
         
             <div className="containerBG">
-            <GenerateBar setLocation={setLocation}/>
-            <Header/>
-            
-                {/* <img src={triangle} className="landingBG"></img> */}
-                {/* <div className="generateBarRight">
-                    Generate 
-                </div> */}
-                <div className="generateBarLeft">
-                    EARTH-SHIELD
-                </div>
-                <div className="centerPhotoContainer">
-                    <img className="centerPhoto" src={centerPhoto}></img>
-                    {/* <h2 className="newsHeader">NEWS</h2>
-                    <News/> */}
-                </div>
+                <GenerateBar setLocation={setLocation}/>
+                <Header/>
+                
+                    {/* <img src={triangle} className="landingBG"></img> */}
+                    {/* <div className="generateBarRight">
+                        Generate 
+                    </div> */}
+                    <div className="generateBarLeft">
+                        EARTH-SHIELD
+                    </div>
+                    <div className="centerPhotoContainer">
+                        <img className="centerPhoto" src={centerPhoto}></img>
+                    </div>
+                    
                 
             </div>
             <div className="generateBlock">
@@ -35,21 +34,25 @@ const Landing = ({setLocation}) => {
                     <img className="character" src={character}></img>
                     <div className="conceptStuff">
                         <div className="generateHead"></div>
-                        <h1 className="ecoHead">EARTH-SHIELD</h1>
+                        <h1 className="ecoHead">EARTH-<br></br>SHIELD</h1>
                         <div className="ecoHead2container">
-                            <h2 className="ecoHead2">lorum ipsum more stuff</h2>
-                            <h2 className="ecoHead2">lorum ipsum</h2>
-                            <h2 className="ecoHead2">lorum ipsum more stuff</h2>
+                            <h2 className="ecoHead2">世界を救うのはあなた!AIと共に</h2>
+                            <h2 className="ecoHead2">未来の環境問題から地球を守る</h2>
+                            <h2 className="ecoHead2">自分だけのシールダーを作ろう！</h2>
                         </div>
                         <div className="ecoParagraphContainer">
-                            <p className="ecoParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend, risus vitae bibendum posuere, sapien mi pretium elit, vel consequat velit ex nec magna.</p>
+                            <p className="ecoParagraph">未来の環境問題に取り組むために、AIを使ってオリジナルの</p>
+                            <p className="ecoParagraph">シールダーを作成できるサイトです。壁に展示してある環境を破壊する</p>
+                            <p className="ecoParagraph">ブレーカーたちと戦うことができる能力を考え、自分だけの</p>
+                            <p className="ecoParagraph">シールダーカードを作ろう！君が世界を救うかも！</p>
                         </div>
-                        <div className="generateButtonContainer">
+                        <div className="generateButtonContainerLanding">
                             {/* <button className="generateButton">GENERATE</button> */}
-                            <Link to="/Home" className="generateButton" onClick={()=>{setLocation(1)}}>GENERATE</Link>
+                            <Link to="/Home" className="generateButtonLanding" onClick={()=>{setLocation(1)}}>GENERATE</Link>
                         </div>
                     </div>
                 </div>
+                <div className="generateBlockBG"></div>
             </div>
             <div className="footerContainer">
                 <img src={footer} className="footer"></img>

@@ -127,7 +127,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
                       </div>
                       <div className='buttonElementTextDiv'>
                         <p className='buttonElementText'> TREE </p>
-                        <p className='buttonElementText'>日本語</p>
+                        <p className='buttonElementText'>木</p>
                       </div>
                     </div>
                   </div>
@@ -138,7 +138,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
                       </div>
                       <div className='buttonElementTextDiv'>
                         <p className='buttonElementText'> FIRE </p>
-                        <p className='buttonElementText'>日本語</p>
+                        <p className='buttonElementText'>火</p>
                       </div>
                     </div>  
                   </div>
@@ -149,7 +149,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
                       </div>
                       <div className='buttonElementTextDiv'>
                         <p className='buttonElementText'> WATER </p>
-                        <p className='buttonElementText'>日本語</p>
+                        <p className='buttonElementText'>水</p>
                       </div>
                     </div>  
                   </div>
@@ -160,7 +160,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
                       </div>
                       <div className='buttonElementTextDiv'>
                         <p className='buttonElementText'>ENERGY</p>
-                        <p className='buttonElementText'>日本語</p>
+                        <p className='buttonElementText'>エネルギー</p>
                       </div>
                     </div>
                   </div>
@@ -171,7 +171,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
                       </div>
                       <div className='buttonElementTextDiv'>
                         <p className='buttonElementText'> MIND </p>
-                        <p className='buttonElementText'>日本語</p>
+                        <p className='buttonElementText'>マインド</p>
                       </div>
                     </div>    
                   </div>
@@ -182,7 +182,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
                       </div>
                       <div className='buttonElementTextDiv'>
                         <p className='buttonElementText'> CLEAN </p>
-                        <p className='buttonElementText'>日本語</p>
+                        <p className='buttonElementText'>クリーン</p>
                       </div>
                     </div>  
                   </div>
@@ -193,7 +193,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
                       </div>
                       <div className='buttonElementTextDiv'>
                         <p className='buttonElementText'> PROTECT </p>
-                        <p className='buttonElementText'>日本語</p>
+                        <p className='buttonElementText'>保護</p>
                       </div>
                     </div>  
                   </div>
@@ -204,7 +204,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
                       </div>
                       <div className='buttonElementTextDiv'>
                         <p className='buttonElementText'> FEAR </p>
-                        <p className='buttonElementText'>日本語</p>
+                        <p className='buttonElementText'>恐れ</p>
                       </div>
                     </div>  
                   </div>
@@ -215,7 +215,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
                       </div>
                       <div className='buttonElementTextDiv'>
                         <p className='buttonElementText'> SPIRIT </p>
-                        <p className='buttonElementText'>日本語</p>
+                        <p className='buttonElementText'>スピリット</p>
                       </div>
                     </div>    
                   </div>

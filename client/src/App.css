@@ -75,7 +75,8 @@ body {
   flex-direction: row;
   position:absolute;
   height: 5%;
-  width: 100vw
+  width: 100vw;
+  /* padding: 5px */
 }
 
 .pokemonLogo {
@@ -83,6 +84,10 @@ body {
   max-height: 90%;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.title{
+  height: 50%;
 }
 
 .headerTopics {
@@ -110,7 +115,7 @@ body {
   background-image: url("./Assets/Page1/blue.png");
   background-size:80%;
   background-repeat: no-repeat;
-  height: 100vw;
+  height: 75vw;
 }
 
 .containerLanding {
@@ -131,6 +136,11 @@ body {
   writing-mode: vertical-lr;
   top: 0;
   right: 0;
+  text-decoration: none;
+  font-family: 'Din', sans-serif;
+  letter-spacing: 10px;
+  font-weight: 600;
+  font-size: 30px;
 }
 
 .generateBarLeft {
@@ -138,14 +148,21 @@ body {
   flex-direction: column;
   justify-content: center;
   writing-mode: vertical-lr;
-  width: 10%;
-  height: 100vh;
+  width: 20%;
+  /* height: 100vh; */
+  height: 75vh;
+  margin-top: 5%;
   position: absolute;
-  left:0%
-
+  left:0%;
+  letter-spacing: 10px;
+  font-family: 'Din', sans-serif;
+  font-weight: 600;
+  font-size: 70px;
 }
 
 .centerPhotoContainer {
+  /* display: flex;
+  flex-direction: column; */
   margin-top: 2%;
   display: flex;
   position: relative;
@@ -194,62 +211,110 @@ body {
 
 .characterContainer{
   display: flex;
+  justify-content: center;
   flex-direction: row;
 }
 
 .generateBlock{
-  background-color: rgb(238, 238, 238);
+  /* background-color: rgb(238, 238, 238); */
   width: 100vw;
+  position: relative;
+}
+
+.generateBlockBG{
+  background-color: rgb(238, 238, 238);
+  position: absolute;
+  top: 11%; /* Adjust the value to set the background 20px below the top */
+  left: 0;
+  right: 0;
+  height: 100%; /* Set the height of the background container */
+  z-index: -1; /* Make sure the background is behind the content */
 }
 
 .conceptStuff{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
+  max-width: 50%;
   text-align: center;
 }
 
 .ecoHead {
   position: relative;
-  font-size: 50px;
+  font-size: 100px;
   text-align: start;
-  padding-left: 15%;
+  padding-left: 10%;
   margin-bottom: 10px;
   margin-left: 0;
+  line-height: 100px;
+  font-family: 'Din', sans-serif;
 }
 
 .ecoHead2 {
   font-size: 25px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   margin:2px;
   background-color: black;
   color: white;
   display: inline-block;
+  font-family: 'NotoSansJP-Black', sans-serif;
+  letter-spacing: 4px;
 }
 
 .ecoHead2container{
+  padding-top: 3%;
   margin: 0 auto;
   width: 80%;
   text-align: start;
+  font-family: 'NotoSansJP-Black', sans-serif;
 }
 
 .ecoParagraph{
   font-size: 14px;
-  text-align: start
+  text-align: start;
+  line-height: 70%;
+  font-family: 'NotoSansJP-Black', sans-serif;
 }
 
 .ecoParagraphContainer{
-  padding-top: 15px;
+  padding-top: 5%;
   width: 80%;
   margin: 0 auto;
 }
 
 .generateButtonContainer{
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   padding-top: 25px;
   text-align: left;
   width: 80%;
+}
+
+.generateButtonContainerLanding{
+  margin: 0 auto;
+  padding-top: 25px;
+  text-align: left;
+  width: 80%;
+}
+
+.generateButtonLanding{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgb(255, 236, 0);
+  background: linear-gradient(to right,#0823dd,#4debc0);
+  color: white;
+  border:none;
+  padding: 10px;
+  width: 25%;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Din', sans-serif
 }
 
 .generateButton{
@@ -259,13 +324,13 @@ body {
   background-color: rgb(255, 236, 0);
   background: linear-gradient(to right,#0823dd,#4debc0);
   color: white;
-  border-radius: 5%;
   border:none;
   padding: 10px;
   width: 140px;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  font-family: 'Din', sans-serif
 }
 
 .generateButton:hover{
@@ -430,7 +495,6 @@ body {
 }
 
 .generateButtonContainer{
-  text-align: center;
   padding-bottom: 20px;
 }
 
