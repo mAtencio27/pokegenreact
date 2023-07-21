@@ -53,10 +53,11 @@ const Landing = ({setLocation}) => {
                     </div>
                 </div>
                 <div className="generateBlockBG"></div>
+                <div className="footerContainer">
+                    <img src={footer} className="footer"></img>
+                </div>
             </div>
-            <div className="footerContainer">
-                <img src={footer} className="footer"></img>
-            </div>
+
         </div>
         </div>)
 }
