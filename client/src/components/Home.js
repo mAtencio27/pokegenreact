@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import background from '../Assets/Page2/yellow.png'
 import Header from './Header';
-import footer from '../Assets/Page1/footer.png'
+import footer from '../Assets/Page1/footer_2.png'
 
 //ELEMENT IMPORTS
 import dark from '../Assets/elements/dark_element.png'

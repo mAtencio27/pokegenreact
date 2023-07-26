@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import triangle from '../Assets/Page1/triangle.png'
 import centerPhoto from '../Assets/Page1/main_visual.png'
-import footer from '../Assets/Page1/footer.png'
+import footer from '../Assets/Page1/footer_2.png'
 import character from '../Assets/Page1/character.png'
 import Header from "./Header"
 import News from "./News"
