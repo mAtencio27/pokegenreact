@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import logo from "../Assets/Page1/logo.png"
 import Loading from './Loading';
 import QRCode from 'react-qr-code'
+import Header from './Header'
 
 const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
 
@@ -84,13 +85,14 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
       {photos[0]?
       <div className='renderPageContainer'>
         <div className='renderContainerBG'>
-          <div className="renderNavbarContainer">
+          <Header/>
+          {/* <div className="renderNavbarContainer">
                 <img className="pokemonLogo" src={logo}></img>
                 <p className="renderHeaderTopics">コンセプト</p>
                 <p className="renderHeaderTopics">環境問題について知ろう</p>
                 <p className="renderHeaderTopics">ヒントを見る</p>
                 <p className="renderHeaderTopics">カード一覧</p>
-          </div>
+          </div> */}
           <div className='renderBodyContainer'>
             <div className='renderHeaderContainer'>
               <h1 className="renderh1">IT'S YOUR CARD!!</h1>

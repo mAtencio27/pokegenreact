@@ -74,20 +74,24 @@ body {
   display: flex;
   flex-direction: row;
   position:absolute;
-  height: 5%;
+  height: 7%;
   width: 100vw;
+  align-items: center;
+  padding-top: .25%;
   /* padding: 5px */
 }
 
 .pokemonLogo {
   max-width: 90%;
-  max-height: 90%;
+  max-height: 100%;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .title{
-  height: 50%;
+  height: 55%;
+  padding-left: 1%;
+  padding-bottom: 1%;
 }
 
 .headerTopics {
@@ -229,7 +233,7 @@ body {
   top: 11%; /* Adjust the value to set the background 20px below the top */
   left: 0;
   right: 0;
-  height: 100%; /* Set the height of the background container */
+  height: 80%; /* Set the height of the background container */
   z-index: -1; /* Make sure the background is behind the content */
 }
 
@@ -381,7 +385,7 @@ body {
   background-image: url("./Assets/Page2/top.png");
   background-size:100%;
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
 }
 
@@ -576,7 +580,7 @@ body {
   background-image: url("./Assets/Page2/top.png");
   background-size:100%;
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
 }
 
@@ -789,7 +793,8 @@ body {
   background-image: url("./Assets/Page4/background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  max-height: 150vh;
+  background-position: center top 35%;
+  /* max-height: 150vh; */
   min-height: 100vh;
   height: 150vh;
   width: 100vw;
