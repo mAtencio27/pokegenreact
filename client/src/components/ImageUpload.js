@@ -50,7 +50,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
             <p className='typeUploadP'>AIでシールダーの画像を生成しよう</p>
             <div className='uploadEntryContainer'>
               <div className='uploadEntranceBar'>
-                好きなキャラクターをクリック
+                プロンプト生成
               </div>
             </div>
             <div className="uploadSelectorContainer">

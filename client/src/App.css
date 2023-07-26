@@ -394,12 +394,12 @@ body {
   position: relative;
   margin: 0 auto;
   color: white;
-  font-size: 2.5em;
+  font-size: 4em;
 }
 
 .typeKeywordP{
   font-family: 'NotoSansJP-Black', sans-serif;
-  font-size: .83em;
+  font-size: 1em;
   margin: 0 auto;
   margin-top: 10px;
   font-weight: bold;
@@ -597,7 +597,7 @@ body {
 .typeUploadHead{
   font-family: 'Din', sans-serif;
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 4em;
   position: relative;
   margin: 0 auto;
   color: white;
@@ -606,7 +606,7 @@ body {
 .typeUploadP{
   font-family: 'NotoSansJP-Black', sans-serif;
   font-weight: bold;
-  font-size: .83em;
+  font-size: 1em;
   margin-top: 10px;
   color: white;
 }
