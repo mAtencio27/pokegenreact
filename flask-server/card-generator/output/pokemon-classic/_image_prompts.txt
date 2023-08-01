@@ -1,3 +1,0 @@
-[001] Dreramor
-Dreramor::0 a special psychic-type pokemon::1.8, wearing dark armor, in a crypt environment, dreamy background, anime sketch --niji --ar 3:2
-
