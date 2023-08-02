@@ -91,13 +91,6 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
   // }, [])
   // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
 
-  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
-  // const buttonHandler = (e) => {
-  //   console.log("button click");
-  //   console.log(e.target.value);
-  //   console.log(data)
-  // };
-  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
 
   return (
     <div className='Home'>
