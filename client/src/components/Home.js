@@ -79,18 +79,6 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
   // }
   // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
   
-  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
-  // useEffect(() => {
-  //   const fetchData = async() => {
-  //     const res = await fetch("/members");
-  //     const resData = await res.json()
-  //     //setData(resData.members)
-  //   };
-
-  //   fetchData()
-  // }, [])
-  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
-
 
   return (
     <div className='Home'>
