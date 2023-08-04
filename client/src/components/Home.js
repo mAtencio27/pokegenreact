@@ -53,14 +53,6 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
   };
 
   // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
-  // const renderScript = async(e) => {
-  //   const res = await fetch("/render")
-  //   console.log(res)
-  //   return
-  // };
-  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
-
-  // 👻👻👻👻👻👻DEPRICATED NOW USING JSON👻👻👻👻👻👻👻
   // const create = async(e) => {
   //   const res_1 = await fetch("/generate")
   //   const res_2 = await fetch("/render")
