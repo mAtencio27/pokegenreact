@@ -8,8 +8,6 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
 
   const [ prompts, setPrompts ] = useState([]);
   const [ selected, setSelected] = useState('');
-  //UPLOAD PHOTO CONFORMATION
-  //const [uploadDisplay, setUploadDisplay] = useState("");
 
   //FILE UPLOAD HANDLER
   const uploadHandler = (e) => {
