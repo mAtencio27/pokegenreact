@@ -30,7 +30,6 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
       
 
     const data = await res.json();
-    //console.log(data)
     return data.response
   };
 
