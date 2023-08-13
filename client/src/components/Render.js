@@ -40,7 +40,6 @@ const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
   };
 
   const dataCardBuilder = () => {
-    //console.log(pokeJson[0])
     let attacks = pokeJson[0].abilities.map((a)=>{return <div className="infoCardPanel">{a.name}</div>})
     let returnCards = [
       <div className="infoCardPanel">{pokeJson[0].element}</div>,
