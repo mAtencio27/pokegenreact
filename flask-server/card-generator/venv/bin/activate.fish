@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/Marcus/Desktop/pokegenreact/flask-server/card-generator/venv"
+set -gx VIRTUAL_ENV "/Users/Marcus/Desktop/Code_builds/Builds/pokegenreact/flask-server/card-generator/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

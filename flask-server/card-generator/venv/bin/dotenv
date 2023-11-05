@@ -1,4 +1,4 @@
-#!/Users/Marcus/Desktop/pokegenreact/flask-server/card-generator/venv/bin/python3
+#!/Users/Marcus/Desktop/Code_builds/Builds/pokegenreact/flask-server/card-generator/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
