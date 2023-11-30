@@ -1,0 +1,20 @@
+{
+  "index": 1,
+  "name": "Rubigar",
+  "description": "Rubigar is a majestic pokemon covered in shimmering ruby armor. It is a guardians of the volcanic regions, often patrolling its home for any signs of danger. With its powerful Magma Claw, it can effortlessly shatter rocks to unearth precious gems and minerals from deep within the earth's core. Rubigar is a truly regal pokemon with a proud and strong presence.",
+  "element": "Fire",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 90,
+  "abilities": [
+    {
+      "name": "Magma Claw",
+      "element": "Fire",
+      "cost": 3,
+      "is_mixed_element": true,
+      "power": 40
+    }
+  ],
+  "image_prompt": "Rubigar::0 a strong fire-type pokemon::1.8, wearing ruby armor, in a volcano environment, blue and red ambient lighting, anime sketch --niji --ar 3:2",
+  "image_file": "001_rubigar.png"
+}

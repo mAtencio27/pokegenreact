@@ -1,0 +1,3 @@
+[001] Rubigar
+Rubigar::0 a strong fire-type pokemon::1.8, wearing ruby armor, in a volcano environment, blue and red ambient lighting, anime sketch --niji --ar 3:2
+

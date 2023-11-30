@@ -59,6 +59,8 @@ def generate():
     ## CALL THE SCRIPT AND RETURN THE JSON TO SAVE THE STATE
     returnData = main_generate(number_of_monsters, element, subject)
 
+    ##👽👽👽👽##Test to see the JSON data👽👽👽👽
+    print(jsonify({"data":returnData}))
     return jsonify({"data":returnData})
 
 # render API route
