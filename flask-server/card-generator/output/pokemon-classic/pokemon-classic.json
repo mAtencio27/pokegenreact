@@ -3,23 +3,30 @@
   "cards": [
     {
       "index": 1,
-      "name": "\u307e\u306d\u305a\u307f",
-      "description": "Tiny and sprightly, \u30de\u30cd\u30ba\u30df is a playful pokemon that loves to explore its ocean-like environment. It can often be spotted skittering along the shoreline and over watery surfaces, startling any creatures it meets along the way. Its unique Siphon ability allows it to absorb the surrounding environment and use the energy absorbed to energize itself and its allies. No matter what it's up to, this curious pokemon is sure to be a source of delight and entertainment.",
+      "name": "\u6d77\u767d\u93a7\u732b",
+      "description": "Using its Glacial Surge and Jab abilities, \u6d77\u767d\u93a7\u732b is an awe-inspiring sight to behold as it patrols the seas and coasts. Its white armor reflects the shimmering sunlight off of its steel-hard exterior. It enthusiastically wriggles through the waves during the day, munching on sea grass as it goes, and hunting for its favorite fishy treats at night. It's a mysterious, majestic guardian of the ocean.",
       "element": "Water",
-      "rarity": "common",
-      "rarity_index": 0,
-      "hp": 80,
+      "rarity": "uncommon",
+      "rarity_index": 1,
+      "hp": 70,
       "abilities": [
         {
-          "name": "Siphon",
+          "name": "Glacial Surge",
           "element": "Water",
-          "cost": 2,
-          "is_mixed_element": true,
-          "power": 30
+          "cost": 3,
+          "is_mixed_element": false,
+          "power": 50
+        },
+        {
+          "name": "Jab",
+          "element": "Neutral",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 10
         }
       ],
-      "image_prompt": "\u307e\u306d\u305a\u307f::0 a basic water-type \u732b pokemon, in a ocean environment, gleaming bubble background, anime sketch --niji --ar 3:2",
-      "image_file": "001_\u307e\u306d\u305a\u307f.png"
+      "image_prompt": "\u6d77\u767d\u93a7\u732b::0 a special water-type \u732b pokemon::1.8, wearing white armor, in a ocean environment, aurora background, anime sketch --niji --ar 3:2",
+      "image_file": "001_\u6d77\u767d\u93a7\u732b.png"
     }
   ]
 }

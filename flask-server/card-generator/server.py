@@ -27,6 +27,10 @@ from src.mechanics.element import Element
 app = Flask(__name__)
 CORS(app)
 
+# Set the JSON configuration to ensure non-ASCII characters are handled correctly (Japnanese)
+app.config['JSON_AS_ASCII'] = False
+#
+
 UPLOAD_FOLDER= './output/pokemon-classic/images'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
