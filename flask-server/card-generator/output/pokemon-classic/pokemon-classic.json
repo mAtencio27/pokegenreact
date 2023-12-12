@@ -3,23 +3,23 @@
   "cards": [
     {
       "index": 1,
-      "name": "Rubigar",
-      "description": "Rubigar is a majestic pokemon covered in shimmering ruby armor. It is a guardians of the volcanic regions, often patrolling its home for any signs of danger. With its powerful Magma Claw, it can effortlessly shatter rocks to unearth precious gems and minerals from deep within the earth's core. Rubigar is a truly regal pokemon with a proud and strong presence.",
-      "element": "Fire",
-      "rarity": "uncommon",
-      "rarity_index": 1,
-      "hp": 90,
+      "name": "\u307e\u306d\u305a\u307f",
+      "description": "Tiny and sprightly, \u30de\u30cd\u30ba\u30df is a playful pokemon that loves to explore its ocean-like environment. It can often be spotted skittering along the shoreline and over watery surfaces, startling any creatures it meets along the way. Its unique Siphon ability allows it to absorb the surrounding environment and use the energy absorbed to energize itself and its allies. No matter what it's up to, this curious pokemon is sure to be a source of delight and entertainment.",
+      "element": "Water",
+      "rarity": "common",
+      "rarity_index": 0,
+      "hp": 80,
       "abilities": [
         {
-          "name": "Magma Claw",
-          "element": "Fire",
-          "cost": 3,
+          "name": "Siphon",
+          "element": "Water",
+          "cost": 2,
           "is_mixed_element": true,
-          "power": 40
+          "power": 30
         }
       ],
-      "image_prompt": "Rubigar::0 a strong fire-type pokemon::1.8, wearing ruby armor, in a volcano environment, blue and red ambient lighting, anime sketch --niji --ar 3:2",
-      "image_file": "001_rubigar.png"
+      "image_prompt": "\u307e\u306d\u305a\u307f::0 a basic water-type \u732b pokemon, in a ocean environment, gleaming bubble background, anime sketch --niji --ar 3:2",
+      "image_file": "001_\u307e\u306d\u305a\u307f.png"
     }
   ]
 }

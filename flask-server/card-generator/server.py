@@ -42,7 +42,7 @@ async def run_script(script_path):
 
 @app.route("/")
 def description():
-    return "This is the generate API from the card_gen"
+    return "This is the generate API from the card_gen 頑張って！"
 
 @app.route("/members", methods=['GET', 'POST'])
 def members():
@@ -61,7 +61,7 @@ def generate():
 
     ##👽👽👽👽##Test to see the JSON data👽👽👽👽
     print(jsonify({"data":returnData}))
-    return jsonify({"data":returnData})
+    return jsonify({"data":returnData}),200, {'Content-Type': 'application/json; charset=utf-8'}
 
 # render API route
 @app.route('/render', methods=['POST'])
