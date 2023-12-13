@@ -8,7 +8,12 @@ from src.pokemon_content.pokemon_elements import PokemonElements
 from src.util.gpt_call import gpt_client
 
 ###CHANGE
-DEFAULT_PATH = "./data/ability_names.json"
+#🇺🇸＃🇺🇸#🇺🇸#
+#DEFAULT_PATH = "./data/ability_names.json"
+#🇺🇸＃🇺🇸#🇺🇸#
+#🇯🇵#🇯🇵#🇯🇵#
+DEFAULT_PATH = "./data/revised_ability_names_japanese.json"
+#🇯🇵#🇯🇵#🇯🇵#
 
 
 def get_ability_name(ability: Ability) -> str:
