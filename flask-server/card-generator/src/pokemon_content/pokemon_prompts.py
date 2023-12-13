@@ -74,15 +74,22 @@ def generate_card_name(card: Card, seen_names: set[str]) -> str:
     else:
         additional_modifier = "single-word, "
     
-    #👹👹👹#Adding a mod to translate all the text into 
-    prompt = f"This prompt will have two steps first identify the japanese word in this prompt and incorporate the subjuect into the name you will give me. next (using the Japanese language)"
-    #👹#
-    prompt += f"Generate a unique, orignal, creative,{additional_modifier} {card.style.subject_type} name for a {get_visual_description(card)} in Japanese"
-    ##prompt += f" (without using the word {card.style.subject_type.lower()} or {card.element.name.lower()}):\n"
-    #👹#
-    prompt += f" (without using the word {card.style.subject_type.lower()} or {card.element.name.lower()})"
-    prompt += f"only return this name that is being generated:\n"
-    #👹👹👹#
+    # #👹👹👹#Adding a mod to translate all the text into 
+    # prompt = f"This prompt will have two steps first identify the japanese word in this prompt and incorporate the subjuect into the name you will give me. next (using the Japanese language)"
+    # #👹#
+    # prompt += f"Generate a unique, orignal, creative,{additional_modifier} {card.style.subject_type} name for a {get_visual_description(card)} in Japanese"
+    # ##prompt += f" (without using the word {card.style.subject_type.lower()} or {card.element.name.lower()}):\n"
+    # #👹#
+    # prompt += f" (without using the word {card.style.subject_type.lower()} or {card.element.name.lower()})"
+    # prompt += f"only return this name that is being generated:\n"
+    # #👹👹👹#nice
+
+    #🇯🇵#🇯🇵# This is the Japanese prompt for name #🇯🇵#🇯🇵#
+    prompt = f"This prompt will have two steps first identify the japanese word in this prompt and incorporate the subjuect into the name you will give me. next (using the Japanese language)　"
+    prompt += f"Generate a unique, orignal, creative,{additional_modifier} {card.style.subject_type} easy to read (using simple kanji) pokemon like name for a {get_visual_description(card)} in Japanese"
+    prompt += f"(without using the word {card.style.subject_type.lower()} or {card.element.name.lower()}):\n"
+    prompt += f"only return this name that is being generated in katakana:\n"
+    #🇯🇵#🇯🇵# This is the Japanese prompt for name #🇯🇵#🇯🇵#
 
     print(prompt)
     response = gpt_client().get_completion(prompt, max_tokens=256, n=5)

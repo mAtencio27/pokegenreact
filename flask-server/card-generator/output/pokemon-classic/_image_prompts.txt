@@ -1,3 +1,3 @@
-[001] 海白鎧猫
-海白鎧猫::0 a special water-type 猫 pokemon::1.8, wearing white armor, in a ocean environment, aurora background, anime sketch --niji --ar 3:2
+[001] アクリルネコ
+アクリルネコ::0 a special water-type 猫 pokemon::1.8, wearing blue crystal armor, in a ocean environment, teal and blue ambient lighting, anime sketch --niji --ar 3:2
 
