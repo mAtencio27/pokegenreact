@@ -1,0 +1,20 @@
+{
+  "index": 1,
+  "name": "\u30e2\u30e1\u30f3\u30c9\u30fc",
+  "description": "The elusive and mysterious Pokemon, Momendoo, is rarely seen in its cosmic purple armor. Living in castle-like environments, it is believed that Momendoo has the unusual ability to manipulate and deceive its opponents with its unique tricks. A master of misdirection, Momendoo can often be found gliding around its home with its powerful wings, ready to surprise anyone who is foolish enough to try and catch it unawares.",
+  "element": "Dark",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 50,
+  "abilities": [
+    {
+      "name": "\u3088\u3053\u3057\u307e\u306a\u3060\u307e\u3057",
+      "element": "Dark",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 60
+    }
+  ],
+  "image_prompt": "\u30e2\u30e1\u30f3\u30c9\u30fc::0 a rare dark-type pokemon::1.8, wearing purple cosmic armor, in a castle environment, violent shadows, anime sketch --niji --ar 3:2",
+  "image_file": "001_\u30e2\u30e1\u30f3\u30c9\u30fc.png"
+}

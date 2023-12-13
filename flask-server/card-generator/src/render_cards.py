@@ -127,12 +127,15 @@ def render_card(card: Card, photo):
     # This is a search flag for Japanese font change 🇯🇵
     name_text_position = (48, 64)
     # 🇺🇸🇺🇸 Unchanged 🇺🇸🇺🇸
-    #title_font = ImageFont.truetype("./resources/font/Cabin-Bold.ttf", 28)
+    # title_font = ImageFont.truetype("./resources/font/Cabin-Bold.ttf", 28)
     # 🇺🇸🇺🇸🇺🇸
     # 🇯🇵🇯🇵 Working 🇯🇵🇯🇵
-    title_font = ImageFont.truetype("./resources/font/japanese/NotoSansJP-SemiBold.ttf", 28)
+    title_font = ImageFont.truetype("./resources/font/japanese/NotoSansJP-ExtraBold.ttf", 32)
     # 🇯🇵🇯🇵🇯🇵
     name_text = card.name
+
+    ### print test ### 
+    print(f"👋👋👋{card.name}👋👋👋")
 
     # Draw the name text onto the card.
     draw = ImageDraw.Draw(card_image)
@@ -242,7 +245,7 @@ def render_ability(ability: Ability):
     # name_font = ImageFont.truetype("./resources/font/Cabin-Bold.ttf", 24)
     # 🇺🇸🇺🇸🇺🇸
     # 🇯🇵🇯🇵 Working 🇯🇵🇯🇵
-    name_font = ImageFont.truetype("./resources/font/japanese/NotoSansJP-SemiBold.ttf", 24)
+    name_font = ImageFont.truetype("./resources/font/japanese/NotoSansJP-ExtraBold.ttf", 24)
     # 🇯🇵🇯🇵🇯🇵
     name_text = ability.name
     draw = ImageDraw.Draw(ability_image)
