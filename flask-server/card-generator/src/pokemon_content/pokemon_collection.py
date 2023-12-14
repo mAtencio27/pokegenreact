@@ -50,6 +50,7 @@ class PokemonCollection(Collection):
         else:
             max_ability_points = self.get_points_budget(rarity.index, 1)
 
+        #💯#💯#💯# THIS IS WHERE WE CAN ADJUST THE RANGE OF VALUES FOR THE HP POINTS 60 - 300#💯#💯#💯#
         hp_points = random.randint(0, max_ability_points // 2)
         ability_points = max_ability_points - hp_points
         ability_costs = self.get_ability_points_costs(ability_points, rarity.index)
@@ -58,9 +59,10 @@ class PokemonCollection(Collection):
         for ability in abilities:
             ability.name = get_ability_name(ability)
 
-        # Calculate HP
         bonus_hp_points = max_ability_points + (hp_points * self.ABILITY_TO_HP_PTS)
-        hp = 10 * bonus_hp_points
+        # hp = 10 * bonus_hp_points
+        ###💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓### HP increase
+        hp = 30 * bonus_hp_points
 
         style = self.generate_style(
             inherited_style, element, rarity, series_index, subject_override

@@ -3,23 +3,30 @@
   "cards": [
     {
       "index": 1,
-      "name": "\u30e2\u30e1\u30f3\u30c9\u30fc",
-      "description": "The elusive and mysterious Pokemon, Momendoo, is rarely seen in its cosmic purple armor. Living in castle-like environments, it is believed that Momendoo has the unusual ability to manipulate and deceive its opponents with its unique tricks. A master of misdirection, Momendoo can often be found gliding around its home with its powerful wings, ready to surprise anyone who is foolish enough to try and catch it unawares.",
-      "element": "Dark",
-      "rarity": "uncommon",
-      "rarity_index": 1,
-      "hp": 50,
+      "name": "\u30ab\u30bc\u30a4\u30aa\u30f3",
+      "description": "Sitting atop its fiery armor, \u30ab\u30bc\u30a4\u30aa\u30f3 is a warrior-like pokemon that dwells in desert-like environments. It uses its powerful aura to ward off predators, while defending its territory with the devastating ability of \u708e\u306e\u69cd. In addition, \u30ab\u30bc\u30a4\u30aa\u30f3 has the unique ability to shoot flaming arrows of \u3084\u3051\u3069\u306e\u77e2. It can often be found patrolling the hot sands, looking for any challengers that may cross its path.",
+      "element": "Fire",
+      "rarity": "rare",
+      "rarity_index": 2,
+      "hp": 180,
       "abilities": [
         {
-          "name": "\u3088\u3053\u3057\u307e\u306a\u3060\u307e\u3057",
-          "element": "Dark",
+          "name": "\u708e\u306e\u69cd",
+          "element": "Fire",
           "cost": 4,
+          "is_mixed_element": true,
+          "power": 50
+        },
+        {
+          "name": "\u3084\u3051\u3069\u306e\u77e2",
+          "element": "Fire",
+          "cost": 2,
           "is_mixed_element": false,
-          "power": 60
+          "power": 40
         }
       ],
-      "image_prompt": "\u30e2\u30e1\u30f3\u30c9\u30fc::0 a rare dark-type pokemon::1.8, wearing purple cosmic armor, in a castle environment, violent shadows, anime sketch --niji --ar 3:2",
-      "image_file": "001_\u30e2\u30e1\u30f3\u30c9\u30fc.png"
+      "image_prompt": "\u30ab\u30bc\u30a4\u30aa\u30f3::0 a mythical fire-type pokemon::2.5, wearing fiery armor, in a desert environment, lava texture background, anime sketch --niji --ar 3:2",
+      "image_file": "001_\u30ab\u30bc\u30a4\u30aa\u30f3.png"
     }
   ]
 }

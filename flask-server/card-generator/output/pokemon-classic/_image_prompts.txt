@@ -1,3 +1,3 @@
-[001] モメンドー
-モメンドー::0 a rare dark-type pokemon::1.8, wearing purple cosmic armor, in a castle environment, violent shadows, anime sketch --niji --ar 3:2
+[001] カゼイオン
+カゼイオン::0 a mythical fire-type pokemon::2.5, wearing fiery armor, in a desert environment, lava texture background, anime sketch --niji --ar 3:2
 
