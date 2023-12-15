@@ -3,7 +3,7 @@
 import argparse
 import random
 ### The translation package ###
-from deep_translator import GoogleTranslator
+### from deep_translator import GoogleTranslator
 ###
 from src.pokemon_content.pokemon_collection import PokemonCollection
 from src.pokemon_content.pokemon_elements import PokemonElements
@@ -92,9 +92,6 @@ from src.pokemon_content.pokemon_rarity import PokemonRarity
 #     main()
 
 def main_generate(number_of_monsters, element_name, subject_override):
-    #👽#👽# This is going to automatically translate the input from any language into english #👽#👽#
-    subject_override = GoogleTranslator(source='auto', target='en').translate(subject_override)
-    #👽#👽##👽#👽#
 
     element = (
         None

@@ -1,6 +1,9 @@
 import string
 from src.mechanics.card import Card
 from src.util.gpt_call import gpt_client
+### The translation package ###
+from deep_translator import GoogleTranslator
+###
 
 
 def get_visual_description(card: Card) -> str:
@@ -15,7 +18,9 @@ def get_visual_description(card: Card) -> str:
 def get_image_prompt(card: Card):
 
     segments = []
+    #⭐️#⭐️# Working at translating the whole subject line into english for the image prompt! #⭐️#⭐️#
     subject_line = get_subject_description(card)
+    subject_line = GoogleTranslator(source='auto', target='en').translate(subject_line)
 
     if card.rarity.index == 1:
         subject_line += "::1.8"
@@ -37,14 +42,16 @@ def get_image_prompt(card: Card):
     message = f"{card.name}::0 " + message
     return message
 
-
+##Adjust the prompt
 def get_subject_description(card: Card):
+    
     subject_section = ["a"]
     subject_section.extend(card.style.subject_adjectives)
     subject_section.append(card.style.subject)
     subject_section.append(card.style.subject_type)
     subject_line = " ".join(subject_section)
     subject_line = subject_line.replace(" ,", ",")
+
     return subject_line
 
 
@@ -82,7 +89,7 @@ def generate_card_name(card: Card, seen_names: set[str]) -> str:
     # #🇺🇸#🇺🇸#
 
     #🇯🇵#🇯🇵# This is the Japanese prompt for name #🇯🇵#🇯🇵#
-    prompt = f"This prompt will have two steps first identify the japanese word in this prompt and incorporate the subjuect into the name you will give me. next (using the Japanese language)　"
+    prompt = f"This prompt will have two steps first identify the japanese word in this prompt and incorporate the subject into the name you will give me. next (using the Japanese language)　"
     prompt += f"Generate a unique, orignal, creative,{additional_modifier} {card.style.subject_type} easy to read (using simple kanji) pokemon like name for a {get_visual_description(card)} in Japanese"
     prompt += f"(without using the word {card.style.subject_type.lower()} or {card.element.name.lower()}):\n"
     prompt += f"only return this name that is being generated in katakana:\n"
