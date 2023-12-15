@@ -1,0 +1,20 @@
+{
+  "index": 1,
+  "name": "\u30c6\u30a4\u30ab\u30ac\u30ce\u30f3",
+  "description": "A notorious warrior of the magma-filled mountains, the flashy red-and-white-armored Pok\u00e9mon, Texigagon, is a powerful force to be reckoned with. Its deadly flame storms are enough to devastate any opponent, as it is said that a single flicker of flame from its claw is enough to cause an inferno. Despite its formidable ferocity, Texigagon spends most of its time eerily patrolling its mountain home, where it can be seen in its natural habitat of fire and lava.",
+  "element": "Fire",
+  "rarity": "uncommon",
+  "rarity_index": 1,
+  "hp": 150,
+  "abilities": [
+    {
+      "name": "\u708e\u306e\u5d50",
+      "element": "Fire",
+      "cost": 4,
+      "is_mixed_element": true,
+      "power": 50
+    }
+  ],
+  "image_prompt": "\u30c6\u30a4\u30ab\u30ac\u30ce\u30f3::0 a strong fire-type Turtle tester pokemon::1.8, wearing red and white armor, in a volcano environment, red and purple ambient lighting, anime sketch --niji --ar 3:2",
+  "image_file": "001_\u30c6\u30a4\u30ab\u30ac\u30ce\u30f3.png"
+}

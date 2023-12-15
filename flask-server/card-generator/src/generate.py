@@ -89,6 +89,9 @@ from src.pokemon_content.pokemon_rarity import PokemonRarity
 #     main()
 
 def main_generate(number_of_monsters, element_name, subject_override):
+    ### print test to see if we can trans the subject here ###
+    subject_override = "Turtle tester"
+    print(f"🍑🍑🍑🍑🍑{subject_override}")
     element = (
         None
         if element_name is None
