@@ -3,23 +3,30 @@
   "cards": [
     {
       "index": 1,
-      "name": "\u30c6\u30a4\u30ab\u30ac\u30ce\u30f3",
-      "description": "A notorious warrior of the magma-filled mountains, the flashy red-and-white-armored Pok\u00e9mon, Texigagon, is a powerful force to be reckoned with. Its deadly flame storms are enough to devastate any opponent, as it is said that a single flicker of flame from its claw is enough to cause an inferno. Despite its formidable ferocity, Texigagon spends most of its time eerily patrolling its mountain home, where it can be seen in its natural habitat of fire and lava.",
+      "name": "\u30d8\u30a4\u30ed\u30fc",
+      "description": "The elusive Heirow is a mysterious pokemon native to the smouldering volcanoes of its homelands. Though made of plastic, it is a surprisingly durable creature that is able to survive the scorching heat of its natural environment. During the day, it can be seen hopping around the slopes of its home volcanoes, where it uses its ability to exhale a jet of flames to create gentle paths up or down its steep surroundings. As the sun sets, Heirow will come to a stop and gaze out into the horizon, sometimes seen setting off a spark of fire in the night sky.",
       "element": "Fire",
-      "rarity": "uncommon",
-      "rarity_index": 1,
-      "hp": 150,
+      "rarity": "common",
+      "rarity_index": 0,
+      "hp": 120,
       "abilities": [
         {
-          "name": "\u708e\u306e\u5d50",
+          "name": "\u708e\u306e\u5674\u706b",
           "element": "Fire",
-          "cost": 4,
-          "is_mixed_element": true,
+          "cost": 3,
+          "is_mixed_element": false,
           "power": 50
+        },
+        {
+          "name": "\u7a81\u304d",
+          "element": "Neutral",
+          "cost": 1,
+          "is_mixed_element": false,
+          "power": 10
         }
       ],
-      "image_prompt": "\u30c6\u30a4\u30ab\u30ac\u30ce\u30f3::0 a strong fire-type Turtle tester pokemon::1.8, wearing red and white armor, in a volcano environment, red and purple ambient lighting, anime sketch --niji --ar 3:2",
-      "image_file": "001_\u30c6\u30a4\u30ab\u30ac\u30ce\u30f3.png"
+      "image_prompt": "\u30d8\u30a4\u30ed\u30fc::0 a simple fire-type plastic rabbit pokemon, in a volcano environment, lava texture background, anime sketch --niji --ar 3:2",
+      "image_file": "001_\u30d8\u30a4\u30ed\u30fc.png"
     }
   ]
 }
