@@ -199,10 +199,17 @@ def render_card(card: Card, photo):
     # Render the status of the card (weakness, resistance, etc.)
     render_weakness_and_resist(card, card_image)
 
-    # Write the rarity of the Pokemon.
+    #🌈#🌈# THIS IS WHERE WE WRITE THE DESCRIPTION AFTER ADJUSTING THE PROMP #🌈#🌈#
+    # Write the rarity text description of the Pokemon.
     rarity_text_position = (58, 602)
-    rarity_font = ImageFont.truetype("./resources/font/Cabin_Condensed-Regular.ttf", 18)
-    rarity_text = f"{card.rarity.name} {card.element.name}-type Card"
+    ## ORIGINAL ##
+    #rarity_font = ImageFont.truetype("./resources/font/Cabin_Condensed-Regular.ttf", 18)
+    #rarity_text = f"{card.rarity.name} {card.element.name}-type Card"
+    ## ORIGINAL ##
+    #🌈#🌈#
+    rarity_font = ImageFont.truetype("./resources/font/japanese/NotoSansJP-ExtraBold.ttf", 16)
+    rarity_text = f"{card.description}-type Card"
+    #🌈#🌈#
     draw.text(
         rarity_text_position,
         rarity_text.title(),
@@ -210,6 +217,7 @@ def render_card(card: Card, photo):
         fill=(0, 0, 0),
         anchor="lm",
     )
+    #🌈#🌈##🌈#🌈#
 
     # Write the rarity of the Pokemon.
     rarity_symbol_position = (card_image.width - 64, 605)

@@ -1,0 +1,20 @@
+{
+  "index": 1,
+  "name": "\u30c4\u30dc\u30c4",
+  "description": "\u30aa\u30fc\u30ad\u30c9\u30dd\u30b1\u30e2\u30f3\u3001\u30d5\u30a3\u30fc\u30eb\u30c9\u3067\u898b\u3064\u3051\u3089\u308c\u308b\u3002",
+  "element": "Neutral",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 120,
+  "abilities": [
+    {
+      "name": "\u30cf\u30f3\u30de\u30fc\u30e9\u30c3\u30b7\u30e5",
+      "element": "Neutral",
+      "cost": 4,
+      "is_mixed_element": false,
+      "power": 40
+    }
+  ],
+  "image_prompt": "\u30c4\u30dc\u30c4::0 a simple neutral-type pokemon, in a field environment, faded prismatic bokeh background, anime sketch --niji --ar 3:2",
+  "image_file": "001_\u30c4\u30dc\u30c4.png"
+}

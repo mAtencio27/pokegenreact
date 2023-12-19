@@ -3,23 +3,23 @@
   "cards": [
     {
       "index": 1,
-      "name": "\u30a4\u30b0\u30ca\u30fc\u30c9",
-      "description": "Igunard is a mysterious and powerful dark armor-clad pokemon often found lurking in dangerous, volcanic environments. It is said to roam atop the molten lava, finely balancing itself with focused and intense agility. Its power comes from the fire within, as evidenced by its signature ability to shoot forth a blast of volcanic lightning. Some have even speculated that Igunard has a special connection to the magma, allowing it to feel the heated energy of the earth and use it to its advantage. Igunard is no doubt a formidable wild pokemon and should not be taken lightly.",
-      "element": "Fire",
-      "rarity": "rare",
-      "rarity_index": 2,
-      "hp": 360,
+      "name": "\u30c4\u30dc\u30c4",
+      "description": "\u30aa\u30fc\u30ad\u30c9\u30dd\u30b1\u30e2\u30f3\u3001\u30d5\u30a3\u30fc\u30eb\u30c9\u3067\u898b\u3064\u3051\u3089\u308c\u308b\u3002",
+      "element": "Neutral",
+      "rarity": "common",
+      "rarity_index": 0,
+      "hp": 120,
       "abilities": [
         {
-          "name": "\u706b\u5c71\u9583\u5149",
-          "element": "Fire",
-          "cost": 3,
+          "name": "\u30cf\u30f3\u30de\u30fc\u30e9\u30c3\u30b7\u30e5",
+          "element": "Neutral",
+          "cost": 4,
           "is_mixed_element": false,
-          "power": 50
+          "power": 40
         }
       ],
-      "image_prompt": "\u30a4\u30b0\u30ca\u30fc\u30c9::0 a mythical fire-type rabbit pokemon::2.5, wearing dark armor, in a volcano environment, blue and red ambient lighting, anime sketch --niji --ar 3:2",
-      "image_file": "001_\u30a4\u30b0\u30ca\u30fc\u30c9.png"
+      "image_prompt": "\u30c4\u30dc\u30c4::0 a simple neutral-type pokemon, in a field environment, faded prismatic bokeh background, anime sketch --niji --ar 3:2",
+      "image_file": "001_\u30c4\u30dc\u30c4.png"
     }
   ]
 }

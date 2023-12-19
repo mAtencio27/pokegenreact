@@ -117,12 +117,28 @@ def generate_card_name(card: Card, seen_names: set[str]) -> str:
 
 
 def generate_desc(card: Card) -> str:
+    #🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵
+    #🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈#
     # Generate a name for the monster.
     if gpt_client().is_openai_enabled:
-        prompt = f"Generate a short, original, creative Pokedex description for {card.name}, {get_visual_description(card)}. "
-        prompt += f"It has the following abilities: {', '.join([ability.name for ability in card.abilities])}. "
-        prompt += f"Be creative about its day-to-day life. "
-        prompt += f" (do not use the word {card.style.subject.lower()} or {card.element.name.lower()} or the ability names):\n"
+        #🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸
+        # prompt = f"Generate a short, original, creative Pokedex description for {card.name}, {get_visual_description(card)}. "
+        # prompt += f"It has the following abilities: {', '.join([ability.name for ability in card.abilities])}. "
+        # prompt += f"Be creative about its day-to-day life. "
+        # prompt += f" (do not use the word {card.style.subject.lower()} or {card.element.name.lower()} or the word pokemon or the name {card.name} or the ability names):\n"
+        #🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸
+        #🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵
+        # 1️⃣ first translate the english using deep translator
+        japanese_description = get_visual_description(card)
+        japanese_description = GoogleTranslator(source='auto', target='en').translate(japanese_description)
+        # 2️⃣ Generate a Japanese description that is shorter than 20 characters.
+        # Emphasize environmental awareness and avoid specific words in Japanese.
+        prompt = f"{card.name}、{japanese_description}。"
+        prompt += "環境への意識を強調し、20文字以下で表現してください。"
+        # 3️⃣ Avoid using specific words in Japanese.
+        prompt += f" (以下の単語を使用しないでください：{card.style.subject}、{card.element.name}、ポケモン、{card.name}、"
+        prompt += f"{', '.join([ability.name for ability in card.abilities])}という単語を使用しないでください):\n"
+        # 🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵
         print(prompt)
         response = gpt_client().get_completion(prompt, max_tokens=256)
         desc = response.choices[0].text
@@ -130,3 +146,5 @@ def generate_desc(card: Card) -> str:
         return desc
     else:
         return "No description available."
+    #🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵
+    #🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈#
