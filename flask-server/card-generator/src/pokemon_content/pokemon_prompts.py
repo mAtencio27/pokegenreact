@@ -92,6 +92,7 @@ def generate_card_name(card: Card, seen_names: set[str]) -> str:
     prompt = f"This prompt will have two steps first identify the japanese word in this prompt and incorporate the subject into the name you will give me. next (using the Japanese language)　"
     prompt += f"Generate a unique, orignal, creative,{additional_modifier} {card.style.subject_type} easy to read (using simple kanji) pokemon like name for a {get_visual_description(card)} in Japanese"
     prompt += f"(without using the word {card.style.subject_type.lower()} or {card.element.name.lower()}):\n"
+    prompt += f"Check to make sure that the name has no mention of the word pokemon in any way this includes the word 'poke' :\n"
     prompt += f"only return this name that is being generated in katakana:\n"
     #🇯🇵#🇯🇵# This is the Japanese prompt for name #🇯🇵#🇯🇵#
 
@@ -138,6 +139,7 @@ def generate_desc(card: Card) -> str:
         # 3️⃣ Avoid using specific words in Japanese.
         prompt += f" (以下の単語を使用しないでください：{card.style.subject}、{card.element.name}、ポケモン、{card.name}、"
         prompt += f"{', '.join([ability.name for ability in card.abilities])}という単語を使用しないでください):\n"
+        prompt += f"日本語で20文字以下で表現してください。"
         # 🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵
         print(prompt)
         response = gpt_client().get_completion(prompt, max_tokens=256)
