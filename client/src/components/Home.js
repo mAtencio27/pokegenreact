@@ -15,7 +15,7 @@ import neutral from '../Assets/elements/neutral_element.png'
 import psychic from '../Assets/elements/psychic_element.png'
 import water from '../Assets/elements/water_element.png'
 
-const Home = ({pokeJson, setPokeJson, setLocation}) => {
+const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
 
   const [subjectString, setSubjectString] = useState([]);
   const [elementString, setElementString] = useState("");
@@ -57,7 +57,7 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
     <div className='Home'>
       <div className='homeContainer'>
       <div className='homeContainerBG'>
-          <Header/>
+          <Header japanese={japanese} setJapanese={setJapanese}/>
           <div className='homeHeaderContainer'>
             <h1 className='typeKeywordHead'>TYPE & KEYWORD</h1>
             <p className='typeKeywordP'>シールダーの属性とキーワードを入力しよう</p>

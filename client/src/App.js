@@ -13,6 +13,9 @@ function App() {
 
   const [pokeJson, setPokeJson] = useState([]);
   const [ files , setFiles ] = useState([]);
+
+  // THIS IS FOR A LANGUAGE SWITCH TO OUTPUT JAPANESE OR ENGLISH
+  const [japanese, SetJapanese] = useState(false)
   //THIS IS TO RESET THE PAGE TO THE TOP WHEN ROUTING
   const [location, setLocation] = useState(0)
 
@@ -21,7 +24,7 @@ function App() {
   //THIS USE EFFECT IS TO RESET TO THE TOP WHICH USES LOCATION
 
   useEffect(()=>{
-    window.scrollTo(0,0);
+  window.scrollTo(0,0);
     setLocation(0)
   },[location])
 
@@ -88,13 +91,13 @@ function App() {
               <Landing setLocation={setLocation}/>
             </Route>
             <Route exact path = "/home">
-              <Home pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation}/>
+              <Home pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation} japanese={japanese} SetJapanese={SetJapanese}/>
             </Route>
             <Route path = "/ImageUpload">
-              <ImageUpload pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation}/>
+              <ImageUpload pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation} japanese={japanese} SetJapanese={SetJapanese}/>
             </Route>
             <Route path="/Render">
-              <Render pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation}/>
+              <Render pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation} japanese={japanese} SetJapanese={SetJapanese}/>
             </Route>
           </Switch>
         </div>
