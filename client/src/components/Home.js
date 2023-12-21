@@ -56,8 +56,9 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
   return (
     <div className='Home'>
       <div className='homeContainer'>
+      <Header japanese={japanese} setJapanese={setJapanese}/>
       <div className='homeContainerBG'>
-          <Header japanese={japanese} setJapanese={setJapanese}/>
+          {/* <Header japanese={japanese} setJapanese={setJapanese}/> */}
           <div className='homeHeaderContainer'>
             <h1 className='typeKeywordHead'>TYPE & KEYWORD</h1>
             <p className='typeKeywordP'>シールダーの属性とキーワードを入力しよう</p>

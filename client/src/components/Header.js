@@ -1,13 +1,19 @@
 import logo from "../Assets/Page1/logo_only.png"
 import title from "../Assets/Page1/only_text.png"
 
-const Header = () => {
+const Header = ({japanese, setJapanese}) => {
+
+    const translateSwitchHandler = () => {
+        console.log(japanese)
+        setJapanese(true)
+        console.log(japanese)
+    }
 
     return (
         <div className="HeaderContainer">
             <img className="pokemonLogo" src={logo}></img>
             <img className="title" src={title}></img>
-            <div className="translateSwitch">
+            <div onClick={()=>{translateSwitchHandler()}} className="translateSwitch">
                 <p>EN/JP</p>
             </div>
             {/* <img className="translateSwitch" src={logo}></img> */}

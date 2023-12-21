@@ -391,7 +391,9 @@ body {
 .homeContainerBG {
   display: flex;
   justify-content: center;
-  position: relative;
+  /* THIS IS THE ORIGINAL POSITON
+  position: relative; */
+  position: static;
   background-image: url("./Assets/Page2/top.png");
   background-size:100%;
   background-repeat: no-repeat;
@@ -420,7 +422,9 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  position: relative;
+  /* this is what the first iteration before adding lang switch */
+  /* position: relative; */
+  position: static;
   padding-top: 12%;
   height: 100vh;
   width: 80vw;
