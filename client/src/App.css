@@ -94,6 +94,13 @@ body {
   padding-bottom: 1%;
 }
 
+.translateSwitch{
+  max-height: 50%;
+  max-width: 45%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 .headerTopics {
   font-family: 'NotoSansJP-Black', sans-serif;
   font-weight: bold;

@@ -28,11 +28,11 @@ const Home = ({pokeJson, setPokeJson, setLocation}) => {
   //THIS IS GENERATING THE JSON SCRIPT AND SAVING THE JSON TO STATE
   const generateScript = async(e) => {
     //🏠🏠🏠🏠🏠🏠 LOCAL 🏠🏠🏠🏠🏠
-    //const res = await fetch(`http://localhost:8000/generate?element=${elementString}&subject=${subjectString}`)
+    const res = await fetch(`http://localhost:8000/generate?element=${elementString}&subject=${subjectString}`)
     //🎹🎹 THIS IS A TEST TO TEST LOADING SCREEN
     //console.log(isLoading)
     //🏩🏩🏩🏩🏩🏩 PRODUCTION 🏩🏩🏩🏩🏩
-    const res = await fetch(`https://pokegen-api.onrender.com/generate?element=${elementString}&subject=${subjectString}`)
+    //const res = await fetch(`https://pokegen-api.onrender.com/generate?element=${elementString}&subject=${subjectString}`)
     let responseData = await res.json()
     setPokeJson(responseData.data.cards)
     return responseData.data.cards
