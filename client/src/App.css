@@ -962,7 +962,9 @@ body {
 
 .buttonElementText{
   width: 100%;
-  margin: 5px;
+  text-align: end;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .buttonElementTextDiv {
