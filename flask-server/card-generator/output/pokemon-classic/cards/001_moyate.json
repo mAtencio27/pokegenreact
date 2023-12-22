@@ -1,0 +1,20 @@
+{
+  "index": 1,
+  "name": "Moyate",
+  "description": "\u5fc3\u306e\u5e73\u548c\u3092\u53d6\u308a\u623b",
+  "element": "Psychic",
+  "rarity": "common",
+  "rarity_index": 0,
+  "hp": 240,
+  "abilities": [
+    {
+      "name": "\u30c6\u30ec\u30ad\u30cd\u30b7\u30b9",
+      "element": "Psychic",
+      "cost": 2,
+      "is_mixed_element": false,
+      "power": 40
+    }
+  ],
+  "image_prompt": "Moyate::0 a simple psychic-type pokemon, in a castle environment, pink bokeh lighting, anime sketch --niji --ar 3:2",
+  "image_file": "001_moyate.png"
+}
