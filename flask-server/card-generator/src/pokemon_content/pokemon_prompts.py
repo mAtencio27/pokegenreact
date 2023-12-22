@@ -84,20 +84,22 @@ def generate_card_name(card: Card, seen_names: set[str]) -> str:
     ### There prompts are later to be generated inside API calls for english or japanese depending on a conditioal switch in React
 
     # #🇺🇸#🇺🇸# Adding a mod to translate all the text into 
-    # prompt = f"Generate a unique, orignal, creative,{additional_modifier} {card.style.subject_type} name for a {get_visual_description(card)}"
-    # prompt += f" (without using the word {card.style.subject_type.lower()} or {card.element.name.lower()}):\n"
+    prompt = f"Generate a unique, original, creative,{additional_modifier} {card.style.subject_type} name for a {get_visual_description(card)}"
+    prompt += f" (without using the word {card.style.subject_type.lower()} or {card.element.name.lower()}):\n"
     # #🇺🇸#🇺🇸#
 
     #🇯🇵#🇯🇵# This is the Japanese prompt for name #🇯🇵#🇯🇵#
-    prompt = f"This prompt will have two steps first identify the japanese word in this prompt and incorporate the subject into the name you will give me. next (using the Japanese language)　"
-    prompt += f"Generate a unique, orignal, creative,{additional_modifier} {card.style.subject_type} easy to read (using simple kanji) pokemon like name for a {get_visual_description(card)} in Japanese"
-    prompt += f"(without using the word {card.style.subject_type.lower()} or {card.element.name.lower()}):\n"
-    prompt += f"Check to make sure that the name has no mention of the word pokemon in any way this includes the word 'poke' :\n"
-    prompt += f"only return this name that is being generated in katakana:\n"
-    #🇯🇵#🇯🇵# This is the Japanese prompt for name #🇯🇵#🇯🇵#
-
-    print(prompt)
-    response = gpt_client().get_completion(prompt, max_tokens=256, n=5)
+    # #prompt = f"This prompt will have two steps first identify the japanese word in this prompt and incorporate the subject into the name you will give me. next (using the Japanese language)　"
+    # prompt = f"This prompt is to return exactly one single name in japanese"
+    # prompt += f"Using Japanese generate a unique, orignal, creative,{additional_modifier} {card.style.subject_type} easy to read (using simple kanji) pokemon like name for a {get_visual_description(card)} in Japanese"
+    # prompt += f"(without using the word {card.style.subject_type.lower()} or {card.element.name.lower()})\n"
+    # #prompt += f"Check to make sure that the name has no mention of the word pokemon in any way this includes the word 'poke' \n"
+    # prompt += f"return with exatly one name is katakana.\n"
+    # #🇯🇵#🇯🇵# This is the Japanese prompt for name #🇯🇵#🇯🇵#
+    japanese_prompt = prompt + "give me the name in katakana"
+    japanese_prompt = GoogleTranslator(source='auto', target='ja').translate(prompt)
+    print(japanese_prompt)
+    response = gpt_client().get_completion(japanese_prompt, max_tokens=256, n=5)
 
     potential_names = set()
     for potential_name in response.choices:
@@ -120,29 +122,26 @@ def generate_card_name(card: Card, seen_names: set[str]) -> str:
 def generate_desc(card: Card) -> str:
     #🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵
     #🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈#
-    # Generate a name for the monster.
     if gpt_client().is_openai_enabled:
+        #🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸 OG OG
+        prompt = f"Generate a short, original, creative Pokedex description for {card.name}, {get_visual_description(card)}. "
+        prompt += f"It has the following abilities: {', '.join([ability.name for ability in card.abilities])}. "
+        prompt += f"Be creative about its day-to-day life. "
+        prompt += f" (do not use the word {card.style.subject.lower()} or {card.element.name.lower()} or the word pokemon or the name {card.name} or the ability names):\n"
         #🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸
-        # prompt = f"Generate a short, original, creative Pokedex description for {card.name}, {get_visual_description(card)}. "
-        # prompt += f"It has the following abilities: {', '.join([ability.name for ability in card.abilities])}. "
-        # prompt += f"Be creative about its day-to-day life. "
-        # prompt += f" (do not use the word {card.style.subject.lower()} or {card.element.name.lower()} or the word pokemon or the name {card.name} or the ability names):\n"
-        #🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸#🇺🇸
-        #🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵
-        # 1️⃣ first translate the english using deep translator
+        prompt += f"summarize this description into the length of 5 tokens."
+        # #🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵
+        # # 1️⃣ first translate the english using deep translator
         japanese_description = get_visual_description(card)
-        japanese_description = GoogleTranslator(source='auto', target='en').translate(japanese_description)
-        # 2️⃣ Generate a Japanese description that is shorter than 20 characters.
-        # Emphasize environmental awareness and avoid specific words in Japanese.
-        prompt = f"{card.name}、{japanese_description}。"
-        prompt += "環境への意識を強調し、20文字以下で表現してください。"
-        # 3️⃣ Avoid using specific words in Japanese.
-        prompt += f" (以下の単語を使用しないでください：{card.style.subject}、{card.element.name}、ポケモン、{card.name}、"
-        prompt += f"{', '.join([ability.name for ability in card.abilities])}という単語を使用しないでください):\n"
-        prompt += f"日本語で20文字以下で表現してください。"
-        # 🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵
-        print(prompt)
-        response = gpt_client().get_completion(prompt, max_tokens=256)
+        japanese_description = GoogleTranslator(source='auto', target='ja').translate(japanese_description)
+        # # 🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵
+        ### 👾👾👾👾 New Attempt from scratch to make a template 👾👾👾👾###
+        japanese_prompt = f"{japanese_description}"
+        japanese_prompt += f"この情報から、キャラクターの能力を極力短い言葉で考えて下さい。能力は地球環境を守ること、改善することに繋がるようなものでなければなりません."
+        japanese_prompt += f"例えば「ごみ収集」など。答えは一つのみ "
+        ### 👾👾👾👾 New Attempt from scratch to make a template 👾👾👾👾###
+        print(japanese_prompt)
+        response = gpt_client().get_completion(japanese_prompt, max_tokens=10)
         desc = response.choices[0].text
         desc = desc.strip()
         return desc

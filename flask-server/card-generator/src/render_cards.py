@@ -208,7 +208,7 @@ def render_card(card: Card, photo):
     ## ORIGINAL ##
     #🌈#🌈#
     rarity_font = ImageFont.truetype("./resources/font/japanese/NotoSansJP-ExtraBold.ttf", 16)
-    rarity_text = f"{card.description}-type Card"
+    rarity_text = f"{card.description}"
     #🌈#🌈#
     draw.text(
         rarity_text_position,
