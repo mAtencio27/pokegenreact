@@ -31,10 +31,10 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
     let endpoint = null
     if(japanese === true){
       console.log ("japanese true endpoint")
-      endpoint = `http://localhost:8000/generate?element=${elementString}&subject=${subjectString}`
+      endpoint = `http://localhost:8000/generate?element=${elementString}&subject=${subjectString}&japanese=${true}`
     }else{
       console.log ("english true endpoint")
-      endpoint = `http://localhost:8000/generate?element=${elementString}&subject=${subjectString}`
+      endpoint = `http://localhost:8000/generate?element=${elementString}&subject=${subjectString}&japanese=${false}`
     }
     //🏠🏠🏠🏠🏠🏠 LOCAL 🏠🏠🏠🏠🏠
     const res = await fetch(endpoint)
