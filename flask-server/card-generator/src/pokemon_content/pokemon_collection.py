@@ -62,9 +62,9 @@ class PokemonCollection(Collection):
             
             #🅾️🅾️🅾️🅾️🅾️ ORIGINAL 🅾️🅾️🅾️🅾️🅾️
             ##Test
-            print(f"JAPANESE BOOL: {japanese}")
+            # print(f"JAPANESE BOOL: {japanese}")
             ### CAN CHANGE WHICH ABILITY FILE FUNC WE CALL
-            ability.name = get_ability_name(ability)
+            #ability.name = get_ability_name(ability)
             #🅾️🅾️🅾️🅾️🅾️ UPDATED 🅾️🅾️🅾️🅾️🅾️
             if japanese == True:
                 ability.name = get_ability_name_jp(ability)
@@ -97,8 +97,8 @@ class PokemonCollection(Collection):
         ### 👾👾👾👾👾 ###
         # Generate a name for the card.
         if gpt_client().is_openai_enabled:
-            card.name = generate_card_name(card, self.card_names_seen)
-            card.description = generate_desc(card)
+            card.name = generate_card_name(japanese, card, self.card_names_seen)
+            card.description = generate_desc(japanese, card)
 
         card.image_prompt = get_image_prompt(card)
         card.visual_description = get_visual_description(card)

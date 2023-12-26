@@ -1,3 +1,3 @@
-[001] シルフェン
-シルフェン::0 a rare water-type pokemon::1.8, wearing ornate armor, in a river environment, gleaming bubble background, anime sketch --niji --ar 3:2
+[001] アクェリン
+アクェリン::0 a strong water-type 猫 pokemon::1.8, wearing white armor, in a ocean environment, gleaming bubble background, anime sketch --niji --ar 3:2
 

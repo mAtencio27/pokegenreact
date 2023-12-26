@@ -69,7 +69,7 @@ def get_full_subject_description(card: Card):
     return subject_line
 
 
-def generate_card_name(card: Card, seen_names: set[str]) -> str:
+def generate_card_name(japanese, card: Card, seen_names: set[str]) -> str:
 
     if not gpt_client().is_openai_enabled:
         return "Untitled Card"
@@ -82,24 +82,22 @@ def generate_card_name(card: Card, seen_names: set[str]) -> str:
         additional_modifier = "single-word, "
     
     ### There prompts are later to be generated inside API calls for english or japanese depending on a conditioal switch in React
-
+    #print(f"THIS IS THE JAPANESE ARG PASSED INTO GETTING THE NAME {japanese}")
     # #🇺🇸#🇺🇸# Adding a mod to translate all the text into 
     prompt = f"Generate a unique, original, creative,{additional_modifier} {card.style.subject_type} name for a {get_visual_description(card)}"
     prompt += f" (without using the word {card.style.subject_type.lower()} or {card.element.name.lower()}):\n"
     # #🇺🇸#🇺🇸#
 
-    #🇯🇵#🇯🇵# This is the Japanese prompt for name #🇯🇵#🇯🇵#
-    # #prompt = f"This prompt will have two steps first identify the japanese word in this prompt and incorporate the subject into the name you will give me. next (using the Japanese language)　"
-    # prompt = f"This prompt is to return exactly one single name in japanese"
-    # prompt += f"Using Japanese generate a unique, orignal, creative,{additional_modifier} {card.style.subject_type} easy to read (using simple kanji) pokemon like name for a {get_visual_description(card)} in Japanese"
-    # prompt += f"(without using the word {card.style.subject_type.lower()} or {card.element.name.lower()})\n"
-    # #prompt += f"Check to make sure that the name has no mention of the word pokemon in any way this includes the word 'poke' \n"
-    # prompt += f"return with exatly one name is katakana.\n"
     # #🇯🇵#🇯🇵# This is the Japanese prompt for name #🇯🇵#🇯🇵#
     japanese_prompt = prompt + "give me the name in katakana"
     japanese_prompt = GoogleTranslator(source='auto', target='ja').translate(prompt)
-    print(japanese_prompt)
-    response = gpt_client().get_completion(japanese_prompt, max_tokens=256, n=5)
+
+    if japanese == True:
+        print(japanese_prompt)
+        response = gpt_client().get_completion(japanese_prompt, max_tokens=256, n=5)
+    else:
+        print(prompt)
+        response = gpt_client().get_completion(prompt, max_tokens=256, n=5)
 
     potential_names = set()
     for potential_name in response.choices:
@@ -119,7 +117,7 @@ def generate_card_name(card: Card, seen_names: set[str]) -> str:
     return name
 
 
-def generate_desc(card: Card) -> str:
+def generate_desc(japanese, card: Card) -> str:
     #🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵🇯🇵
     #🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈##🌈#🌈#
     if gpt_client().is_openai_enabled:
@@ -140,8 +138,14 @@ def generate_desc(card: Card) -> str:
         japanese_prompt += f"この情報から、キャラクターの能力を極力短い言葉で考えて下さい。能力は地球環境を守ること、改善することに繋がるようなものでなければなりません."
         japanese_prompt += f"例えば「ごみ収集」など。答えは一つのみ "
         ### 👾👾👾👾 New Attempt from scratch to make a template 👾👾👾👾###
-        print(japanese_prompt)
-        response = gpt_client().get_completion(japanese_prompt, max_tokens=10)
+        #print(japanese_prompt)
+        if japanese == True:
+            print(japanese_prompt)
+            response = gpt_client().get_completion(japanese_prompt, max_tokens=256, n=1)
+        else:
+            print(prompt)
+            response = gpt_client().get_completion(prompt, max_tokens=256, n=1)
+        #response = gpt_client().get_completion(japanese_prompt, max_tokens=10)
         desc = response.choices[0].text
         desc = desc.strip()
         return desc
