@@ -4,9 +4,11 @@ import title from "../Assets/Page1/only_text.png"
 const Header = ({japanese, setJapanese}) => {
 
     const translateSwitchHandler = () => {
-        console.log(japanese)
-        setJapanese(true)
-        console.log(japanese)
+        if(japanese === true){
+            setJapanese(false)
+        }else{
+            setJapanese(true)
+        }
     }
 
     return (
@@ -14,7 +16,7 @@ const Header = ({japanese, setJapanese}) => {
             <img className="pokemonLogo" src={logo}></img>
             <img className="title" src={title}></img>
             <div onClick={()=>{translateSwitchHandler()}} className="translateSwitch">
-                <p>EN/JP</p>
+                {japanese ? <p className="languageP">ENGLISH</p> : <p className="languageP">日本語</p>}
             </div>
             {/* <img className="translateSwitch" src={logo}></img> */}
             {/* <p>アースシールド　カード生成サイト</p> */}

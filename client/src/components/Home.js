@@ -27,12 +27,22 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
 
   //THIS IS GENERATING THE JSON SCRIPT AND SAVING THE JSON TO STATE
   const generateScript = async(e) => {
+    //🇺🇸🇯🇵 this is where we are going to switch and make a us endpoint and jp one
+    let endpoint = null
+    if(japanese === true){
+      console.log ("japanese true endpoint")
+      endpoint = `http://localhost:8000/generate?element=${elementString}&subject=${subjectString}`
+    }else{
+      console.log ("english true endpoint")
+      endpoint = `http://localhost:8000/generate?element=${elementString}&subject=${subjectString}`
+    }
     //🏠🏠🏠🏠🏠🏠 LOCAL 🏠🏠🏠🏠🏠
-    const res = await fetch(`http://localhost:8000/generate?element=${elementString}&subject=${subjectString}`)
-    //🎹🎹 THIS IS A TEST TO TEST LOADING SCREEN
-    //console.log(isLoading)
+    const res = await fetch(endpoint)
+    //const res = await fetch(`http://localhost:8000/generate?element=${elementString}&subject=${subjectString}`)
+    //🏠🏠🏠🏠🏠🏠 LOCAL 🏠🏠🏠🏠🏠
     //🏩🏩🏩🏩🏩🏩 PRODUCTION 🏩🏩🏩🏩🏩
     //const res = await fetch(`https://pokegen-api.onrender.com/generate?element=${elementString}&subject=${subjectString}`)
+    //🏩🏩🏩🏩🏩🏩 PRODUCTION 🏩🏩🏩🏩🏩
     let responseData = await res.json()
     setPokeJson(responseData.data.cards)
     return responseData.data.cards
