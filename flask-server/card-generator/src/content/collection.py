@@ -25,15 +25,16 @@ class Collection:
     card_names_seen: set[str] = field(default_factory=set)
 
     def generate_random_cards(
-        self, element: Element = None, subject_override: str = None
+        self, japanese, element: Element = None, subject_override: str = None,
     ) -> list[Card]:
         element = element if element else random.choice(self.elements)
         # n_series = random.randint(1, 3)
         n_series = 1
-        return self.generate_card_series(element, n_series, subject_override)
+        #🅾️🅾️🅾️ we call generate card series => generate card => generate card abilities🅾️🅾️🅾️🅾️
+        return self.generate_card_series(japanese, element, n_series, subject_override)
 
     def generate_card_series(
-        self, element: Element, n: int = 1, subject_override: str = None
+        self, japanese, element: Element, n: int = 1, subject_override: str = None
     ) -> list[Card]:
 
         # The last card in the series is always the highest in the series.
@@ -50,7 +51,9 @@ class Collection:
         for i in range(n):
             rarity_index = min(len(self.rarities) - 1, starting_rarity_index + i)
             rarity = self.rarities[rarity_index]
+            ##🅾️🅾️🅾️🅾️ Where we call generate card and in that call get abilitiy name🅾️🅾️🅾️🅾️
             card = self.generate_card(
+                japanese,
                 element=element,
                 rarity=rarity,
                 inherited_style=card_style,
@@ -67,6 +70,7 @@ class Collection:
 
     def generate_card(
         self,
+        japanese,
         element: Element,
         rarity: Rarity,
         style: Style = None,

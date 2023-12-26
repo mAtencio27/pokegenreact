@@ -14,6 +14,7 @@ import pathlib
 
 #### modules to run render_cards.py module and generate.py module
 from src.generate import main_generate
+from src.generate_jp import main_generate_jp
 from src.render_cards import main_render
 #from src.render_cards import return_cards
 from src.pokemon_content.pokemon_elements import PokemonElements, get_resist, get_weakness
@@ -58,10 +59,23 @@ def generate():
     ## TAKE IN THE ARGS
     element = request.args.get("element", default="", type=str)
     subject = request.args.get("subject", default="", type=str)
+    ## 🇺🇸🇯🇵🇺🇸🇯🇵🇺🇸🇯🇵🇺🇸🇯🇵🇺🇸🇯🇵
+    japanese = request.args.get("japanese", default="", type=str)
+    ## 🇺🇸🇯🇵🇺🇸🇯🇵🇺🇸🇯🇵🇺🇸🇯🇵🇺🇸🇯🇵
     number_of_monsters = 1
 
+
+    ## 🇺🇸🇯🇵🇺🇸🇯🇵🇺🇸🇯🇵🇺🇸🇯🇵🇺🇸🇯🇵
+    if japanese == 'true':
+        print(f"JAPANESE 🇯🇵")
+        returnData = main_generate_jp(number_of_monsters, element, subject)
+    else:
+        print(f"ENGLISH 🇺🇸")
+        returnData  = main_generate(number_of_monsters, element, subject)
+    ## 🇺🇸🇯🇵🇺🇸🇯🇵🇺🇸🇯🇵🇺🇸🇯🇵🇺🇸🇯🇵
+
     ## CALL THE SCRIPT AND RETURN THE JSON TO SAVE THE STATE
-    returnData = main_generate(number_of_monsters, element, subject)
+    ##returnData = main_generate(number_of_monsters, element, subject)
 
     ##👽👽👽👽##Test to see the JSON data👽👽👽👽
     print(jsonify({"data":returnData}))

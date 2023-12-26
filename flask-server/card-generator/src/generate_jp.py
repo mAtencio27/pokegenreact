@@ -80,7 +80,7 @@ from src.pokemon_content.pokemon_rarity import PokemonRarity
 #                 element if element else all_elements[i % len(all_elements)]
 #             )
 #             monsters = current_collection.generate_random_cards(
-#                 element=current_element, subject_override=subject_override
+#                 japanese=True, element=current_element, subject_override=subject_override
 #             )
 #             print(*monsters, sep="\n\n")
 
@@ -91,7 +91,7 @@ from src.pokemon_content.pokemon_rarity import PokemonRarity
 # if __name__ == "__main__":
 #     main()
 
-def main_generate(number_of_monsters, element_name, subject_override):
+def main_generate_jp(number_of_monsters, element_name, subject_override, japanese=True):
 
     element = (
         None
@@ -129,8 +129,10 @@ def main_generate(number_of_monsters, element_name, subject_override):
             current_element = (
                 element if element else all_elements[i % len(all_elements)]
             )
+            ### TRY TO PASS IN THE JAPANESE ARG
+            ### 🅾️🅾️🅾️🅾️ generate random cards => gemerate card series => generate card => generate abilities 🅾️🅾️🅾️🅾️🅾️
             monsters = current_collection.generate_random_cards(
-                japanese=False, element=current_element, subject_override=subject_override
+                japanese=True, element=current_element, subject_override=subject_override
             )
             print(*monsters, sep="\n\n")
 
@@ -172,4 +174,4 @@ if __name__ == "__main__":
     element_name = args.element
     subject_override = args.subject
 
-    main_generate(number_of_monsters, element_name, subject_override)
+    main_generate_jp(number_of_monsters, element_name, subject_override)

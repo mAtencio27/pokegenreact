@@ -24,6 +24,7 @@ from src.pokemon_content.pokemon_prompts import (
     get_visual_description,
 )
 from src.util.ability_name_library import get_ability_name
+from src.util.ability_name_library_jp import get_ability_name_jp
 from src.util.gpt_call import gpt_client
 
 
@@ -37,6 +38,7 @@ class PokemonCollection(Collection):
 
     def generate_card(
         self,
+        japanese: bool,
         element: Element,
         rarity: Rarity,
         inherited_style: Style = None,
@@ -57,7 +59,18 @@ class PokemonCollection(Collection):
         abilities = self.generate_abilities(element, ability_costs)
 
         for ability in abilities:
+            
+            #🅾️🅾️🅾️🅾️🅾️ ORIGINAL 🅾️🅾️🅾️🅾️🅾️
+            ##Test
+            print(f"JAPANESE BOOL: {japanese}")
+            ### CAN CHANGE WHICH ABILITY FILE FUNC WE CALL
             ability.name = get_ability_name(ability)
+            #🅾️🅾️🅾️🅾️🅾️ UPDATED 🅾️🅾️🅾️🅾️🅾️
+            if japanese == True:
+                ability.name = get_ability_name_jp(ability)
+            else:
+                ability.name = get_ability_name(ability)
+
 
         bonus_hp_points = max_ability_points + (hp_points * self.ABILITY_TO_HP_PTS)
         # hp = 10 * bonus_hp_points
@@ -81,6 +94,7 @@ class PokemonCollection(Collection):
         card.image_prompt = get_image_prompt(card)
         card.visual_description = get_visual_description(card)
 
+        ### 👾👾👾👾👾 ###
         # Generate a name for the card.
         if gpt_client().is_openai_enabled:
             card.name = generate_card_name(card, self.card_names_seen)
@@ -174,6 +188,8 @@ class PokemonCollection(Collection):
 
         return style
 
+    ### 👾👾👾👾 #####
+    #🅾️🅾️🅾️🅾️🅾️🅾️🅾️🅾️
     def generate_abilities(self, element: Element, ability_costs: list[int]):
         abilities = []
         for i, cost in enumerate(ability_costs):
