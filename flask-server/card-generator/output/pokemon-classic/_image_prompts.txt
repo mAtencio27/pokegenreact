@@ -1,3 +1,0 @@
-[001] Moyate
-Moyate::0 a simple psychic-type pokemon, in a castle environment, pink bokeh lighting, anime sketch --niji --ar 3:2
-
