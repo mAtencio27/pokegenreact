@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from './Header';
 import footer from '../Assets/Page1/footer_2.png'
 
-const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
+const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation, japanese, setJapanese, location}) => {
 
   const [ prompts, setPrompts ] = useState([]);
   const [ selected, setSelected] = useState('');
@@ -42,13 +42,13 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
     <div className='ImageUpload'>
       <div className="uploadContainer">
       <div className='uploadContainerBG'>
-          <Header/>
+          <Header location={location}/>
           <div className='uploadHeaderContainer'>
             <h1 className='typeUploadHead'>GENERATE IMAGE</h1>
             <p className='typeUploadP'>AIでシールダーの画像を生成しよう</p>
             <div className='uploadEntryContainer'>
               <div className='uploadEntranceBar'>
-                プロンプト生成
+                {japanese?"プロンプト生成":"GENERATED PROMPT"}
               </div>
             </div>
             <div className="uploadSelectorContainer">
@@ -56,7 +56,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation}) => {
             </div>
             <div className='photoUploadContainer'>
               <div className='photouploadEntranceBar'>
-                画像を挿入する
+                {japanese?"画像を挿入する":"UPLOAD YOUR IMAGE"}
               </div>
             </div>
             <div className='uploadInputContainer'>

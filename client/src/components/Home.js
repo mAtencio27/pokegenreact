@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
+import Header_language_switch from './Header_language_switch';
 import footer from '../Assets/Page1/footer_2.png'
 
 //ELEMENT IMPORTS
@@ -15,7 +16,7 @@ import neutral from '../Assets/elements/neutral_element.png'
 import psychic from '../Assets/elements/psychic_element.png'
 import water from '../Assets/elements/water_element.png'
 
-const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
+const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese, location}) => {
 
   const [subjectString, setSubjectString] = useState([]);
   const [elementString, setElementString] = useState("");
@@ -68,7 +69,8 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
   return (
     <div className='Home'>
       <div className='homeContainer'>
-      <Header japanese={japanese} setJapanese={setJapanese}/>
+      {/* <Header japanese={japanese} setJapanese={setJapanese} location={location}/> */}
+      <Header_language_switch japanese={japanese} setJapanese={setJapanese} location={location}/>
       <div className='homeContainerBG'>
           {/* <Header japanese={japanese} setJapanese={setJapanese}/> */}
           <div className='homeHeaderContainer'>
@@ -76,15 +78,15 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
             <p className='typeKeywordP'>シールダーの属性とキーワードを入力しよう</p>
             <div className='keywordEntryContainer'>
               <div className='keywordEntranceBar'>
-                キーワードを入力
+                {japanese?'キーワードを入力':'ENTER KEYWORD'}
               </div>
             </div>
             <div className='keywordInputContainer'>
-              <input className='keywordInput' placeholder="例）Recycle" onChange={(e) => {setSubjectString(e.target.value)}}  type='text'></input>
+              <input className='keywordInput' placeholder={japanese?"例）リサイクル":"Ex. Recycle"} onChange={(e) => {setSubjectString(e.target.value)}}  type='text'></input>
             </div>
             <div className='elementSelectorContainer'>
               <div className='elementEntranceBar'>
-                属性を選ぶ
+                {japanese?"属性を選ぶ":"SELECT TYPE"}
               </div>
               <div className="generateElementBox" >
                   <div className={`generateElementTile${elementString === 'grass' ? ' selected' : ''}`} onClick={(e)=>{setElementString(e.currentTarget.dataset.value)}} data-value="grass">
@@ -93,8 +95,8 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
                           <img className='buttonElementImage' src={grass}></img>
                       </div>
                       <div className='buttonElementTextDiv'>
-                        <p className='buttonElementText'> TREE </p>
-                        <p className='buttonElementText'>木</p>
+                        <p className='buttonElementText'> {japanese?'木':'TREE'} </p>
+                        {/* <p className='buttonElementText'>木</p> */}
                       </div>
                     </div>
                   </div>
@@ -104,8 +106,8 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
                           <img className='buttonElementImage' src={fire}></img>
                       </div>
                       <div className='buttonElementTextDiv'>
-                        <p className='buttonElementText'> FIRE </p>
-                        <p className='buttonElementText'>火</p>
+                        <p className='buttonElementText'> {japanese?"火":"FIRE"} </p>
+                        {/* <p className='buttonElementText'>火</p> */}
                       </div>
                     </div>  
                   </div>
@@ -115,8 +117,8 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
                           <img className='buttonElementImage' src={water}></img>
                       </div>
                       <div className='buttonElementTextDiv'>
-                        <p className='buttonElementText'> WATER </p>
-                        <p className='buttonElementText'>水</p>
+                        <p className='buttonElementText'> {japanese?"水":"WATER"}</p>
+                        {/* <p className='buttonElementText'>水</p> */}
                       </div>
                     </div>  
                   </div>
@@ -126,8 +128,8 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
                           <img className='buttonElementImage' src={electric}></img>
                       </div>
                       <div className='buttonElementTextDiv'>
-                        <p className='buttonElementText'>ENERGY</p>
-                        <p className='buttonElementText'>エネルギー</p>
+                        <p className='buttonElementText'>{japanese?"エネルギー":"ENERGY"}</p>
+                        {/* <p className='buttonElementText'>エネルギー</p> */}
                       </div>
                     </div>
                   </div>
@@ -137,8 +139,8 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
                           <img className='buttonElementImage' src={psychic}></img>
                       </div>
                       <div className='buttonElementTextDiv'>
-                        <p className='buttonElementText'> MIND </p>
-                        <p className='buttonElementText'>マインド</p>
+                        <p className='buttonElementText'>{japanese?"マインド":"MIND"}</p>
+                        {/* <p className='buttonElementText'>マインド</p> */}
                       </div>
                     </div>    
                   </div>
@@ -148,8 +150,8 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
                           <img className='buttonElementImage' src={neutral}></img>
                       </div>
                       <div className='buttonElementTextDiv'>
-                        <p className='buttonElementText'> CLEAN </p>
-                        <p className='buttonElementText'>クリーン</p>
+                        <p className='buttonElementText'>{japanese?"クリーン":"CLEAN"}</p>
+                        {/* <p className='buttonElementText'>クリーン</p> */}
                       </div>
                     </div>  
                   </div>
@@ -159,8 +161,8 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
                           <img className='buttonElementImage' src={fighting}></img>
                       </div>
                       <div className='buttonElementTextDiv'>
-                        <p className='buttonElementText'> PROTECT </p>
-                        <p className='buttonElementText'>保護</p>
+                        <p className='buttonElementText'>{japanese?"保護":"PROTECT"}</p>
+                        {/* <p className='buttonElementText'>保護</p> */}
                       </div>
                     </div>  
                   </div>
@@ -170,8 +172,8 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
                           <img className='buttonElementImage' src={dark}></img>
                       </div>
                       <div className='buttonElementTextDiv'>
-                        <p className='buttonElementText'> FEAR </p>
-                        <p className='buttonElementText'>恐れ</p>
+                        <p className='buttonElementText'>{japanese?"恐れ":"FEAR"}</p>
+                        {/* <p className='buttonElementText'>恐れ</p> */}
                       </div>
                     </div>  
                   </div>
@@ -181,8 +183,8 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese}) => {
                           <img className='buttonElementImage' src={fairy}></img>
                       </div>
                       <div className='buttonElementTextDiv'>
-                        <p className='buttonElementText'> SPIRIT </p>
-                        <p className='buttonElementText'>スピリット</p>
+                        <p className='buttonElementText'>{japanese?"スピリット":"SPIRIT"}</p>
+                        {/* <p className='buttonElementText'>スピリット</p> */}
                       </div>
                     </div>    
                   </div>

@@ -6,7 +6,7 @@ import Loading from './Loading';
 import QRCode from 'react-qr-code'
 import Header from './Header'
 
-const Render = ({pokeJson, setPokeJson, files, setFiles}) => {
+const Render = ({pokeJson, setPokeJson, files, setFiles, location}) => {
 
   const [photos, setPhotos] = useState([])
 

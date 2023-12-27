@@ -91,13 +91,13 @@ function App() {
               <Landing setLocation={setLocation}/>
             </Route>
             <Route exact path = "/home">
-              <Home pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation} japanese={japanese} setJapanese={setJapanese}/>
+              <Home pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} location={location} setLocation={setLocation} japanese={japanese} setJapanese={setJapanese}/>
             </Route>
             <Route path = "/ImageUpload">
-              <ImageUpload pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation} japanese={japanese} setJapanese={setJapanese}/>
+              <ImageUpload pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} location={location} setLocation={setLocation} japanese={japanese} setJapanese={setJapanese}/>
             </Route>
             <Route path="/Render">
-              <Render pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} setLocation={setLocation} japanese={japanese} setJapanese={setJapanese}/>
+              <Render pokeJson={pokeJson} setPokeJson={setPokeJson} files={files} setFiles={setFiles} location={location} setLocation={setLocation} japanese={japanese} setJapanese={setJapanese}/>
             </Route>
           </Switch>
         </div>
