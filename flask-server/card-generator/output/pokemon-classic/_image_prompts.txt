@@ -1,3 +1,0 @@
-[001] アクェリン
-アクェリン::0 a strong water-type 猫 pokemon::1.8, wearing white armor, in a ocean environment, gleaming bubble background, anime sketch --niji --ar 3:2
-
