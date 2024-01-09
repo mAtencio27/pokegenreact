@@ -194,7 +194,7 @@ const Home = ({pokeJson, setPokeJson, setLocation, japanese, setJapanese, locati
             </div>
             <div className='generateButtonContainer'>
               {/* {elementString ? <button className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}}> Generate Script </button>: <button className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e)}} disabled> Generate Script </button>} */}
-              {elementString ? <Link to="/ImageUpload" className="generateScriptButton" value={subjectString} onClick={(e)=>{clickHandler(e)}}> GENERATE SCRIPT </Link>: <Link to='/Home' className="generateScriptButtonDisabled" value={subjectString}> Select an element to continue </Link>}
+              {elementString ? <Link to="/ImageUpload" className="generateScriptButton" value={subjectString} onClick={(e)=>{clickHandler(e)}}> {japanese? "スクリプトを生成する":"GENERATE SCRIPT"} </Link>: <Link to='/Home' className="generateScriptButtonDisabled" value={subjectString}> {japanese? "属性を選んで進む" :"Select an element to continue"} </Link>}
               {/* {<Link to="/ImageUpload" className="generateScriptButton" value={subjectString} onClick={(e)=>{generateScript(e); setLocation(2)}}> Generate Script </Link>} */}
               {/* {<Link to="/ImageUpload" className="generateScriptButton" value={subjectString} onClick={(e)=>{clickHandler(e)}}> Generate Script </Link>} */}
             </div>

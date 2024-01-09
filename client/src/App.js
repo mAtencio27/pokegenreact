@@ -15,7 +15,7 @@ function App() {
   const [ files , setFiles ] = useState([]);
 
   // THIS IS FOR A LANGUAGE SWITCH TO OUTPUT JAPANESE OR ENGLISH
-  const [japanese, setJapanese] = useState(false);
+  const [japanese, setJapanese] = useState(true);
   //THIS IS TO RESET THE PAGE TO THE TOP WHEN ROUTING
   const [location, setLocation] = useState(0)
 
