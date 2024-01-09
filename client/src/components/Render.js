@@ -6,7 +6,7 @@ import Loading from './Loading';
 import QRCode from 'react-qr-code'
 import Header from './Header'
 
-const Render = ({pokeJson, setPokeJson, files, setFiles, location}) => {
+const Render = ({pokeJson, setPokeJson, files, setFiles, location, japanese}) => {
 
   const [photos, setPhotos] = useState([])
 
@@ -106,7 +106,7 @@ const Render = ({pokeJson, setPokeJson, files, setFiles, location}) => {
               <button onClick={handleScan}></button>
             </div> */}
             <div className='renderNavButtons'>
-              <Link to="/" className="renderReturnButton" type='submit' onClick={()=>{resetData()}}>RETURN TO TOP</Link>
+              <Link to="/" className="renderReturnButton" type='submit' onClick={()=>{resetData()}}>{japanese?"トップページに戻る":"RETURN TO TOP"}</Link>
             </div>
           </div>
         </div>

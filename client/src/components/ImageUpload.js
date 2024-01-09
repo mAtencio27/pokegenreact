@@ -78,7 +78,7 @@ const ImageUpload = ({pokeJson, setPokeJson, files, setFiles, setLocation, japan
                 <div className='submitPhotoFileContainer'>
                   {files[0]?
                   <Link to="/Render" className="photoInputName" type='submit' onClick={()=>{setLocation(3)}}>{japanese?"カードを生成する":"GENERATE YOUR CARD"}</Link>:
-                  <Link to="/ImageUpload" className="photoInputNameDisabled" type='submit'>{japanese?"画像をアップロード":"PLEASE UPLOAD A PHOTO"}</Link>
+                  <Link to="/ImageUpload" className="photoInputNameDisabled" type='submit'>{japanese?"画像をアップロード":"PLEASE UPLOAD A IMAGE"}</Link>
                   }
                 </div>
               </form>
