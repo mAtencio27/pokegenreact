@@ -92,7 +92,7 @@ const Render = ({pokeJson, setPokeJson, files, setFiles, location, japanese}) =>
           </div> */}
           <div className='renderBodyContainer'>
             <div className='renderHeaderContainer'>
-              <h1 className="renderh1">IT'S YOUR CARD!!</h1>
+              <h1 className="renderh1"><div className='renderh1text'>IT'S YOUR CARD!!</div></h1>
               <h3 className='renderh2'>君だけのアースシールダーの出来上がり！</h3>
             </div>
             <div className='renderCardContainer'>

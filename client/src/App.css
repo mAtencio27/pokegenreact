@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'Din';
-  src: url('../src/Assets/fonts/DIN_Condensed_Bold.ttf') format('truetype'),
+  src: url('../src/Assets/fonts/DIN_Condensed_Bold.ttf') format('truetype');
   /* Additional font formats if available */
+  ascent-override: 100%;
 }
 
 @font-face {
@@ -858,6 +859,12 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 50px;
+}
+
+.renderh1text{
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .renderh2{
