@@ -89,7 +89,9 @@ def generate_card_name(japanese, card: Card, seen_names: set[str]) -> str:
     # #🇺🇸#🇺🇸#
 
     # #🇯🇵#🇯🇵# This is the Japanese prompt for name #🇯🇵#🇯🇵#
-    japanese_prompt = prompt + "give me the name in katakana"
+    # japanese_prompt = prompt + "give me the name in katakana"
+    japanese_prompt = f"{card.style.subject_type}"
+    japanese_prompt += f"この情報を使って、ユニークでクリエイティブなキャラクターの名前をカタカナで考えてください。ただし、「ポケモン」や「ポケ」などの言葉は使用禁止です。直訳も禁止です。これは対話ではありません。1つだけのカタカナの名前を提供してください。ローマ字の読み方は必要ありません"
     japanese_prompt = GoogleTranslator(source='auto', target='ja').translate(prompt)
 
     if japanese == True:
