@@ -89,13 +89,15 @@ def generate_card_name(japanese, card: Card, seen_names: set[str]) -> str:
     # #🇺🇸#🇺🇸#
 
     # #🇯🇵#🇯🇵# This is the Japanese prompt for name #🇯🇵#🇯🇵#
-    # japanese_prompt = prompt + "give me the name in katakana"
-    japanese_prompt = f"{card.style.subject_type}"
+    japanese_description = get_visual_description(card)
+    japanese_description = GoogleTranslator(source='auto', target='ja').translate(japanese_description)
+
+    japanese_prompt = f"{japanese_description}"
     japanese_prompt += f"この情報を使って、ユニークでクリエイティブなキャラクターの名前をカタカナで考えてください。ただし、「ポケモン」や「ポケ」などの言葉は使用禁止です。直訳も禁止です。これは対話ではありません。1つだけのカタカナの名前を提供してください。ローマ字の読み方は必要ありません"
-    japanese_prompt = GoogleTranslator(source='auto', target='ja').translate(prompt)
+    # japanese_prompt = GoogleTranslator(source='auto', target='ja').translate(japanese_prompt)
 
     if japanese == True:
-        print(japanese_prompt)
+        print(f"JAPANESE NAME PROMPT: \n{japanese_prompt}\n")
         response = gpt_client().get_completion(japanese_prompt, max_tokens=256, n=5)
     else:
         print(prompt)
@@ -142,7 +144,7 @@ def generate_desc(japanese, card: Card) -> str:
         ### 👾👾👾👾 New Attempt from scratch to make a template 👾👾👾👾###
         #print(japanese_prompt)
         if japanese == True:
-            print(japanese_prompt)
+            print(f"JAPANESE DESCRIPTION PROMPT :\n {japanese_prompt} :\n ")
             response = gpt_client().get_completion(japanese_prompt, max_tokens=256, n=1)
         else:
             print(prompt)
