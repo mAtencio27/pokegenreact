@@ -20,7 +20,7 @@ def get_image_prompt(card: Card):
     segments = []
     #⭐️#⭐️# Working at translating the whole subject line into english for the image prompt! #⭐️#⭐️#
     subject_line = get_subject_description(card)
-    subject_line = GoogleTranslator(source='auto', target='en').translate(subject_line)
+    subject_line = GoogleTranslator(source='ja', target='en').translate(subject_line)
 
     if card.rarity.index == 1:
         subject_line += "::1.8"
